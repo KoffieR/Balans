@@ -1,0 +1,58 @@
+# Balans — WordPress-thema (PRD)
+
+## Oorspronkelijk problem statement
+Gebruiker vroeg om een WordPress-website rond "Van vicieuze cirkel naar balans".
+Omdat Emergent niet in WordPress uitlevert, is in overleg gekozen voor een compleet,
+uploadbaar WordPress-thema (.zip) dat de gebruiker op zijn eigen WordPress-installatie plaatst.
+
+## Keuzes gebruiker
+- Formaat: Compleet WordPress-thema (PHP + style.css + functions.php), .zip-upload.
+- Shop: WooCommerce. Afspraken: eigen custom afsprakenpagina met form handler (AJAX).
+- Eerste scope: Homepage, Shop, Afspraken.
+- Betalingen: mock/placeholder (afhankelijk van WooCommerce + gateway van gebruiker).
+- Afsprakenkalender: ingebouwd (datum + tijdslot, opslaan in DB als CPT).
+- Meditatie-audio: placeholders, duidelijk gelabeld.
+- Voorbeeldcontent: placeholder teksten met "nog aan te leveren"-notices.
+
+## Architectuur
+Thema `balans-theme/` met:
+- Hoofdbestanden: style.css, functions.php, header.php, footer.php, front-page.php,
+  page.php, single.php, index.php, archive.php, search.php, searchform.php, 404.php.
+- /inc/: theme-setup.php, enqueue.php, cpt.php, form-handler.php, appointments.php,
+  woocommerce.php, template-helpers.php, placeholder-content.php, install-pages.php.
+- /page-templates/: voor-jou, voor-bedrijven, meditatie, consult, drukpuntmassage,
+  abonnementen, trainingen, offerte, artikelen, over, afspraak, contact.
+- /assets/css/main.css, /assets/js/main.js, /assets/images/.
+- /woocommerce/ (voor eventuele template overrides).
+- readme.txt met installatie-instructies.
+
+## Features gereed
+- Mobile-first responsive layout, Fraunces (serif) + Instrument Sans (sans) typografie.
+- Warme crème/klei kleurpalet met goede contrast en focusringen.
+- Custom post types: Meditaties, Trainingen, Zakelijke trainingen, Eigen blogs,
+  Afspraken (intern), Offerteaanvragen (intern).
+- Automatische pagina-installatie bij thema-activering (incl. hoofdmenu).
+- AJAX-formulieren: afspraak, contact, offerte — opslag als CPT + e-mail naar admin.
+- WooCommerce-ondersteuning + aangepaste shop-hero "Kristallen & (half)edelstenen".
+- Placeholder-notices op elke pagina met uit te leveren content.
+- Toegankelijkheid: skip-link, focus-visible, prefers-reduced-motion.
+- Homepage met hero + "Waar ben je naar op zoek?" (5 routes) + zakelijk + shop + aanpak.
+
+## Mocked / nog aan te vullen door eigenaar
+- Alle echte teksten, afbeeldingen, audiobestanden.
+- Instagram URL, contactgegevens, logo.
+- Juridische teksten (privacy, cookies, voorwaarden, disclaimer).
+- Werkelijke tijdslot-beschikbaarheid (nu statische voorbeelden).
+- Betaalmethoden via WooCommerce (bijv. Mollie) — klant installeert zelf.
+- Terugkerende betalingen (WooCommerce Subscriptions) — nog niet geactiveerd.
+
+## Oplevering
+- `/app/balans-theme.zip` — uploadbaar via Weergave → Thema's → Thema uploaden.
+
+## Backlog / volgende fases
+- P1: Trainingdetail-template met prijs + "In winkelmand" via WooCommerce.
+- P1: Meditatie-detail template met beveiligde audio-URL (member-only).
+- P2: WooCommerce Subscriptions-integratie voor meditatieabonnementen.
+- P2: Beveiligde audio (afgeschermde media, niet alleen hidden page).
+- P3: Externe kalender-koppeling (bijv. Google Calendar/ical) voor afspraken.
+- P3: SEO-metabeschrijvingen en schema.org markup per CPT.
