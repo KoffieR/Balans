@@ -4,6 +4,7 @@ from fontTools.ttLib import TTFont
 from fontTools.pens.basePen import BasePen
 from fontTools.pens.boundsPen import BoundsPen
 from reportlab.pdfgen import canvas
+from make_logos import tail_commands
 from reportlab.lib.units import mm
 from reportlab.lib.colors import CMYKColor
 from reportlab.pdfbase import pdfmetrics
@@ -26,6 +27,7 @@ CARD = {
     "functie": "Balansbrenger",
     "telefoon": "+31 6 23 988 488",
     "website": "www.eq5.nl",
+    "diensten": ("consulten · workshops", "cursussen · ondersteuning"),
     "slogan": "Van vicieuze cirkel naar balans",
 }
 
@@ -74,19 +76,9 @@ def glyph_bounds(ch):
 
 
 def draw_tail(pen, cx, y0):
-    """Zelfde staart als in make_logos.py (y omhoog in font units)."""
-    top, bottom = y0 + 0.035 * CAP, y0 - 0.34 * CAP
-    wt, wb = 0.065 * CAP, 0.035 * CAP
-    mid = top + (bottom - top) * 0.35
-    end = bottom + wb
-    k = 0.5523 * wb
-    pen.moveTo((cx - wt, top))
-    pen.lineTo((cx + wt, top))
-    pen.qCurveTo((cx + wb * 1.05, mid), (cx + wb, end))
-    pen.curveTo((cx + wb, end - k), (cx + k, bottom), (cx, bottom))
-    pen.curveTo((cx - k, bottom), (cx - wb, end - k), (cx - wb, end))
-    pen.qCurveTo((cx - wb * 1.05, mid), (cx - wt, top))
-    pen.closePath()
+    for op, pts in tail_commands(cx, y0):
+        {"M": pen.moveTo, "L": pen.lineTo, "C": lambda *p: pen.curveTo(*p),
+         "Z": pen.closePath}[op](*pts)
 
 
 def eq5_width():
@@ -159,11 +151,15 @@ def back(c):
     left = 7 * mm
     c.setFillColor(CREAM)
     c.setFont("Fraunces-Medium", 13)
-    c.drawString(left, 37 * mm, CARD["naam"])
-    tracked(c, left, 32 * mm, CARD["functie"].upper(), "InstrumentSans-Medium", 6.5, 1.2, TEAL_LIGHT)
+    c.drawString(left, 42 * mm, CARD["naam"])
+    tracked(c, left, 37 * mm, CARD["functie"].upper(), "InstrumentSans-Medium", 6.5, 1.2, TEAL_LIGHT)
+    c.setFillColor(CREAM)
+    c.setFont("Fraunces-Italic", 7.5)
+    c.drawString(left, 31 * mm, CARD["diensten"][0])
+    c.drawString(left, 27.6 * mm, CARD["diensten"][1])
     c.setStrokeColor(TEAL_LIGHT)
     c.setLineWidth(0.4)
-    c.line(left, 26.5 * mm, left + 10 * mm, 26.5 * mm)
+    c.line(left, 22.5 * mm, left + 10 * mm, 22.5 * mm)
     c.setFillColor(CREAM)
     c.setFont("InstrumentSans", 8)
     c.drawString(left, 17 * mm, CARD["telefoon"])

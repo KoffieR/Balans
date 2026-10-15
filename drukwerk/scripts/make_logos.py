@@ -27,18 +27,36 @@ def glyph(ch, x=0.0, s=1.0):
     return pen.getCommands(), gs[name].width * s, bp.bounds
 
 
+def tail_commands(cx, y0):
+    """Staart in font units (y omhoog): vloeiende uitloop uit de ring, smalle steel, ronde punt."""
+    flare_w, flare_y = 0.16 * CAP, y0 + 0.032 * CAP
+    neck_w, neck_y = 0.046 * CAP, y0 - 0.10 * CAP
+    bot_w, bottom = 0.036 * CAP, y0 - 0.34 * CAP
+    end = bottom + bot_w
+    k = 0.5523 * bot_w
+    cmds = [("M", ((cx - flare_w, flare_y),)), ("L", ((cx + flare_w, flare_y),))]
+    for sgn, seq in ((1, "down"), (-1, "up")):
+        fl = (cx + sgn * flare_w, flare_y)
+        nk = (cx + sgn * neck_w, neck_y)
+        en = (cx + sgn * bot_w, end)
+        c_fl = (cx + sgn * (neck_w + (flare_w - neck_w) * 0.30), y0 + 0.004 * CAP)
+        c_nk = (cx + sgn * neck_w, y0 - 0.035 * CAP)
+        if seq == "down":
+            cmds += [("C", (c_fl, c_nk, nk)), ("L", (en,)),
+                     ("C", ((cx + bot_w, end - k), (cx + k, bottom), (cx, bottom))),
+                     ("C", ((cx - k, bottom), (cx - bot_w, end - k), (cx - bot_w, end)))]
+        else:
+            cmds += [("L", (nk,)), ("C", (c_nk, c_fl, fl))]
+    cmds.append(("Z", ()))
+    return cmds
+
+
 def q_mark(x=0.0, s=1.0):
     """Q = Fraunces-O met een verticale staart midden onder de ring."""
     d, adv, (x0, y0, x1, y1) = glyph("O", x, s)
-    cx = x + (x0 + x1) / 2 * s
-    top = -(y0 + 0.035 * CAP) * s
-    bottom = -(y0 - 0.34 * CAP) * s
-    w_top, w_bot = 0.065 * CAP * s, 0.035 * CAP * s
-    mid = top + (bottom - top) * 0.35
-    tail = (f"M{cx - w_top:.1f},{top:.1f} L{cx + w_top:.1f},{top:.1f} "
-            f"Q{cx + w_bot * 1.05:.1f},{mid:.1f} {cx + w_bot:.1f},{bottom - w_bot:.1f} "
-            f"A{w_bot:.1f},{w_bot:.1f} 0 0 1 {cx - w_bot:.1f},{bottom - w_bot:.1f} "
-            f"Q{cx - w_bot * 1.05:.1f},{mid:.1f} {cx - w_top:.1f},{top:.1f} Z")
+    cx = (x0 + x1) / 2
+    tail = " ".join(op + " ".join(f"{x + px * s:.1f},{-py * s:.1f}" for px, py in pts)
+                    for op, pts in tail_commands(cx, y0))
     return d, tail, adv
 
 

@@ -69,3 +69,4 @@ Thema `balans-theme/` met:
 - Visitekaartje 85x55, dubbelzijdig, CMYK, 3 mm afloop, snijtekens, fonts ingesloten: /app/drukwerk/visitekaartje (script: make_business_card.py). Gegevens: Remco Sas, Balansbrenger, +31 6 23 988 488, www.eq5.nl.
 - Bundel: /app/balans-drukwerk.zip
 - Backlog: EQ5-logo + Q-accent in WordPress-thema verwerken; briefpapier-sjabloon; meditaties fase 2/3.
+- (juni 2026) Q-staart herzien: vloeiende uitloop uit de ring (geen insnoering), gedeeld via tail_commands() in make_logos.py. Achterkant visitekaartje: diensten "consulten · workshops / cursussen · ondersteuning" toegevoegd.
