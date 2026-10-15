@@ -55,3 +55,29 @@ B. Abonnementen online afsluiten (Paid Memberships Pro + Stripe)
    - Vermeld Stripe als betaalprovider in de privacyverklaring en webshopvoorwaarden
      (zoek op [in te vullen]), en vul de opzegtermijn in bij Artikel 7 van de
      algemene voorwaarden.
+
+C. Afrekenen en account in het Engels en Frans (vanaf thema 1.7.0)
+------------------------------------------------------------------
+- Laat PMPro eerst zijn pagina's aanmaken (Memberships > Settings > Pages > "Generate Pages").
+- Bovenaan het dashboard verschijnt dan de melding "Abonnementspagina's vertalen".
+  Eén klik maakt Engelse en Franse versies van Checkout, Account, Annuleren, Factuur enz.
+  en koppelt ze via Polylang. Bezoekers op /en/ of /fr/ rekenen dan af in hun eigen taal.
+- De teksten van PMPro zelf (knoppen, formuliervelden) worden vertaald door de
+  officiële taalbestanden van PMPro. WordPress downloadt die automatisch voor de talen
+  die je hebt geïnstalleerd (Dashboard > Updates > Vertalingen bijwerken).
+
+D. Welkomstmail en herinneringen (vanaf thema 1.7.0)
+----------------------------------------------------
+- Welkomstmail: zodra iemand een abonnement afsluit dat aan een dienst gekoppeld is,
+  ontvangt hij/zij automatisch een warme welkomstmail in de taal waarin is afgerekend,
+  met wanneer de verlichting plaatsvindt (de "Tijdsaanduiding") en de tekst van de dienst.
+- Herinneringen: abonnees van Wekelijks A krijgen op zondag, B op woensdag en C op
+  vrijdag om ca. 08:00 een korte herinnering om die dag even rust te nemen.
+  (Maandelijks krijgt geen wekelijkse herinnering.)
+- Elke mail heeft onderaan een afmeldlink voor de herinneringen; het abonnement zelf
+  loopt dan gewoon door.
+- Tip: WordPress verstuurt geplande taken pas bij een bezoek aan de site. Vraag je
+  hostingpartij om een "echte cron" voor wp-cron.php (bijv. elk kwartier), dan gaan de
+  herinneringen altijd op tijd de deur uit.
+- Tip: gebruik een SMTP-plugin (bijv. WP Mail SMTP) met het e-mailadres van EQ5,
+  zodat de mails niet in de spam belanden.

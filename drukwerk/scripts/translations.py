@@ -272,4 +272,6 @@ T = {
     "EQ5 Prijsnotitie": ("EQ5 Price note", "Note sur les prix EQ5"),
     "De notitie onder de diensten, per taal. Leeg = standaardtekst. Witregel = nieuwe alinea.": ("The note below the services, per language. Empty = default text. Blank line = new paragraph.", "La note sous les services, par langue. Vide = texte par défaut. Ligne vide = nouveau paragraphe."),
     "Prijsnotitie": ("Price note", "Note sur les prix"),
+    "Maak de afreken- en accountpagina's van de abonnementen ook in het Engels en Frans.": ("Create the checkout and account pages of the subscriptions in English and French as well.", "Créez aussi les pages de paiement et de compte des abonnements en anglais et en français."),
+    "Abonnementspagina's vertalen": ("Translate subscription pages", "Traduire les pages d'abonnement"),
 }

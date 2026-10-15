@@ -145,6 +145,8 @@
 "EQ5 Prijsnotitie": "inc/services.php",
 "De notitie onder de diensten, per taal. Leeg = standaardtekst. Witregel = nieuwe alinea.": "inc/services.php",
 "Prijsnotitie": "inc/services.php",
+"Maak de afreken- en accountpagina's van de abonnementen ook in het Engels en Frans.": "inc/subscriptions.php",
+"Abonnementspagina's vertalen": "inc/subscriptions.php",
 "Foto nog aan te leveren": "inc/template-helpers.php",
 "Nog aan te leveren door de eigenaar. Dit is een tijdelijke aanduiding.": "inc/template-helpers.php",
 "Footer navigatie": "inc/theme-setup.php",

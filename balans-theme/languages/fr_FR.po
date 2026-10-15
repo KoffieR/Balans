@@ -658,6 +658,18 @@ msgstr ""
 msgid "Prijsnotitie"
 msgstr "Note sur les prix"
 
+#: inc/subscriptions.php
+msgid ""
+"Maak de afreken- en accountpagina's van de abonnementen ook in het Engels en"
+" Frans."
+msgstr ""
+"Créez aussi les pages de paiement et de compte des abonnements en anglais et"
+" en français."
+
+#: inc/subscriptions.php
+msgid "Abonnementspagina's vertalen"
+msgstr "Traduire les pages d'abonnement"
+
 #: inc/template-helpers.php
 msgid "Foto nog aan te leveren"
 msgstr "Photo encore à fournir"
