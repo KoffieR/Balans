@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'BALANS_VERSION', '1.5.0' );
+define( 'BALANS_VERSION', '1.6.0' );
 define( 'BALANS_DIR', get_template_directory() );
 define( 'BALANS_URI', get_template_directory_uri() );
 

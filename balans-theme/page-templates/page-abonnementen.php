@@ -23,8 +23,8 @@ $s = balans_services();
                 <?php if ( get_the_content() ) : ?><div class="entry-content service-extra"><?php the_content(); ?></div><?php endif; ?>
             <?php endwhile; endif; ?>
             <div class="service-list">
-                <?php foreach ( $s['abonnementen'] as $key => $item ) : ?>
-                    <?php balans_service_block( $key, $item, balans_url( 'contact' ), $s['abo_button'] ); ?>
+                <?php foreach ( balans_get_diensten( 'abonnement' ) as $key => $item ) : ?>
+                    <?php balans_service_block( $key, $item, 'abonnement' ); ?>
                 <?php endforeach; ?>
             </div>
             <?php balans_price_note(); ?>

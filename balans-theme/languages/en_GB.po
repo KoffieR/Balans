@@ -562,6 +562,94 @@ msgstr "EQ5 Podcast"
 msgid "Links naar je podcast per taal. Lege velden worden niet getoond."
 msgstr "Links to your podcast per language. Empty fields are not shown."
 
+#: inc/services.php
+msgid "Dienst"
+msgstr "Service"
+
+#: inc/services.php
+msgid "Nieuwe dienst"
+msgstr "New service"
+
+#: inc/services.php
+msgid "Dienst bewerken"
+msgstr "Edit service"
+
+#: inc/services.php
+msgid "Groep"
+msgstr "Group"
+
+#: inc/services.php
+msgid "Tijdsaanduiding (bijv. \"Iedere zondag\")"
+msgstr "Timing (e.g. \"Every Sunday\")"
+
+#: inc/services.php
+msgid "Prijs (bijv. \"€ 45 per maand\")"
+msgstr "Price (e.g. \"€ 45 per month\")"
+
+#: inc/services.php
+msgid "Code (voor het afspraakformulier en de link #code)"
+msgstr "Code (for the appointment form and the #code link)"
+
+#: inc/services.php
+msgid "Paid Memberships Pro-niveau (abonnementen)"
+msgstr "Paid Memberships Pro level (subscriptions)"
+
+#: inc/services.php
+msgid "Knop"
+msgstr "Button"
+
+#: inc/services.php
+msgid "Gegevens van de dienst"
+msgstr "Service details"
+
+#: inc/services.php
+msgid "— geen (knop gaat naar contact) —"
+msgstr "— none (button goes to contact) —"
+
+#: inc/services.php
+msgid ""
+"Kies het niveau dat bij dit abonnement hoort. De knop wordt dan \"Abonneer\""
+" en gaat direct naar afrekenen."
+msgstr ""
+"Choose the level that belongs to this subscription. The button then becomes "
+"\"Subscribe\" and goes straight to checkout."
+
+#: inc/services.php
+msgid "Activeer Paid Memberships Pro om abonnementen online te verkopen."
+msgstr "Activate Paid Memberships Pro to sell subscriptions online."
+
+#: inc/services.php
+msgid "Afspraak maken (staat ook in het afspraakformulier)"
+msgstr "Book an appointment (also listed in the appointment form)"
+
+#: inc/services.php
+msgid "Contact opnemen"
+msgstr "Get in touch"
+
+#: inc/services.php
+msgid ""
+"Geldt voor \"Afspraak voor hulp\". Bij abonnementen met een niveau is de "
+"knop altijd \"Abonneer\"."
+msgstr ""
+"Applies to \"Appointment for help\". For subscriptions with a level, the "
+"button is always \"Subscribe\"."
+
+#: inc/services.php
+msgid "EQ5 Prijsnotitie"
+msgstr "EQ5 Price note"
+
+#: inc/services.php
+msgid ""
+"De notitie onder de diensten, per taal. Leeg = standaardtekst. Witregel = "
+"nieuwe alinea."
+msgstr ""
+"The note below the services, per language. Empty = default text. Blank line "
+"= new paragraph."
+
+#: inc/services.php
+msgid "Prijsnotitie"
+msgstr "Price note"
+
 #: inc/template-helpers.php
 msgid "Foto nog aan te leveren"
 msgstr "Photo still to be supplied"
@@ -626,10 +714,6 @@ msgid ""
 msgstr ""
 "Available time slots are temporary examples. Actual availability will be set"
 " up later by the owner."
-
-#: page-templates/page-afspraak.php
-msgid "Dienst"
-msgstr "Service"
 
 #: page-templates/page-afspraak.php
 msgid "Kies een dienst…"

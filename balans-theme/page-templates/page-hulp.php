@@ -17,7 +17,7 @@ $s = balans_services();
                 <p class="page-hero__intro"><?php echo esc_html( $paragraph ); ?></p>
             <?php endforeach; ?>
             <nav class="service-jump" aria-label="<?php echo esc_attr( $s['hulp_eyebrow'] ); ?>">
-                <?php foreach ( $s['hulp'] as $key => $item ) : ?>
+                <?php foreach ( balans_get_diensten( 'hulp' ) as $key => $item ) : ?>
                     <a href="#<?php echo esc_attr( $key ); ?>" data-testid="jump-<?php echo esc_attr( $key ); ?>"><?php echo esc_html( $item['title'] ); ?></a>
                 <?php endforeach; ?>
             </nav>
@@ -27,16 +27,8 @@ $s = balans_services();
     <section class="section">
         <div class="container">
             <div class="service-list">
-                <?php foreach ( $s['hulp'] as $key => $item ) : ?>
-                    <?php
-                    $is_custom = 'maatwerk' === $key;
-                    balans_service_block(
-                        $key,
-                        $item,
-                        $is_custom ? balans_url( 'contact' ) : balans_url( 'afspraak-maken', array( 'dienst' => $key ) ),
-                        $is_custom ? $s['hulp_contact'] : $s['hulp_button']
-                    );
-                    ?>
+                <?php foreach ( balans_get_diensten( 'hulp' ) as $key => $item ) : ?>
+                    <?php balans_service_block( $key, $item, 'hulp' ); ?>
                 <?php endforeach; ?>
             </div>
             <?php balans_price_note(); ?>

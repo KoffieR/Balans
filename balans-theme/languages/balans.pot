@@ -539,6 +539,88 @@ msgstr ""
 msgid "Links naar je podcast per taal. Lege velden worden niet getoond."
 msgstr ""
 
+#: inc/services.php
+msgid "Dienst"
+msgstr ""
+
+#: inc/services.php
+msgid "Nieuwe dienst"
+msgstr ""
+
+#: inc/services.php
+msgid "Dienst bewerken"
+msgstr ""
+
+#: inc/services.php
+msgid "Groep"
+msgstr ""
+
+#: inc/services.php
+msgid "Tijdsaanduiding (bijv. \"Iedere zondag\")"
+msgstr ""
+
+#: inc/services.php
+msgid "Prijs (bijv. \"€ 45 per maand\")"
+msgstr ""
+
+#: inc/services.php
+msgid "Code (voor het afspraakformulier en de link #code)"
+msgstr ""
+
+#: inc/services.php
+msgid "Paid Memberships Pro-niveau (abonnementen)"
+msgstr ""
+
+#: inc/services.php
+msgid "Knop"
+msgstr ""
+
+#: inc/services.php
+msgid "Gegevens van de dienst"
+msgstr ""
+
+#: inc/services.php
+msgid "— geen (knop gaat naar contact) —"
+msgstr ""
+
+#: inc/services.php
+msgid ""
+"Kies het niveau dat bij dit abonnement hoort. De knop wordt dan \"Abonneer\""
+" en gaat direct naar afrekenen."
+msgstr ""
+
+#: inc/services.php
+msgid "Activeer Paid Memberships Pro om abonnementen online te verkopen."
+msgstr ""
+
+#: inc/services.php
+msgid "Afspraak maken (staat ook in het afspraakformulier)"
+msgstr ""
+
+#: inc/services.php
+msgid "Contact opnemen"
+msgstr ""
+
+#: inc/services.php
+msgid ""
+"Geldt voor \"Afspraak voor hulp\". Bij abonnementen met een niveau is de "
+"knop altijd \"Abonneer\"."
+msgstr ""
+
+#: inc/services.php
+msgid "EQ5 Prijsnotitie"
+msgstr ""
+
+#: inc/services.php
+msgid ""
+"De notitie onder de diensten, per taal. Leeg = standaardtekst. Witregel = "
+"nieuwe alinea."
+msgstr ""
+
+#: inc/services.php
+msgid "Prijsnotitie"
+msgstr ""
+
 #: inc/template-helpers.php
 msgid "Foto nog aan te leveren"
 msgstr ""
@@ -594,10 +676,6 @@ msgstr ""
 msgid ""
 "Beschikbare tijdslots zijn tijdelijke voorbeelden. De werkelijke "
 "beschikbaarheid wordt later door de eigenaar ingericht."
-msgstr ""
-
-#: page-templates/page-afspraak.php
-msgid "Dienst"
 msgstr ""
 
 #: page-templates/page-afspraak.php

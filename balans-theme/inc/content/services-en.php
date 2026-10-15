@@ -17,6 +17,8 @@ return array(
     'abo_title'   => 'Regularly lightened and cleansed energetically.',
     'abo_intro'   => 'Choose the rhythm that suits you: monthly or on a fixed day of the week.',
     'abo_button'  => 'Sign up or ask a question',
+    'abo_subscribe' => 'Subscribe',
+    'abo_active'    => 'You have this subscription',
     'abonnementen' => array(
         'maandelijks' => array(
             'title' => 'Monthly',

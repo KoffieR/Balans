@@ -17,6 +17,8 @@ return array(
     'abo_title'   => 'Allégé et nettoyé énergétiquement, régulièrement.',
     'abo_intro'   => 'Choisissez le rythme qui vous convient : mensuel ou un jour fixe de la semaine.',
     'abo_button'  => "S'inscrire ou poser une question",
+    'abo_subscribe' => "S'abonner",
+    'abo_active'    => 'Vous avez cet abonnement',
     'abonnementen' => array(
         'maandelijks' => array(
             'title' => 'Mensuel',

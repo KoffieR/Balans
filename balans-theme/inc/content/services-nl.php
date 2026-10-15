@@ -17,6 +17,8 @@ return array(
     'abo_title'   => 'Regelmatig energetisch verlicht en opgeschoond.',
     'abo_intro'   => 'Kies het ritme dat bij je past: maandelijks of op een vaste dag in de week.',
     'abo_button'  => 'Aanmelden of vraag stellen',
+    'abo_subscribe' => 'Abonneer',
+    'abo_active'    => 'Je hebt dit abonnement',
     'abonnementen' => array(
         'maandelijks' => array(
             'title' => 'Maandelijks',

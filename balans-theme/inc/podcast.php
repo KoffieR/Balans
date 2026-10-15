@@ -17,10 +17,19 @@ function balans_has_podcast_plugin() {
 }
 
 /**
- * Heeft de bezoeker een actief EQ5-abonnement? (elk actief PMPro-niveau telt).
+ * Heeft de bezoeker een actief EQ5-abonnement? (elk actief PMPro-niveau, behalve niveaus van energetische abonnementen).
  */
 function balans_is_member( $user_id = null ) {
-    $is_member = function_exists( 'pmpro_hasMembershipLevel' ) && pmpro_hasMembershipLevel( null, $user_id );
+    $is_member = false;
+    if ( function_exists( 'pmpro_getMembershipLevelsForUser' ) ) {
+        $dienst_levels = function_exists( 'balans_dienst_level_ids' ) ? balans_dienst_level_ids() : array();
+        foreach ( (array) pmpro_getMembershipLevelsForUser( $user_id ) as $level ) {
+            if ( ! in_array( (int) $level->id, $dienst_levels, true ) ) {
+                $is_member = true;
+                break;
+            }
+        }
+    }
     return (bool) apply_filters( 'balans_is_member', $is_member, $user_id );
 }
 

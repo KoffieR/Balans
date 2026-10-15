@@ -1,0 +1,57 @@
+EQ5 — Diensten bewerken en abonnementen online verkopen
+========================================================
+
+A. Diensten bewerken (teksten, prijzen, volgorde)
+-------------------------------------------------
+- Na het bijwerken naar thema 1.6.0 en het openen van het dashboard staat er een
+  menu "Diensten" met al je diensten, in NL, EN en FR (gekoppeld via Polylang).
+  (Is Polylang actief, dan gebeurt dit pas als de drie talen zijn toegevoegd.)
+- Per dienst pas je aan:
+    Titel en tekst        -> gewoon in de editor
+    Groep                 -> Abonnementen of Afspraak voor hulp
+    Tijdsaanduiding       -> bijv. "Iedere zondag"
+    Prijs                 -> bijv. "€ 45 per maand" (leeg = "[in te vullen]")
+    Code                  -> technisch kenmerk, niet wijzigen bij bestaande diensten
+    Knop                  -> Afspraak maken of Contact opnemen
+    PMPro-niveau          -> alleen bij abonnementen (zie B)
+    Volgorde              -> rechts onder "Pagina-attributen" > Volgorde (10, 20, 30 ...)
+- Vul je de prijs of het niveau in bij de Nederlandse dienst, dan wordt dat
+  automatisch ook bij de Engelse en Franse versie gezet (prijs alleen als die nog leeg is).
+- De vertaling van een dienst bewerk je via het taal-icoontje in de lijst.
+- De prijsnotitie ("pay it forward") pas je aan via Weergave > Customizer > EQ5 Prijsnotitie.
+- Nieuwe dienst: Diensten > Nieuwe dienst. Diensten in de groep "Afspraak voor hulp"
+  met knop "Afspraak maken" verschijnen vanzelf in het afspraakformulier.
+
+B. Abonnementen online afsluiten (Paid Memberships Pro + Stripe)
+----------------------------------------------------------------
+1. Stripe-account
+   - Maak een account aan op stripe.com en zet in het Stripe-dashboard bij
+     Settings > Payment methods aan: Card, iDEAL, Bancontact en SEPA Direct Debit.
+2. Betaalprovider in PMPro
+   - Memberships > Settings > Payment Gateway & SSL > kies "Stripe" > Connect with Stripe.
+   - Kies bij "Payment flow" voor Stripe Checkout. Daarmee betaalt de klant de eerste
+     keer met iDEAL/Bancontact en worden de volgende betalingen automatisch via
+     SEPA-incasso afgeschreven.
+   - Valuta: Euro. Test eerst in "Sandbox/Testing"-modus.
+3. Groep voor meerdere abonnementen tegelijk
+   - Memberships > Settings > Levels > "Add New Group": naam "Energetische abonnementen",
+     vink "Allow members to have multiple levels from this group" AAN.
+   - Het EQ5-abonnement voor podcasts/meditaties zet je in een aparte groep.
+4. Vier niveaus aanmaken in die groep
+   - Maandelijks, Wekelijks A, Wekelijks B, Wekelijks C
+   - Per niveau: eerste betaling = prijs, "Recurring Subscription" aan, elke 1 maand.
+   - Optioneel: een korte beschrijving; die toont PMPro op de afrekenpagina.
+5. Koppelen aan de diensten
+   - Diensten > open "Maandelijks" (NL) > kies bij "Paid Memberships Pro-niveau" het
+     niveau Maandelijks > Bijwerken. Herhaal voor Wekelijks A, B en C.
+   - Op de pagina Abonnementen staat dan de knop "Abonneer" die direct naar afrekenen gaat.
+     Wie al een abonnement heeft (en is ingelogd), ziet "Je hebt dit abonnement".
+6. Goed om te weten
+   - Deze vier niveaus geven GEEN toegang tot betaalde podcasts/meditaties; dat doet
+     alleen het aparte EQ5-abonnement (elk niveau dat niet aan een dienst gekoppeld is).
+   - Opzeggen kan de klant zelf via de accountpagina van PMPro.
+   - De pagina's van PMPro (Checkout, Account) zijn Nederlands. PMPro heeft zelf ook
+     Engelse en Franse vertalingen; meertalige afrekenpagina's kun je later toevoegen.
+   - Vermeld Stripe als betaalprovider in de privacyverklaring en webshopvoorwaarden
+     (zoek op [in te vullen]), en vul de opzegtermijn in bij Artikel 7 van de
+     algemene voorwaarden.

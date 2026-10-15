@@ -570,6 +570,94 @@ msgid "Links naar je podcast per taal. Lege velden worden niet getoond."
 msgstr ""
 "Liens vers votre podcast par langue. Les champs vides ne sont pas affichés."
 
+#: inc/services.php
+msgid "Dienst"
+msgstr "Service"
+
+#: inc/services.php
+msgid "Nieuwe dienst"
+msgstr "Nouveau service"
+
+#: inc/services.php
+msgid "Dienst bewerken"
+msgstr "Modifier le service"
+
+#: inc/services.php
+msgid "Groep"
+msgstr "Groupe"
+
+#: inc/services.php
+msgid "Tijdsaanduiding (bijv. \"Iedere zondag\")"
+msgstr "Moment (par ex. « Chaque dimanche »)"
+
+#: inc/services.php
+msgid "Prijs (bijv. \"€ 45 per maand\")"
+msgstr "Prix (par ex. « 45 € par mois »)"
+
+#: inc/services.php
+msgid "Code (voor het afspraakformulier en de link #code)"
+msgstr "Code (pour le formulaire de rendez-vous et le lien #code)"
+
+#: inc/services.php
+msgid "Paid Memberships Pro-niveau (abonnementen)"
+msgstr "Niveau Paid Memberships Pro (abonnements)"
+
+#: inc/services.php
+msgid "Knop"
+msgstr "Bouton"
+
+#: inc/services.php
+msgid "Gegevens van de dienst"
+msgstr "Détails du service"
+
+#: inc/services.php
+msgid "— geen (knop gaat naar contact) —"
+msgstr "— aucun (le bouton mène au contact) —"
+
+#: inc/services.php
+msgid ""
+"Kies het niveau dat bij dit abonnement hoort. De knop wordt dan \"Abonneer\""
+" en gaat direct naar afrekenen."
+msgstr ""
+"Choisissez le niveau correspondant à cet abonnement. Le bouton devient alors"
+" « S'abonner » et mène directement au paiement."
+
+#: inc/services.php
+msgid "Activeer Paid Memberships Pro om abonnementen online te verkopen."
+msgstr "Activez Paid Memberships Pro pour vendre des abonnements en ligne."
+
+#: inc/services.php
+msgid "Afspraak maken (staat ook in het afspraakformulier)"
+msgstr "Prendre rendez-vous (figure aussi dans le formulaire de rendez-vous)"
+
+#: inc/services.php
+msgid "Contact opnemen"
+msgstr "Nous contacter"
+
+#: inc/services.php
+msgid ""
+"Geldt voor \"Afspraak voor hulp\". Bij abonnementen met een niveau is de "
+"knop altijd \"Abonneer\"."
+msgstr ""
+"S'applique à « Rendez-vous d'aide ». Pour les abonnements avec un niveau, le"
+" bouton est toujours « S'abonner »."
+
+#: inc/services.php
+msgid "EQ5 Prijsnotitie"
+msgstr "Note sur les prix EQ5"
+
+#: inc/services.php
+msgid ""
+"De notitie onder de diensten, per taal. Leeg = standaardtekst. Witregel = "
+"nieuwe alinea."
+msgstr ""
+"La note sous les services, par langue. Vide = texte par défaut. Ligne vide ="
+" nouveau paragraphe."
+
+#: inc/services.php
+msgid "Prijsnotitie"
+msgstr "Note sur les prix"
+
 #: inc/template-helpers.php
 msgid "Foto nog aan te leveren"
 msgstr "Photo encore à fournir"
@@ -634,10 +722,6 @@ msgid ""
 msgstr ""
 "Les créneaux disponibles sont des exemples provisoires. Les disponibilités "
 "réelles seront définies plus tard par le propriétaire."
-
-#: page-templates/page-afspraak.php
-msgid "Dienst"
-msgstr "Service"
 
 #: page-templates/page-afspraak.php
 msgid "Kies een dienst…"
