@@ -1,0 +1,14 @@
+Visitekaartje EQ5 — Remco Sas
+=============================
+Formaat : 85 x 55 mm, dubbelzijdig (pagina 1 = voorkant, pagina 2 = achterkant)
+Kleur   : CMYK  — teal C75 M38 Y42 K18 (ca. #3C6E71), creme C3 M5 Y9 K0
+Afloop  : 3 mm rondom, lettertypes ingesloten (Fraunces + Instrument Sans)
+
+Bestanden
+- visitekaartje-EQ5-drukklaar-snijtekens.pdf : met snijtekens (voor de meeste drukkerijen)
+- visitekaartje-EQ5-drukklaar-afloop.pdf     : alleen 3 mm afloop, zonder snijtekens
+  (gebruik deze als je online drukker zoals Drukwerkdeal/Helloprint "zonder snijtekens" vraagt)
+- preview-voorkant.png / preview-achterkant.png : alleen ter controle, niet voor druk
+
+Advies papier: 350 g/m2 mat of silk, eventueel matte laminaat voor een zachte, warme uitstraling.
+Aanpassen: wijzig de gegevens in drukwerk/scripts/make_business_card.py (CARD) en draai het script opnieuw.

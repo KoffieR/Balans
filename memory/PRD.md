@@ -62,3 +62,10 @@ Thema `balans-theme/` met:
 - Desktop-lettertypes (statische TTF Regular/Medium/SemiBold/Bold + cursief, en variabele TTF) in /app/lettertypes + /app/balans-lettertypes.zip (met LEESMIJ.txt en OFL-licentie) voor briefpapier/visitekaartjes.
 - 404-probleem bevestigd opgelost door gebruiker (permalinks opnieuw opslaan).
 - Backlog: Meditaties fase 2/3 (betaalde programma's, abonnementen), WooCommerce-inrichting begeleiden.
+
+## Update — logo & visitekaartje (juni 2026)
+- Logo gekozen: EQ5-woordmerk in teal #3C6E71 (Fraunces SemiBold, Q = O met verticale staart midden onder). Q mag terugkomen als beeldaccent in teksten/website.
+- Logo-opties (SVG + overzicht.png) in /app/drukwerk/logo-opties (script: drukwerk/scripts/make_logos.py).
+- Visitekaartje 85x55, dubbelzijdig, CMYK, 3 mm afloop, snijtekens, fonts ingesloten: /app/drukwerk/visitekaartje (script: make_business_card.py). Gegevens: Remco Sas, Balansbrenger, +31 6 23 988 488, www.eq5.nl.
+- Bundel: /app/balans-drukwerk.zip
+- Backlog: EQ5-logo + Q-accent in WordPress-thema verwerken; briefpapier-sjabloon; meditaties fase 2/3.
