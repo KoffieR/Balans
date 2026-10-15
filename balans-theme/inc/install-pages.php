@@ -29,6 +29,7 @@ function balans_install_pages() {
         array( 'title' => 'Abonnementen',               'slug' => 'abonnementen',           'template' => 'page-templates/page-abonnementen.php' ),
         array( 'title' => 'Trainingen & workshops',     'slug' => 'trainingen-workshops',   'template' => 'page-templates/page-trainingen.php' ),
         array( 'title' => 'Offerte aanvragen',          'slug' => 'offerte-aanvragen',      'template' => 'page-templates/page-offerte.php' ),
+        array( 'title' => 'Podcast',                    'slug' => 'podcasts',               'template' => 'page-templates/page-podcast.php' ),
     );
 
     foreach ( $pages as $page ) {

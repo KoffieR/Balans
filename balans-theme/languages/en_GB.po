@@ -78,6 +78,10 @@ msgid "Meditatie"
 msgstr "Meditation"
 
 #: footer.php
+msgid "Podcast"
+msgstr "Podcast"
+
+#: footer.php
 msgid "Consult"
 msgstr "Consultation"
 
@@ -514,6 +518,42 @@ msgstr "Regular energetic cleansing of your body"
 msgid "Een doorlopend ritme van energetische opschoning op afspraak."
 msgstr "An ongoing rhythm of energetic cleansing by appointment."
 
+#: inc/podcast.php
+msgid "EQ5-abonnement"
+msgstr "EQ5 subscription"
+
+#: inc/podcast.php
+msgid "Alleen voor abonnees"
+msgstr "Subscribers only"
+
+#: inc/podcast.php
+msgid "Niet aangevinkt = gratis voor iedereen."
+msgstr "Unchecked = free for everyone."
+
+#: inc/podcast.php
+msgid ""
+"Met een EQ5-abonnement luister je naar alle afleveringen en betaalde "
+"meditaties, ook in je eigen podcast-app."
+msgstr ""
+"With an EQ5 subscription you can listen to all episodes and paid "
+"meditations, also in your own podcast app."
+
+#: inc/podcast.php
+msgid "Word abonnee"
+msgstr "Become a subscriber"
+
+#: inc/podcast.php
+msgid "Audio nog aan te leveren."
+msgstr "Audio still to be supplied."
+
+#: inc/podcast.php
+msgid "EQ5 Podcast"
+msgstr "EQ5 Podcast"
+
+#: inc/podcast.php
+msgid "Links naar je podcast per taal. Lege velden worden niet getoond."
+msgstr "Links to your podcast per language. Empty fields are not shown."
+
 #: inc/template-helpers.php
 msgid "Foto nog aan te leveren"
 msgstr "Photo still to be supplied"
@@ -834,10 +874,6 @@ msgstr ""
 "menu. Below are example blocks to illustrate the layout."
 
 #: page-templates/page-meditatie.php
-msgid "Audio nog aan te leveren."
-msgstr "Audio still to be supplied."
-
-#: page-templates/page-meditatie.php
 msgid "Binnenkort: betaalde programma's en abonnementen"
 msgstr "Coming soon: paid programmes and subscriptions"
 
@@ -948,6 +984,34 @@ msgid ""
 msgstr ""
 "Only include when there are genuinely relevant partners. Still to be "
 "supplied."
+
+#: page-templates/page-podcast.php
+msgid "Meditaties om naar te luisteren, waar je ook bent."
+msgstr "Meditations to listen to, wherever you are."
+
+#: page-templates/page-podcast.php
+msgid ""
+"Rustige afleveringen om even stil te staan. Een deel is gratis; met een "
+"EQ5-abonnement luister je naar alles."
+msgstr ""
+"Calm episodes to pause for a moment. Some are free; with an EQ5 subscription"
+" you can listen to everything."
+
+#: page-templates/page-podcast.php
+msgid ""
+"Installeer en activeer de plugin Seriously Simple Podcasting om afleveringen"
+" te tonen."
+msgstr ""
+"Install and activate the Seriously Simple Podcasting plugin to show "
+"episodes."
+
+#: page-templates/page-podcast.php
+msgid "Nog geen afleveringen. Voeg ze toe via \"Podcast\" in het WordPress-menu."
+msgstr "No episodes yet. Add them via \"Podcast\" in the WordPress menu."
+
+#: page-templates/page-podcast.php
+msgid "Meer afleveringen"
+msgstr "More episodes"
 
 #: page-templates/page-trainingen.php
 msgid ""
@@ -1089,3 +1153,45 @@ msgstr "Own blog"
 #: single.php
 msgid "Artikel"
 msgstr "Article"
+
+#: template-parts/podcast-episode.php
+msgid "Abonnees"
+msgstr "Subscribers"
+
+#: template-parts/podcast-membership.php
+msgid "Luister naar alle afleveringen en meditaties."
+msgstr "Listen to all episodes and meditations."
+
+#: template-parts/podcast-membership.php
+msgid "Alle podcastafleveringen, ook de afleveringen voor abonnees"
+msgstr "All podcast episodes, including subscriber episodes"
+
+#: template-parts/podcast-membership.php
+msgid "Betaalde meditaties op de website"
+msgstr "Paid meditations on the website"
+
+#: template-parts/podcast-membership.php
+msgid "Een eigen privé-feed voor je podcast-app"
+msgstr "Your own private feed for your podcast app"
+
+#: template-parts/podcast-membership.php
+msgid "Maandelijks of jaarlijks, altijd opzegbaar"
+msgstr "Monthly or yearly, cancel anytime"
+
+#: template-parts/podcast-membership.php
+msgid "Bekijk het abonnement"
+msgstr "View the subscription"
+
+#: template-parts/podcast-subscribe.php
+msgid "Luister en abonneer via"
+msgstr "Listen and subscribe via"
+
+#: template-parts/podcast-subscribe.php
+msgid ""
+"Jouw privé-feed met alle afleveringen (kopieer deze link in je podcast-app):"
+msgstr ""
+"Your private feed with all episodes (copy this link into your podcast app):"
+
+#: template-parts/podcast-subscribe.php
+msgid "Privé-feed"
+msgstr "Private feed"

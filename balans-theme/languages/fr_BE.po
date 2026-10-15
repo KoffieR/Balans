@@ -78,6 +78,10 @@ msgid "Meditatie"
 msgstr "Méditation"
 
 #: footer.php
+msgid "Podcast"
+msgstr "Podcast"
+
+#: footer.php
 msgid "Consult"
 msgstr "Consultation"
 
@@ -521,6 +525,43 @@ msgstr "Un nettoyage énergétique régulier de votre corps"
 msgid "Een doorlopend ritme van energetische opschoning op afspraak."
 msgstr "Un rythme continu de nettoyage énergétique sur rendez-vous."
 
+#: inc/podcast.php
+msgid "EQ5-abonnement"
+msgstr "Abonnement EQ5"
+
+#: inc/podcast.php
+msgid "Alleen voor abonnees"
+msgstr "Réservé aux abonnés"
+
+#: inc/podcast.php
+msgid "Niet aangevinkt = gratis voor iedereen."
+msgstr "Non coché = gratuit pour tous."
+
+#: inc/podcast.php
+msgid ""
+"Met een EQ5-abonnement luister je naar alle afleveringen en betaalde "
+"meditaties, ook in je eigen podcast-app."
+msgstr ""
+"Avec un abonnement EQ5, vous écoutez tous les épisodes et les méditations "
+"payantes, aussi dans votre propre application de podcast."
+
+#: inc/podcast.php
+msgid "Word abonnee"
+msgstr "Devenir abonné"
+
+#: inc/podcast.php
+msgid "Audio nog aan te leveren."
+msgstr "Audio encore à fournir."
+
+#: inc/podcast.php
+msgid "EQ5 Podcast"
+msgstr "Podcast EQ5"
+
+#: inc/podcast.php
+msgid "Links naar je podcast per taal. Lege velden worden niet getoond."
+msgstr ""
+"Liens vers votre podcast par langue. Les champs vides ne sont pas affichés."
+
 #: inc/template-helpers.php
 msgid "Foto nog aan te leveren"
 msgstr "Photo encore à fournir"
@@ -844,10 +885,6 @@ msgstr ""
 "en page."
 
 #: page-templates/page-meditatie.php
-msgid "Audio nog aan te leveren."
-msgstr "Audio encore à fournir."
-
-#: page-templates/page-meditatie.php
 msgid "Binnenkort: betaalde programma's en abonnementen"
 msgstr "Bientôt : programmes et abonnements payants"
 
@@ -961,6 +998,35 @@ msgid ""
 msgstr ""
 "À inclure uniquement s'il existe des partenaires réellement pertinents. "
 "Encore à fournir."
+
+#: page-templates/page-podcast.php
+msgid "Meditaties om naar te luisteren, waar je ook bent."
+msgstr "Des méditations à écouter, où que vous soyez."
+
+#: page-templates/page-podcast.php
+msgid ""
+"Rustige afleveringen om even stil te staan. Een deel is gratis; met een "
+"EQ5-abonnement luister je naar alles."
+msgstr ""
+"Des épisodes calmes pour faire une pause. Une partie est gratuite ; avec un "
+"abonnement EQ5, vous écoutez tout."
+
+#: page-templates/page-podcast.php
+msgid ""
+"Installeer en activeer de plugin Seriously Simple Podcasting om afleveringen"
+" te tonen."
+msgstr ""
+"Installez et activez l'extension Seriously Simple Podcasting pour afficher "
+"les épisodes."
+
+#: page-templates/page-podcast.php
+msgid "Nog geen afleveringen. Voeg ze toe via \"Podcast\" in het WordPress-menu."
+msgstr ""
+"Pas encore d'épisodes. Ajoutez-les via « Podcast » dans le menu WordPress."
+
+#: page-templates/page-podcast.php
+msgid "Meer afleveringen"
+msgstr "Plus d'épisodes"
 
 #: page-templates/page-trainingen.php
 msgid ""
@@ -1106,3 +1172,46 @@ msgstr "Blog"
 #: single.php
 msgid "Artikel"
 msgstr "Article"
+
+#: template-parts/podcast-episode.php
+msgid "Abonnees"
+msgstr "Abonnés"
+
+#: template-parts/podcast-membership.php
+msgid "Luister naar alle afleveringen en meditaties."
+msgstr "Écoutez tous les épisodes et toutes les méditations."
+
+#: template-parts/podcast-membership.php
+msgid "Alle podcastafleveringen, ook de afleveringen voor abonnees"
+msgstr "Tous les épisodes du podcast, y compris ceux réservés aux abonnés"
+
+#: template-parts/podcast-membership.php
+msgid "Betaalde meditaties op de website"
+msgstr "Les méditations payantes sur le site"
+
+#: template-parts/podcast-membership.php
+msgid "Een eigen privé-feed voor je podcast-app"
+msgstr "Votre propre flux privé pour votre application de podcast"
+
+#: template-parts/podcast-membership.php
+msgid "Maandelijks of jaarlijks, altijd opzegbaar"
+msgstr "Mensuel ou annuel, résiliable à tout moment"
+
+#: template-parts/podcast-membership.php
+msgid "Bekijk het abonnement"
+msgstr "Voir l'abonnement"
+
+#: template-parts/podcast-subscribe.php
+msgid "Luister en abonneer via"
+msgstr "Écoutez et abonnez-vous via"
+
+#: template-parts/podcast-subscribe.php
+msgid ""
+"Jouw privé-feed met alle afleveringen (kopieer deze link in je podcast-app):"
+msgstr ""
+"Votre flux privé avec tous les épisodes (copiez ce lien dans votre "
+"application de podcast) :"
+
+#: template-parts/podcast-subscribe.php
+msgid "Privé-feed"
+msgstr "Flux privé"

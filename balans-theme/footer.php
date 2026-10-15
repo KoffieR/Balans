@@ -37,6 +37,7 @@
                 <h4><?php esc_html_e( 'Diensten', 'balans' ); ?></h4>
                 <ul>
                     <li><a href="<?php echo esc_url( balans_url( 'meditatie' ) ); ?>"><?php esc_html_e( 'Meditatie', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'podcasts' ) ); ?>"><?php esc_html_e( 'Podcast', 'balans' ); ?></a></li>
                     <li><a href="<?php echo esc_url( balans_url( 'consult' ) ); ?>"><?php esc_html_e( 'Consult', 'balans' ); ?></a></li>
                     <li><a href="<?php echo esc_url( balans_url( 'drukpuntmassage-consult' ) ); ?>"><?php esc_html_e( 'Drukpuntmassage + consult', 'balans' ); ?></a></li>
                     <li><a href="<?php echo esc_url( balans_url( 'abonnementen' ) ); ?>"><?php esc_html_e( 'Abonnementen', 'balans' ); ?></a></li>

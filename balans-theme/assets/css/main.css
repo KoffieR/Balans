@@ -541,3 +541,59 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 .fade-in[data-delay="3"] { animation-delay: .24s; }
 .fade-in[data-delay="4"] { animation-delay: .32s; }
 .fade-in[data-delay="5"] { animation-delay: .40s; }
+
+/* ---------- Podcast ---------- */
+.podcast-hero { position: relative; overflow: hidden; }
+.podcast-hero > .container { position: relative; z-index: 1; }
+.podcast-subscribe { margin-top: 28px; }
+.podcast-subscribe__label { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--balans-muted); margin-bottom: 10px; }
+.podcast-subscribe__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.podcast-btn {
+    display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 999px;
+    border: 1px solid var(--balans-line); background: var(--balans-surface); color: var(--balans-ink);
+    text-decoration: none; font-size: 0.92rem; font-weight: 500;
+    transition: transform .2s var(--balans-ease), border-color .2s var(--balans-ease), color .2s var(--balans-ease);
+}
+.podcast-btn svg { color: var(--balans-primary); }
+.podcast-btn:hover { transform: translateY(-1px); border-color: var(--balans-primary); color: var(--balans-primary-dk); }
+.podcast-subscribe__private { margin-top: 18px; font-size: 0.9rem; color: var(--balans-ink-soft); max-width: 60ch; }
+.podcast-subscribe__private input { display: block; width: 100%; margin-top: 8px; padding: 10px 12px; border: 1px solid var(--balans-line); border-radius: var(--balans-radius); background: var(--balans-surface); font-size: 0.85rem; }
+
+.episode-list { display: flex; flex-direction: column; gap: 18px; }
+.episode {
+    background: var(--balans-surface); border: 1px solid var(--balans-line); border-radius: var(--balans-radius-lg);
+    padding: 26px 28px; transition: box-shadow .3s var(--balans-ease), transform .3s var(--balans-ease);
+}
+.episode:hover { box-shadow: var(--balans-shadow); }
+.episode--featured { border-color: var(--balans-primary); border-left-width: 4px; padding: 34px 36px; }
+.episode--featured .episode__title { font-size: clamp(1.5rem, 3vw, 2rem); }
+.episode__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 0.82rem; color: var(--balans-muted); margin-bottom: 8px; }
+.episode__title { margin: 0 0 6px; font-size: 1.3rem; }
+.episode__title a { color: var(--balans-ink); text-decoration: none; }
+.episode__title a:hover { color: var(--balans-primary); }
+.episode__text { color: var(--balans-ink-soft); max-width: 70ch; margin-bottom: 14px; }
+.episode__player { margin-top: 12px; }
+.episode-badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
+.episode-badge--free { background: rgba(107, 127, 92, 0.18); color: #3f5033; }
+.episode-badge--members { background: var(--balans-primary-lt); color: var(--balans-primary-dk); }
+
+.members-lock {
+    display: flex; gap: 18px; align-items: flex-start; margin-top: 12px; padding: 20px 22px;
+    border-radius: var(--balans-radius-lg); background: var(--balans-primary-lt);
+}
+.members-lock__q { width: 34px; height: auto; color: var(--balans-primary); flex-shrink: 0; }
+.members-lock__title { font-family: var(--balans-font-serif); font-size: 1.15rem; color: var(--balans-primary-dk); margin: 0 0 4px; }
+.members-lock p { margin: 0 0 12px; }
+
+.membership-cta { display: grid; grid-template-columns: 1.4fr 0.6fr; gap: 40px; align-items: center; }
+.membership-cta__list { list-style: none; padding: 0; margin: 18px 0 0; }
+.membership-cta__list li { padding: 8px 0 8px 26px; position: relative; color: var(--balans-ink-soft); border-bottom: 1px solid var(--balans-line); }
+.membership-cta__list li::before { content: ""; position: absolute; left: 0; top: 15px; width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--balans-primary); }
+.membership-cta__action { justify-self: end; }
+.pagination { margin-top: 30px; display: flex; gap: 8px; }
+.pagination .page-numbers { padding: 8px 14px; border-radius: 999px; border: 1px solid var(--balans-line); text-decoration: none; color: var(--balans-ink); }
+.pagination .page-numbers.current { background: var(--balans-primary); border-color: var(--balans-primary); color: var(--balans-surface); }
+@media (max-width: 900px) {
+    .membership-cta { grid-template-columns: 1fr; }
+    .membership-cta__action { justify-self: start; }
+}

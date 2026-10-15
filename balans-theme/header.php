@@ -46,6 +46,7 @@
                 echo '<li><a href="' . esc_url( balans_url( 'voor-jou' ) ) . '">' . esc_html__( 'Voor jou', 'balans' ) . '</a></li>';
                 echo '<li><a href="' . esc_url( balans_url( 'voor-bedrijven' ) ) . '">' . esc_html__( 'Voor bedrijven', 'balans' ) . '</a></li>';
                 echo '<li><a href="' . esc_url( balans_url( 'shop' ) ) . '">' . esc_html__( 'Shop', 'balans' ) . '</a></li>';
+                echo '<li><a href="' . esc_url( balans_url( 'podcasts' ) ) . '">' . esc_html__( 'Podcast', 'balans' ) . '</a></li>';
                 echo '<li><a href="' . esc_url( balans_url( 'artikelen-bronnen' ) ) . '">' . esc_html__( 'Artikelen & bronnen', 'balans' ) . '</a></li>';
                 echo '<li><a href="' . esc_url( balans_url( 'over' ) ) . '">' . esc_html__( 'Over', 'balans' ) . '</a></li>';
                 echo '</ul>';

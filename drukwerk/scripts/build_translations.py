@@ -5,7 +5,8 @@ from translations import T
 
 LANG_DIR = "/app/balans-theme/languages"
 strings = json.load(open("/app/drukwerk/scripts/strings.json"))
-assert len(strings) == len(T), (len(strings), len(T))
+missing = [k for k in strings if k not in T]
+assert not missing, missing
 
 LOCALES = {"en_US": 0, "en_GB": 0, "fr_FR": 1, "fr_BE": 1}
 META = {
@@ -25,7 +26,8 @@ pot.save(f"{LANG_DIR}/balans.pot")
 for locale, idx in LOCALES.items():
     po = polib.POFile()
     po.metadata = dict(META, Language=locale, **{"Plural-Forms": "nplurals=2; plural=(n != 1);" if idx == 0 else "nplurals=2; plural=(n > 1);"})
-    for (msgid, ref), pair in zip(strings.items(), T):
+    for msgid, ref in strings.items():
+        pair = T[msgid]
         po.append(polib.POEntry(msgid=msgid, msgstr=pair[idx], occurrences=[(ref, "")]))
     po.save(f"{LANG_DIR}/{locale}.po")
     po.save_as_mofile(f"{LANG_DIR}/{locale}.mo")

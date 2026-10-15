@@ -74,6 +74,10 @@ msgid "Meditatie"
 msgstr ""
 
 #: footer.php
+msgid "Podcast"
+msgstr ""
+
+#: footer.php
 msgid "Consult"
 msgstr ""
 
@@ -493,6 +497,40 @@ msgstr ""
 msgid "Een doorlopend ritme van energetische opschoning op afspraak."
 msgstr ""
 
+#: inc/podcast.php
+msgid "EQ5-abonnement"
+msgstr ""
+
+#: inc/podcast.php
+msgid "Alleen voor abonnees"
+msgstr ""
+
+#: inc/podcast.php
+msgid "Niet aangevinkt = gratis voor iedereen."
+msgstr ""
+
+#: inc/podcast.php
+msgid ""
+"Met een EQ5-abonnement luister je naar alle afleveringen en betaalde "
+"meditaties, ook in je eigen podcast-app."
+msgstr ""
+
+#: inc/podcast.php
+msgid "Word abonnee"
+msgstr ""
+
+#: inc/podcast.php
+msgid "Audio nog aan te leveren."
+msgstr ""
+
+#: inc/podcast.php
+msgid "EQ5 Podcast"
+msgstr ""
+
+#: inc/podcast.php
+msgid "Links naar je podcast per taal. Lege velden worden niet getoond."
+msgstr ""
+
 #: inc/template-helpers.php
 msgid "Foto nog aan te leveren"
 msgstr ""
@@ -777,10 +815,6 @@ msgid ""
 msgstr ""
 
 #: page-templates/page-meditatie.php
-msgid "Audio nog aan te leveren."
-msgstr ""
-
-#: page-templates/page-meditatie.php
 msgid "Binnenkort: betaalde programma's en abonnementen"
 msgstr ""
 
@@ -879,6 +913,30 @@ msgstr ""
 msgid ""
 "Alleen opnemen wanneer er werkelijk relevante partners zijn. Nog aan te "
 "leveren."
+msgstr ""
+
+#: page-templates/page-podcast.php
+msgid "Meditaties om naar te luisteren, waar je ook bent."
+msgstr ""
+
+#: page-templates/page-podcast.php
+msgid ""
+"Rustige afleveringen om even stil te staan. Een deel is gratis; met een "
+"EQ5-abonnement luister je naar alles."
+msgstr ""
+
+#: page-templates/page-podcast.php
+msgid ""
+"Installeer en activeer de plugin Seriously Simple Podcasting om afleveringen"
+" te tonen."
+msgstr ""
+
+#: page-templates/page-podcast.php
+msgid "Nog geen afleveringen. Voeg ze toe via \"Podcast\" in het WordPress-menu."
+msgstr ""
+
+#: page-templates/page-podcast.php
+msgid "Meer afleveringen"
 msgstr ""
 
 #: page-templates/page-trainingen.php
@@ -1007,4 +1065,45 @@ msgstr ""
 
 #: single.php
 msgid "Artikel"
+msgstr ""
+
+#: template-parts/podcast-episode.php
+msgid "Abonnees"
+msgstr ""
+
+#: template-parts/podcast-membership.php
+msgid "Luister naar alle afleveringen en meditaties."
+msgstr ""
+
+#: template-parts/podcast-membership.php
+msgid "Alle podcastafleveringen, ook de afleveringen voor abonnees"
+msgstr ""
+
+#: template-parts/podcast-membership.php
+msgid "Betaalde meditaties op de website"
+msgstr ""
+
+#: template-parts/podcast-membership.php
+msgid "Een eigen privé-feed voor je podcast-app"
+msgstr ""
+
+#: template-parts/podcast-membership.php
+msgid "Maandelijks of jaarlijks, altijd opzegbaar"
+msgstr ""
+
+#: template-parts/podcast-membership.php
+msgid "Bekijk het abonnement"
+msgstr ""
+
+#: template-parts/podcast-subscribe.php
+msgid "Luister en abonneer via"
+msgstr ""
+
+#: template-parts/podcast-subscribe.php
+msgid ""
+"Jouw privé-feed met alle afleveringen (kopieer deze link in je podcast-app):"
+msgstr ""
+
+#: template-parts/podcast-subscribe.php
+msgid "Privé-feed"
 msgstr ""

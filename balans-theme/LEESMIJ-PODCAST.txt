@@ -1,0 +1,56 @@
+EQ5 — Podcast met gratis en betaalde afleveringen
+=================================================
+
+Benodigde plugins (allemaal gratis)
+-----------------------------------
+1. Seriously Simple Podcasting (SSP)  — afleveringen en podcastfeed
+   Plugins > Nieuwe plugin > "Seriously Simple Podcasting"
+2. Paid Memberships Pro (PMPro)        — het EQ5-abonnement (maandelijks/jaarlijks)
+   Plugins > Nieuwe plugin > "Paid Memberships Pro"
+3. PMPro Member RSS (add-on)           — privé-feed voor abonnees in hun podcast-app
+   Na het activeren van PMPro: Memberships > Add Ons > "Member RSS" > Installeren
+   (gratis te gebruiken; een licentie is alleen nodig voor automatische updates)
+
+Instellen
+---------
+1. Werk het thema bij naar versie 1.4.0 en open het dashboard. Het thema maakt
+   de podcastpagina automatisch aan: /podcasts/ (NL), /en/listen/ (EN), /fr/ecouter/ (FR).
+2. Podcast > Instellingen (SSP): vul titel, beschrijving, afbeelding (min. 1400x1400)
+   en categorie in. Kies bij "Feed" de naam/slug van je podcast.
+3. Memberships > Settings > Levels (PMPro): maak één niveau "EQ5-abonnement" met
+   een maand- of jaarprijs. Elk actief niveau geeft toegang tot alles voor abonnees.
+   Laat PMPro de pagina's (Levels, Checkout, Account) aanmaken.
+4. Memberships > Settings > Payment Gateway: kies je betaalprovider.
+   [in te vullen: Stripe (ondersteunt iDEAL/Bancontact) of een Mollie-koppeling.]
+5. Weergave > Customizer > EQ5 Podcast: vul per taal je Spotify- en
+   Apple Podcasts-link in. De RSS-knop vult het thema zelf in.
+
+Een aflevering toevoegen
+------------------------
+- Podcast > Nieuwe aflevering: titel, korte beschrijving (samenvatting/excerpt),
+  audiobestand (MP3) en duur.
+- Kies rechts de taal (Polylang). Per taal maak je een eigen aflevering.
+- Vakje "EQ5-abonnement > Alleen voor abonnees":
+    uit = gratis voor iedereen (staat ook in de openbare feed, Spotify en Apple)
+    aan = alleen abonnees (niet in de openbare feed; wel op de website voor
+          ingelogde abonnees en in hun privé-feed)
+- Hetzelfde vakje staat bij Meditaties, voor betaalde meditaties.
+
+Feeds per taal (voor Spotify / Apple Podcasts)
+----------------------------------------------
+- NL: https://www.eq5.nl/feed/podcast/<jouw-podcast-slug>/
+- EN: https://www.eq5.nl/feed/podcast/<jouw-podcast-slug>/?lang=en
+- FR: https://www.eq5.nl/feed/podcast/<jouw-podcast-slug>/?lang=fr
+  (De juiste link staat achter de RSS-knop op de podcastpagina van elke taal.)
+Meld elke feed apart aan bij Spotify for Creators en Apple Podcasts Connect;
+zo heb je per taal een eigen show.
+
+Goed om te weten
+----------------
+- Audiobestanden staan in de mediabibliotheek. Iemand die de directe link van een
+  betaald MP3-bestand heeft, kan die openen. Voor echte afscherming en betere
+  streaming kun je later Castos-hosting koppelen (vanaf ca. $19/maand), met
+  automatisch beheer van privé-feeds via de PMPro-integratie van SSP.
+- Groeit je audio-archief, overweeg dan hosting met voldoende opslag/bandbreedte.
+- Vermeld je podcastdienst en betaalprovider in de privacy- en cookieverklaring
+  (zoek op [in te vullen]).
