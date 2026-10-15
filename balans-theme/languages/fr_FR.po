@@ -145,11 +145,6 @@ msgstr "Livraison & retours"
 msgid "Disclaimer"
 msgstr "Avertissement"
 
-#: footer.php
-msgid "Juridische teksten moeten nog door de eigenaar worden aangeleverd."
-msgstr ""
-"Les textes juridiques doivent encore être fournis par le propriétaire."
-
 #: front-page.php
 msgid "Welkom"
 msgstr "Bienvenue"

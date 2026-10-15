@@ -6,7 +6,7 @@ gebruikt het de gratis plugin Polylang.
 
 Stap voor stap
 --------------
-1. Upload en activeer het thema (balans-theme.zip, versie 1.2.0).
+1. Upload en activeer het thema (balans-theme.zip, versie 1.3.0 of nieuwer).
 2. Plugins > Nieuwe plugin > zoek "Polylang" > Installeren > Activeren.
    (De installatiewizard van Polylang mag je overslaan.)
 3. Talen > Talen: voeg in deze volgorde toe:
@@ -41,3 +41,17 @@ Controleren / zelf aanpassen
 - Vertalingen van de vaste themateksten staan in de map languages/
   (en_US/en_GB/fr_FR/fr_BE .po en .mo). Aanpassen kan met het gratis
   programma Poedit of de plugin Loco Translate.
+
+Juridische pagina's (vanaf versie 1.3.0)
+----------------------------------------
+- Zodra je na het bijwerken van het thema het dashboard opent, maakt het thema
+  automatisch deze pagina's aan, in NL, EN en FR en gekoppeld via Polylang:
+  Privacyverklaring, Cookieverklaring, Algemene voorwaarden, Webshopvoorwaarden,
+  Verzenden & retour en Disclaimer. De links in de footer werken dan per taal.
+- Bestaande pagina's met dezelfde naam worden NIET overschreven.
+- De Privacyverklaring wordt ingesteld als privacypagina van WordPress, de
+  Webshopvoorwaarden als voorwaardenpagina van WooCommerce (als die nog leeg was).
+- Zoek in elke pagina op [in te vullen] en vul je gegevens aan
+  (bedrijfsnaam, KvK, adres, e-mail, betaalprovider, podcastdienst, termijnen).
+- Dit zijn concepten: laat ze controleren door een jurist of vergelijk ze met
+  een gecontroleerd model (bijv. KVK / Ondernemersplein / Thuiswinkel.org).

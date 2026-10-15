@@ -28,8 +28,74 @@ function balans_page_map() {
         'abonnementen'            => array( 'Subscriptions', 'subscriptions', 'Abonnements', 'abonnements' ),
         'trainingen-workshops'    => array( 'Trainings & workshops', 'trainings-workshops', 'Formations & ateliers', 'formations-ateliers' ),
         'offerte-aanvragen'       => array( 'Request a quote', 'request-quote', 'Demander un devis', 'demander-un-devis' ),
+        'privacyverklaring'       => array( 'Privacy statement', 'privacy-statement', 'Déclaration de confidentialité', 'declaration-de-confidentialite' ),
+        'cookies'                 => array( 'Cookie policy', 'cookie-policy', 'Politique en matière de cookies', 'politique-cookies' ),
+        'algemene-voorwaarden'    => array( 'Terms and conditions', 'terms-and-conditions', 'Conditions générales', 'conditions-generales' ),
+        'webshopvoorwaarden'      => array( 'Webshop terms', 'webshop-terms', 'Conditions de la boutique', 'conditions-boutique' ),
+        'verzenden-retour'        => array( 'Shipping & returns', 'shipping-returns', 'Livraison & retours', 'livraison-retours' ),
+        'disclaimer'              => array( 'Disclaimer', 'disclaimer-en', 'Avertissement', 'avertissement' ),
     );
 }
+
+/**
+ * Juridische pagina's (NL-slug => NL-titel). Teksten staan in inc/legal/{nl,en,fr}/.
+ */
+function balans_legal_pages() {
+    return array(
+        'privacyverklaring'    => 'Privacyverklaring',
+        'cookies'              => 'Cookieverklaring',
+        'algemene-voorwaarden' => 'Algemene voorwaarden',
+        'webshopvoorwaarden'   => 'Webshopvoorwaarden',
+        'verzenden-retour'     => 'Verzenden & retour',
+        'disclaimer'           => 'Disclaimer',
+    );
+}
+
+function balans_legal_content( $nl_slug, $lang ) {
+    $file = BALANS_DIR . '/inc/legal/' . sanitize_key( $lang ) . '/' . sanitize_file_name( $nl_slug ) . '.html';
+    return file_exists( $file ) ? file_get_contents( $file ) : '';
+}
+
+/**
+ * Juridische pagina's eenmalig aanmaken (bestaande pagina's worden nooit overschreven).
+ */
+function balans_install_legal() {
+    if ( get_option( 'balans_legal_installed' ) || ! current_user_can( 'manage_options' ) ) {
+        return;
+    }
+    foreach ( balans_legal_pages() as $slug => $title ) {
+        $page = get_page_by_path( $slug );
+        if ( ! $page ) {
+            $id = wp_insert_post( array(
+                'post_title'   => $title,
+                'post_name'    => $slug,
+                'post_status'  => 'publish',
+                'post_type'    => 'page',
+                'post_content' => balans_legal_content( $slug, 'nl' ),
+            ) );
+            if ( $id && ! is_wp_error( $id ) && balans_has_polylang() && function_exists( 'pll_set_post_language' ) ) {
+                pll_set_post_language( $id, 'nl' );
+            }
+            $page = $id ? get_post( $id ) : null;
+        }
+        if ( $page && 'privacyverklaring' === $slug ) {
+            update_option( 'wp_page_for_privacy_policy', $page->ID );
+        }
+        if ( $page && 'webshopvoorwaarden' === $slug && ! get_option( 'woocommerce_terms_page_id' ) ) {
+            update_option( 'woocommerce_terms_page_id', $page->ID );
+        }
+    }
+
+    $langs = balans_has_polylang() ? pll_languages_list( array( 'fields' => 'slug' ) ) : array();
+    if ( balans_has_polylang() && ! ( in_array( 'en', $langs, true ) && in_array( 'fr', $langs, true ) ) ) {
+        return; // Opnieuw proberen zodra de talen zijn toegevoegd.
+    }
+    if ( balans_has_polylang() ) {
+        balans_install_translations();
+    }
+    update_option( 'balans_legal_installed', 1 );
+}
+add_action( 'admin_init', 'balans_install_legal' );
 
 function balans_has_polylang() {
     return function_exists( 'pll_current_language' ) && function_exists( 'pll_get_post' );
@@ -153,7 +219,7 @@ function balans_install_translations() {
                 'post_name'    => $info[1],
                 'post_status'  => 'publish',
                 'post_type'    => 'page',
-                'post_content' => '',
+                'post_content' => balans_legal_content( $nl_slug, $lang ),
             ) );
             if ( ! $id || is_wp_error( $id ) ) {
                 continue;

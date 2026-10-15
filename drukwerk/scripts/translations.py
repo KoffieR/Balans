@@ -34,7 +34,6 @@ T = [
     ("Webshop terms", "Conditions de la boutique"),  # 30
     ("Shipping & returns", "Livraison & retours"),
     ("Disclaimer", "Avertissement"),
-    ("Legal texts are still to be supplied by the owner.", "Les textes juridiques doivent encore être fournis par le propriétaire."),
     ("Welcome", "Bienvenue"),
     ("From vicious cycle %s", "Du cercle vicieux %s"),  # 35
     ("to balance.", "à l'équilibre."),

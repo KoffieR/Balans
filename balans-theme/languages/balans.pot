@@ -141,10 +141,6 @@ msgstr ""
 msgid "Disclaimer"
 msgstr ""
 
-#: footer.php
-msgid "Juridische teksten moeten nog door de eigenaar worden aangeleverd."
-msgstr ""
-
 #: front-page.php
 msgid "Welkom"
 msgstr ""

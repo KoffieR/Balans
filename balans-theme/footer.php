@@ -80,9 +80,7 @@
             </nav>
         </div>
 
-        <p class="footer-muted footer-note">
-            <small><?php esc_html_e( 'Juridische teksten moeten nog door de eigenaar worden aangeleverd.', 'balans' ); ?></small>
-        </p>
+
     </div>
 </footer>
 
