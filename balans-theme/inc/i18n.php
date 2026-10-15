@@ -35,6 +35,7 @@ function balans_page_map() {
         'verzenden-retour'        => array( 'Shipping & returns', 'shipping-returns', 'Livraison & retours', 'livraison-retours' ),
         'disclaimer'              => array( 'Disclaimer', 'disclaimer-en', 'Avertissement', 'avertissement' ),
         'podcasts'                => array( 'Podcast', 'listen', 'Podcast', 'ecouter' ),
+        'afspraak-voor-hulp'      => array( 'Appointment for help', 'appointment-for-help', 'Rendez-vous d\'aide', 'rendez-vous-aide' ),
     );
 }
 
@@ -57,7 +58,7 @@ function balans_legal_content( $nl_slug, $lang ) {
     return file_exists( $file ) ? file_get_contents( $file ) : '';
 }
 
-const BALANS_PAGES_VERSION = 2;
+const BALANS_PAGES_VERSION = 3;
 
 /**
  * Pagina's uit nieuwere themaversies eenmalig aanmaken (bestaande pagina's worden nooit overschreven).
@@ -66,8 +67,11 @@ function balans_install_extra_pages() {
     if ( (int) get_option( 'balans_pages_version' ) >= BALANS_PAGES_VERSION || ! current_user_can( 'manage_options' ) ) {
         return;
     }
-    $pages = balans_legal_pages() + array( 'podcasts' => 'Podcast' );
-    $templates = array( 'podcasts' => 'page-templates/page-podcast.php' );
+    $pages = balans_legal_pages() + array( 'podcasts' => 'Podcast', 'afspraak-voor-hulp' => 'Afspraak voor hulp' );
+    $templates = array(
+        'podcasts'           => 'page-templates/page-podcast.php',
+        'afspraak-voor-hulp' => 'page-templates/page-hulp.php',
+    );
     foreach ( $pages as $slug => $title ) {
         $page = get_page_by_path( $slug );
         if ( ! $page ) {

@@ -82,16 +82,12 @@ msgid "Podcast"
 msgstr "Podcast"
 
 #: footer.php
-msgid "Consult"
-msgstr "Consultation"
-
-#: footer.php
-msgid "Drukpuntmassage + consult"
-msgstr "Massage par acupression + consultation"
-
-#: footer.php
 msgid "Abonnementen"
 msgstr "Abonnements"
+
+#: footer.php
+msgid "Afspraak voor hulp"
+msgstr "Rendez-vous d'aide"
 
 #: footer.php
 msgid "Trainingen & workshops"
@@ -287,6 +283,10 @@ msgstr "Ouvrir le menu"
 #: header.php
 msgid "Hoofdnavigatie"
 msgstr "Navigation principale"
+
+#: header.php
+msgid "Hulp"
+msgstr "Aide"
 
 #: inc/appointments.php
 msgid "Kies een geldige dienst."
@@ -492,6 +492,10 @@ msgid "Praten over wat er bij je speelt"
 msgstr "Parler de ce qui vous préoccupe"
 
 #: inc/placeholder-content.php
+msgid "Consult"
+msgstr "Consultation"
+
+#: inc/placeholder-content.php
 msgid "Een gesprek om stil te staan bij jouw vraag of patroon."
 msgstr ""
 "Un entretien pour prendre le temps d'examiner votre question ou votre "
@@ -500,6 +504,10 @@ msgstr ""
 #: inc/placeholder-content.php
 msgid "Drukpuntmassage gecombineerd met een consult"
 msgstr "Massage par acupression combiné à une consultation"
+
+#: inc/placeholder-content.php
+msgid "Drukpuntmassage + consult"
+msgstr "Massage par acupression + consultation"
 
 #: inc/placeholder-content.php
 msgid ""
@@ -606,44 +614,6 @@ msgstr "Pas encore de contenu"
 #: index.php
 msgid "Er is nog geen inhoud op deze locatie."
 msgstr "Il n'y a pas encore de contenu à cet endroit."
-
-#: page-templates/page-abonnementen.php
-msgid "Abonnementen — regelmatige energetische opschoning"
-msgstr "Abonnements — nettoyage énergétique régulier"
-
-#: page-templates/page-abonnementen.php
-msgid ""
-"Een doorlopend ritme van energetische opschoning van je lichaam. Dit is een "
-"aparte dienst en niet hetzelfde als een meditatieabonnement."
-msgstr ""
-"Un rythme continu de nettoyage énergétique de votre corps. Il s'agit d'un "
-"service distinct, différent d'un abonnement de méditation."
-
-#: page-templates/page-abonnementen.php
-msgid ""
-"Varianten, frequenties, tarieven en voorwaarden nog aan te leveren door de "
-"eigenaar."
-msgstr ""
-"Formules, fréquences, tarifs et conditions encore à fournir par le "
-"propriétaire."
-
-#: page-templates/page-abonnementen.php
-msgid "Hoe werkt het?"
-msgstr "Comment ça marche ?"
-
-#: page-templates/page-abonnementen.php
-msgid ""
-"Nog aan te vullen. Als een variant op afspraak gaat, loopt dat via de "
-"afsprakenkalender. Varianten die rechtstreeks online afgenomen kunnen worden"
-" lopen via het winkelmandje."
-msgstr ""
-"À compléter. Si une formule se fait sur rendez-vous, elle passe par le "
-"calendrier des rendez-vous. Les formules achetables directement en ligne "
-"passent par le panier."
-
-#: page-templates/page-abonnementen.php
-msgid "Stel een vraag"
-msgstr "Poser une question"
 
 #: page-templates/page-afspraak.php
 msgid "Een afspraak inplannen."

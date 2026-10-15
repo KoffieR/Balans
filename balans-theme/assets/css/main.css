@@ -10,14 +10,16 @@
     --balans-ink:         #2B2420;  /* warme bijna-zwarte tekst */
     --balans-ink-soft:    #5A4F46;  /* zachter tekst grijs-bruin */
     --balans-muted:       #8A7D71;  /* subtiele tekst */
-    --balans-primary:     #3C6E71;  /* EQ5 teal - primaire accent */
-    --balans-primary-dk:  #2C5457;  /* donkere teal */
-    --balans-primary-lt:  #DCE7E5;  /* zachte teal-tint */
-    --balans-deep:        #1F3B3D;  /* diep teal voor footer */
+    --balans-primary:     #8B6B47;  /* klei/brons - primaire accent */
+    --balans-primary-dk:  #6E5236;  /* donkere variant */
+    --balans-primary-lt:  #EFE6D8;  /* zachte brons-tint */
+    --balans-gold:        #B08D57;  /* goud-accent ("naar balans") */
+    --balans-deep:        #2B2420;  /* footer */
     --balans-accent:      #6B7F5C;  /* gedempt salie-groen */
     --balans-line:        #D9CFBE;  /* lijnen/randen */
     --balans-focus:       #3C6E71;  /* focusring - cool teal voor contrast */
     --balans-logo:        #3C6E71;  /* EQ5-logo teal */
+    --balans-logo-lt:     #7FAAAD;  /* EQ5-logo teal, lichter voor donkere achtergrond */
 
     --balans-radius:      4px;
     --balans-radius-lg:   10px;
@@ -135,7 +137,7 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
     transition: background .2s var(--balans-ease), color .2s var(--balans-ease);
 }
 .primary-nav a:hover,
-.primary-nav .current-menu-item > a { background: rgba(60, 110, 113, 0.1); color: var(--balans-primary-dk); }
+.primary-nav .current-menu-item > a { background: rgba(139, 107, 71, 0.1); color: var(--balans-primary-dk); }
 .primary-nav a.balans-btn { color: inherit; }
 .primary-nav a.balans-btn--primary { color: var(--balans-surface); }
 .primary-nav a.balans-btn--primary:hover { background: var(--balans-primary-dk); color: var(--balans-surface); }
@@ -176,7 +178,7 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
     font-size: 0.95rem;
     line-height: 1;
 }
-.balans-btn--primary { background: var(--balans-primary); color: var(--balans-surface); }
+.balans-btn--primary { background: var(--balans-ink); color: var(--balans-surface); }
 .balans-btn--primary:hover { background: var(--balans-primary-dk); color: var(--balans-surface); transform: translateY(-1px); box-shadow: var(--balans-shadow); }
 .balans-btn--secondary { background: transparent; color: var(--balans-ink); border-color: var(--balans-ink); }
 .balans-btn--secondary:hover { background: var(--balans-ink); color: var(--balans-surface); }
@@ -187,8 +189,8 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 /* ---------- Logo ---------- */
 .site-logo { display: inline-flex; align-items: center; line-height: 0; color: var(--balans-logo); transition: opacity .25s var(--balans-ease); }
 .site-logo:hover { opacity: .8; }
-.site-logo__svg { height: 40px; width: auto; }
-@media (max-width: 600px) { .site-logo__svg { height: 32px; } }
+.site-logo__svg { height: 66px; width: auto; }
+@media (max-width: 600px) { .site-logo__svg { height: 52px; } }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -201,7 +203,7 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
     position: absolute; z-index: 0; pointer-events: none;
     right: -4%; bottom: -14%;
     height: 118%; width: auto;
-    color: var(--balans-logo); opacity: .09;
+    color: var(--balans-primary); opacity: .10;
 }
 @media (max-width: 900px) { .hero__q { right: -30%; height: 90%; opacity: .07; } }
 .hero__grid {
@@ -218,7 +220,7 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 }
 .hero__content h1 em {
     font-style: italic;
-    color: var(--balans-primary-dk);
+    color: var(--balans-gold);
 }
 .hero__intro { font-size: 1.15rem; max-width: 44ch; margin-bottom: 32px; color: var(--balans-ink-soft); }
 .hero__actions { display: flex; gap: 14px; flex-wrap: wrap; }
@@ -227,7 +229,7 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
     border-radius: var(--balans-radius-lg);
     background:
         radial-gradient(circle at 30% 20%, rgba(255,255,255,0.3), transparent 50%),
-        linear-gradient(135deg, #9DBDBA 0%, #3C6E71 60%, #1F3B3D 100%);
+        linear-gradient(135deg, #C9B38A 0%, #8B6B47 60%, #6E5236 100%);
     position: relative;
     overflow: hidden;
     box-shadow: var(--balans-shadow);
@@ -292,7 +294,7 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 }
 .balans-card__image--placeholder {
     background:
-        linear-gradient(135deg, #DCE7E5 0%, #8FB0AE 100%);
+        linear-gradient(135deg, #D9CFBE 0%, #B5A48B 100%);
     position: relative;
 }
 .balans-card__image--placeholder::after {
@@ -317,7 +319,7 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 
 /* ---------- Placeholder notice ---------- */
 .balans-placeholder-notice {
-    background: rgba(60, 110, 113, 0.1);
+    background: rgba(139, 107, 71, 0.1);
     border-left: 3px solid var(--balans-primary);
     padding: 12px 18px;
     border-radius: 0 var(--balans-radius) var(--balans-radius) 0;
@@ -434,11 +436,11 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 /* ---------- Footer ---------- */
 .site-footer {
     background: var(--balans-deep);
-    color: #D5E2E0;
+    color: #D9CFBE;
     padding: 70px 0 30px;
     margin-top: 100px;
 }
-.site-footer a { color: #F5F0E8; }
+.site-footer a { color: #ECE4D4; }
 .site-footer a:hover { color: #FFFBF4; }
 .footer-grid {
     display: grid;
@@ -460,14 +462,14 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
     font-size: 0.85rem; color: #B5A48B;
 }
 .footer-bottom nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 20px; flex-wrap: wrap; }
-.footer-brand { display: inline-block; color: #FFFBF4; line-height: 0; }
+.footer-brand { display: inline-block; color: var(--balans-logo-lt); line-height: 0; }
 .footer-brand__svg { height: 92px; width: auto; }
-.footer-text { color: #A9C2C0; margin-top: 18px; max-width: 30ch; }
-.footer-contact { color: #D5E2E0; font-size: 0.92rem; margin-top: 16px; line-height: 1.7; }
-.footer-muted { color: #8FAAA8; }
+.footer-text { color: #B5A48B; margin-top: 18px; max-width: 30ch; }
+.footer-contact { color: #D9CFBE; font-size: 0.92rem; margin-top: 16px; line-height: 1.7; }
+.footer-muted { color: #8A7D71; }
 .footer-note { font-size: 0.78rem; margin-top: 18px; }
 .footer-copy { display: flex; align-items: center; gap: 10px; }
-.footer-q { height: 22px; width: auto; color: #8FB0AE; flex-shrink: 0; }
+.footer-q { height: 22px; width: auto; color: #B5A48B; flex-shrink: 0; }
 
 /* ---------- Grid for Voor jou ---------- */
 .voor-jou-grid {
@@ -596,4 +598,40 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 @media (max-width: 900px) {
     .membership-cta { grid-template-columns: 1fr; }
     .membership-cta__action { justify-self: start; }
+}
+
+/* ---------- Diensten (Abonnementen / Afspraak voor hulp) ---------- */
+.service-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.service-jump a {
+    padding: 8px 16px; border-radius: 999px; border: 1px solid var(--balans-line); background: var(--balans-surface);
+    color: var(--balans-ink); text-decoration: none; font-size: 0.88rem;
+    transition: border-color .2s var(--balans-ease), color .2s var(--balans-ease);
+}
+.service-jump a:hover { border-color: var(--balans-primary); color: var(--balans-primary-dk); }
+.service-list { display: flex; flex-direction: column; gap: 22px; }
+.service-extra { margin-bottom: 30px; }
+.service-block {
+    display: grid; grid-template-columns: 0.75fr 1.6fr; gap: 10px 48px; scroll-margin-top: 120px;
+    background: var(--balans-surface); border: 1px solid var(--balans-line); border-radius: var(--balans-radius-lg);
+    padding: 34px 38px; transition: box-shadow .3s var(--balans-ease);
+}
+.service-block:hover { box-shadow: var(--balans-shadow); }
+.service-block__title { margin: 0 0 6px; font-size: clamp(1.35rem, 2.4vw, 1.75rem); }
+.service-block__when { margin: 0; font-family: var(--balans-font-serif); font-style: italic; color: var(--balans-gold); }
+.service-block__body p { color: var(--balans-ink-soft); line-height: 1.75; margin: 0 0 14px; max-width: 68ch; }
+.service-block__foot {
+    grid-column: 2; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px;
+    padding-top: 16px; border-top: 1px solid var(--balans-line);
+}
+.service-block__price { margin: 0; font-weight: 500; color: var(--balans-primary-dk); }
+.price-note {
+    display: flex; gap: 20px; align-items: flex-start; margin-top: 36px; padding: 28px 32px;
+    border-radius: var(--balans-radius-lg); background: var(--balans-primary-lt); border-left: 4px solid var(--balans-gold);
+}
+.price-note__q { width: 36px; height: auto; color: var(--balans-gold); flex-shrink: 0; }
+.price-note p { margin: 0 0 10px; color: var(--balans-ink-soft); max-width: 72ch; }
+.price-note p:last-child { margin-bottom: 0; }
+@media (max-width: 860px) {
+    .service-block { grid-template-columns: 1fr; padding: 26px 24px; }
+    .service-block__foot { grid-column: 1; }
 }

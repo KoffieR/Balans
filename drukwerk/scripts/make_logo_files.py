@@ -75,7 +75,7 @@ def main():
     for lang, slogan in SLOGANS.items():
         svg = slogan_svg(body, x, y, w, h, pad, slogan, TEAL)
         write(f"EQ5-logo-teal-met-slogan-{lang.upper()}", svg)
-        theme = slogan_svg(body.replace(TEAL, "currentColor"), x, y, w, h, pad, slogan, "currentColor")
+        theme = slogan_svg(body.replace(TEAL, "currentColor"), x, y, w, h, w * 0.01, slogan, "currentColor")
         open(os.path.join(THEME_IMG, f"logo-eq5-slogan-{lang}.svg"), "w").write(
             theme.replace("<svg ", '<svg aria-hidden="true" focusable="false" '))
     print("klaar")

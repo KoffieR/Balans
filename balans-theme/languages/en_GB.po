@@ -82,16 +82,12 @@ msgid "Podcast"
 msgstr "Podcast"
 
 #: footer.php
-msgid "Consult"
-msgstr "Consultation"
-
-#: footer.php
-msgid "Drukpuntmassage + consult"
-msgstr "Acupressure massage + consultation"
-
-#: footer.php
 msgid "Abonnementen"
 msgstr "Subscriptions"
+
+#: footer.php
+msgid "Afspraak voor hulp"
+msgstr "Appointment for help"
 
 #: footer.php
 msgid "Trainingen & workshops"
@@ -285,6 +281,10 @@ msgstr "Open menu"
 #: header.php
 msgid "Hoofdnavigatie"
 msgstr "Main navigation"
+
+#: header.php
+msgid "Hulp"
+msgstr "Help"
 
 #: inc/appointments.php
 msgid "Kies een geldige dienst."
@@ -490,12 +490,20 @@ msgid "Praten over wat er bij je speelt"
 msgstr "Talking about what is going on for you"
 
 #: inc/placeholder-content.php
+msgid "Consult"
+msgstr "Consultation"
+
+#: inc/placeholder-content.php
 msgid "Een gesprek om stil te staan bij jouw vraag of patroon."
 msgstr "A conversation to reflect on your question or pattern."
 
 #: inc/placeholder-content.php
 msgid "Drukpuntmassage gecombineerd met een consult"
 msgstr "Acupressure massage combined with a consultation"
+
+#: inc/placeholder-content.php
+msgid "Drukpuntmassage + consult"
+msgstr "Acupressure massage + consultation"
 
 #: inc/placeholder-content.php
 msgid ""
@@ -598,44 +606,6 @@ msgstr "No content yet"
 #: index.php
 msgid "Er is nog geen inhoud op deze locatie."
 msgstr "There is no content at this location yet."
-
-#: page-templates/page-abonnementen.php
-msgid "Abonnementen — regelmatige energetische opschoning"
-msgstr "Subscriptions — regular energetic cleansing"
-
-#: page-templates/page-abonnementen.php
-msgid ""
-"Een doorlopend ritme van energetische opschoning van je lichaam. Dit is een "
-"aparte dienst en niet hetzelfde als een meditatieabonnement."
-msgstr ""
-"An ongoing rhythm of energetic cleansing of your body. This is a separate "
-"service and not the same as a meditation subscription."
-
-#: page-templates/page-abonnementen.php
-msgid ""
-"Varianten, frequenties, tarieven en voorwaarden nog aan te leveren door de "
-"eigenaar."
-msgstr ""
-"Variants, frequencies, rates and conditions still to be supplied by the "
-"owner."
-
-#: page-templates/page-abonnementen.php
-msgid "Hoe werkt het?"
-msgstr "How does it work?"
-
-#: page-templates/page-abonnementen.php
-msgid ""
-"Nog aan te vullen. Als een variant op afspraak gaat, loopt dat via de "
-"afsprakenkalender. Varianten die rechtstreeks online afgenomen kunnen worden"
-" lopen via het winkelmandje."
-msgstr ""
-"Still to be completed. If a variant is by appointment, it goes through the "
-"appointment calendar. Variants that can be purchased directly online go "
-"through the shopping cart."
-
-#: page-templates/page-abonnementen.php
-msgid "Stel een vraag"
-msgstr "Ask a question"
 
 #: page-templates/page-afspraak.php
 msgid "Een afspraak inplannen."

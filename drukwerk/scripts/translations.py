@@ -252,4 +252,6 @@ T = {
     "Luister en abonneer via": ("Listen and subscribe via", "Écoutez et abonnez-vous via"),
     "Jouw privé-feed met alle afleveringen (kopieer deze link in je podcast-app):": ("Your private feed with all episodes (copy this link into your podcast app):", "Votre flux privé avec tous les épisodes (copiez ce lien dans votre application de podcast) :"),
     "Privé-feed": ("Private feed", "Flux privé"),
+    "Afspraak voor hulp": ("Appointment for help", "Rendez-vous d'aide"),
+    "Hulp": ("Help", "Aide"),
 }

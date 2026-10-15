@@ -21,7 +21,7 @@
         <div class="site-branding">
             <?php if ( has_custom_logo() ) : the_custom_logo(); else : ?>
                 <a class="site-logo" href="<?php echo esc_url( balans_url() ); ?>" aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" data-testid="site-logo">
-                    <?php echo balans_svg( 'logo-eq5', 'site-logo__svg' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
+                    <?php echo balans_svg( 'logo-eq5-slogan-' . balans_lang(), 'site-logo__svg' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
                 </a>
             <?php endif; ?>
         </div>
@@ -46,6 +46,7 @@
                 echo '<li><a href="' . esc_url( balans_url( 'voor-jou' ) ) . '">' . esc_html__( 'Voor jou', 'balans' ) . '</a></li>';
                 echo '<li><a href="' . esc_url( balans_url( 'voor-bedrijven' ) ) . '">' . esc_html__( 'Voor bedrijven', 'balans' ) . '</a></li>';
                 echo '<li><a href="' . esc_url( balans_url( 'shop' ) ) . '">' . esc_html__( 'Shop', 'balans' ) . '</a></li>';
+                echo '<li><a href="' . esc_url( balans_url( 'afspraak-voor-hulp' ) ) . '">' . esc_html__( 'Hulp', 'balans' ) . '</a></li>';
                 echo '<li><a href="' . esc_url( balans_url( 'podcasts' ) ) . '">' . esc_html__( 'Podcast', 'balans' ) . '</a></li>';
                 echo '<li><a href="' . esc_url( balans_url( 'artikelen-bronnen' ) ) . '">' . esc_html__( 'Artikelen & bronnen', 'balans' ) . '</a></li>';
                 echo '<li><a href="' . esc_url( balans_url( 'over' ) ) . '">' . esc_html__( 'Over', 'balans' ) . '</a></li>';

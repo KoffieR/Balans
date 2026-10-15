@@ -27,8 +27,10 @@ $slots = balans_get_time_slots();
                     <label for="afspraak-service"><?php esc_html_e( 'Dienst', 'balans' ); ?></label>
                     <select id="afspraak-service" name="service" required data-testid="afspraak-service">
                         <option value=""><?php esc_html_e( 'Kies een dienst…', 'balans' ); ?></option>
-                        <option value="consult"><?php esc_html_e( 'Consult', 'balans' ); ?></option>
-                        <option value="drukpuntmassage"><?php esc_html_e( 'Drukpuntmassage + consult', 'balans' ); ?></option>
+                        <?php $chosen = isset( $_GET['dienst'] ) ? sanitize_key( wp_unslash( $_GET['dienst'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification ?>
+                        <?php foreach ( balans_appointment_services() as $key => $label ) : ?>
+                            <option value="<?php echo esc_attr( $key ); ?>" <?php selected( $chosen, $key ); ?>><?php echo esc_html( $label ); ?></option>
+                        <?php endforeach; ?>
                     </select>
                 </div>
 

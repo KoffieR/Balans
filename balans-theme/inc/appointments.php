@@ -21,7 +21,7 @@ function balans_handle_appointment() {
     $message    = isset( $_POST['message'] ) ? sanitize_textarea_field( wp_unslash( $_POST['message'] ) ) : '';
 
     $errors = array();
-    if ( ! in_array( $service, array( 'consult', 'drukpuntmassage' ), true ) ) {
+    if ( ! array_key_exists( $service, balans_appointment_services() ) ) {
         $errors[] = __( 'Kies een geldige dienst.', 'balans' );
     }
     if ( empty( $date ) ) {

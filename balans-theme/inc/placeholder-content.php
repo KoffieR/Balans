@@ -22,13 +22,13 @@ function balans_homepage_routes() {
             'eyebrow' => __( 'Praten over wat er bij je speelt', 'balans' ),
             'title'   => __( 'Consult', 'balans' ),
             'text'    => __( 'Een gesprek om stil te staan bij jouw vraag of patroon.', 'balans' ),
-            'link'    => balans_url( 'consult' ),
+            'link'    => balans_url( 'afspraak-voor-hulp' ) . '#consult',
         ),
         array(
             'eyebrow' => __( 'Drukpuntmassage gecombineerd met een consult', 'balans' ),
             'title'   => __( 'Drukpuntmassage + consult', 'balans' ),
             'text'    => __( 'Lichaamsgericht werk gecombineerd met ruimte om te vertellen wat er speelt.', 'balans' ),
-            'link'    => balans_url( 'drukpuntmassage-consult' ),
+            'link'    => balans_url( 'afspraak-voor-hulp' ) . '#drukpuntmassage',
         ),
         array(
             'eyebrow' => __( 'Leren, ontdekken en jezelf ontwikkelen', 'balans' ),
