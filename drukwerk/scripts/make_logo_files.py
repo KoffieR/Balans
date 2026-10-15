@@ -10,7 +10,7 @@ from fontTools.pens.transformPen import TransformPen
 OUT = "/app/drukwerk/logo"
 TEAL = "#3C6E71"
 LOGO = "/app/balans-theme/assets/images/logo-eq5.svg"
-SLOGAN = "van vicieuze cirkel, naar balans"
+SLOGAN = "van vicieuze cirkel naar balans"
 SLOGAN_FONT = "/app/lettertypes/Fraunces/Fraunces-Italic.ttf"
 
 
