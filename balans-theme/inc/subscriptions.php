@@ -112,48 +112,6 @@ add_action( 'admin_post_balans_pmpro_pages', function () {
  * 2. Welkomstmail
  * ------------------------------------------------------------- */
 
-function balans_mail_texts( $lang ) {
-    $t = array(
-        'nl' => array(
-            'welcome_subject' => 'Welkom bij je EQ5-abonnement: %s',
-            'welcome_hi'      => 'Lieve %s,',
-            'welcome_body'    => 'Fijn dat je hebt gekozen voor het abonnement %1$s. Vanaf nu word je %2$s energetisch verlicht. Je hoeft daar zelf niets voor te doen; je kunt er wel ruimte voor maken door op dat moment even rustig aan te doen, water te drinken en te voelen wat er verandert.',
-            'welcome_what'    => 'Wat er gebeurt:',
-            'welcome_end'     => 'Heb je vragen? Beantwoord gewoon deze e-mail of bel +31 6 23 988 488.',
-            'remind_subject'  => 'Vandaag is je moment van verlichting',
-            'remind_body'     => 'Vandaag vindt de verlichting van je abonnement %s plaats. Neem vandaag even de tijd voor rust: een wandeling, een kop thee, een paar minuten stilte. Zo geef je de energie de ruimte om haar werk te doen.',
-            'sign'            => 'Hartelijke groet, Remco Sas — EQ5',
-            'unsubscribe'     => 'Geen herinneringen meer ontvangen? Klik hier.',
-            'unsubscribed'    => 'Je ontvangt geen herinneringen meer. Je abonnement loopt gewoon door.',
-        ),
-        'en' => array(
-            'welcome_subject' => 'Welcome to your EQ5 subscription: %s',
-            'welcome_hi'      => 'Dear %s,',
-            'welcome_body'    => 'We are glad you chose the %1$s subscription. From now on you will be lightened energetically %2$s. You do not need to do anything yourself; you can make room for it by taking it easy at that moment, drinking water and feeling what changes.',
-            'welcome_what'    => 'What happens:',
-            'welcome_end'     => 'Any questions? Simply reply to this email or call +31 6 23 988 488.',
-            'remind_subject'  => 'Today is your moment of lightening',
-            'remind_body'     => 'Today the lightening of your %s subscription takes place. Take some time for rest today: a walk, a cup of tea, a few minutes of silence. This gives the energy room to do its work.',
-            'sign'            => 'Warm regards, Remco Sas — EQ5',
-            'unsubscribe'     => 'No longer want reminders? Click here.',
-            'unsubscribed'    => 'You will no longer receive reminders. Your subscription continues as usual.',
-        ),
-        'fr' => array(
-            'welcome_subject' => 'Bienvenue dans votre abonnement EQ5 : %s',
-            'welcome_hi'      => 'Cher/Chère %s,',
-            'welcome_body'    => "Nous sommes heureux que vous ayez choisi l'abonnement %1\$s. Désormais, vous serez allégé(e) énergétiquement %2\$s. Vous n'avez rien à faire vous-même ; vous pouvez y faire de la place en prenant les choses calmement à ce moment-là, en buvant de l'eau et en ressentant ce qui change.",
-            'welcome_what'    => 'Ce qui se passe :',
-            'welcome_end'     => 'Des questions ? Répondez simplement à cet e-mail ou appelez le +31 6 23 988 488.',
-            'remind_subject'  => "Aujourd'hui, c'est votre moment d'allègement",
-            'remind_body'     => "Aujourd'hui a lieu l'allègement de votre abonnement %s. Prenez un moment de repos aujourd'hui : une promenade, une tasse de thé, quelques minutes de silence. Vous laissez ainsi à l'énergie l'espace pour faire son travail.",
-            'sign'            => 'Bien chaleureusement, Remco Sas — EQ5',
-            'unsubscribe'     => 'Vous ne souhaitez plus recevoir de rappels ? Cliquez ici.',
-            'unsubscribed'    => "Vous ne recevrez plus de rappels. Votre abonnement continue normalement.",
-        ),
-    );
-    return isset( $t[ $lang ] ) ? $t[ $lang ] : $t['nl'];
-}
-
 /**
  * Dienst (in de taal van de abonnee) die bij een PMPro-niveau hoort.
  */
@@ -216,18 +174,23 @@ function balans_welcome_mail( $level_id, $user_id, $cancel_level = 0 ) {
     }
     $t    = balans_mail_texts( $lang );
     $when = get_post_meta( $dienst->ID, '_dienst_when', true );
+    $vars = array(
+        '{naam}'       => $user->first_name ? $user->first_name : $user->display_name,
+        '{abonnement}' => $dienst->post_title,
+        '{moment}'     => mb_strtolower( mb_substr( $when, 0, 1 ) ) . mb_substr( $when, 1 ),
+    );
     $html = balans_mail_html( $lang, array(
-        esc_html( sprintf( $t['welcome_hi'], $user->first_name ? $user->first_name : $user->display_name ) ),
-        esc_html( sprintf( $t['welcome_body'], $dienst->post_title, mb_strtolower( mb_substr( $when, 0, 1 ) ) . mb_substr( $when, 1 ) ) ),
+        esc_html( balans_mail_fill( $t['welcome_hi'], $vars ) ),
+        nl2br( esc_html( balans_mail_fill( $t['welcome_body'], $vars ) ) ),
         '<strong>' . esc_html( $t['welcome_what'] ) . '</strong><br>' . nl2br( esc_html( trim( wp_strip_all_tags( str_replace( '</p>', "</p>\n\n", $dienst->post_content ) ) ) ) ),
-        esc_html( $t['welcome_end'] ),
+        nl2br( esc_html( balans_mail_fill( $t['welcome_end'], $vars ) ) ),
     ), $user_id );
-    balans_send_mail( $user, sprintf( $t['welcome_subject'], $dienst->post_title ), $html );
+    balans_send_mail( $user, balans_mail_fill( $t['welcome_subject'], $vars ), $html );
 }
 add_action( 'pmpro_after_change_membership_level', 'balans_welcome_mail', 20, 3 );
 
 /* ---------------------------------------------------------------
- * 3. Herinneringen op zondag (A), woensdag (B) en vrijdag (C)
+ * 3. Herinneringen op zondag (A), woensdag (B), vrijdag (C) en 1e zaterdag (maandelijks)
  * ------------------------------------------------------------- */
 
 function balans_reminder_days() {
@@ -255,15 +218,31 @@ function balans_level_for_key( $key ) {
     return $posts ? (int) get_post_meta( $posts[0]->ID, '_dienst_level', true ) : 0;
 }
 
-function balans_send_reminders( $weekday = null ) {
-    global $wpdb;
-    $weekday = null === $weekday ? (int) wp_date( 'w' ) : (int) $weekday;
-    $days    = balans_reminder_days();
-    if ( ! isset( $days[ $weekday ] ) || empty( $wpdb->pmpro_memberships_users ) ) {
-        return 0;
+function balans_is_first_saturday( $timestamp ) {
+    return 6 === (int) wp_date( 'w', $timestamp ) && (int) wp_date( 'j', $timestamp ) <= 7;
+}
+
+/**
+ * Dagelijkse cron: wekelijkse herinneringen (zo/wo/vr) en op de 1e zaterdag het maandelijkse rustmoment.
+ */
+function balans_send_reminders( $timestamp = null ) {
+    $timestamp = $timestamp ? (int) $timestamp : time();
+    $days      = balans_reminder_days();
+    $weekday   = (int) wp_date( 'w', $timestamp );
+    $sent      = 0;
+    if ( isset( $days[ $weekday ] ) ) {
+        $sent += balans_send_level_reminders( $days[ $weekday ], 'remind', $timestamp );
     }
-    $level = balans_level_for_key( $days[ $weekday ] );
-    if ( ! $level ) {
+    if ( balans_is_first_saturday( $timestamp ) ) {
+        $sent += balans_send_level_reminders( 'maandelijks', 'monthly', $timestamp );
+    }
+    return $sent;
+}
+
+function balans_send_level_reminders( $key, $type, $timestamp ) {
+    global $wpdb;
+    $level = balans_level_for_key( $key );
+    if ( ! $level || empty( $wpdb->pmpro_memberships_users ) ) {
         return 0;
     }
     $user_ids = $wpdb->get_col( $wpdb->prepare( "SELECT DISTINCT user_id FROM {$wpdb->pmpro_memberships_users} WHERE membership_id = %d AND status = 'active'", $level ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
@@ -275,16 +254,31 @@ function balans_send_reminders( $weekday = null ) {
         }
         $lang   = get_user_meta( $user_id, 'eq5_lang', true );
         $lang   = $lang ? $lang : 'nl';
-        $t      = balans_mail_texts( $lang );
         $dienst = balans_dienst_for_level( $level, $lang );
-        $name   = $dienst ? $dienst->post_title : '';
-        $html   = balans_mail_html( $lang, array(
-            esc_html( sprintf( $t['welcome_hi'], $user->first_name ? $user->first_name : $user->display_name ) ),
-            esc_html( sprintf( $t['remind_body'], $name ) ),
-        ), $user_id );
-        $sent  += balans_send_mail( $user, $t['remind_subject'], $html ) ? 1 : 0;
+        $sent  += balans_reminder_mail( $user, $lang, $type, $dienst ? $dienst->post_title : '', (int) floor( $timestamp / DAY_IN_SECONDS ) ) ? 1 : 0;
     }
     return $sent;
+}
+
+function balans_reminder_mail( $user, $lang, $type, $abonnement, $seed = null ) {
+    $t     = balans_mail_texts( $lang );
+    $vars  = array(
+        '{naam}'       => $user->first_name ? $user->first_name : $user->display_name,
+        '{abonnement}' => $abonnement,
+        '{moment}'     => '',
+    );
+    $parts = array(
+        esc_html( balans_mail_fill( $t['welcome_hi'], $vars ) ),
+        nl2br( esc_html( balans_mail_fill( $t[ $type . '_body' ], $vars ) ) ),
+    );
+    $question = balans_reflect_question( $t, $seed );
+    if ( $question ) {
+        $parts[] = '<span style="display:block;border-left:3px solid #B8925A;padding:4px 0 4px 16px;">'
+            . '<span style="display:block;font-size:13px;color:#8B6B47;text-transform:uppercase;letter-spacing:1px;">' . esc_html( $t['reflect_intro'] ) . '</span>'
+            . '<span style="display:block;font-size:19px;font-style:italic;margin:6px 0;">' . esc_html( balans_mail_fill( $question, $vars ) ) . '</span>'
+            . '<span style="display:block;font-size:14px;color:#6B5D50;">' . esc_html( $t['reflect_tip'] ) . '</span></span>';
+    }
+    return balans_send_mail( $user, balans_mail_fill( $t[ $type . '_subject' ], $vars ), balans_mail_html( $lang, $parts, $user->ID ) );
 }
 add_action( 'balans_daily_reminders', 'balans_send_reminders' );
 

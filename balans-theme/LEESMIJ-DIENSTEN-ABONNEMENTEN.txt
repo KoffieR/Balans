@@ -81,3 +81,19 @@ D. Welkomstmail en herinneringen (vanaf thema 1.7.0)
   herinneringen altijd op tijd de deur uit.
 - Tip: gebruik een SMTP-plugin (bijv. WP Mail SMTP) met het e-mailadres van EQ5,
   zodat de mails niet in de spam belanden.
+
+==============================================================
+E-MAILTEKSTEN BEWERKEN (Balans → E-mailteksten)
+==============================================================
+- In het WordPress-menu staat nu "Balans → E-mailteksten" met tabbladen Nederlands / English / Français.
+- Per taal bewerk je: welkomstmail, wekelijkse herinnering, maandelijks rustmoment, reflectievraag, ondertekening en afmeldteksten.
+- Plaatshouders: {naam} (voornaam abonnee), {abonnement} (naam abonnement), {moment} (alleen welkomstmail, bijv. "elke zondag").
+- Leeg veld = standaardtekst. Knop "Standaardteksten terugzetten" herstelt alle teksten van die taal.
+
+MAANDELIJKS RUSTMOMENT
+- Abonnees van het abonnement met code "maandelijks" krijgen op de 1e zaterdag van elke maand om ca. 08:00 een herinnering.
+- Voorwaarde: koppel bij Diensten → Maandelijks een Paid Memberships Pro-niveau (net als bij de wekelijkse abonnementen).
+
+REFLECTIEVRAAG
+- Onder elke herinnering (wekelijks en maandelijks) staat een korte reflectievraag.
+- Zet in het veld "Vragen" één vraag per regel; er wordt elke dag een andere vraag uit de lijst gekozen.
