@@ -56,3 +56,9 @@ Thema `balans-theme/` met:
 - P2: Beveiligde audio (afgeschermde media, niet alleen hidden page).
 - P3: Externe kalender-koppeling (bijv. Google Calendar/ical) voor afspraken.
 - P3: SEO-metabeschrijvingen en schema.org markup per CPT.
+
+## Update — lettertypes lokaal (juni 2026)
+- Google Fonts CDN verwijderd; Fraunces + Instrument Sans lokaal (woff2) in balans-theme/assets/fonts, @font-face in assets/css/fonts.css, enqueued via inc/enqueue.php.
+- Desktop-lettertypes (statische TTF Regular/Medium/SemiBold/Bold + cursief, en variabele TTF) in /app/lettertypes + /app/balans-lettertypes.zip (met LEESMIJ.txt en OFL-licentie) voor briefpapier/visitekaartjes.
+- 404-probleem bevestigd opgelost door gebruiker (permalinks opnieuw opslaan).
+- Backlog: Meditaties fase 2/3 (betaalde programma's, abonnementen), WooCommerce-inrichting begeleiden.

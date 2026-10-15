@@ -10,12 +10,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function balans_enqueue_assets() {
-    // Google Fonts — Fraunces (warm serif) + Instrument Sans (modern humanist sans).
+    // Locally hosted fonts (GDPR-friendly): Fraunces + Instrument Sans.
     wp_enqueue_style(
         'balans-fonts',
-        'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600&display=swap',
+        BALANS_URI . '/assets/css/fonts.css',
         array(),
-        null
+        BALANS_VERSION
     );
 
     // Theme stylesheet header (required by WP) + main stylesheet.

@@ -1,0 +1,26 @@
+Balans — huisstijl lettertypes
+==============================
+
+Koppen / titels : Fraunces        (warme serif)
+Lopende tekst   : Instrument Sans (moderne schreefloze letter)
+
+Installeren
+-----------
+Windows : selecteer alle .ttf-bestanden in de mappen "Fraunces" en "InstrumentSans",
+          klik met rechts > "Installeren voor alle gebruikers".
+macOS   : dubbelklik op elk .ttf-bestand > "Installeer lettertype" (Lettertypecatalogus).
+Herstart daarna Word, Canva Desktop, InDesign e.d.
+
+Mappen
+------
+Fraunces/        Losse gewichten: Regular, Medium, SemiBold, Bold (+ cursief) — aanbevolen voor Word.
+InstrumentSans/  Losse gewichten: Regular, Medium, SemiBold, Bold (+ cursief) — aanbevolen voor Word.
+variabel/        Variabele versies (alle gewichten in één bestand) — voor Adobe/Affinity/Figma.
+                 Installeer NIET zowel de losse als de variabele versie tegelijk.
+
+Website-kleuren bij de huisstijl staan in balans-theme/assets/css/main.css (:root variabelen).
+
+Licentie
+--------
+Beide lettertypes vallen onder de SIL Open Font License 1.1 (zie OFL.txt):
+gratis te gebruiken, ook commercieel (briefpapier, visitekaartjes, drukwerk, website).
