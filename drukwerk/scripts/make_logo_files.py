@@ -10,7 +10,12 @@ from fontTools.pens.transformPen import TransformPen
 OUT = "/app/drukwerk/logo"
 TEAL = "#3C6E71"
 LOGO = "/app/balans-theme/assets/images/logo-eq5.svg"
-SLOGAN = "van vicieuze cirkel naar balans"
+SLOGANS = {
+    "nl": "van vicieuze cirkel naar balans",
+    "en": "from vicious cycle to balance",
+    "fr": "du cercle vicieux \u00e0 l\u2019\u00e9quilibre",
+}
+THEME_IMG = "/app/balans-theme/assets/images"
 SLOGAN_FONT = "/app/lettertypes/Fraunces/Fraunces-Italic.ttf"
 
 
@@ -48,6 +53,18 @@ def write(name, svg):
     cairosvg.svg2pdf(bytestring=svg.encode(), write_to=path + ".pdf")
 
 
+def slogan_svg(body, x, y, w, h, pad, slogan, color):
+    size = w * 0.115
+    _, tw = text_path(slogan, SLOGAN_FONT, size, 0, 0)
+    base = y + h + size * 1.35
+    d, tw = text_path(slogan, SLOGAN_FONT, size, x + (w - tw) / 2, base)
+    left, right = min(x, x + (w - tw) / 2), max(x + w, x + (w + tw) / 2)
+    bottom = base + size * 0.3
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" '
+            f'viewBox="{left - pad:.0f} {y - pad:.0f} {right - left + 2 * pad:.0f} {bottom - y + 2 * pad:.0f}">'
+            f'{body}<path fill="{color}" d="{d}"/></svg>')
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     body, (x, y, w, h) = logo_parts()
@@ -55,15 +72,12 @@ def main():
     write("EQ5-logo-teal", f'<svg xmlns="http://www.w3.org/2000/svg" '
           f'viewBox="{x - pad:.0f} {y - pad:.0f} {w + 2 * pad:.0f} {h + 2 * pad:.0f}">{body}</svg>')
 
-    size = w * 0.115
-    probe, tw = text_path(SLOGAN, SLOGAN_FONT, size, 0, 0)
-    base = y + h + size * 1.35
-    d, tw = text_path(SLOGAN, SLOGAN_FONT, size, x + (w - tw) / 2, base)
-    left, right = min(x, x + (w - tw) / 2), max(x + w, x + (w + tw) / 2)
-    bottom = base + size * 0.3
-    write("EQ5-logo-teal-met-slogan", f'<svg xmlns="http://www.w3.org/2000/svg" '
-          f'viewBox="{left - pad:.0f} {y - pad:.0f} {right - left + 2 * pad:.0f} {bottom - y + 2 * pad:.0f}">'
-          f'{body}<path fill="{TEAL}" d="{d}"/></svg>')
+    for lang, slogan in SLOGANS.items():
+        svg = slogan_svg(body, x, y, w, h, pad, slogan, TEAL)
+        write(f"EQ5-logo-teal-met-slogan-{lang.upper()}", svg)
+        theme = slogan_svg(body.replace(TEAL, "currentColor"), x, y, w, h, pad, slogan, "currentColor")
+        open(os.path.join(THEME_IMG, f"logo-eq5-slogan-{lang}.svg"), "w").write(
+            theme.replace("<svg ", '<svg aria-hidden="true" focusable="false" '))
     print("klaar")
 
 

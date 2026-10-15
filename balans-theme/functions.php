@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'BALANS_VERSION', '1.1.1' );
+define( 'BALANS_VERSION', '1.2.0' );
 define( 'BALANS_DIR', get_template_directory() );
 define( 'BALANS_URI', get_template_directory_uri() );
 
@@ -22,3 +22,4 @@ require_once BALANS_DIR . '/inc/woocommerce.php';
 require_once BALANS_DIR . '/inc/template-helpers.php';
 require_once BALANS_DIR . '/inc/placeholder-content.php';
 require_once BALANS_DIR . '/inc/install-pages.php';
+require_once BALANS_DIR . '/inc/i18n.php';

@@ -30,8 +30,8 @@ get_header();
                         <?php esc_html_e( 'Iedereen heeft vragen in een zoektocht naar balans. Hier vind je rustige begeleiding — van meditaties die je zelf kunt doen tot gesprekken en lichaamsgericht werk.', 'balans' ); ?>
                     </p>
                     <div class="hero__actions">
-                        <?php balans_button( home_url( '/voor-jou/' ), __( 'Ontdek wat bij je past', 'balans' ), 'primary', 'hero-cta-primary' ); ?>
-                        <?php balans_button( home_url( '/meditatie/' ), __( 'Luister gratis', 'balans' ), 'secondary', 'hero-cta-secondary' ); ?>
+                        <?php balans_button( balans_url( 'voor-jou' ), __( 'Ontdek wat bij je past', 'balans' ), 'primary', 'hero-cta-primary' ); ?>
+                        <?php balans_button( balans_url( 'meditatie' ), __( 'Luister gratis', 'balans' ), 'secondary', 'hero-cta-secondary' ); ?>
                     </div>
                 </div>
                 <div class="hero__visual fade-in" data-delay="2" aria-hidden="true">
@@ -70,14 +70,14 @@ get_header();
                     <p class="eyebrow"><?php esc_html_e( 'Voor bedrijven', 'balans' ); ?></p>
                     <h2><?php esc_html_e( 'Trainingen die ruimte scheppen in de groep.', 'balans' ); ?></h2>
                     <p><?php esc_html_e( 'Een vastgesteld concept en programma, op onze locatie. Op aanvraag maken we een offerte voor een groep medewerkers.', 'balans' ); ?></p>
-                    <?php balans_button( home_url( '/voor-bedrijven/' ), __( 'Bekijk het zakelijke aanbod', 'balans' ), 'secondary', 'homepage-cta-zakelijk' ); ?>
+                    <?php balans_button( balans_url( 'voor-bedrijven' ), __( 'Bekijk het zakelijke aanbod', 'balans' ), 'secondary', 'homepage-cta-zakelijk' ); ?>
                 </div>
                 <div>
                     <?php balans_card( array(
                         'eyebrow' => __( 'Voorbeeld-concept', 'balans' ),
                         'title'   => __( 'Werken met de groep', 'balans' ),
                         'text'    => __( 'Programmadetails nog aan te leveren door de eigenaar.', 'balans' ),
-                        'link'    => home_url( '/voor-bedrijven/' ),
+                        'link'    => balans_url( 'voor-bedrijven' ),
                         'cta'     => __( 'Meer info', 'balans' ),
                     ) ); ?>
                 </div>
@@ -99,11 +99,11 @@ get_header();
                     <?php echo do_shortcode( '[products limit="3" columns="3" visibility="visible"]' ); ?>
                 </div>
                 <div style="margin-top:28px;">
-                    <?php balans_button( home_url( '/shop/' ), __( 'Bekijk de hele shop', 'balans' ), 'primary', 'homepage-shop-cta' ); ?>
+                    <?php balans_button( balans_url( 'shop' ), __( 'Bekijk de hele shop', 'balans' ), 'primary', 'homepage-shop-cta' ); ?>
                 </div>
             <?php else : ?>
                 <?php balans_placeholder_notice( __( 'WooCommerce is nog niet geactiveerd. Activeer de plugin om producten te tonen.', 'balans' ) ); ?>
-                <?php balans_button( home_url( '/shop/' ), __( 'Naar de shop', 'balans' ), 'secondary', 'homepage-shop-cta' ); ?>
+                <?php balans_button( balans_url( 'shop' ), __( 'Naar de shop', 'balans' ), 'secondary', 'homepage-shop-cta' ); ?>
             <?php endif; ?>
         </div>
     </section>
@@ -117,7 +117,7 @@ get_header();
                 <p><?php esc_html_e( 'Geen beloftes, geen jargon. Een rustige, menselijke manier van kijken naar wat er bij jou of in een groep speelt.', 'balans' ); ?></p>
             </div>
             <div style="margin-top:24px;">
-                <?php balans_button( home_url( '/over/' ), __( 'Lees meer over onze aanpak', 'balans' ), 'ghost', 'homepage-aanpak-cta' ); ?>
+                <?php balans_button( balans_url( 'over' ), __( 'Lees meer over onze aanpak', 'balans' ), 'ghost', 'homepage-aanpak-cta' ); ?>
             </div>
         </div>
     </section>

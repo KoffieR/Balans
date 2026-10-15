@@ -20,11 +20,13 @@
     <div class="container site-header__inner">
         <div class="site-branding">
             <?php if ( has_custom_logo() ) : the_custom_logo(); else : ?>
-                <a class="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" data-testid="site-logo">
+                <a class="site-logo" href="<?php echo esc_url( balans_url() ); ?>" aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" data-testid="site-logo">
                     <?php echo balans_svg( 'logo-eq5', 'site-logo__svg' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
                 </a>
             <?php endif; ?>
         </div>
+
+        <?php balans_language_switcher(); ?>
 
         <button class="nav-toggle" aria-label="<?php esc_attr_e( 'Open menu', 'balans' ); ?>" aria-expanded="false" aria-controls="primary-navigation" data-testid="nav-toggle">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -41,15 +43,15 @@
                 ) );
             } else {
                 echo '<ul>';
-                echo '<li><a href="' . esc_url( home_url( '/voor-jou/' ) ) . '">' . esc_html__( 'Voor jou', 'balans' ) . '</a></li>';
-                echo '<li><a href="' . esc_url( home_url( '/voor-bedrijven/' ) ) . '">' . esc_html__( 'Voor bedrijven', 'balans' ) . '</a></li>';
-                echo '<li><a href="' . esc_url( home_url( '/shop/' ) ) . '">' . esc_html__( 'Shop', 'balans' ) . '</a></li>';
-                echo '<li><a href="' . esc_url( home_url( '/artikelen-bronnen/' ) ) . '">' . esc_html__( 'Artikelen & bronnen', 'balans' ) . '</a></li>';
-                echo '<li><a href="' . esc_url( home_url( '/over/' ) ) . '">' . esc_html__( 'Over', 'balans' ) . '</a></li>';
+                echo '<li><a href="' . esc_url( balans_url( 'voor-jou' ) ) . '">' . esc_html__( 'Voor jou', 'balans' ) . '</a></li>';
+                echo '<li><a href="' . esc_url( balans_url( 'voor-bedrijven' ) ) . '">' . esc_html__( 'Voor bedrijven', 'balans' ) . '</a></li>';
+                echo '<li><a href="' . esc_url( balans_url( 'shop' ) ) . '">' . esc_html__( 'Shop', 'balans' ) . '</a></li>';
+                echo '<li><a href="' . esc_url( balans_url( 'artikelen-bronnen' ) ) . '">' . esc_html__( 'Artikelen & bronnen', 'balans' ) . '</a></li>';
+                echo '<li><a href="' . esc_url( balans_url( 'over' ) ) . '">' . esc_html__( 'Over', 'balans' ) . '</a></li>';
                 echo '</ul>';
             }
             ?>
-            <a class="balans-btn balans-btn--primary balans-btn--small" href="<?php echo esc_url( home_url( '/afspraak-maken/' ) ); ?>" data-testid="header-cta-afspraak">
+            <a class="balans-btn balans-btn--primary balans-btn--small" href="<?php echo esc_url( balans_url( 'afspraak-maken' ) ); ?>" data-testid="header-cta-afspraak">
                 <?php esc_html_e( 'Afspraak maken', 'balans' ); ?>
             </a>
         </nav>

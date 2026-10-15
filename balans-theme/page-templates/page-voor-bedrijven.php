@@ -43,7 +43,7 @@ $query = new WP_Query( array(
                         'eyebrow' => __( 'Voorbeeld-concept', 'balans' ),
                         'title'   => __( 'Werken met de groep', 'balans' ),
                         'text'    => __( 'Programma, aantal dagen en eventuele terugkomdag nog aan te leveren.', 'balans' ),
-                        'link'    => home_url( '/offerte-aanvragen/' ),
+                        'link'    => balans_url( 'offerte-aanvragen' ),
                         'cta'     => __( 'Vraag een offerte aan', 'balans' ),
                     ) ); ?>
                 </div>
@@ -61,14 +61,14 @@ $query = new WP_Query( array(
                     'eyebrow' => __( 'Open inschrijving', 'balans' ),
                     'title'   => __( 'Zelf een plek boeken', 'balans' ),
                     'text'    => __( 'Als een training een vaste prijs en open inschrijving heeft, kun je direct inschrijven en afrekenen via het winkelmandje.', 'balans' ),
-                    'link'    => home_url( '/voor-bedrijven-aanbod/' ),
+                    'link'    => get_post_type_archive_link( 'balans_zakelijk' ),
                     'cta'     => __( 'Bekijk open trainingen', 'balans' ),
                 ) ); ?>
                 <?php balans_card( array(
                     'eyebrow' => __( 'Groepen', 'balans' ),
                     'title'   => __( 'Vraag een offerte aan', 'balans' ),
                     'text'    => __( 'Meerdere medewerkers aanmelden of een voorstel ontvangen? Vraag een offerte aan.', 'balans' ),
-                    'link'    => home_url( '/offerte-aanvragen/' ),
+                    'link'    => balans_url( 'offerte-aanvragen' ),
                     'cta'     => __( 'Offerte aanvragen', 'balans' ),
                 ) ); ?>
             </div>

@@ -38,6 +38,14 @@ function balans_enqueue_assets() {
     wp_localize_script( 'balans-main', 'BalansData', array(
         'ajaxUrl' => admin_url( 'admin-ajax.php' ),
         'nonce'   => wp_create_nonce( 'balans_nonce' ),
+        'lang'    => balans_lang(),
+        'i18n'    => array(
+            'wait'    => __( 'Even geduld…', 'balans' ),
+            'send'    => __( 'Verzenden', 'balans' ),
+            'thanks'  => __( 'Bedankt, we hebben je bericht ontvangen.', 'balans' ),
+            'error'   => __( 'Er ging iets mis.', 'balans' ),
+            'network' => __( 'Netwerkfout. Probeer het later opnieuw.', 'balans' ),
+        ),
     ) );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

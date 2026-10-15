@@ -28,7 +28,7 @@ function balans_card( $args ) {
         <?php if ( ! empty( $args['image'] ) ) : ?>
             <div class="balans-card__image" style="background-image:url('<?php echo esc_url( $args['image'] ); ?>');" role="img" aria-label="<?php echo esc_attr( $args['title'] ); ?>"></div>
         <?php else : ?>
-            <div class="balans-card__image balans-card__image--placeholder" aria-hidden="true"></div>
+            <div class="balans-card__image balans-card__image--placeholder" aria-hidden="true" data-label="<?php esc_attr_e( 'Foto nog aan te leveren', 'balans' ); ?>"></div>
         <?php endif; ?>
         <div class="balans-card__body">
             <?php if ( $args['eyebrow'] ) : ?><p class="eyebrow"><?php echo esc_html( $args['eyebrow'] ); ?></p><?php endif; ?>

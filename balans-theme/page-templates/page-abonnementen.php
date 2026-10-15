@@ -28,8 +28,8 @@ get_header();
             <p><?php esc_html_e( 'Nog aan te vullen. Als een variant op afspraak gaat, loopt dat via de afsprakenkalender. Varianten die rechtstreeks online afgenomen kunnen worden lopen via het winkelmandje.', 'balans' ); ?></p>
 
             <div style="margin-top:30px; display:flex; gap:14px; flex-wrap:wrap;">
-                <?php balans_button( home_url( '/afspraak-maken/' ), __( 'Afspraak maken', 'balans' ), 'secondary', 'abo-cta-afspraak' ); ?>
-                <?php balans_button( home_url( '/contact/' ), __( 'Stel een vraag', 'balans' ), 'ghost', 'abo-cta-vraag' ); ?>
+                <?php balans_button( balans_url( 'afspraak-maken' ), __( 'Afspraak maken', 'balans' ), 'secondary', 'abo-cta-afspraak' ); ?>
+                <?php balans_button( balans_url( 'contact' ), __( 'Stel een vraag', 'balans' ), 'ghost', 'abo-cta-vraag' ); ?>
             </div>
         </div>
     </section>

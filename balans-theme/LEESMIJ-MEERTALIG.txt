@@ -1,0 +1,43 @@
+EQ5 / Balans-thema — meertalig maken (NL · EN · FR)
+====================================================
+
+Het thema is volledig vertaald naar Engels en Frans. Voor de pagina's per taal
+gebruikt het de gratis plugin Polylang.
+
+Stap voor stap
+--------------
+1. Upload en activeer het thema (balans-theme.zip, versie 1.2.0).
+2. Plugins > Nieuwe plugin > zoek "Polylang" > Installeren > Activeren.
+   (De installatiewizard van Polylang mag je overslaan.)
+3. Talen > Talen: voeg in deze volgorde toe:
+     - Nederlands (nl_NL)  -> wordt de standaardtaal
+     - English (en_US of en_GB)
+     - Français (fr_FR of fr_BE)
+   Bij de vraag "Wil je alle bestaande inhoud de standaardtaal geven?" kies je Ja.
+4. Bovenaan het dashboard verschijnt een melding van EQ5 / Balans.
+   Klik op "Engelse en Franse pagina's aanmaken".
+   Het thema maakt dan alle Engelse en Franse pagina's aan, koppelt ze aan de
+   Nederlandse pagina's en zet de herkenning van de browsertaal aan.
+5. Instellingen > Permalinks > Wijzigingen opslaan (één keer, voor de nieuwe adressen).
+
+Resultaat
+---------
+- www.eq5.nl/       Nederlands
+- www.eq5.nl/en/    English
+- www.eq5.nl/fr/    Français
+- Nieuwe bezoekers gaan automatisch naar hun browsertaal (Engels of Frans);
+  alle andere talen zien Nederlands.
+- Rechtsboven in de kop staat de taalkeuze NL · EN · FR.
+- In de footer staat het EQ5-logo met de slogan in de taal van de pagina.
+
+Controleren / zelf aanpassen
+----------------------------
+- Instellingen browsertaal: Talen > Instellingen > URL-aanpassingen /
+  "Detecteer de taal van de browser".
+- Teksten die je zelf in WordPress typt (blogs, meditaties, trainingen,
+  producten) vertaal je per bericht via het taal-vakje (+) in de editor.
+- WooCommerce-producten: de gratis Polylang vertaalt producten niet volledig.
+  Daarvoor is de betaalde uitbreiding "Polylang for WooCommerce" nodig.
+- Vertalingen van de vaste themateksten staan in de map languages/
+  (en_US/en_GB/fr_FR/fr_BE .po en .mo). Aanpassen kan met het gratis
+  programma Poedit of de plugin Loco Translate.

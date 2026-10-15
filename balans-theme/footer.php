@@ -9,46 +9,48 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-col">
-                <a class="footer-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" data-testid="footer-logo">
-                    <?php echo balans_svg( 'logo-eq5', 'footer-brand__svg' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
+                <a class="footer-brand" href="<?php echo esc_url( balans_url() ); ?>" aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" data-testid="footer-logo">
+                    <?php echo balans_svg( 'logo-eq5-slogan-' . balans_lang(), 'footer-brand__svg' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
                 </a>
-                <p style="color:#B5A48B; margin-top:10px; max-width:28ch;">
-                    <?php esc_html_e( 'Van vicieuze cirkel naar balans. Iedereen heeft vragen in een zoektocht naar balans.', 'balans' ); ?>
+                <p class="footer-text">
+                    <?php esc_html_e( 'Iedereen heeft vragen in een zoektocht naar balans.', 'balans' ); ?>
                 </p>
-                <p style="color:#B5A48B; font-size:0.85rem; margin-top:16px;">
-                    <small><?php esc_html_e( 'Contactgegevens: nog aan te leveren door de eigenaar.', 'balans' ); ?></small>
+                <p class="footer-contact" data-testid="footer-contact">
+                    Remco Sas &middot; <?php esc_html_e( 'Balansbrenger', 'balans' ); ?><br />
+                    <a href="tel:+31623988488">+31 6 23 988 488</a><br />
+                    <a href="https://www.eq5.nl">www.eq5.nl</a>
                 </p>
             </div>
 
             <div class="footer-col">
                 <h4><?php esc_html_e( 'Ontdek', 'balans' ); ?></h4>
                 <ul>
-                    <li><a href="<?php echo esc_url( home_url( '/voor-jou/' ) ); ?>"><?php esc_html_e( 'Voor jou', 'balans' ); ?></a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/voor-bedrijven/' ) ); ?>"><?php esc_html_e( 'Voor bedrijven', 'balans' ); ?></a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/shop/' ) ); ?>"><?php esc_html_e( 'Shop', 'balans' ); ?></a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/artikelen-bronnen/' ) ); ?>"><?php esc_html_e( 'Artikelen & bronnen', 'balans' ); ?></a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/over/' ) ); ?>"><?php esc_html_e( 'Over', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'voor-jou' ) ); ?>"><?php esc_html_e( 'Voor jou', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'voor-bedrijven' ) ); ?>"><?php esc_html_e( 'Voor bedrijven', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'shop' ) ); ?>"><?php esc_html_e( 'Shop', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'artikelen-bronnen' ) ); ?>"><?php esc_html_e( 'Artikelen & bronnen', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'over' ) ); ?>"><?php esc_html_e( 'Over', 'balans' ); ?></a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h4><?php esc_html_e( 'Diensten', 'balans' ); ?></h4>
                 <ul>
-                    <li><a href="<?php echo esc_url( home_url( '/meditatie/' ) ); ?>"><?php esc_html_e( 'Meditatie', 'balans' ); ?></a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/consult/' ) ); ?>"><?php esc_html_e( 'Consult', 'balans' ); ?></a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/drukpuntmassage-consult/' ) ); ?>"><?php esc_html_e( 'Drukpuntmassage + consult', 'balans' ); ?></a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/abonnementen/' ) ); ?>"><?php esc_html_e( 'Abonnementen', 'balans' ); ?></a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/trainingen-workshops/' ) ); ?>"><?php esc_html_e( 'Trainingen & workshops', 'balans' ); ?></a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/afspraak-maken/' ) ); ?>"><?php esc_html_e( 'Afspraak maken', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'meditatie' ) ); ?>"><?php esc_html_e( 'Meditatie', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'consult' ) ); ?>"><?php esc_html_e( 'Consult', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'drukpuntmassage-consult' ) ); ?>"><?php esc_html_e( 'Drukpuntmassage + consult', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'abonnementen' ) ); ?>"><?php esc_html_e( 'Abonnementen', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'trainingen-workshops' ) ); ?>"><?php esc_html_e( 'Trainingen & workshops', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'afspraak-maken' ) ); ?>"><?php esc_html_e( 'Afspraak maken', 'balans' ); ?></a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h4><?php esc_html_e( 'Contact & volg', 'balans' ); ?></h4>
                 <ul>
-                    <li><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Heb je een vraag?', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'contact' ) ); ?>"><?php esc_html_e( 'Heb je een vraag?', 'balans' ); ?></a></li>
                     <li><a href="https://www.instagram.com/" rel="noopener" target="_blank"><?php esc_html_e( 'Instagram', 'balans' ); ?></a></li>
-                    <li><small style="color:#8A7D71;"><?php esc_html_e( 'Instagram-link nog aan te vullen.', 'balans' ); ?></small></li>
+                    <li><small class="footer-muted"><?php esc_html_e( 'Instagram-link nog aan te vullen.', 'balans' ); ?></small></li>
                 </ul>
             </div>
         </div>
@@ -66,19 +68,19 @@
                     ) );
                 } else {
                     echo '<ul>';
-                    echo '<li><a href="' . esc_url( home_url( '/privacyverklaring/' ) ) . '">' . esc_html__( 'Privacy', 'balans' ) . '</a></li>';
-                    echo '<li><a href="' . esc_url( home_url( '/cookies/' ) ) . '">' . esc_html__( 'Cookies', 'balans' ) . '</a></li>';
-                    echo '<li><a href="' . esc_url( home_url( '/algemene-voorwaarden/' ) ) . '">' . esc_html__( 'Algemene voorwaarden', 'balans' ) . '</a></li>';
-                    echo '<li><a href="' . esc_url( home_url( '/webshopvoorwaarden/' ) ) . '">' . esc_html__( 'Webshopvoorwaarden', 'balans' ) . '</a></li>';
-                    echo '<li><a href="' . esc_url( home_url( '/verzenden-retour/' ) ) . '">' . esc_html__( 'Verzenden & retour', 'balans' ) . '</a></li>';
-                    echo '<li><a href="' . esc_url( home_url( '/disclaimer/' ) ) . '">' . esc_html__( 'Disclaimer', 'balans' ) . '</a></li>';
+                    echo '<li><a href="' . esc_url( balans_url( 'privacyverklaring' ) ) . '">' . esc_html__( 'Privacy', 'balans' ) . '</a></li>';
+                    echo '<li><a href="' . esc_url( balans_url( 'cookies' ) ) . '">' . esc_html__( 'Cookies', 'balans' ) . '</a></li>';
+                    echo '<li><a href="' . esc_url( balans_url( 'algemene-voorwaarden' ) ) . '">' . esc_html__( 'Algemene voorwaarden', 'balans' ) . '</a></li>';
+                    echo '<li><a href="' . esc_url( balans_url( 'webshopvoorwaarden' ) ) . '">' . esc_html__( 'Webshopvoorwaarden', 'balans' ) . '</a></li>';
+                    echo '<li><a href="' . esc_url( balans_url( 'verzenden-retour' ) ) . '">' . esc_html__( 'Verzenden & retour', 'balans' ) . '</a></li>';
+                    echo '<li><a href="' . esc_url( balans_url( 'disclaimer' ) ) . '">' . esc_html__( 'Disclaimer', 'balans' ) . '</a></li>';
                     echo '</ul>';
                 }
                 ?>
             </nav>
         </div>
 
-        <p style="color:#8A7D71; font-size:0.78rem; margin-top:18px;">
+        <p class="footer-muted footer-note">
             <small><?php esc_html_e( 'Juridische teksten moeten nog door de eigenaar worden aangeleverd.', 'balans' ); ?></small>
         </p>
     </div>

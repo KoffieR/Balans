@@ -29,7 +29,7 @@ get_header();
             <p><?php esc_html_e( 'Nog aan te vullen.', 'balans' ); ?></p>
 
             <div style="margin-top:30px;">
-                <?php balans_button( home_url( '/afspraak-maken/?dienst=drukpuntmassage' ), __( 'Afspraak maken', 'balans' ), 'primary', 'drukpunt-cta' ); ?>
+                <?php balans_button( balans_url( 'afspraak-maken', array( 'dienst' => 'drukpuntmassage' ) ), __( 'Afspraak maken', 'balans' ), 'primary', 'drukpunt-cta' ); ?>
             </div>
         </div>
     </section>

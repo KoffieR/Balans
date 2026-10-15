@@ -24,6 +24,8 @@
             });
         });
 
+        var T = (window.BalansData && window.BalansData.i18n) || {};
+
         // AJAX forms
         document.querySelectorAll('form[data-balans-ajax]').forEach(function (form) {
             form.addEventListener('submit', function (e) {
@@ -32,11 +34,12 @@
                 var messageEl = form.querySelector('.balans-form-message');
                 var submit = form.querySelector('button[type="submit"]');
                 if (messageEl) { messageEl.textContent = ''; messageEl.className = 'balans-form-message'; }
-                if (submit) { submit.disabled = true; submit.dataset.label = submit.textContent; submit.textContent = 'Even geduld…'; }
+                if (submit) { submit.disabled = true; submit.dataset.label = submit.textContent; submit.textContent = (T.wait || 'Even geduld…'); }
 
                 var formData = new FormData(form);
                 formData.append('action', action);
                 formData.append('nonce', window.BalansData ? window.BalansData.nonce : '');
+                if (window.BalansData && window.BalansData.lang) { formData.append('lang', window.BalansData.lang); }
 
                 fetch((window.BalansData && window.BalansData.ajaxUrl) || '/wp-admin/admin-ajax.php', {
                     method: 'POST',
@@ -45,24 +48,24 @@
                 })
                 .then(function (r) { return r.json(); })
                 .then(function (data) {
-                    if (submit) { submit.disabled = false; submit.textContent = submit.dataset.label || 'Verzenden'; }
+                    if (submit) { submit.disabled = false; submit.textContent = submit.dataset.label || T.send || 'Verzenden'; }
                     if (!messageEl) { return; }
                     if (data && data.success) {
                         messageEl.className = 'balans-form-message balans-form-message--success';
-                        messageEl.textContent = data.data && data.data.message ? data.data.message : 'Bedankt, we hebben je bericht ontvangen.';
+                        messageEl.textContent = data.data && data.data.message ? data.data.message : (T.thanks || 'Bedankt, we hebben je bericht ontvangen.');
                         form.reset();
                         form.querySelectorAll('.time-slot.is-selected').forEach(function (b) { b.classList.remove('is-selected'); });
                     } else {
                         messageEl.className = 'balans-form-message balans-form-message--error';
-                        var errors = (data && data.data && data.data.errors) ? data.data.errors : ['Er ging iets mis.'];
+                        var errors = (data && data.data && data.data.errors) ? data.data.errors : [T.error || 'Er ging iets mis.'];
                         messageEl.textContent = errors.join(' ');
                     }
                 })
                 .catch(function () {
-                    if (submit) { submit.disabled = false; submit.textContent = submit.dataset.label || 'Verzenden'; }
+                    if (submit) { submit.disabled = false; submit.textContent = submit.dataset.label || T.send || 'Verzenden'; }
                     if (messageEl) {
                         messageEl.className = 'balans-form-message balans-form-message--error';
-                        messageEl.textContent = 'Netwerkfout. Probeer het later opnieuw.';
+                        messageEl.textContent = (T.network || 'Netwerkfout. Probeer het later opnieuw.');
                     }
                 });
             });

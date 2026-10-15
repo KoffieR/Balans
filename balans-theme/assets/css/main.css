@@ -10,8 +10,10 @@
     --balans-ink:         #2B2420;  /* warme bijna-zwarte tekst */
     --balans-ink-soft:    #5A4F46;  /* zachter tekst grijs-bruin */
     --balans-muted:       #8A7D71;  /* subtiele tekst */
-    --balans-primary:     #8B6B47;  /* klei/brons - primaire accent */
-    --balans-primary-dk:  #6E5236;  /* donkere variant */
+    --balans-primary:     #3C6E71;  /* EQ5 teal - primaire accent */
+    --balans-primary-dk:  #2C5457;  /* donkere teal */
+    --balans-primary-lt:  #DCE7E5;  /* zachte teal-tint */
+    --balans-deep:        #1F3B3D;  /* diep teal voor footer */
     --balans-accent:      #6B7F5C;  /* gedempt salie-groen */
     --balans-line:        #D9CFBE;  /* lijnen/randen */
     --balans-focus:       #3C6E71;  /* focusring - cool teal voor contrast */
@@ -133,10 +135,28 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
     transition: background .2s var(--balans-ease), color .2s var(--balans-ease);
 }
 .primary-nav a:hover,
-.primary-nav .current-menu-item > a { background: rgba(139, 107, 71, 0.1); color: var(--balans-primary-dk); }
+.primary-nav .current-menu-item > a { background: rgba(60, 110, 113, 0.1); color: var(--balans-primary-dk); }
 .primary-nav a.balans-btn { color: inherit; }
 .primary-nav a.balans-btn--primary { color: var(--balans-surface); }
 .primary-nav a.balans-btn--primary:hover { background: var(--balans-primary-dk); color: var(--balans-surface); }
+
+/* ---------- Taalkeuze ---------- */
+.site-branding { order: 1; }
+.primary-nav { order: 2; }
+.lang-switch {
+    order: 3; list-style: none; margin: 0 0 0 4px; padding: 0 0 0 14px;
+    display: flex; align-items: center; gap: 2px;
+    border-left: 1px solid var(--balans-line);
+}
+.lang-switch li + li::before { content: "\00B7"; color: var(--balans-muted); margin: 0 2px; }
+.lang-switch a {
+    font-size: 0.78rem; letter-spacing: 0.1em; font-weight: 500;
+    color: var(--balans-muted); text-decoration: none; padding: 6px 4px; border-radius: 4px;
+    transition: color .2s var(--balans-ease);
+}
+.lang-switch a:hover { color: var(--balans-primary); }
+.lang-switch a.is-current { color: var(--balans-primary); }
+.nav-toggle { order: 4; }
 
 .nav-toggle {
     display: none; background: transparent; border: 1px solid var(--balans-line);
@@ -156,7 +176,7 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
     font-size: 0.95rem;
     line-height: 1;
 }
-.balans-btn--primary { background: var(--balans-ink); color: var(--balans-surface); }
+.balans-btn--primary { background: var(--balans-primary); color: var(--balans-surface); }
 .balans-btn--primary:hover { background: var(--balans-primary-dk); color: var(--balans-surface); transform: translateY(-1px); box-shadow: var(--balans-shadow); }
 .balans-btn--secondary { background: transparent; color: var(--balans-ink); border-color: var(--balans-ink); }
 .balans-btn--secondary:hover { background: var(--balans-ink); color: var(--balans-surface); }
@@ -207,7 +227,7 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
     border-radius: var(--balans-radius-lg);
     background:
         radial-gradient(circle at 30% 20%, rgba(255,255,255,0.3), transparent 50%),
-        linear-gradient(135deg, #C9B38A 0%, #8B6B47 60%, #6E5236 100%);
+        linear-gradient(135deg, #9DBDBA 0%, #3C6E71 60%, #1F3B3D 100%);
     position: relative;
     overflow: hidden;
     box-shadow: var(--balans-shadow);
@@ -272,11 +292,11 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 }
 .balans-card__image--placeholder {
     background:
-        linear-gradient(135deg, #D9CFBE 0%, #B5A48B 100%);
+        linear-gradient(135deg, #DCE7E5 0%, #8FB0AE 100%);
     position: relative;
 }
 .balans-card__image--placeholder::after {
-    content: "Foto nog aan te leveren";
+    content: attr(data-label);
     position: absolute; inset: 0; display: grid; place-items: center;
     color: var(--balans-surface); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;
     font-family: var(--balans-font-sans);
@@ -297,7 +317,7 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 
 /* ---------- Placeholder notice ---------- */
 .balans-placeholder-notice {
-    background: rgba(139, 107, 71, 0.1);
+    background: rgba(60, 110, 113, 0.1);
     border-left: 3px solid var(--balans-primary);
     padding: 12px 18px;
     border-radius: 0 var(--balans-radius) var(--balans-radius) 0;
@@ -409,12 +429,12 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 
 /* ---------- Footer ---------- */
 .site-footer {
-    background: var(--balans-ink);
-    color: #D9CFBE;
+    background: var(--balans-deep);
+    color: #D5E2E0;
     padding: 70px 0 30px;
     margin-top: 100px;
 }
-.site-footer a { color: #ECE4D4; }
+.site-footer a { color: #F5F0E8; }
 .site-footer a:hover { color: #FFFBF4; }
 .footer-grid {
     display: grid;
@@ -437,9 +457,13 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 }
 .footer-bottom nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 20px; flex-wrap: wrap; }
 .footer-brand { display: inline-block; color: #FFFBF4; line-height: 0; }
-.footer-brand__svg { height: 34px; width: auto; }
+.footer-brand__svg { height: 92px; width: auto; }
+.footer-text { color: #A9C2C0; margin-top: 18px; max-width: 30ch; }
+.footer-contact { color: #D5E2E0; font-size: 0.92rem; margin-top: 16px; line-height: 1.7; }
+.footer-muted { color: #8FAAA8; }
+.footer-note { font-size: 0.78rem; margin-top: 18px; }
 .footer-copy { display: flex; align-items: center; gap: 10px; }
-.footer-q { height: 22px; width: auto; color: #7FA3A5; flex-shrink: 0; }
+.footer-q { height: 22px; width: auto; color: #8FB0AE; flex-shrink: 0; }
 
 /* ---------- Grid for Voor jou ---------- */
 .voor-jou-grid {
@@ -486,6 +510,8 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 @media (max-width: 640px) {
     .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
     .primary-nav { display: none; }
+    .site-header__inner { gap: 12px; }
+    .lang-switch { margin-left: auto; padding-left: 0; border-left: 0; }
     .primary-nav.is-open {
         display: flex; flex-direction: column; align-items: stretch;
         position: absolute; top: 100%; left: 0; right: 0;

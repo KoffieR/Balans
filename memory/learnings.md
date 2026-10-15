@@ -1,0 +1,1 @@
+- Lokale WP-testomgeving: /root/wptest/wordpress (SQLite, Polylang). Start: cd /root/wptest/wordpress && php -S 127.0.0.1:8099 -t . ; admin/admin123. Thema is symlink naar /app/balans-theme.

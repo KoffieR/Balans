@@ -1,7 +1,9 @@
 EQ5-logo — teal (#3C6E71 / CMYK ca. C75 M38 Y42 K18)
 =====================================================
 EQ5-logo-teal             : alleen het woordmerk
-EQ5-logo-teal-met-slogan  : met "van vicieuze cirkel naar balans" eronder
+EQ5-logo-teal-met-slogan-NL : met "van vicieuze cirkel naar balans"
+EQ5-logo-teal-met-slogan-EN : met "from vicious cycle to balance"
+EQ5-logo-teal-met-slogan-FR : met "du cercle vicieux à l’équilibre"
 
 Per variant drie bestandstypes:
 - .svg : vector, voor website, Canva, Figma, Illustrator (onbeperkt schaalbaar)
