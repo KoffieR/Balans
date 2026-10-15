@@ -1,0 +1,29 @@
+E-mailhandtekening EQ5 — Remco Sas
+===================================
+
+1) /e/OS Mail (telefoon)  ->  handtekening-eos-mail.txt
+   /e/OS Mail ondersteunt alleen tekst-handtekeningen (geen logo of opmaak).
+   - Open Mail > menu (drie streepjes) > Instellingen > kies je account
+   - Berichten verzenden (of "Sending mail") > Handtekening gebruiken: AAN
+   - Handtekening: plak de tekst uit handtekening-eos-mail.txt
+   Tip: de eerste regel "-- " (twee streepjes + spatie) is de standaard
+   scheiding; mailprogramma's herkennen daardoor de handtekening.
+
+2) Webmail / Thunderbird / Gmail / Outlook (computer)  ->  handtekening-html.html
+   Deze versie heeft het EQ5-logo en de teal huisstijlkleur.
+   - Open handtekening-html.html in je browser
+   - Selecteer de handtekening (van logo t/m www.eq5.nl) en kopieer (Ctrl/Cmd+C)
+   - Plak in het handtekeningveld van je mailprogramma (Ctrl/Cmd+V)
+   Thunderbird: Accountinstellingen > "HTML gebruiken" aanvinken en de
+   HTML-code tussen START en EINDE plakken.
+
+Logo
+- Het logo wordt geladen vanaf je website:
+  https://www.eq5.nl/wp-content/themes/balans-theme/assets/images/email-logo-eq5.png
+- Dit werkt zodra het Balans-thema (v1.1.1 of nieuwer) op www.eq5.nl is geinstalleerd.
+- Heet de themamap op je server anders dan "balans-theme"? Pas dan dat deel van de
+  link aan in handtekening-html.html.
+
+Lettertypes
+- E-mailprogramma's tonen geen eigen lettertypes; daarom gebruikt de handtekening
+  Georgia (lijkt op Fraunces) en Arial (lijkt op Instrument Sans).
