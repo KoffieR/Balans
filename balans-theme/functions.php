@@ -27,3 +27,4 @@ require_once BALANS_DIR . '/inc/podcast.php';
 require_once BALANS_DIR . '/inc/services.php';
 require_once BALANS_DIR . '/inc/mail-settings.php';
 require_once BALANS_DIR . '/inc/subscriptions.php';
+require_once BALANS_DIR . '/inc/plugins-setup.php';

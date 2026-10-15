@@ -1,0 +1,35 @@
+BALANS / EQ5 — INSTALLATIE IN 3 STAPPEN
+=======================================
+
+1. Thema installeren
+   Weergave → Thema's → Nieuw thema → Thema uploaden → balans-theme.zip → Activeren.
+
+2. Plugins (Balans → Installatie & plugins)
+   Klik op "Alle plugins installeren & activeren". Het thema downloadt en activeert:
+   - Polylang (meertaligheid NL/EN/FR)                 — WordPress.org
+   - Paid Memberships Pro (abonnementen + Stripe)      — officiële PMPro-site (staat niet meer op WordPress.org)
+   - Seriously Simple Podcasting (podcast)             — WordPress.org
+   - WooCommerce (webshop)                             — WordPress.org
+   - Simply Schedule Appointments (optioneel, agenda)  — WordPress.org
+   Lukt installeren niet (bijv. geen schrijfrechten op de server)? Installeer de plugin dan handmatig via Plugins → Nieuwe plugin.
+
+3. Alles instellen (zelfde pagina)
+   Klik op "Alles instellen". Dit maakt aan: de talen NL (standaard), EN en FR; alle pagina's met vertalingen;
+   de diensten; de PMPro afreken-/accountpagina's in 3 talen; de WooCommerce-pagina's (valuta EUR).
+   Je kunt dit veilig vaker doen: bestaande pagina's blijven staan.
+
+ZELF NOG DOEN
+- PMPro → Instellingen → Betalingen: Stripe koppelen. Per abonnement een niveau maken en koppelen bij Diensten.
+- WooCommerce → Instellingen → Betalingen: Stripe of Mollie aanzetten.
+- Podcast → Instellingen: titel, omslag, categorie.
+- Agenda: Appointments → Appointment Types: beschikbaarheid en diensten instellen.
+  Zodra de agenda actief is, toont de afsprakenpagina automatisch de agenda in plaats van het eigen formulier.
+
+AGENDA EN AVG
+Simply Schedule Appointments (gratis basisversie) slaat afspraken op je eigen server op; er gaan geen gegevens naar een
+extern platform. Vermeld de agenda in je privacyverklaring. Koppeling met Google Agenda, herinneringen per sms en
+online betalen bij boeken zitten in de betaalde versies (vanaf ca. $99 per jaar); bij Google-koppeling gaan
+afspraakgegevens wel naar Google.
+
+LET OP: de webshop-pagina's (winkelmand, afrekenen) zijn standaard alleen Nederlands. Voor vertaalde
+WooCommerce-pagina's is de betaalde uitbreiding "Polylang for WooCommerce" nodig.

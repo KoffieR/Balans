@@ -96,3 +96,10 @@ Thema `balans-theme/` met:
 - P1: Validatie WooCommerce-flow met Polylang + PMPro
 - P1: Live-gang begeleiden (plugins installeren/instellen)
 - P2: Losse verkoop meditaties/trainingen via WooCommerce + PMPro
+
+## Update juni 2026 — Installatie-assistent plugins (DONE)
+- `inc/plugins-setup.php`: "Balans → Installatie & plugins": installeert/activeert Polylang, SSP, WooCommerce (WordPress.org) en PMPro (officiële download https://license.paidmembershipspro.com/downloads/free/paid-memberships-pro.zip, PMPro is van WP.org verwijderd) + optioneel Simply Schedule Appointments (AVG-vriendelijke agenda).
+- Knop "Alles instellen": talen nl/en/fr, thema-pagina's + vertalingen, diensten, PMPro-pagina's (3 talen), WooCommerce-pagina's (EUR). Idempotent.
+- `page-afspraak.php`: toont [ssa_booking] als SSA actief is, anders eigen formulier.
+- Getest op verse WP-install (/tmp/wpf) via wp-cli: alle 5 plugins echt gedownload en geactiveerd; setup gaf 95 pagina's, 27 diensten.
+- Bekend: WooCommerce-pagina's alleen NL (vertalen vereist betaalde Polylang for WooCommerce).

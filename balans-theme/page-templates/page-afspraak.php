@@ -19,6 +19,9 @@ $slots = balans_get_time_slots();
 
     <section class="section">
         <div class="container">
+            <?php if ( shortcode_exists( 'ssa_booking' ) ) : ?>
+            <div class="balans-agenda" data-testid="agenda-booking"><?php echo do_shortcode( '[ssa_booking]' ); ?></div>
+            <?php else : ?>
             <?php balans_placeholder_notice( __( 'Beschikbare tijdslots zijn tijdelijke voorbeelden. De werkelijke beschikbaarheid wordt later door de eigenaar ingericht.', 'balans' ) ); ?>
 
             <form class="balans-form" data-balans-ajax="balans_appointment" data-testid="form-afspraak" novalidate>
@@ -77,6 +80,7 @@ $slots = balans_get_time_slots();
                     <small><?php esc_html_e( 'Afspraken zijn alleen bedoeld voor consult en drukpuntmassage + consult. Shop, meditaties en vaste trainingen lopen via het winkelmandje.', 'balans' ); ?></small>
                 </p>
             </form>
+            <?php endif; ?>
         </div>
     </section>
 </main>
