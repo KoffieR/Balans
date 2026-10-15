@@ -70,3 +70,4 @@ Thema `balans-theme/` met:
 - Bundel: /app/balans-drukwerk.zip
 - Backlog: EQ5-logo + Q-accent in WordPress-thema verwerken; briefpapier-sjabloon; meditaties fase 2/3.
 - (juni 2026) Q-staart herzien: vloeiende uitloop uit de ring (geen insnoering), gedeeld via tail_commands() in make_logos.py. Achterkant visitekaartje: diensten "consulten · workshops / cursussen · ondersteuning" toegevoegd.
+- (juni 2026) Thema v1.1.0: EQ5-logo (inline SVG, teal via --balans-logo) in header en footer (crème), grote lichte Q als accent in home-hero, kleine Q in footer-bottom, Q-favicon (SVG/PNG, alleen als geen Site-pictogram ingesteld). Assets via drukwerk/scripts/export_theme_assets.py -> balans-theme/assets/images. Helper balans_svg() in inc/template-helpers.php.

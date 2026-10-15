@@ -12,6 +12,7 @@ get_header();
 
     <!-- HERO -->
     <section class="hero">
+        <?php echo balans_svg( 'q-accent', 'hero__q' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
         <div class="container">
             <div class="hero__grid">
                 <div class="hero__content fade-in">

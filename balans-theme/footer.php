@@ -9,7 +9,9 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-col">
-                <p class="footer-brand"><?php bloginfo( 'name' ); ?></p>
+                <a class="footer-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" data-testid="footer-logo">
+                    <?php echo balans_svg( 'logo-eq5', 'footer-brand__svg' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
+                </a>
                 <p style="color:#B5A48B; margin-top:10px; max-width:28ch;">
                     <?php esc_html_e( 'Van vicieuze cirkel naar balans. Iedereen heeft vragen in een zoektocht naar balans.', 'balans' ); ?>
                 </p>
@@ -52,7 +54,7 @@
         </div>
 
         <div class="footer-bottom">
-            <div>&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'Alle rechten voorbehouden.', 'balans' ); ?></div>
+            <div class="footer-copy"><?php echo balans_svg( 'q-accent', 'footer-q' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'Alle rechten voorbehouden.', 'balans' ); ?></div>
             <nav aria-label="<?php esc_attr_e( 'Juridische links', 'balans' ); ?>">
                 <?php
                 if ( has_nav_menu( 'legal' ) ) {

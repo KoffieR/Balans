@@ -68,3 +68,32 @@ function balans_button( $url, $label, $style = 'primary', $testid = '' ) {
         esc_html( $label )
     );
 }
+
+/**
+ * Inline SVG uit assets/images (kleur via CSS currentColor).
+ */
+function balans_svg( $name, $class = '' ) {
+    $file = BALANS_DIR . '/assets/images/' . sanitize_file_name( $name ) . '.svg';
+    if ( ! file_exists( $file ) ) {
+        return '';
+    }
+    $svg = file_get_contents( $file );
+    if ( $class ) {
+        $svg = preg_replace( '/^<svg /', '<svg class="' . esc_attr( $class ) . '" ', $svg );
+    }
+    return $svg;
+}
+
+/**
+ * Q-favicon zolang er geen Site-pictogram in de Customizer is ingesteld.
+ */
+function balans_favicon() {
+    if ( has_site_icon() ) {
+        return;
+    }
+    $img = BALANS_URI . '/assets/images/';
+    echo '<link rel="icon" href="' . esc_url( $img . 'favicon.svg' ) . '" type="image/svg+xml" />' . "\n";
+    echo '<link rel="icon" href="' . esc_url( $img . 'favicon-32.png' ) . '" sizes="32x32" type="image/png" />' . "\n";
+    echo '<link rel="apple-touch-icon" href="' . esc_url( $img . 'apple-touch-icon.png' ) . '" />' . "\n";
+}
+add_action( 'wp_head', 'balans_favicon', 5 );

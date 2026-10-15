@@ -20,9 +20,8 @@
     <div class="container site-header__inner">
         <div class="site-branding">
             <?php if ( has_custom_logo() ) : the_custom_logo(); else : ?>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" data-testid="site-logo">
-                    <?php bloginfo( 'name' ); ?>
-                    <small><?php esc_html_e( 'Van vicieuze cirkel naar balans', 'balans' ); ?></small>
+                <a class="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" data-testid="site-logo">
+                    <?php echo balans_svg( 'logo-eq5', 'site-logo__svg' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
                 </a>
             <?php endif; ?>
         </div>

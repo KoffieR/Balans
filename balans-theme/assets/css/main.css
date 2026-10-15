@@ -15,6 +15,7 @@
     --balans-accent:      #6B7F5C;  /* gedempt salie-groen */
     --balans-line:        #D9CFBE;  /* lijnen/randen */
     --balans-focus:       #3C6E71;  /* focusring - cool teal voor contrast */
+    --balans-logo:        #3C6E71;  /* EQ5-logo teal */
 
     --balans-radius:      4px;
     --balans-radius-lg:   10px;
@@ -163,12 +164,26 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 .balans-btn--ghost:hover { color: var(--balans-ink); }
 .balans-btn--small { padding: 10px 16px; font-size: 0.85rem; }
 
+/* ---------- Logo ---------- */
+.site-logo { display: inline-flex; align-items: center; line-height: 0; color: var(--balans-logo); transition: opacity .25s var(--balans-ease); }
+.site-logo:hover { opacity: .8; }
+.site-logo__svg { height: 40px; width: auto; }
+@media (max-width: 600px) { .site-logo__svg { height: 32px; } }
+
 /* ---------- Hero ---------- */
 .hero {
     padding: 90px 0 100px;
     position: relative;
     overflow: hidden;
 }
+.hero > .container { position: relative; z-index: 1; }
+.hero__q {
+    position: absolute; z-index: 0; pointer-events: none;
+    right: -4%; bottom: -14%;
+    height: 118%; width: auto;
+    color: var(--balans-logo); opacity: .09;
+}
+@media (max-width: 900px) { .hero__q { right: -30%; height: 90%; opacity: .07; } }
 .hero__grid {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
@@ -421,7 +436,10 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
     font-size: 0.85rem; color: #B5A48B;
 }
 .footer-bottom nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 20px; flex-wrap: wrap; }
-.footer-brand { font-family: var(--balans-font-serif); font-size: 1.4rem; color: #FFFBF4; }
+.footer-brand { display: inline-block; color: #FFFBF4; line-height: 0; }
+.footer-brand__svg { height: 34px; width: auto; }
+.footer-copy { display: flex; align-items: center; gap: 10px; }
+.footer-q { height: 22px; width: auto; color: #7FA3A5; flex-shrink: 0; }
 
 /* ---------- Grid for Voor jou ---------- */
 .voor-jou-grid {
