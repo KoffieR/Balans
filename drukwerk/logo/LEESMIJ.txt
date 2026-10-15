@@ -1,0 +1,12 @@
+EQ5-logo — teal (#3C6E71 / CMYK ca. C75 M38 Y42 K18)
+=====================================================
+EQ5-logo-teal             : alleen het woordmerk
+EQ5-logo-teal-met-slogan  : met "van vicieuze cirkel, naar balans" eronder
+
+Per variant drie bestandstypes:
+- .svg : vector, voor website, Canva, Figma, Illustrator (onbeperkt schaalbaar)
+- .png : 3000 px breed, transparante achtergrond, voor Word, social media, presentaties
+- .pdf : vector, voor drukwerk en de drukker
+
+Alle tekst is omgezet naar contouren: het logo ziet er overal hetzelfde uit,
+ook zonder dat de lettertypes geinstalleerd zijn.
