@@ -1,0 +1,17 @@
+{
+  "summary": "Verified with curl/wp-cli only (no browser) that the Hulp item is gone from the header fallback menu. FR, EN and NL fallback show only 5 items (Voor jou/Voor bedrijven/Shop/Artikelen & bronnen/Over, translated). No Hulp/Help/Aide anywhere, and the Afspraak maken CTA is still there. php -l passes. /, /events/, /voor-jou/, /afspraak-voor-hulp/, /fr/, /en/ all return 200 with no fatal errors in the pages or in /tmp/phps.log. The zip's header.php is byte-identical to the theme file and has 0 'Hulp' strings. 21/22 script checks passed. The one failure ('nl renders wp_nav_menu') is about the test environment, not the theme: see context note. When the menu was assigned via Polylang, the wp_nav_menu path rendered exactly the 5 menu items, with no Hulp.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": ["/app/tests/test_header_menu.sh"],
+  "action_items": [
+    "Test env only: on the front end NL also renders the FALLBACK menu. Polylang's option 'polylang'['nav_menus'] is empty, so has_nav_menu('primary') is false on the front end even though theme_mod nav_menu_locations has primary=>2. On the live site this does not matter as long as the user assigns menus via Weergave > Menu's (Polylang stores them per language). Optional: tell the user that EN/FR show the fallback until a menu is assigned per language.",
+    "Note: menu id 2 in the test DB has English item titles (For you, For businesses, ...) and ?page_id links, although it is meant to be the NL menu. Test data only."
+  ],
+  "critical_code_review_comments": [],
+  "updated_files": ["/app/tests/test_header_menu.sh"],
+  "success_rate": {"backend": "100%", "frontend": "N/A (skipped by request)"},
+  "seed_data_creation": "None. The test temporarily unset theme_mod primary and later set Polylang nav_menus[balans][primary][nl]=2. Both were restored: theme_mod nav_menu_locations primary=>2, polylang nav_menus=[] (original state).",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Run: bash /app/tests/test_header_menu.sh (needs php -S localhost:8099 running). The 'nl renders wp_nav_menu' check fails because Polylang manages menu locations in option polylang['nav_menus'], not in the theme_mod. To exercise wp_nav_menu, set polylang nav_menus[get_stylesheet()]['primary']['nl']=2 and restore it afterwards."
+}

@@ -136,3 +136,6 @@ Thema `balans-theme/` met:
 - Testmail onderaan Balans → E-mailteksten: 8 maaltypes, eigen adres, taal van tabblad, "[TEST]" prefix (wp_mail-filter). `balans_send_welcome()` en `balans_waitlist_mail()` afgesplitst.
 - Templates: template-parts/event-share.php, template-parts/event-interest.php.
 - Getest op /tmp/wpf (wp-cli + php -S/curl).
+
+## Fix juni 2026 — "Hulp" uit bovenste menu
+- header.php: "Hulp" verwijderd uit het reservemenu (dat verschijnt als er voor een taal geen menu aan "Hoofdmenu" is gekoppeld). Getest door testing agent (iteration_2, 100%).
