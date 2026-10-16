@@ -72,3 +72,13 @@
         });
     });
 })();
+
+document.addEventListener('click', function (e) {
+    var btn = e.target.closest && e.target.closest('.event-share__copy');
+    if (!btn || !navigator.clipboard) { return; }
+    navigator.clipboard.writeText(btn.dataset.copy).then(function () {
+        var label = btn.textContent;
+        btn.textContent = btn.dataset.done;
+        setTimeout(function () { btn.textContent = label; }, 2000);
+    });
+});

@@ -42,8 +42,10 @@ get_header();
                         <?php balans_button( balans_url( 'events' ), __( 'Bekijk de komende events', 'balans' ), 'ghost', 'event-more' ); ?>
                     <?php elseif ( ! get_post_meta( $id, '_event_url', true ) && balans_event_product( $id ) ) : ?>
                         <?php get_template_part( 'template-parts/event-tickets', null, array( 'event' => $id ) ); ?>
+                        <?php get_template_part( 'template-parts/event-share', null, array( 'event' => $id ) ); ?>
                     <?php else : ?>
                         <?php balans_button( balans_event_signup_url( $id ), __( 'Aanmelden', 'balans' ), 'primary', 'event-signup' ); ?>
+                        <?php get_template_part( 'template-parts/event-share', null, array( 'event' => $id ) ); ?>
                     <?php endif; ?>
                 </div>
             </div>

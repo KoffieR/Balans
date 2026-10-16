@@ -424,6 +424,22 @@ msgstr ""
 msgid "Tickets"
 msgstr ""
 
+#: inc/event-share.php
+msgid "Geef toestemming om je een e-mail te sturen over nieuwe events."
+msgstr ""
+
+#: inc/event-share.php
+msgid "Dank je wel! Je krijgt een e-mail zodra er een nieuw event is."
+msgstr ""
+
+#: inc/event-share.php
+msgid "Deze afmeldlink is ongeldig."
+msgstr ""
+
+#: inc/event-share.php
+msgid "Geen toegang."
+msgstr ""
+
 #: inc/event-tickets.php
 msgid "Je kunt maximaal %d tickets per bestelling kopen."
 msgstr ""
@@ -519,10 +535,6 @@ msgstr ""
 
 #: inc/i18n.php
 msgid "Engelse en Franse pagina's aanmaken"
-msgstr ""
-
-#: inc/i18n.php
-msgid "Geen toegang."
 msgstr ""
 
 #: inc/placeholder-content.php
@@ -903,10 +915,6 @@ msgid ""
 "Laat het ons weten."
 msgstr ""
 
-#: page-templates/page-events.php
-msgid "Houd me op de hoogte"
-msgstr ""
-
 #: page-templates/page-meditatie.php
 msgid "Adem — 5 minuten rust"
 msgstr ""
@@ -1237,6 +1245,38 @@ msgstr ""
 
 #: single.php
 msgid "Artikel"
+msgstr ""
+
+#: template-parts/event-interest.php
+msgid "Houd me op de hoogte"
+msgstr ""
+
+#: template-parts/event-interest.php
+msgid ""
+"Laat je e-mailadres achter, dan krijg je bericht zodra er een nieuw event "
+"is. Afmelden kan altijd met één klik."
+msgstr ""
+
+#: template-parts/event-interest.php
+msgid ""
+"Ik wil een e-mail ontvangen over nieuwe events. Mijn gegevens worden alleen "
+"hiervoor gebruikt."
+msgstr ""
+
+#: template-parts/event-share.php
+msgid "In mijn agenda zetten"
+msgstr ""
+
+#: template-parts/event-share.php
+msgid "Deel dit event"
+msgstr ""
+
+#: template-parts/event-share.php
+msgid "Gekopieerd!"
+msgstr ""
+
+#: template-parts/event-share.php
+msgid "Link kopiëren"
 msgstr ""
 
 #: template-parts/event-tickets.php

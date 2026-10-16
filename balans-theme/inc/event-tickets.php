@@ -279,6 +279,7 @@ function balans_event_reminder_mail( $order, $main_event, $qty ) {
         nl2br( esc_html( balans_mail_fill( $t['event_body'], $vars ) ) ),
         '<span style="display:block;background:#EEF4F4;border-radius:8px;padding:18px 20px;">' . $info . '</span>',
         nl2br( esc_html( balans_mail_fill( $t['event_prep'], $vars ) ) ),
+        '<a style="color:#3F7F83;" href="' . esc_url( balans_event_ics_url( $event ) ) . '">' . esc_html( $t['ics_link'] ) . '</a>',
     ) );
     if ( $sw ) {
         restore_previous_locale();

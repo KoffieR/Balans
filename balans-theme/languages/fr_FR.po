@@ -445,6 +445,25 @@ msgstr "E-mail"
 msgid "Tickets"
 msgstr "Billets"
 
+#: inc/event-share.php
+msgid "Geef toestemming om je een e-mail te sturen over nieuwe events."
+msgstr ""
+"Veuillez nous autoriser à vous envoyer un e-mail sur les nouveaux "
+"événements."
+
+#: inc/event-share.php
+msgid "Dank je wel! Je krijgt een e-mail zodra er een nieuw event is."
+msgstr ""
+"Merci ! Vous recevrez un e-mail dès qu'un nouvel événement sera prévu."
+
+#: inc/event-share.php
+msgid "Deze afmeldlink is ongeldig."
+msgstr "Ce lien de désinscription n'est pas valide."
+
+#: inc/event-share.php
+msgid "Geen toegang."
+msgstr "Accès refusé."
+
 #: inc/event-tickets.php
 msgid "Je kunt maximaal %d tickets per bestelling kopen."
 msgstr "Vous pouvez acheter au maximum %d billets par commande."
@@ -546,10 +565,6 @@ msgstr ""
 #: inc/i18n.php
 msgid "Engelse en Franse pagina's aanmaken"
 msgstr "Créer les pages anglaises et françaises"
-
-#: inc/i18n.php
-msgid "Geen toegang."
-msgstr "Accès refusé."
 
 #: inc/placeholder-content.php
 msgid "Meer rust, zelf ontdekken en oefenen"
@@ -972,10 +987,6 @@ msgstr ""
 "Aucun événement n'est prévu pour le moment. Vous souhaitez être tenu(e) "
 "informé(e) ? Faites-le-nous savoir."
 
-#: page-templates/page-events.php
-msgid "Houd me op de hoogte"
-msgstr "Tenez-moi informé(e)"
-
 #: page-templates/page-meditatie.php
 msgid "Adem — 5 minuten rust"
 msgstr "Respirer — 5 minutes de calme"
@@ -1351,6 +1362,42 @@ msgstr "Blog"
 #: single.php
 msgid "Artikel"
 msgstr "Article"
+
+#: template-parts/event-interest.php
+msgid "Houd me op de hoogte"
+msgstr "Tenez-moi informé(e)"
+
+#: template-parts/event-interest.php
+msgid ""
+"Laat je e-mailadres achter, dan krijg je bericht zodra er een nieuw event "
+"is. Afmelden kan altijd met één klik."
+msgstr ""
+"Laissez votre adresse e-mail et nous vous préviendrons dès qu'un nouvel "
+"événement sera prévu. Désinscription possible à tout moment en un clic."
+
+#: template-parts/event-interest.php
+msgid ""
+"Ik wil een e-mail ontvangen over nieuwe events. Mijn gegevens worden alleen "
+"hiervoor gebruikt."
+msgstr ""
+"Je souhaite recevoir un e-mail sur les nouveaux événements. Mes données "
+"seront utilisées uniquement à cette fin."
+
+#: template-parts/event-share.php
+msgid "In mijn agenda zetten"
+msgstr "Ajouter à mon agenda"
+
+#: template-parts/event-share.php
+msgid "Deel dit event"
+msgstr "Partager cet événement"
+
+#: template-parts/event-share.php
+msgid "Gekopieerd!"
+msgstr "Copié !"
+
+#: template-parts/event-share.php
+msgid "Link kopiëren"
+msgstr "Copier le lien"
 
 #: template-parts/event-tickets.php
 msgid "Zet me op de wachtlijst"

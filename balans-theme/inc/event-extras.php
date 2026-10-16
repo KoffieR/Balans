@@ -77,24 +77,28 @@ function balans_notify_waitlist( $main ) {
     $list = balans_waitlist( $main );
     $sent = 0;
     foreach ( $list as $email => $entry ) {
-        $lang  = balans_mail_lang( $entry['lang'] );
-        $event = balans_event_lang_id( $main, $lang );
-        $t     = balans_mail_texts( $lang );
-        $sw    = balans_mail_locale( $lang );
-        $vars  = array( '{naam}' => $entry['name'], '{event}' => get_the_title( $event ) );
-        $html  = balans_mail_html( $lang, array(
-            esc_html( balans_mail_fill( $t['welcome_hi'], $vars ) ),
-            nl2br( esc_html( balans_mail_fill( $t['waitlist_body'], $vars ) ) ),
-            esc_html( balans_event_date( $event ) . ( balans_event_time( $event ) ? ' · ' . balans_event_time( $event ) : '' ) ),
-            balans_mail_button( get_permalink( $event ), $t['waitlist_button'] ),
-        ) );
-        if ( $sw ) {
-            restore_previous_locale();
-        }
-        $sent += wp_mail( $email, balans_mail_fill( $t['waitlist_subject'], $vars ), $html, array( 'Content-Type: text/html; charset=UTF-8' ) ) ? 1 : 0;
+        $sent += balans_waitlist_mail( $email, $entry, $main ) ? 1 : 0;
     }
     delete_post_meta( $main, '_event_waitlist' );
     return $sent;
+}
+
+function balans_waitlist_mail( $email, $entry, $main ) {
+    $lang  = balans_mail_lang( $entry['lang'] );
+    $event = balans_event_lang_id( $main, $lang );
+    $t     = balans_mail_texts( $lang );
+    $sw    = balans_mail_locale( $lang );
+    $vars  = array( '{naam}' => $entry['name'], '{event}' => get_the_title( $event ) );
+    $html  = balans_mail_html( $lang, array(
+        esc_html( balans_mail_fill( $t['welcome_hi'], $vars ) ),
+        nl2br( esc_html( balans_mail_fill( $t['waitlist_body'], $vars ) ) ),
+        esc_html( balans_event_date( $event ) . ( balans_event_time( $event ) ? ' · ' . balans_event_time( $event ) : '' ) ),
+        balans_mail_button( get_permalink( $event ), $t['waitlist_button'] ),
+    ) );
+    if ( $sw ) {
+        restore_previous_locale();
+    }
+    return wp_mail( $email, balans_mail_fill( $t['waitlist_subject'], $vars ), $html, array( 'Content-Type: text/html; charset=UTF-8' ) );
 }
 
 /* ---------------------------------------------------------------
@@ -166,7 +170,17 @@ function balans_attendees_page() {
         foreach ( get_posts( array( 'post_type' => 'balans_event', 'numberposts' => 50, 'lang' => balans_has_polylang() ? pll_default_language() : '', 'meta_key' => '_event_date', 'orderby' => 'meta_value', 'order' => 'DESC' ) ) as $e ) { // phpcs:ignore WordPress.DB.SlowDBQuery
             echo '<li><a href="' . esc_url( balans_attendees_url( $e->ID ) ) . '">' . esc_html( get_the_title( $e ) . ' — ' . balans_event_date( $e->ID ) ) . '</a></li>';
         }
-        echo '</ul></div>';
+        echo '</ul>';
+        $interest = balans_interest_list();
+        echo '<h2>' . esc_html__( 'Interesselijst (bericht bij elk nieuw event)', 'balans' ) . ' (' . count( $interest ) . ')</h2>';
+        if ( $interest ) {
+            echo '<table class="widefat striped" data-testid="interest-table"><tbody>';
+            foreach ( $interest as $email => $entry ) {
+                echo '<tr><td>' . esc_html( $entry['name'] ) . '</td><td>' . esc_html( $email ) . '</td><td>' . esc_html( strtoupper( $entry['lang'] ) ) . '</td><td>' . esc_html( wp_date( 'j-n-Y', $entry['time'] ) ) . '</td></tr>';
+            }
+            echo '</tbody></table>';
+        }
+        echo '</div>';
         return;
     }
     $pid   = (int) get_post_meta( $main, '_event_product_id', true );

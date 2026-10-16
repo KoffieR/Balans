@@ -58,3 +58,20 @@ UPCOMING (homepage en Voor jou)
 - Bij de dienst "Event" staat een label "Upcoming" met een korte tekst dat events eraan komen.
 - Aanpassen: Weergave → Customizer → "Homepage: Upcoming" (met live voorbeeld): aan/uit, label en tekst per taal,
   en of zodra er een event gepland is het eerstvolgende event getoond moet worden in plaats van de tekst.
+
+DELEN EN IN AGENDA ZETTEN
+- Op elke eventpagina staan deelknoppen: WhatsApp, Facebook, LinkedIn, X, e-mail en "Link kopiëren".
+  Het zijn gewone links, zonder trackers of scripts van die sites (AVG-vriendelijk).
+- Knop "In mijn agenda zetten": downloadt een .ics-bestand (Apple, Outlook, Google Agenda).
+- Dezelfde agenda-link staat in de bestelbevestiging van WooCommerce (de ticketmail) en in de herinnering.
+
+INTERESSELIJST (NIEUWE EVENTS)
+- Op de pagina Events kunnen bezoekers hun naam en e-mail achterlaten (met toestemming).
+- Publiceer je een nieuw event, dan krijgt iedereen op de lijst 15 minuten later een mail in de eigen taal met een
+  knop naar het event. Die 15 minuten zijn er zodat je eerst de EN/FR-vertaling kunt toevoegen.
+  Elk event wordt maar één keer aangekondigd. Afmelden kan met één klik onderaan de mail.
+- De lijst zie je bij Events → Deelnemerslijst. Teksten: Balans → E-mailteksten → "Nieuw event".
+
+TESTMAIL
+- Onderaan Balans → E-mailteksten: kies de mail, vul een e-mailadres in en klik "Testmail versturen".
+  De mail komt in de taal van het gekozen tabblad, met "[TEST]" in het onderwerp.

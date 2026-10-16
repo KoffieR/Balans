@@ -129,3 +129,10 @@ Thema `balans-theme/` met:
 - Upcoming: Customizer-sectie "Homepage: Upcoming" (eq5_upcoming_show/next/badge_{lang}/text_{lang}); badge + tekst op dienst Event (homepage-routes, Voor jou-kaart, lege Events-pagina); toont eerstvolgend event als er een is.
 - Mailteksten waitlist_* en followup_* in Balans → E-mailteksten.
 - Getest op /tmp/wpf (wp-cli + php -S/curl).
+
+## Update juni 2026 — Delen, .ics, interesselijst, testmail (DONE)
+- `inc/event-share.php`: deellinks (WhatsApp, Facebook, LinkedIn, X, e-mail, link kopiëren — geen trackers), `?balans_ics=ID` .ics-download, agenda-link in WooCommerce klantmail (`woocommerce_email_after_order_table`) en in event-herinnering.
+- Interesselijst (option `balans_interest`, AJAX `balans_interest`, naam+e-mail+toestemming), bij eerste publicatie event cron `balans_announce_event` na 15 min, 1x per event (`_event_announced`), afmelden met token (`eq5_interest_unsub`). Lijst in Events → Deelnemerslijst.
+- Testmail onderaan Balans → E-mailteksten: 8 maaltypes, eigen adres, taal van tabblad, "[TEST]" prefix (wp_mail-filter). `balans_send_welcome()` en `balans_waitlist_mail()` afgesplitst.
+- Templates: template-parts/event-share.php, template-parts/event-interest.php.
+- Getest op /tmp/wpf (wp-cli + php -S/curl).

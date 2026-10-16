@@ -174,6 +174,12 @@ function balans_welcome_mail( $level_id, $user_id, $cancel_level = 0 ) {
     if ( ! $dienst ) {
         return;
     }
+    balans_send_welcome( $user, $lang, $dienst );
+}
+add_action( 'pmpro_after_change_membership_level', 'balans_welcome_mail', 20, 3 );
+
+function balans_send_welcome( $user, $lang, $dienst ) {
+    $user_id = $user->ID;
     $t    = balans_mail_texts( $lang );
     $when = get_post_meta( $dienst->ID, '_dienst_when', true );
     $vars = array(
@@ -187,9 +193,8 @@ function balans_welcome_mail( $level_id, $user_id, $cancel_level = 0 ) {
         '<strong>' . esc_html( $t['welcome_what'] ) . '</strong><br>' . nl2br( esc_html( trim( wp_strip_all_tags( str_replace( '</p>', "</p>\n\n", $dienst->post_content ) ) ) ) ),
         nl2br( esc_html( balans_mail_fill( $t['welcome_end'], $vars ) ) ),
     ), $user_id );
-    balans_send_mail( $user, balans_mail_fill( $t['welcome_subject'], $vars ), $html );
+    return balans_send_mail( $user, balans_mail_fill( $t['welcome_subject'], $vars ), $html );
 }
-add_action( 'pmpro_after_change_membership_level', 'balans_welcome_mail', 20, 3 );
 
 /* ---------------------------------------------------------------
  * 3. Herinneringen op zondag (A), woensdag (B), vrijdag (C) en 1e zaterdag (maandelijks)

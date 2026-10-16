@@ -45,6 +45,11 @@ function balans_mail_defaults( $lang ) {
             'followup_body'    => 'Dank je wel dat je erbij was bij {event}. Er is veel in beweging gekomen; geef jezelf de komende dagen de tijd en ruimte om dat te laten landen.',
             'followup_question'=> 'Wat voel je nu anders dan vóór het event?',
             'followup_next'    => 'Het volgende event',
+            'ics_link'         => 'Zet dit event in je agenda',
+            'interest_subject' => 'Nieuw event: {event}',
+            'interest_body'    => 'Je gaf aan dat je graag wilt horen wanneer er een nieuw event is. Het is zover:',
+            'interest_unsub'   => 'Geen berichten meer over nieuwe events? Klik hier.',
+            'interest_unsubscribed' => 'Je bent afgemeld en krijgt geen berichten meer over nieuwe events.',
             'sign'            => 'Hartelijke groet, Remco Sas — EQ5',
             'unsubscribe'     => 'Geen herinneringen meer ontvangen? Klik hier.',
             'unsubscribed'    => 'Je ontvangt geen herinneringen meer. Je abonnement loopt gewoon door.',
@@ -76,6 +81,11 @@ function balans_mail_defaults( $lang ) {
             'followup_body'    => 'Thank you for joining {event}. A lot has been set in motion; give yourself time and space in the coming days to let it settle.',
             'followup_question'=> 'What do you feel differently now compared to before the event?',
             'followup_next'    => 'The next event',
+            'ics_link'         => 'Add this event to your calendar',
+            'interest_subject' => 'New event: {event}',
+            'interest_body'    => 'You told us you would like to hear about new events. Here it is:',
+            'interest_unsub'   => 'No longer want news about new events? Click here.',
+            'interest_unsubscribed' => 'You have been unsubscribed and will no longer receive news about new events.',
             'sign'            => 'Warm regards, Remco Sas — EQ5',
             'unsubscribe'     => 'No longer want reminders? Click here.',
             'unsubscribed'    => 'You will no longer receive reminders. Your subscription continues as usual.',
@@ -107,6 +117,11 @@ function balans_mail_defaults( $lang ) {
             'followup_body'    => "Merci d'avoir participé à {event}. Beaucoup de choses se sont mises en mouvement ; accordez-vous du temps et de l'espace dans les jours à venir pour les laisser s'installer.",
             'followup_question'=> "Que ressentez-vous différemment maintenant par rapport à avant l'événement ?",
             'followup_next'    => 'Le prochain événement',
+            'ics_link'         => 'Ajouter cet événement à votre agenda',
+            'interest_subject' => 'Nouvel événement : {event}',
+            'interest_body'    => "Vous nous avez indiqué vouloir être informé(e) des nouveaux événements. Le voici :",
+            'interest_unsub'   => 'Vous ne souhaitez plus recevoir de nouvelles sur les événements ? Cliquez ici.',
+            'interest_unsubscribed' => 'Vous êtes désinscrit(e) et ne recevrez plus de nouvelles sur les événements.',
             'sign'            => 'Bien chaleureusement, Remco Sas — EQ5',
             'unsubscribe'     => 'Vous ne souhaitez plus recevoir de rappels ? Cliquez ici.',
             'unsubscribed'    => 'Vous ne recevrez plus de rappels. Votre abonnement continue normalement.',
@@ -189,6 +204,15 @@ function balans_mail_fields() {
             'followup_question' => array( __( 'Reflectievraag', 'balans' ), 'text' ),
             'followup_next'     => array( __( 'Kopje boven het volgende event', 'balans' ), 'text' ),
         ),
+        __( 'Nieuw event (interesselijst)', 'balans' ) => array(
+            'interest_subject'      => array( __( 'Onderwerp — plaatshouder: {event}', 'balans' ), 'text' ),
+            'interest_body'         => array( __( 'Tekst boven het event', 'balans' ), 'textarea' ),
+            'interest_unsub'        => array( __( 'Afmeldlink', 'balans' ), 'text' ),
+            'interest_unsubscribed' => array( __( 'Melding na afmelden', 'balans' ), 'textarea' ),
+        ),
+        __( 'Agenda-link', 'balans' ) => array(
+            'ics_link' => array( __( 'Tekst van de agenda-link (ticketmail en herinnering)', 'balans' ), 'text' ),
+        ),
         __( 'Algemeen', 'balans' )                   => array(
             'sign'         => array( __( 'Ondertekening', 'balans' ), 'text' ),
             'unsubscribe'  => array( __( 'Afmeldlink', 'balans' ), 'text' ),
@@ -261,5 +285,7 @@ function balans_mail_settings_page() {
     }
     echo '<p class="submit"><button data-testid="mail-save" type="submit" class="button button-primary">' . esc_html__( 'Opslaan', 'balans' ) . '</button> ';
     echo '<button data-testid="mail-reset" type="submit" name="reset" value="1" class="button" onclick="return confirm(\'' . esc_js( __( 'Standaardteksten voor deze taal terugzetten?', 'balans' ) ) . '\');">' . esc_html__( 'Standaardteksten terugzetten', 'balans' ) . '</button></p>';
-    echo '</form></div>';
+    echo '</form>';
+    balans_test_mail_form( $lang );
+    echo '</div>';
 }

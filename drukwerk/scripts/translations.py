@@ -314,4 +314,13 @@ T = {
     "Komt er een plek vrij, dan krijgt iedereen op de wachtlijst tegelijk een e-mail. Wie het eerst een ticket koopt, heeft de plek.": ("If a place becomes available, everyone on the waiting list receives an email at the same time. Whoever buys a ticket first gets the place.", "Si une place se libère, toutes les personnes sur la liste d'attente reçoivent un e-mail en même temps. La première personne qui achète un billet obtient la place."),
     "Mijn gegevens worden alleen gebruikt voor deze wachtlijst en daarna verwijderd.": ("My details will only be used for this waiting list and deleted afterwards.", "Mes données seront utilisées uniquement pour cette liste d'attente, puis supprimées."),
     "Op de wachtlijst": ("Join the waiting list", "Rejoindre la liste d'attente"),
+    "Geef toestemming om je een e-mail te sturen over nieuwe events.": ("Please give permission for us to email you about new events.", "Veuillez nous autoriser à vous envoyer un e-mail sur les nouveaux événements."),
+    "Dank je wel! Je krijgt een e-mail zodra er een nieuw event is.": ("Thank you! You will receive an email as soon as there is a new event.", "Merci ! Vous recevrez un e-mail dès qu'un nouvel événement sera prévu."),
+    "Laat je e-mailadres achter, dan krijg je bericht zodra er een nieuw event is. Afmelden kan altijd met één klik.": ("Leave your email address and we will let you know as soon as there is a new event. You can unsubscribe at any time with one click.", "Laissez votre adresse e-mail et nous vous préviendrons dès qu'un nouvel événement sera prévu. Désinscription possible à tout moment en un clic."),
+    "Ik wil een e-mail ontvangen over nieuwe events. Mijn gegevens worden alleen hiervoor gebruikt.": ("I would like to receive an email about new events. My details will only be used for this.", "Je souhaite recevoir un e-mail sur les nouveaux événements. Mes données seront utilisées uniquement à cette fin."),
+    "In mijn agenda zetten": ("Add to my calendar", "Ajouter à mon agenda"),
+    "Deel dit event": ("Share this event", "Partager cet événement"),
+    "Gekopieerd!": ("Copied!", "Copié !"),
+    "Link kopiëren": ("Copy link", "Copier le lien"),
+    "Deze afmeldlink is ongeldig.": ("This unsubscribe link is invalid.", "Ce lien de désinscription n'est pas valide."),
 }

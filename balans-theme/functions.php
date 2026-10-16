@@ -31,4 +31,5 @@ require_once BALANS_DIR . '/inc/plugins-setup.php';
 require_once BALANS_DIR . '/inc/events.php';
 require_once BALANS_DIR . '/inc/event-tickets.php';
 require_once BALANS_DIR . '/inc/event-extras.php';
+require_once BALANS_DIR . '/inc/event-share.php';
 require_once BALANS_DIR . '/inc/upgrade.php';

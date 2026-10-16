@@ -654,3 +654,9 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 .event-waitlist { margin-top: 28px; padding: 24px; border: 1px solid var(--balans-line); border-radius: var(--balans-radius-lg); background: #FFFBF4; }
 .event-waitlist h3 { margin-top: 0; }
 .event-waitlist__consent { display: flex; gap: 10px; align-items: flex-start; font-size: .92rem; }
+.event-share { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--balans-line); }
+.event-share__label { margin: 20px 0 10px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--balans-muted); }
+.event-share__list { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.event-share__list a, .event-share__copy { display: inline-block; padding: 7px 16px; border: 1px solid var(--balans-line); border-radius: 999px; background: #FFFBF4; color: var(--balans-text, #2B2420); font: inherit; font-size: .9rem; text-decoration: none; cursor: pointer; transition: border-color .2s ease, color .2s ease, transform .2s ease; }
+.event-share__list a:hover, .event-share__copy:hover { border-color: var(--balans-logo); color: var(--balans-logo); transform: translateY(-1px); }
+.event-interest { margin-top: 40px; }
