@@ -61,8 +61,8 @@ function balans_hero( $post_id, $key ) {
         return balans_hero_defaults( $key );
     } ) : balans_hero_defaults( $key );
     foreach ( BALANS_HERO_FIELDS as $f ) {
-        $v = get_post_meta( $post_id, '_balans_hero_' . $f, true );
-        if ( '' !== $v ) {
+        $v = (string) get_post_meta( $post_id, '_balans_hero_' . $f, true );
+        if ( '' !== $v || ( 'title' !== $f && metadata_exists( 'post', $post_id, '_balans_hero_' . $f ) ) ) {
             $out[ $f ] = $v;
         }
     }

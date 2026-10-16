@@ -139,3 +139,12 @@ Thema `balans-theme/` met:
 
 ## Fix juni 2026 — "Hulp" uit bovenste menu
 - header.php: "Hulp" verwijderd uit het reservemenu (dat verschijnt als er voor een taal geen menu aan "Hoofdmenu" is gekoppeld). Getest door testing agent (iteration_2, 100%).
+
+## Update juni 2026 — Bewerkbare teksten + logo (DONE, testing agent iteration_3 100%)
+- `inc/page-texts.php`: meta box "Paginakop" (eyebrow/title/intro per pagina & taal, meta _balans_hero_*), `balans_page_hero($key)` in alle page-templates; standaard-inhoud als blokken (Over: kolommen, Contact: adres-voorbeeld, Voor bedrijven: Twee routes) via `balans_migrate_page_texts()` (per pagina, idempotent, flag _balans_texts_migrated, per taal via `balans_with_locale`).
+- Homepage: Customizer-paneel "Homepage-teksten" (secties NL/EN/FR + afbeelding welkomstblok), `balans_hp($key)`.
+- "Nog aan te leveren"-meldingen/voorbeeldkaarten alleen voor beheerders.
+- Logo: header altijd thema-SVG (teal #3F7F83, custom logo genegeerd), 118px desktop/72px mobiel, padding-left 16/14px. Cache-busting main.css/js via filemtime, versie 2.0.0.
+- i18n: balans_reload_textdomain($locale) laadt mo met locale-param; nl_NL.mo (identiteit) toegevoegd in build_translations.py.
+- Testsite nu persistent: /root/wptest/build_site.sh → /root/wpf/wordpress.
+- LEESMIJ-TEKSTEN-AANPASSEN.txt.

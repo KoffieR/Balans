@@ -1,0 +1,24 @@
+{
+  "summary": "Tested the Balans theme's editable page texts using bash, curl and wp-cli only (no browser). 54/54 checks pass: php -l on all theme files; the zip contains page-texts.php and LEESMIJ and matches the source; the Paginakop hero meta changes the NL /over/ h1 while EN and FR keep their own titles; the Over body has a columns block translated in NL/EN/FR with no duplicate hard-coded text, and editing post_content changes the rendered page; contact-content and zakelijk-content ('Twee routes', once) render; balans_migrate_page_texts is idempotent and all 39 template pages are marked migrated; anonymous visitors see no 'aan te leveren' or balans-placeholder-notice on the 15 listed URLs (all 200) or on EN/FR about/contact; the homepage Customizer mods work per language and the panel and sections register; the header shows the inline SVG logo even with custom_logo=1; the CSS values for teal, padding and logo height are correct; main.css has ?ver=2.0.0.<mtime>; no PHP warnings were logged.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "Paginakop meta box (balans_hero)", "issue": "Editors cannot leave a hero field empty. If the eyebrow or intro is saved as '', balans_hero() shows the default text again, because '' counts as 'not set'. Verified: blanking _balans_hero_intro on /over/ still showed the default intro."}
+    ]
+  },
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": ["/app/tests/test_page_texts.sh", "/app/tests/test_header_menu.sh"],
+  "action_items": [
+    "Optional: let editors clear the hero eyebrow/intro. For example, fall back to the default only when the meta key does not exist (metadata_exists) rather than when the value is empty, and say so in LEESMIJ."
+  ],
+  "critical_code_review_comments": [
+    "balans_hero: the check '' !== $v treats a deliberately empty field the same as an unset one (see the minor issue).",
+    "balans_migrate_page_texts runs on admin_init on every admin request. NOT EXISTS keeps the query cheap, but a version option flag would avoid the meta query entirely."
+  ],
+  "updated_files": ["/app/tests/test_page_texts.sh"],
+  "success_rate": {"backend": "100%", "frontend": "N/A (backend-only, no browser per user)"},
+  "seed_data_creation": "None. All test changes (hero title, post_content, theme mods eq5_hp_routes_title_fr and eq5_hp_hero_title_nl, intro meta) were restored or removed. As requested, eq5_hp_hero_title_nl is now removed, so the NL homepage shows the default 'Van vicieuze cirkel naar balans.'",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Run: bash /app/tests/test_page_texts.sh (site at http://localhost:8099, wp-cli with --path=/root/wpf/wordpress --user=admin). Over page ids: nl=8, en=43 (/en/about/), fr=44 (/fr/a-propos/). The theme dir is symlinked into WP."
+}
