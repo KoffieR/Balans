@@ -8,17 +8,13 @@
 get_header();
 ?>
 <main id="main" class="site-main" data-testid="page-contact">
-    <section class="page-hero">
-        <div class="container">
-            <p class="eyebrow"><?php esc_html_e( 'Contact', 'balans' ); ?></p>
-            <h1><?php esc_html_e( 'Heb je een vraag?', 'balans' ); ?></h1>
-            <p class="page-hero__intro"><?php esc_html_e( 'Stuur een bericht en we reageren zo snel mogelijk.', 'balans' ); ?></p>
-        </div>
-    </section>
+    <?php balans_page_hero( 'contact' ); ?>
 
     <section class="section">
         <div class="container">
-            <?php balans_placeholder_notice( __( 'Adres en reactietermijnen nog aan te leveren door de eigenaar.', 'balans' ) ); ?>
+            <?php while ( have_posts() ) : the_post(); if ( get_the_content() ) : ?>
+                <div class="entry-content" data-testid="contact-content" style="margin-bottom:32px;"><?php the_content(); ?></div>
+            <?php endif; endwhile; ?>
 
             <form class="balans-form" data-balans-ajax="balans_contact" data-testid="form-contact" novalidate>
                 <div class="form-row--inline">

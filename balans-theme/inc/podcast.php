@@ -23,7 +23,7 @@ function balans_is_member( $user_id = null ) {
     $is_member = false;
     if ( function_exists( 'pmpro_getMembershipLevelsForUser' ) ) {
         $dienst_levels = function_exists( 'balans_dienst_level_ids' ) ? balans_dienst_level_ids() : array();
-        foreach ( (array) pmpro_getMembershipLevelsForUser( $user_id ) as $level ) {
+        foreach ( pmpro_getMembershipLevelsForUser( $user_id ) ?: array() as $level ) {
             if ( ! in_array( (int) $level->id, $dienst_levels, true ) ) {
                 $is_member = true;
                 break;

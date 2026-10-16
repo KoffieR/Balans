@@ -15,13 +15,7 @@ $query = new WP_Query( array(
 ) );
 ?>
 <main id="main" class="site-main" data-testid="page-trainingen">
-    <section class="page-hero">
-        <div class="container">
-            <p class="eyebrow"><?php esc_html_e( 'Voor jou', 'balans' ); ?></p>
-            <h1><?php esc_html_e( 'Trainingen & workshops', 'balans' ); ?></h1>
-            <p class="page-hero__intro"><?php esc_html_e( 'Op vastgestelde data op onze locatie. Waar mogelijk kun je direct inschrijven via het winkelmandje.', 'balans' ); ?></p>
-        </div>
-    </section>
+    <?php balans_page_hero( 'trainingen' ); ?>
 
     <section class="section">
         <div class="container">
@@ -38,7 +32,7 @@ $query = new WP_Query( array(
                         ) );
                     endwhile; wp_reset_postdata(); ?>
                 </div>
-            <?php else : ?>
+            <?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
                 <?php balans_placeholder_notice( __( 'Nog geen trainingen toegevoegd. Voeg trainingen toe via "Trainingen" in het WordPress-menu. Zodra ze zijn gepubliceerd, verschijnen ze hier automatisch.', 'balans' ) ); ?>
                 <div class="cards-grid">
                     <?php for ( $i = 0; $i < 3; $i++ ) :

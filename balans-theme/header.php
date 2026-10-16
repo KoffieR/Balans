@@ -19,11 +19,9 @@
 <header class="site-header" data-testid="site-header">
     <div class="container site-header__inner">
         <div class="site-branding">
-            <?php if ( has_custom_logo() ) : the_custom_logo(); else : ?>
-                <a class="site-logo" href="<?php echo esc_url( balans_url() ); ?>" aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" data-testid="site-logo">
+            <a class="site-logo" href="<?php echo esc_url( balans_url() ); ?>" aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" data-testid="site-logo">
                     <?php echo balans_svg( 'logo-eq5-slogan-' . balans_lang(), 'site-logo__svg' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
                 </a>
-            <?php endif; ?>
         </div>
 
         <?php balans_language_switcher(); ?>

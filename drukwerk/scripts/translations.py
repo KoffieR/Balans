@@ -323,4 +323,12 @@ T = {
     "Gekopieerd!": ("Copied!", "Copié !"),
     "Link kopiëren": ("Copy link", "Copier le lien"),
     "Deze afmeldlink is ongeldig.": ("This unsubscribe link is invalid.", "Ce lien de désinscription n'est pas valide."),
+    "(Voorbeeldtekst — klik erop om hem te vervangen.)": ("(Example text — click it to replace it.)", "(Texte d'exemple — cliquez dessus pour le remplacer.)"),
+    "Vertel hier in een paar zinnen wie EQ5 is, waar je voor staat en voor wie je er bent.": ("Tell in a few sentences who EQ5 is, what you stand for and who you are there for.", "Expliquez en quelques phrases qui est EQ5, ce que vous défendez et pour qui vous êtes là."),
+    "Vertel hier iets over jezelf: je achtergrond, je ervaring en hoe je bij dit werk bent gekomen.": ("Tell something about yourself: your background, your experience and how you came to this work.", "Parlez un peu de vous : votre parcours, votre expérience et comment vous êtes arrivé(e) à ce travail."),
+    "Beschrijf hier hoe een sessie verloopt en wat iemand kan verwachten.": ("Describe how a session goes and what someone can expect.", "Décrivez le déroulement d'une séance et ce à quoi on peut s'attendre."),
+    "Werk je samen met andere praktijken of organisaties? Noem ze hier, of verwijder dit kopje.": ("Do you work with other practices or organisations? Name them here, or remove this heading.", "Travaillez-vous avec d'autres cabinets ou organisations ? Citez-les ici, ou supprimez ce titre."),
+    "Adres: [straat en huisnummer, postcode en plaats]": ("Address: [street and number, postcode and town]", "Adresse : [rue et numéro, code postal et ville]"),
+    "We reageren meestal binnen twee werkdagen.": ("We usually respond within two working days.", "Nous répondons généralement sous deux jours ouvrables."),
+    "Een dag waarin de groep ruimte maakt voor wat er onderling speelt.": ("A day in which the group makes room for what is going on between its members.", "Une journée où le groupe fait de la place à ce qui se joue entre ses membres."),
 }

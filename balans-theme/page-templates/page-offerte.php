@@ -8,13 +8,7 @@
 get_header();
 ?>
 <main id="main" class="site-main" data-testid="page-offerte">
-    <section class="page-hero">
-        <div class="container">
-            <p class="eyebrow"><?php esc_html_e( 'Voor bedrijven', 'balans' ); ?></p>
-            <h1><?php esc_html_e( 'Vraag een offerte aan', 'balans' ); ?></h1>
-            <p class="page-hero__intro"><?php esc_html_e( 'Voor groepsaanmeldingen of een voorstel op maat van de bestaande concepten. We vragen alleen wat nodig is.', 'balans' ); ?></p>
-        </div>
-    </section>
+    <?php balans_page_hero( 'offerte' ); ?>
 
     <section class="section">
         <div class="container">

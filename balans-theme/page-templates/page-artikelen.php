@@ -21,13 +21,7 @@ $blogs = new WP_Query( array(
 ) );
 ?>
 <main id="main" class="site-main" data-testid="page-artikelen">
-    <section class="page-hero">
-        <div class="container">
-            <p class="eyebrow"><?php esc_html_e( 'Artikelen & bronnen', 'balans' ); ?></p>
-            <h1><?php esc_html_e( 'Lezen, verdiepen en reflecteren.', 'balans' ); ?></h1>
-            <p class="page-hero__intro"><?php esc_html_e( 'Artikelen met inhoudelijke verdieping en betrouwbare bronnen, plus eigen blogs waarin we visie en ervaring delen.', 'balans' ); ?></p>
-        </div>
-    </section>
+    <?php balans_page_hero( 'artikelen' ); ?>
 
     <section class="section">
         <div class="container">

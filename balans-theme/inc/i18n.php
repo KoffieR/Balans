@@ -183,9 +183,10 @@ function balans_language_switcher() {
 /**
  * Themavertalingen opnieuw laden zodra Polylang de taal van de bezoeker kent.
  */
-function balans_reload_textdomain() {
+function balans_reload_textdomain( $locale = '' ) {
+    $locale = is_string( $locale ) && false !== strpos( $locale, '_' ) ? $locale : determine_locale();
     unload_textdomain( 'balans', true );
-    load_textdomain( 'balans', BALANS_DIR . '/languages/' . determine_locale() . '.mo' );
+    load_textdomain( 'balans', BALANS_DIR . '/languages/' . $locale . '.mo', $locale );
 }
 add_action( 'pll_language_defined', 'balans_reload_textdomain' );
 add_action( 'change_locale', 'balans_reload_textdomain' );

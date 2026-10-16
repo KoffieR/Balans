@@ -8,13 +8,7 @@
 get_header();
 ?>
 <main id="main" class="site-main" data-testid="page-voor-jou">
-    <section class="page-hero">
-        <div class="container">
-            <p class="eyebrow"><?php esc_html_e( 'Voor jou', 'balans' ); ?></p>
-            <h1><?php esc_html_e( 'Vijf manieren om met wat er speelt aan de slag te gaan.', 'balans' ); ?></h1>
-            <p class="page-hero__intro"><?php esc_html_e( 'Kies wat op dit moment past. Je kunt altijd op een ander moment een andere route proberen.', 'balans' ); ?></p>
-        </div>
-    </section>
+    <?php balans_page_hero( 'voor-jou' ); ?>
 
     <section class="section">
         <div class="container">

@@ -1,0 +1,50 @@
+TEKSTEN AANPASSEN — WAAR VIND IK WAT?
+=====================================
+Alle teksten zijn per taal aan te passen. Wissel van taal met de Polylang-vlaggetjes of open de vertaling
+van een pagina (NL / EN / FR) via de kolom met vlaggetjes in Pagina's.
+
+1. PAGINA'S (Over, Voor jou, Voor bedrijven, Contact, Afspraak maken, Hulp, Abonnementen, Events, enz.)
+   Dashboard → Pagina's → [pagina] → Bewerken
+   - De gekleurde balk bovenaan (klein kopje, grote kop, introductie): onder de editor, in het vak
+     "Paginakop (bovenaan de pagina)".
+   - De tekst eronder (koppen, alinea's, kolommen, knoppen): gewoon in de editor. Klik op een tekst en typ.
+     Voorbeeldteksten zijn herkenbaar aan "(Voorbeeldtekst — klik erop om hem te vervangen.)".
+   - Op de pagina Over staan twee kolommen. Kopje weg? Selecteer het en druk op Verwijderen.
+   - Diensten-, event- en productoverzichten komen automatisch onder of boven je tekst.
+
+2. HOMEPAGE
+   Weergave → Customizer → "Homepage-teksten" → Nederlands / English / Français
+   - Alle koppen, teksten en knoppen van de homepage, met live voorbeeld. Leeg veld = standaardtekst
+     (die staat grijs in het veld).
+   - "Afbeelding welkomstblok": kies de foto naast de welkomsttekst.
+   - Het label "Upcoming" bij Event: Customizer → "Homepage: Upcoming".
+
+3. DIENSTEN (abonnementen en afspraken, met prijzen)
+   Dashboard → Diensten → [dienst] → Bewerken (titel, tekst, moment, prijs, knop).
+
+4. EVENTS
+   Dashboard → Events (zie LEESMIJ-EVENTS.txt). De uitleg en thema's bovenaan de Events-pagina pas je aan via
+   Pagina's → Events.
+
+5. E-MAILS
+   Balans → E-mailteksten (tabbladen per taal): welkomstmail, herinneringen, afspraakbevestiging,
+   event-mails, wachtlijst, nagesprek, nieuw event. Onderaan: testmail versturen.
+
+6. MENU'S EN FOOTER
+   Weergave → Menu's. Koppel per taal een menu aan "Hoofdmenu" (Locaties beheren).
+   Is er voor een taal geen menu gekoppeld, dan toont het thema een standaardmenu.
+
+7. JURIDISCHE PAGINA'S (Privacy, Cookies, Voorwaarden, ...)
+   Dashboard → Pagina's. Vervang daar de stukjes "[in te vullen]".
+
+8. LOGO
+   Het logo bovenin is het EQ5-logo van het thema (teal). Een afbeelding bij Customizer → Site-identiteit wordt
+   niet meer gebruikt in de kop, zodat het logo altijd in de juiste kleur staat.
+
+MELDINGEN "ALLEEN ZICHTBAAR VOOR JOU"
+Zolang een onderdeel nog leeg is (bijv. nog geen trainingen of meditaties), zie je als ingelogde beheerder een
+kleine melding met uitleg. Bezoekers zien die meldingen en voorbeeldkaarten niet.
+
+ZIE JE OUDE KLEUREN OF TEKSTEN?
+Na een thema-update laadt de site automatisch de nieuwe opmaak. Gebruik je een cache-plugin (bijv. WP Rocket,
+LiteSpeed), leeg dan één keer de cache.

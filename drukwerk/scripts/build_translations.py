@@ -33,3 +33,12 @@ for locale, idx in LOCALES.items():
     po.save(f"{LANG_DIR}/{locale}.po")
     po.save_as_mofile(f"{LANG_DIR}/{locale}.mo")
 print("klaar:", len(strings), "strings x", len(LOCALES), "locales")
+
+# Nederlands = brontaal; nl_NL.mo zorgt dat er bij taalwissel geen Engelse vertaling wordt geladen.
+po = polib.POFile()
+po.metadata = dict(META, Language="nl_NL", **{"Plural-Forms": "nplurals=2; plural=(n != 1);"})
+for msgid in strings:
+    po.append(polib.POEntry(msgid=msgid, msgstr=msgid))
+po.save(f"{LANG_DIR}/nl_NL.po")
+po.save_as_mofile(f"{LANG_DIR}/nl_NL.mo")
+print("nl_NL klaar")

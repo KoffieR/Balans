@@ -1,0 +1,1169 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Balans / EQ5 theme\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: balans\n"
+
+msgid "404"
+msgstr "404"
+
+msgid "Deze pagina kunnen we niet vinden."
+msgstr "Deze pagina kunnen we niet vinden."
+
+msgid ""
+"Misschien is de link verouderd. Ga terug naar de homepage of ontdek wat bij "
+"je past."
+msgstr ""
+"Misschien is de link verouderd. Ga terug naar de homepage of ontdek wat bij "
+"je past."
+
+msgid "Naar de homepage"
+msgstr "Naar de homepage"
+
+msgid "Voor jou"
+msgstr "Voor jou"
+
+msgid "Lees meer"
+msgstr "Lees meer"
+
+msgid "Nog geen inhoud."
+msgstr "Nog geen inhoud."
+
+msgid "Iedereen heeft vragen in een zoektocht naar balans."
+msgstr "Iedereen heeft vragen in een zoektocht naar balans."
+
+msgid "Balansbrenger"
+msgstr "Balansbrenger"
+
+msgid "Ontdek"
+msgstr "Ontdek"
+
+msgid "Voor bedrijven"
+msgstr "Voor bedrijven"
+
+msgid "Shop"
+msgstr "Shop"
+
+msgid "Artikelen & bronnen"
+msgstr "Artikelen & bronnen"
+
+msgid "Over"
+msgstr "Over"
+
+msgid "Diensten"
+msgstr "Diensten"
+
+msgid "Meditatie"
+msgstr "Meditatie"
+
+msgid "Events"
+msgstr "Events"
+
+msgid "Abonnementen"
+msgstr "Abonnementen"
+
+msgid "Afspraak voor hulp"
+msgstr "Afspraak voor hulp"
+
+msgid "Trainingen & workshops"
+msgstr "Trainingen & workshops"
+
+msgid "Afspraak maken"
+msgstr "Afspraak maken"
+
+msgid "Contact & volg"
+msgstr "Contact & volg"
+
+msgid "Heb je een vraag?"
+msgstr "Heb je een vraag?"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Instagram-link nog aan te vullen."
+msgstr "Instagram-link nog aan te vullen."
+
+msgid "Alle rechten voorbehouden."
+msgstr "Alle rechten voorbehouden."
+
+msgid "Juridische links"
+msgstr "Juridische links"
+
+msgid "Privacy"
+msgstr "Privacy"
+
+msgid "Cookies"
+msgstr "Cookies"
+
+msgid "Algemene voorwaarden"
+msgstr "Algemene voorwaarden"
+
+msgid "Webshopvoorwaarden"
+msgstr "Webshopvoorwaarden"
+
+msgid "Verzenden & retour"
+msgstr "Verzenden & retour"
+
+msgid "Disclaimer"
+msgstr "Disclaimer"
+
+msgid "Meer info"
+msgstr "Meer info"
+
+msgid "Bekijk de hele shop"
+msgstr "Bekijk de hele shop"
+
+msgid ""
+"WooCommerce is nog niet geactiveerd. Activeer de plugin om producten te "
+"tonen."
+msgstr ""
+"WooCommerce is nog niet geactiveerd. Activeer de plugin om producten te "
+"tonen."
+
+msgid "Naar de shop"
+msgstr "Naar de shop"
+
+msgid "Spring naar hoofdinhoud"
+msgstr "Spring naar hoofdinhoud"
+
+msgid "Open menu"
+msgstr "Open menu"
+
+msgid "Hoofdnavigatie"
+msgstr "Hoofdnavigatie"
+
+msgid "Kies een geldige dienst."
+msgstr "Kies een geldige dienst."
+
+msgid "Kies een datum."
+msgstr "Kies een datum."
+
+msgid "Kies een tijdslot."
+msgstr "Kies een tijdslot."
+
+msgid "Vul je naam in."
+msgstr "Vul je naam in."
+
+msgid "Vul een geldig e-mailadres in."
+msgstr "Vul een geldig e-mailadres in."
+
+msgid "%1$s — %2$s — %3$s %4$s"
+msgstr "%1$s — %2$s — %3$s %4$s"
+
+msgid "Er ging iets mis. Probeer het later opnieuw."
+msgstr "Er ging iets mis. Probeer het later opnieuw."
+
+msgid "Nieuwe afspraakaanvraag: %s"
+msgstr "Nieuwe afspraakaanvraag: %s"
+
+msgid ""
+"Bedankt, je aanvraag is verzonden. We nemen zo snel mogelijk contact met je "
+"op om de afspraak te bevestigen."
+msgstr ""
+"Bedankt, je aanvraag is verzonden. We nemen zo snel mogelijk contact met je "
+"op om de afspraak te bevestigen."
+
+msgid "Meditaties"
+msgstr "Meditaties"
+
+msgid "Nieuwe meditatie toevoegen"
+msgstr "Nieuwe meditatie toevoegen"
+
+msgid "Meditatie bewerken"
+msgstr "Meditatie bewerken"
+
+msgid "Meditatiethema"
+msgstr "Meditatiethema"
+
+msgid "Training"
+msgstr "Training"
+
+msgid "Nieuwe training toevoegen"
+msgstr "Nieuwe training toevoegen"
+
+msgid "Trainingen"
+msgstr "Trainingen"
+
+msgid "Zakelijke trainingen"
+msgstr "Zakelijke trainingen"
+
+msgid "Zakelijke training"
+msgstr "Zakelijke training"
+
+msgid "Nieuwe zakelijke training"
+msgstr "Nieuwe zakelijke training"
+
+msgid "Zakelijk aanbod"
+msgstr "Zakelijk aanbod"
+
+msgid "Eigen blogs"
+msgstr "Eigen blogs"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Afspraken"
+msgstr "Afspraken"
+
+msgid "Afspraak"
+msgstr "Afspraak"
+
+msgid "Offerteaanvragen"
+msgstr "Offerteaanvragen"
+
+msgid "Offerteaanvraag"
+msgstr "Offerteaanvraag"
+
+msgid "Even geduld…"
+msgstr "Even geduld…"
+
+msgid "Verzenden"
+msgstr "Verzenden"
+
+msgid "Bedankt, we hebben je bericht ontvangen."
+msgstr "Bedankt, we hebben je bericht ontvangen."
+
+msgid "Er ging iets mis."
+msgstr "Er ging iets mis."
+
+msgid "Netwerkfout. Probeer het later opnieuw."
+msgstr "Netwerkfout. Probeer het later opnieuw."
+
+msgid "Onbekend event."
+msgstr "Onbekend event."
+
+msgid "Geef toestemming om je gegevens voor de wachtlijst te gebruiken."
+msgstr "Geef toestemming om je gegevens voor de wachtlijst te gebruiken."
+
+msgid ""
+"Je staat op de wachtlijst. Komt er een plek vrij, dan krijg je meteen een "
+"e-mail."
+msgstr ""
+"Je staat op de wachtlijst. Komt er een plek vrij, dan krijg je meteen een "
+"e-mail."
+
+msgid "Naam"
+msgstr "Naam"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Tickets"
+msgstr "Tickets"
+
+msgid "Geef toestemming om je een e-mail te sturen over nieuwe events."
+msgstr "Geef toestemming om je een e-mail te sturen over nieuwe events."
+
+msgid "Dank je wel! Je krijgt een e-mail zodra er een nieuw event is."
+msgstr "Dank je wel! Je krijgt een e-mail zodra er een nieuw event is."
+
+msgid "Deze afmeldlink is ongeldig."
+msgstr "Deze afmeldlink is ongeldig."
+
+msgid "Geen toegang."
+msgstr "Geen toegang."
+
+msgid "Je kunt maximaal %d tickets per bestelling kopen."
+msgstr "Je kunt maximaal %d tickets per bestelling kopen."
+
+msgid "Datum"
+msgstr "Datum"
+
+msgid "Tijd"
+msgstr "Tijd"
+
+msgid "Locatie"
+msgstr "Locatie"
+
+msgid "Event"
+msgstr "Event"
+
+msgid "Nieuw event"
+msgstr "Nieuw event"
+
+msgid "Event bewerken"
+msgstr "Event bewerken"
+
+msgid "Begintijd"
+msgstr "Begintijd"
+
+msgid "Eindtijd"
+msgstr "Eindtijd"
+
+msgid "Thema"
+msgstr "Thema"
+
+msgid "Gegevens van het event"
+msgstr "Gegevens van het event"
+
+msgid "Schrijf een bericht."
+msgstr "Schrijf een bericht."
+
+msgid "Nieuw contactbericht via de website: %s"
+msgstr "Nieuw contactbericht via de website: %s"
+
+msgid "Bedankt voor je bericht. We reageren zo snel mogelijk."
+msgstr "Bedankt voor je bericht. We reageren zo snel mogelijk."
+
+msgid "Vul de bedrijfsnaam in."
+msgstr "Vul de bedrijfsnaam in."
+
+msgid "Vul de naam van de contactpersoon in."
+msgstr "Vul de naam van de contactpersoon in."
+
+msgid "Offerte: %1$s — %2$s"
+msgstr "Offerte: %1$s — %2$s"
+
+msgid "algemene aanvraag"
+msgstr "algemene aanvraag"
+
+msgid "Nieuwe offerteaanvraag: %s"
+msgstr "Nieuwe offerteaanvraag: %s"
+
+msgid ""
+"Bedankt voor je aanvraag. We nemen zo spoedig mogelijk contact op met een "
+"voorstel."
+msgstr ""
+"Bedankt voor je aanvraag. We nemen zo spoedig mogelijk contact op met een "
+"voorstel."
+
+msgid "Kies een taal"
+msgstr "Kies een taal"
+
+msgid ""
+"Polylang is actief. Voeg eerst de talen Nederlands, English en Français toe "
+"(Talen → Talen) en maak daarna met één klik de Engelse en Franse pagina's "
+"aan."
+msgstr ""
+"Polylang is actief. Voeg eerst de talen Nederlands, English en Français toe "
+"(Talen → Talen) en maak daarna met één klik de Engelse en Franse pagina's "
+"aan."
+
+msgid "Engelse en Franse pagina's aanmaken"
+msgstr "Engelse en Franse pagina's aanmaken"
+
+msgid "Over ons, de oprichter en onze aanpak."
+msgstr "Over ons, de oprichter en onze aanpak."
+
+msgid ""
+"Wie we zijn, hoe we werken en wat we met empathisch energiewerk bedoelen."
+msgstr ""
+"Wie we zijn, hoe we werken en wat we met empathisch energiewerk bedoelen."
+
+msgid "Vijf manieren om met wat er speelt aan de slag te gaan."
+msgstr "Vijf manieren om met wat er speelt aan de slag te gaan."
+
+msgid ""
+"Kies wat op dit moment past. Je kunt altijd op een ander moment een andere "
+"route proberen."
+msgstr ""
+"Kies wat op dit moment past. Je kunt altijd op een ander moment een andere "
+"route proberen."
+
+msgid "Trainingen die ruimte scheppen in de groep."
+msgstr "Trainingen die ruimte scheppen in de groep."
+
+msgid ""
+"Een vastgesteld concept en programma op onze locatie. Deelnemers komen naar "
+"de trainingslocatie — training op locatie bij het bedrijf wordt niet "
+"aangeboden."
+msgstr ""
+"Een vastgesteld concept en programma op onze locatie. Deelnemers komen naar "
+"de trainingslocatie — training op locatie bij het bedrijf wordt niet "
+"aangeboden."
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Stuur een bericht en we reageren zo snel mogelijk."
+msgstr "Stuur een bericht en we reageren zo snel mogelijk."
+
+msgid "Een afspraak inplannen."
+msgstr "Een afspraak inplannen."
+
+msgid ""
+"Kies de dienst, een datum en een tijdslot. We nemen daarna contact met je op"
+" om de afspraak te bevestigen."
+msgstr ""
+"Kies de dienst, een datum en een tijdslot. We nemen daarna contact met je op"
+" om de afspraak te bevestigen."
+
+msgid "Lezen, verdiepen en reflecteren."
+msgstr "Lezen, verdiepen en reflecteren."
+
+msgid ""
+"Artikelen met inhoudelijke verdieping en betrouwbare bronnen, plus eigen "
+"blogs waarin we visie en ervaring delen."
+msgstr ""
+"Artikelen met inhoudelijke verdieping en betrouwbare bronnen, plus eigen "
+"blogs waarin we visie en ervaring delen."
+
+msgid "Meditaties om zelf te luisteren."
+msgstr "Meditaties om zelf te luisteren."
+
+msgid ""
+"Gratis meditaties zonder account. Later volgen losse programma's en "
+"abonnementen via de shop."
+msgstr ""
+"Gratis meditaties zonder account. Later volgen losse programma's en "
+"abonnementen via de shop."
+
+msgid "Vraag een offerte aan"
+msgstr "Vraag een offerte aan"
+
+msgid ""
+"Voor groepsaanmeldingen of een voorstel op maat van de bestaande concepten. "
+"We vragen alleen wat nodig is."
+msgstr ""
+"Voor groepsaanmeldingen of een voorstel op maat van de bestaande concepten. "
+"We vragen alleen wat nodig is."
+
+msgid ""
+"Op vastgestelde data op onze locatie. Waar mogelijk kun je direct "
+"inschrijven via het winkelmandje."
+msgstr ""
+"Op vastgestelde data op onze locatie. Waar mogelijk kun je direct "
+"inschrijven via het winkelmandje."
+
+msgid "Podcast"
+msgstr "Podcast"
+
+msgid "Meditaties om naar te luisteren, waar je ook bent."
+msgstr "Meditaties om naar te luisteren, waar je ook bent."
+
+msgid ""
+"Rustige afleveringen om even stil te staan. Een deel is gratis; met een "
+"EQ5-abonnement luister je naar alles."
+msgstr ""
+"Rustige afleveringen om even stil te staan. Een deel is gratis; met een "
+"EQ5-abonnement luister je naar alles."
+
+msgid "(Voorbeeldtekst — klik erop om hem te vervangen.)"
+msgstr "(Voorbeeldtekst — klik erop om hem te vervangen.)"
+
+msgid "De organisatie"
+msgstr "De organisatie"
+
+msgid ""
+"Vertel hier in een paar zinnen wie EQ5 is, waar je voor staat en voor wie je"
+" er bent."
+msgstr ""
+"Vertel hier in een paar zinnen wie EQ5 is, waar je voor staat en voor wie je"
+" er bent."
+
+msgid "De oprichter"
+msgstr "De oprichter"
+
+msgid ""
+"Vertel hier iets over jezelf: je achtergrond, je ervaring en hoe je bij dit "
+"werk bent gekomen."
+msgstr ""
+"Vertel hier iets over jezelf: je achtergrond, je ervaring en hoe je bij dit "
+"werk bent gekomen."
+
+msgid "Onze aanpak & empathisch energiewerk"
+msgstr "Onze aanpak & empathisch energiewerk"
+
+msgid ""
+"Een rustige, menselijke manier van kijken naar wat er speelt. Zonder "
+"beloftes, zonder jargon. We presenteren wat we doen niet als vervanging van "
+"medische zorg."
+msgstr ""
+"Een rustige, menselijke manier van kijken naar wat er speelt. Zonder "
+"beloftes, zonder jargon. We presenteren wat we doen niet als vervanging van "
+"medische zorg."
+
+msgid "Beschrijf hier hoe een sessie verloopt en wat iemand kan verwachten."
+msgstr "Beschrijf hier hoe een sessie verloopt en wat iemand kan verwachten."
+
+msgid "Partners & samenwerking"
+msgstr "Partners & samenwerking"
+
+msgid ""
+"Werk je samen met andere praktijken of organisaties? Noem ze hier, of "
+"verwijder dit kopje."
+msgstr ""
+"Werk je samen met andere praktijken of organisaties? Noem ze hier, of "
+"verwijder dit kopje."
+
+msgid "Adres: [straat en huisnummer, postcode en plaats]"
+msgstr "Adres: [straat en huisnummer, postcode en plaats]"
+
+msgid "We reageren meestal binnen twee werkdagen."
+msgstr "We reageren meestal binnen twee werkdagen."
+
+msgid "Twee routes"
+msgstr "Twee routes"
+
+msgid "Zelf een plek boeken"
+msgstr "Zelf een plek boeken"
+
+msgid ""
+"Als een training een vaste prijs en open inschrijving heeft, kun je direct "
+"inschrijven en afrekenen via het winkelmandje."
+msgstr ""
+"Als een training een vaste prijs en open inschrijving heeft, kun je direct "
+"inschrijven en afrekenen via het winkelmandje."
+
+msgid "Bekijk open trainingen"
+msgstr "Bekijk open trainingen"
+
+msgid ""
+"Meerdere medewerkers aanmelden of een voorstel ontvangen? Vraag een offerte "
+"aan."
+msgstr ""
+"Meerdere medewerkers aanmelden of een voorstel ontvangen? Vraag een offerte "
+"aan."
+
+msgid "Offerte aanvragen"
+msgstr "Offerte aanvragen"
+
+msgid "Welkom"
+msgstr "Welkom"
+
+msgid "Van vicieuze cirkel %s"
+msgstr "Van vicieuze cirkel %s"
+
+msgid "naar balans."
+msgstr "naar balans."
+
+msgid ""
+"Iedereen heeft vragen in een zoektocht naar balans. Hier vind je rustige "
+"begeleiding — van meditaties die je zelf kunt doen tot gesprekken en "
+"lichaamsgericht werk."
+msgstr ""
+"Iedereen heeft vragen in een zoektocht naar balans. Hier vind je rustige "
+"begeleiding — van meditaties die je zelf kunt doen tot gesprekken en "
+"lichaamsgericht werk."
+
+msgid "Ontdek wat bij je past"
+msgstr "Ontdek wat bij je past"
+
+msgid "Luister gratis"
+msgstr "Luister gratis"
+
+msgid "Keuzehulp"
+msgstr "Keuzehulp"
+
+msgid "Waar ben je naar op zoek?"
+msgstr "Waar ben je naar op zoek?"
+
+msgid "Vijf directe routes. Kies wat op dit moment het beste past."
+msgstr "Vijf directe routes. Kies wat op dit moment het beste past."
+
+msgid ""
+"Een vastgesteld concept en programma, op onze locatie. Op aanvraag maken we "
+"een offerte voor een groep medewerkers."
+msgstr ""
+"Een vastgesteld concept en programma, op onze locatie. Op aanvraag maken we "
+"een offerte voor een groep medewerkers."
+
+msgid "Bekijk het zakelijke aanbod"
+msgstr "Bekijk het zakelijke aanbod"
+
+msgid "Werken met de groep"
+msgstr "Werken met de groep"
+
+msgid "Een dag waarin de groep ruimte maakt voor wat er onderling speelt."
+msgstr "Een dag waarin de groep ruimte maakt voor wat er onderling speelt."
+
+msgid "Kristallen & (half)edelstenen"
+msgstr "Kristallen & (half)edelstenen"
+
+msgid ""
+"Stenen die energetisch zijn bewerkt om bij een thema of persoonlijk proces "
+"te ondersteunen."
+msgstr ""
+"Stenen die energetisch zijn bewerkt om bij een thema of persoonlijk proces "
+"te ondersteunen."
+
+msgid "Onze aanpak"
+msgstr "Onze aanpak"
+
+msgid "Empathisch energiewerk, in woorden die kloppen."
+msgstr "Empathisch energiewerk, in woorden die kloppen."
+
+msgid ""
+"Geen beloftes, geen jargon. Een rustige, menselijke manier van kijken naar "
+"wat er bij jou of in een groep speelt."
+msgstr ""
+"Geen beloftes, geen jargon. Een rustige, menselijke manier van kijken naar "
+"wat er bij jou of in een groep speelt."
+
+msgid "Lees meer over onze aanpak"
+msgstr "Lees meer over onze aanpak"
+
+msgid "Meer rust, zelf ontdekken en oefenen"
+msgstr "Meer rust, zelf ontdekken en oefenen"
+
+msgid ""
+"Gratis en betaalde meditaties die je in je eigen tempo kunt beluisteren."
+msgstr ""
+"Gratis en betaalde meditaties die je in je eigen tempo kunt beluisteren."
+
+msgid "Praten over wat er bij je speelt"
+msgstr "Praten over wat er bij je speelt"
+
+msgid "Hulp"
+msgstr "Hulp"
+
+msgid ""
+"Persoonlijke hulp, één op één: een afstemming, een consult of een dubbel "
+"consult."
+msgstr ""
+"Persoonlijke hulp, één op één: een afstemming, een consult of een dubbel "
+"consult."
+
+msgid "Een middag of avond rond één thema"
+msgstr "Een middag of avond rond één thema"
+
+msgid ""
+"Laat emotionele ladingen los en ga verlicht en fris naar huis. Niemand "
+"verwacht dat je iets deelt."
+msgstr ""
+"Laat emotionele ladingen los en ga verlicht en fris naar huis. Niemand "
+"verwacht dat je iets deelt."
+
+msgid "Leren, ontdekken en jezelf ontwikkelen"
+msgstr "Leren, ontdekken en jezelf ontwikkelen"
+
+msgid "Op vastgestelde data op onze locatie. Open inschrijving waar mogelijk."
+msgstr ""
+"Op vastgestelde data op onze locatie. Open inschrijving waar mogelijk."
+
+msgid ""
+"Regelmatig afvoeren van verbruikte en vastgelopen emoties en energie uit je "
+"lichaam"
+msgstr ""
+"Regelmatig afvoeren van verbruikte en vastgelopen emoties en energie uit je "
+"lichaam"
+
+msgid "Een doorlopend ritme van energetische opschoning op afspraak."
+msgstr "Een doorlopend ritme van energetische opschoning op afspraak."
+
+msgid "EQ5-abonnement"
+msgstr "EQ5-abonnement"
+
+msgid "Alleen voor abonnees"
+msgstr "Alleen voor abonnees"
+
+msgid "Niet aangevinkt = gratis voor iedereen."
+msgstr "Niet aangevinkt = gratis voor iedereen."
+
+msgid ""
+"Met een EQ5-abonnement luister je naar alle afleveringen en betaalde "
+"meditaties, ook in je eigen podcast-app."
+msgstr ""
+"Met een EQ5-abonnement luister je naar alle afleveringen en betaalde "
+"meditaties, ook in je eigen podcast-app."
+
+msgid "Word abonnee"
+msgstr "Word abonnee"
+
+msgid "Audio nog aan te leveren."
+msgstr "Audio nog aan te leveren."
+
+msgid "EQ5 Podcast"
+msgstr "EQ5 Podcast"
+
+msgid "Links naar je podcast per taal. Lege velden worden niet getoond."
+msgstr "Links naar je podcast per taal. Lege velden worden niet getoond."
+
+msgid "Dienst"
+msgstr "Dienst"
+
+msgid "Nieuwe dienst"
+msgstr "Nieuwe dienst"
+
+msgid "Dienst bewerken"
+msgstr "Dienst bewerken"
+
+msgid "Groep"
+msgstr "Groep"
+
+msgid "Tijdsaanduiding (bijv. \"Iedere zondag\")"
+msgstr "Tijdsaanduiding (bijv. \"Iedere zondag\")"
+
+msgid "Prijs (bijv. \"€ 45 per maand\")"
+msgstr "Prijs (bijv. \"€ 45 per maand\")"
+
+msgid "Code (voor het afspraakformulier en de link #code)"
+msgstr "Code (voor het afspraakformulier en de link #code)"
+
+msgid "Paid Memberships Pro-niveau (abonnementen)"
+msgstr "Paid Memberships Pro-niveau (abonnementen)"
+
+msgid "Knop"
+msgstr "Knop"
+
+msgid "Gegevens van de dienst"
+msgstr "Gegevens van de dienst"
+
+msgid "— geen (knop gaat naar contact) —"
+msgstr "— geen (knop gaat naar contact) —"
+
+msgid ""
+"Kies het niveau dat bij dit abonnement hoort. De knop wordt dan \"Abonneer\""
+" en gaat direct naar afrekenen."
+msgstr ""
+"Kies het niveau dat bij dit abonnement hoort. De knop wordt dan \"Abonneer\""
+" en gaat direct naar afrekenen."
+
+msgid "Activeer Paid Memberships Pro om abonnementen online te verkopen."
+msgstr "Activeer Paid Memberships Pro om abonnementen online te verkopen."
+
+msgid "Afspraak maken (staat ook in het afspraakformulier)"
+msgstr "Afspraak maken (staat ook in het afspraakformulier)"
+
+msgid "Contact opnemen"
+msgstr "Contact opnemen"
+
+msgid ""
+"Geldt voor \"Afspraak voor hulp\". Bij abonnementen met een niveau is de "
+"knop altijd \"Abonneer\"."
+msgstr ""
+"Geldt voor \"Afspraak voor hulp\". Bij abonnementen met een niveau is de "
+"knop altijd \"Abonneer\"."
+
+msgid "EQ5 Prijsnotitie"
+msgstr "EQ5 Prijsnotitie"
+
+msgid ""
+"De notitie onder de diensten, per taal. Leeg = standaardtekst. Witregel = "
+"nieuwe alinea."
+msgstr ""
+"De notitie onder de diensten, per taal. Leeg = standaardtekst. Witregel = "
+"nieuwe alinea."
+
+msgid "Prijsnotitie"
+msgstr "Prijsnotitie"
+
+msgid ""
+"Maak de afreken- en accountpagina's van de abonnementen ook in het Engels en"
+" Frans."
+msgstr ""
+"Maak de afreken- en accountpagina's van de abonnementen ook in het Engels en"
+" Frans."
+
+msgid "Abonnementspagina's vertalen"
+msgstr "Abonnementspagina's vertalen"
+
+msgid "Foto nog aan te leveren"
+msgstr "Foto nog aan te leveren"
+
+msgid "Nog aan te leveren door de eigenaar. Dit is een tijdelijke aanduiding."
+msgstr ""
+"Nog aan te leveren door de eigenaar. Dit is een tijdelijke aanduiding."
+
+msgid "Footer navigatie"
+msgstr "Footer navigatie"
+
+msgid "Footer"
+msgstr "Footer"
+
+msgid "Widgets voor de footer"
+msgstr "Widgets voor de footer"
+
+msgid ""
+"Energetisch bewerkte stenen, bedoeld om bij een specifiek thema of "
+"persoonlijk proces te ondersteunen. Niet bedoeld als vervanging van medische"
+" zorg."
+msgstr ""
+"Energetisch bewerkte stenen, bedoeld om bij een specifiek thema of "
+"persoonlijk proces te ondersteunen. Niet bedoeld als vervanging van medische"
+" zorg."
+
+msgid ""
+"Deze steen is bedoeld om te ondersteunen. Het is geen vervanging van "
+"medische zorg of professioneel advies."
+msgstr ""
+"Deze steen is bedoeld om te ondersteunen. Het is geen vervanging van "
+"medische zorg of professioneel advies."
+
+msgid "Nog geen inhoud"
+msgstr "Nog geen inhoud"
+
+msgid "Er is nog geen inhoud op deze locatie."
+msgstr "Er is nog geen inhoud op deze locatie."
+
+msgid ""
+"Beschikbare tijdslots zijn tijdelijke voorbeelden. De werkelijke "
+"beschikbaarheid wordt later door de eigenaar ingericht."
+msgstr ""
+"Beschikbare tijdslots zijn tijdelijke voorbeelden. De werkelijke "
+"beschikbaarheid wordt later door de eigenaar ingericht."
+
+msgid "Kies een dienst…"
+msgstr "Kies een dienst…"
+
+msgid "Tijdslot"
+msgstr "Tijdslot"
+
+msgid "Telefoon (optioneel)"
+msgstr "Telefoon (optioneel)"
+
+msgid "Toelichting (optioneel)"
+msgstr "Toelichting (optioneel)"
+
+msgid "Afspraak aanvragen"
+msgstr "Afspraak aanvragen"
+
+msgid ""
+"Afspraken zijn alleen bedoeld voor consult en drukpuntmassage + consult. "
+"Shop, meditaties en vaste trainingen lopen via het winkelmandje."
+msgstr ""
+"Afspraken zijn alleen bedoeld voor consult en drukpuntmassage + consult. "
+"Shop, meditaties en vaste trainingen lopen via het winkelmandje."
+
+msgid "Lees artikel"
+msgstr "Lees artikel"
+
+msgid ""
+"Nog geen artikelen gepubliceerd. Voeg artikelen toe via \"Berichten\" in het"
+" WordPress-menu."
+msgstr ""
+"Nog geen artikelen gepubliceerd. Voeg artikelen toe via \"Berichten\" in het"
+" WordPress-menu."
+
+msgid "Lees blog"
+msgstr "Lees blog"
+
+msgid ""
+"Nog geen eigen blogs. Voeg ze toe via \"Eigen blogs\" in het WordPress-menu."
+msgstr ""
+"Nog geen eigen blogs. Voeg ze toe via \"Eigen blogs\" in het WordPress-menu."
+
+msgid "Consult"
+msgstr "Consult"
+
+msgid ""
+"Een gesprek om stil te staan bij wat er speelt en zicht te krijgen op een "
+"volgende stap."
+msgstr ""
+"Een gesprek om stil te staan bij wat er speelt en zicht te krijgen op een "
+"volgende stap."
+
+msgid ""
+"Praktische informatie — duur, prijs, locatie, werkwijze — nog aan te vullen "
+"door de eigenaar."
+msgstr ""
+"Praktische informatie — duur, prijs, locatie, werkwijze — nog aan te vullen "
+"door de eigenaar."
+
+msgid "Voor wie"
+msgstr "Voor wie"
+
+msgid "Nog aan te vullen."
+msgstr "Nog aan te vullen."
+
+msgid "Wat je kunt verwachten"
+msgstr "Wat je kunt verwachten"
+
+msgid "Je bericht"
+msgstr "Je bericht"
+
+msgid "Ik meld me graag aan voor: %1$s (%2$s)"
+msgstr "Ik meld me graag aan voor: %1$s (%2$s)"
+
+msgid "Bericht verzenden"
+msgstr "Bericht verzenden"
+
+msgid "Drukpuntmassage + consult"
+msgstr "Drukpuntmassage + consult"
+
+msgid ""
+"Drukpuntmassage gecombineerd met een consult: lichaamsgericht werk met "
+"ruimte om te vertellen wat er bij je speelt."
+msgstr ""
+"Drukpuntmassage gecombineerd met een consult: lichaamsgericht werk met "
+"ruimte om te vertellen wat er bij je speelt."
+
+msgid "Wat is drukpuntmassage?"
+msgstr "Wat is drukpuntmassage?"
+
+msgid ""
+"Beschrijving nog aan te vullen. Dit is geen vervanging van medische zorg."
+msgstr ""
+"Beschrijving nog aan te vullen. Dit is geen vervanging van medische zorg."
+
+msgid "Hoe verloopt een sessie?"
+msgstr "Hoe verloopt een sessie?"
+
+msgid "Komende events"
+msgstr "Komende events"
+
+msgid "Uitverkocht"
+msgstr "Uitverkocht"
+
+msgid "Bekijk event"
+msgstr "Bekijk event"
+
+msgid ""
+"Er staan op dit moment geen events gepland. Wil je op de hoogte blijven? "
+"Laat het ons weten."
+msgstr ""
+"Er staan op dit moment geen events gepland. Wil je op de hoogte blijven? "
+"Laat het ons weten."
+
+msgid "Adem — 5 minuten rust"
+msgstr "Adem — 5 minuten rust"
+
+msgid "Een korte adembegeleiding om tussendoor even stil te staan."
+msgstr "Een korte adembegeleiding om tussendoor even stil te staan."
+
+msgid "Grond je dag"
+msgstr "Grond je dag"
+
+msgid "Een rustige meditatie om je dag mee te beginnen."
+msgstr "Een rustige meditatie om je dag mee te beginnen."
+
+msgid "Loslaten voor de nacht"
+msgstr "Loslaten voor de nacht"
+
+msgid "Een zachte afsluiting om los te laten wat er was."
+msgstr "Een zachte afsluiting om los te laten wat er was."
+
+msgid "Gratis meditaties"
+msgstr "Gratis meditaties"
+
+msgid "Gratis"
+msgstr "Gratis"
+
+msgid "Je browser ondersteunt geen audio."
+msgstr "Je browser ondersteunt geen audio."
+
+msgid ""
+"Audiobestand nog aan te leveren. Upload de MP3 bij deze meditatie in de "
+"beheeromgeving."
+msgstr ""
+"Audiobestand nog aan te leveren. Upload de MP3 bij deze meditatie in de "
+"beheeromgeving."
+
+msgid ""
+"Nog geen meditaties toegevoegd. Voeg ze toe onder \"Meditaties\" in het "
+"WordPress-menu. Hieronder staan voorbeeld-blokken ter illustratie van de "
+"layout."
+msgstr ""
+"Nog geen meditaties toegevoegd. Voeg ze toe onder \"Meditaties\" in het "
+"WordPress-menu. Hieronder staan voorbeeld-blokken ter illustratie van de "
+"layout."
+
+msgid "Binnenkort: betaalde programma's en abonnementen"
+msgstr "Binnenkort: betaalde programma's en abonnementen"
+
+msgid ""
+"Losse meditatieprogramma's en abonnementen worden gefaseerd toegevoegd via "
+"de shop. Je rekent dan af via het gewone winkelmandje en krijgt na betaling "
+"toegang."
+msgstr ""
+"Losse meditatieprogramma's en abonnementen worden gefaseerd toegevoegd via "
+"de shop. Je rekent dan af via het gewone winkelmandje en krijgt na betaling "
+"toegang."
+
+msgid "Bedrijfsnaam"
+msgstr "Bedrijfsnaam"
+
+msgid "Contactpersoon"
+msgstr "Contactpersoon"
+
+msgid "Gewenste training"
+msgstr "Gewenste training"
+
+msgid "Bijv. Werken met de groep"
+msgstr "Bijv. Werken met de groep"
+
+msgid "Groepsgrootte (optioneel)"
+msgstr "Groepsgrootte (optioneel)"
+
+msgid "Vraag of aanvullende informatie"
+msgstr "Vraag of aanvullende informatie"
+
+msgid ""
+"Installeer en activeer de plugin Seriously Simple Podcasting om afleveringen"
+" te tonen."
+msgstr ""
+"Installeer en activeer de plugin Seriously Simple Podcasting om afleveringen"
+" te tonen."
+
+msgid "Nog geen afleveringen. Voeg ze toe via \"Podcast\" in het WordPress-menu."
+msgstr "Nog geen afleveringen. Voeg ze toe via \"Podcast\" in het WordPress-menu."
+
+msgid "Meer afleveringen"
+msgstr "Meer afleveringen"
+
+msgid "Bekijk training"
+msgstr "Bekijk training"
+
+msgid ""
+"Nog geen trainingen toegevoegd. Voeg trainingen toe via \"Trainingen\" in "
+"het WordPress-menu. Zodra ze zijn gepubliceerd, verschijnen ze hier "
+"automatisch."
+msgstr ""
+"Nog geen trainingen toegevoegd. Voeg trainingen toe via \"Trainingen\" in "
+"het WordPress-menu. Zodra ze zijn gepubliceerd, verschijnen ze hier "
+"automatisch."
+
+msgid "Voorbeeld"
+msgstr "Voorbeeld"
+
+msgid "Trainingstitel"
+msgstr "Trainingstitel"
+
+msgid "Korte beschrijving van wat de deelnemer kan verwachten."
+msgstr "Korte beschrijving van wat de deelnemer kan verwachten."
+
+msgid "Nog aan te leveren"
+msgstr "Nog aan te leveren"
+
+msgid ""
+"Nog geen zakelijke trainingen toegevoegd. Voeg aanbod toe via \"Zakelijk "
+"aanbod\" in het WordPress-menu."
+msgstr ""
+"Nog geen zakelijke trainingen toegevoegd. Voeg aanbod toe via \"Zakelijk "
+"aanbod\" in het WordPress-menu."
+
+msgid "Voorbeeld-concept"
+msgstr "Voorbeeld-concept"
+
+msgid "Programma, aantal dagen en eventuele terugkomdag nog aan te leveren."
+msgstr "Programma, aantal dagen en eventuele terugkomdag nog aan te leveren."
+
+msgid "Meer informatie"
+msgstr "Meer informatie"
+
+msgid "Zoekresultaten voor: %s"
+msgstr "Zoekresultaten voor: %s"
+
+msgid "Bekijk"
+msgstr "Bekijk"
+
+msgid "Geen resultaten gevonden."
+msgstr "Geen resultaten gevonden."
+
+msgid "Zoek naar:"
+msgstr "Zoek naar:"
+
+msgid "Zoeken…"
+msgstr "Zoeken…"
+
+msgid "Zoeken"
+msgstr "Zoeken"
+
+msgid "Prijs"
+msgstr "Prijs"
+
+msgid "Dit event is al geweest."
+msgstr "Dit event is al geweest."
+
+msgid "Bekijk de komende events"
+msgstr "Bekijk de komende events"
+
+msgid "Aanmelden"
+msgstr "Aanmelden"
+
+msgid "Eigen blog"
+msgstr "Eigen blog"
+
+msgid "Artikel"
+msgstr "Artikel"
+
+msgid "Houd me op de hoogte"
+msgstr "Houd me op de hoogte"
+
+msgid ""
+"Laat je e-mailadres achter, dan krijg je bericht zodra er een nieuw event "
+"is. Afmelden kan altijd met één klik."
+msgstr ""
+"Laat je e-mailadres achter, dan krijg je bericht zodra er een nieuw event "
+"is. Afmelden kan altijd met één klik."
+
+msgid ""
+"Ik wil een e-mail ontvangen over nieuwe events. Mijn gegevens worden alleen "
+"hiervoor gebruikt."
+msgstr ""
+"Ik wil een e-mail ontvangen over nieuwe events. Mijn gegevens worden alleen "
+"hiervoor gebruikt."
+
+msgid "In mijn agenda zetten"
+msgstr "In mijn agenda zetten"
+
+msgid "Deel dit event"
+msgstr "Deel dit event"
+
+msgid "Gekopieerd!"
+msgstr "Gekopieerd!"
+
+msgid "Link kopiëren"
+msgstr "Link kopiëren"
+
+msgid "Zet me op de wachtlijst"
+msgstr "Zet me op de wachtlijst"
+
+msgid ""
+"Komt er een plek vrij, dan krijgt iedereen op de wachtlijst tegelijk een "
+"e-mail. Wie het eerst een ticket koopt, heeft de plek."
+msgstr ""
+"Komt er een plek vrij, dan krijgt iedereen op de wachtlijst tegelijk een "
+"e-mail. Wie het eerst een ticket koopt, heeft de plek."
+
+msgid ""
+"Mijn gegevens worden alleen gebruikt voor deze wachtlijst en daarna "
+"verwijderd."
+msgstr ""
+"Mijn gegevens worden alleen gebruikt voor deze wachtlijst en daarna "
+"verwijderd."
+
+msgid "Op de wachtlijst"
+msgstr "Op de wachtlijst"
+
+msgid "Aantal tickets"
+msgstr "Aantal tickets"
+
+msgid "Ticket kopen"
+msgstr "Ticket kopen"
+
+msgid "per ticket"
+msgstr "per ticket"
+
+msgid "Nog %d plaats beschikbaar"
+msgstr "Nog %d plaats beschikbaar"
+
+msgid "Nog %d plaatsen beschikbaar"
+msgstr "Nog %d plaatsen beschikbaar"
+
+msgid "Abonnees"
+msgstr "Abonnees"
+
+msgid "Luister naar alle afleveringen en meditaties."
+msgstr "Luister naar alle afleveringen en meditaties."
+
+msgid "Alle podcastafleveringen, ook de afleveringen voor abonnees"
+msgstr "Alle podcastafleveringen, ook de afleveringen voor abonnees"
+
+msgid "Betaalde meditaties op de website"
+msgstr "Betaalde meditaties op de website"
+
+msgid "Een eigen privé-feed voor je podcast-app"
+msgstr "Een eigen privé-feed voor je podcast-app"
+
+msgid "Maandelijks of jaarlijks, altijd opzegbaar"
+msgstr "Maandelijks of jaarlijks, altijd opzegbaar"
+
+msgid "Bekijk het abonnement"
+msgstr "Bekijk het abonnement"
+
+msgid "Luister en abonneer via"
+msgstr "Luister en abonneer via"
+
+msgid ""
+"Jouw privé-feed met alle afleveringen (kopieer deze link in je podcast-app):"
+msgstr ""
+"Jouw privé-feed met alle afleveringen (kopieer deze link in je podcast-app):"
+
+msgid "Privé-feed"
+msgstr "Privé-feed"

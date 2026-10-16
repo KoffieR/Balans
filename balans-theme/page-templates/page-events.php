@@ -11,12 +11,7 @@ get_header();
 $events = balans_upcoming_events();
 ?>
 <main id="main" class="site-main" data-testid="page-events">
-    <section class="page-hero">
-        <div class="container">
-            <p class="eyebrow"><?php esc_html_e( 'Voor jou', 'balans' ); ?></p>
-            <h1><?php the_title(); ?></h1>
-        </div>
-    </section>
+    <?php balans_page_hero( 'events' ); ?>
 
     <section class="section">
         <div class="container container--text entry-content" data-testid="events-intro">

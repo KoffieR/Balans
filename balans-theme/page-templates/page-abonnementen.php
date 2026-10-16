@@ -9,13 +9,7 @@ get_header();
 $s = balans_services();
 ?>
 <main id="main" class="site-main" data-testid="page-abonnementen">
-    <section class="page-hero">
-        <div class="container">
-            <p class="eyebrow"><?php echo esc_html( $s['abo_eyebrow'] ); ?></p>
-            <h1><?php echo esc_html( $s['abo_title'] ); ?></h1>
-            <p class="page-hero__intro"><?php echo esc_html( $s['abo_intro'] ); ?></p>
-        </div>
-    </section>
+    <?php balans_page_hero( 'abonnementen' ); ?>
 
     <section class="section">
         <div class="container">

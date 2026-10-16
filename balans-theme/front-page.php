@@ -16,26 +16,21 @@ get_header();
         <div class="container">
             <div class="hero__grid">
                 <div class="hero__content fade-in">
-                    <p class="eyebrow"><?php esc_html_e( 'Welkom', 'balans' ); ?></p>
-                    <h1>
-                        <?php
-                        printf(
-                            /* translators: %s is the italic highlight */
-                            esc_html__( 'Van vicieuze cirkel %s', 'balans' ),
-                            '<em>' . esc_html__( 'naar balans.', 'balans' ) . '</em>'
-                        );
-                        ?>
-                    </h1>
-                    <p class="hero__intro">
-                        <?php esc_html_e( 'Iedereen heeft vragen in een zoektocht naar balans. Hier vind je rustige begeleiding — van meditaties die je zelf kunt doen tot gesprekken en lichaamsgericht werk.', 'balans' ); ?>
-                    </p>
+                    <p class="eyebrow"><?php echo esc_html( balans_hp( 'hero_eyebrow' ) ); ?></p>
+                    <h1><?php echo esc_html( balans_hp( 'hero_title' ) ); ?> <?php if ( balans_hp( 'hero_highlight' ) ) : ?><em><?php echo esc_html( balans_hp( 'hero_highlight' ) ); ?></em><?php endif; ?></h1>
+                    <p class="hero__intro"><?php echo esc_html( balans_hp( 'hero_intro' ) ); ?></p>
                     <div class="hero__actions">
-                        <?php balans_button( balans_url( 'voor-jou' ), __( 'Ontdek wat bij je past', 'balans' ), 'primary', 'hero-cta-primary' ); ?>
-                        <?php balans_button( balans_url( 'meditatie' ), __( 'Luister gratis', 'balans' ), 'secondary', 'hero-cta-secondary' ); ?>
+                        <?php balans_button( balans_url( 'voor-jou' ), balans_hp( 'hero_cta1' ), 'primary', 'hero-cta-primary' ); ?>
+                        <?php balans_button( balans_url( 'meditatie' ), balans_hp( 'hero_cta2' ), 'secondary', 'hero-cta-secondary' ); ?>
                     </div>
                 </div>
-                <div class="hero__visual fade-in" data-delay="2" aria-hidden="true">
-                    <p class="hero__visual-label"><?php esc_html_e( 'Beeld nog aan te leveren', 'balans' ); ?></p>
+                <?php $hero_img = (int) get_theme_mod( 'eq5_hp_hero_image', 0 ); ?>
+                <div class="hero__visual fade-in<?php echo $hero_img ? ' hero__visual--image' : ''; ?>" data-delay="2" aria-hidden="true">
+                    <?php if ( $hero_img ) : ?>
+                        <?php echo wp_get_attachment_image( $hero_img, 'large', false, array( 'class' => 'hero__img', 'alt' => '' ) ); ?>
+                    <?php elseif ( current_user_can( 'edit_theme_options' ) ) : ?>
+                        <p class="hero__visual-label"><?php esc_html_e( 'Kies een afbeelding: Weergave → Customizer → Homepage-teksten (alleen jij ziet deze melding)', 'balans' ); ?></p>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -45,9 +40,9 @@ get_header();
     <section class="section section--alt" data-testid="routes-section">
         <div class="container">
             <div class="section-intro">
-                <p class="eyebrow"><?php esc_html_e( 'Keuzehulp', 'balans' ); ?></p>
-                <h2><?php esc_html_e( 'Waar ben je naar op zoek?', 'balans' ); ?></h2>
-                <p><?php esc_html_e( 'Vijf directe routes. Kies wat op dit moment het beste past.', 'balans' ); ?></p>
+                <p class="eyebrow"><?php echo esc_html( balans_hp( 'routes_eyebrow' ) ); ?></p>
+                <h2><?php echo esc_html( balans_hp( 'routes_title' ) ); ?></h2>
+                <p><?php echo esc_html( balans_hp( 'routes_intro' ) ); ?></p>
             </div>
 
             <div class="routes-grid">
@@ -69,16 +64,16 @@ get_header();
         <div class="container">
             <div class="hero__grid">
                 <div>
-                    <p class="eyebrow"><?php esc_html_e( 'Voor bedrijven', 'balans' ); ?></p>
-                    <h2><?php esc_html_e( 'Trainingen die ruimte scheppen in de groep.', 'balans' ); ?></h2>
-                    <p><?php esc_html_e( 'Een vastgesteld concept en programma, op onze locatie. Op aanvraag maken we een offerte voor een groep medewerkers.', 'balans' ); ?></p>
-                    <?php balans_button( balans_url( 'voor-bedrijven' ), __( 'Bekijk het zakelijke aanbod', 'balans' ), 'secondary', 'homepage-cta-zakelijk' ); ?>
+                    <p class="eyebrow"><?php echo esc_html( balans_hp( 'biz_eyebrow' ) ); ?></p>
+                    <h2><?php echo esc_html( balans_hp( 'biz_title' ) ); ?></h2>
+                    <p><?php echo esc_html( balans_hp( 'biz_text' ) ); ?></p>
+                    <?php balans_button( balans_url( 'voor-bedrijven' ), balans_hp( 'biz_button' ), 'secondary', 'homepage-cta-zakelijk' ); ?>
                 </div>
                 <div>
                     <?php balans_card( array(
-                        'eyebrow' => __( 'Voorbeeld-concept', 'balans' ),
-                        'title'   => __( 'Werken met de groep', 'balans' ),
-                        'text'    => __( 'Programmadetails nog aan te leveren door de eigenaar.', 'balans' ),
+                        'eyebrow' => balans_hp( 'biz_eyebrow' ),
+                        'title'   => balans_hp( 'biz_card_title' ),
+                        'text'    => balans_hp( 'biz_card_text' ),
                         'link'    => balans_url( 'voor-bedrijven' ),
                         'cta'     => __( 'Meer info', 'balans' ),
                     ) ); ?>
@@ -91,9 +86,9 @@ get_header();
     <section class="section section--alt" data-testid="homepage-shop">
         <div class="container">
             <div class="section-intro">
-                <p class="eyebrow"><?php esc_html_e( 'Shop', 'balans' ); ?></p>
-                <h2><?php esc_html_e( 'Kristallen & (half)edelstenen', 'balans' ); ?></h2>
-                <p><?php esc_html_e( 'Stenen die energetisch zijn bewerkt om bij een thema of persoonlijk proces te ondersteunen.', 'balans' ); ?></p>
+                <p class="eyebrow"><?php echo esc_html( balans_hp( 'shop_eyebrow' ) ); ?></p>
+                <h2><?php echo esc_html( balans_hp( 'shop_title' ) ); ?></h2>
+                <p><?php echo esc_html( balans_hp( 'shop_text' ) ); ?></p>
             </div>
 
             <?php if ( class_exists( 'WooCommerce' ) && ! defined( 'BALANS_PREVIEW' ) ) : ?>
@@ -114,12 +109,12 @@ get_header();
     <section class="section">
         <div class="container">
             <div class="section-intro">
-                <p class="eyebrow"><?php esc_html_e( 'Onze aanpak', 'balans' ); ?></p>
-                <h2><?php esc_html_e( 'Empathisch energiewerk, in woorden die kloppen.', 'balans' ); ?></h2>
-                <p><?php esc_html_e( 'Geen beloftes, geen jargon. Een rustige, menselijke manier van kijken naar wat er bij jou of in een groep speelt.', 'balans' ); ?></p>
+                <p class="eyebrow"><?php echo esc_html( balans_hp( 'aanpak_eyebrow' ) ); ?></p>
+                <h2><?php echo esc_html( balans_hp( 'aanpak_title' ) ); ?></h2>
+                <p><?php echo esc_html( balans_hp( 'aanpak_text' ) ); ?></p>
             </div>
             <div style="margin-top:24px;">
-                <?php balans_button( balans_url( 'over' ), __( 'Lees meer over onze aanpak', 'balans' ), 'ghost', 'homepage-aanpak-cta' ); ?>
+                <?php balans_button( balans_url( 'over' ), balans_hp( 'aanpak_button' ), 'ghost', 'homepage-aanpak-cta' ); ?>
             </div>
         </div>
     </section>

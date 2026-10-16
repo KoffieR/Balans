@@ -29,7 +29,7 @@ function balans_card( $args ) {
         <?php if ( ! empty( $args['image'] ) ) : ?>
             <div class="balans-card__image" style="background-image:url('<?php echo esc_url( $args['image'] ); ?>');" role="img" aria-label="<?php echo esc_attr( $args['title'] ); ?>"></div>
         <?php else : ?>
-            <div class="balans-card__image balans-card__image--placeholder" aria-hidden="true" data-label="<?php esc_attr_e( 'Foto nog aan te leveren', 'balans' ); ?>"></div>
+            <div class="balans-card__image balans-card__image--placeholder" aria-hidden="true" <?php if ( current_user_can( 'edit_posts' ) ) : ?>data-label="<?php esc_attr_e( 'Foto nog aan te leveren', 'balans' ); ?>"<?php endif; ?>></div>
         <?php endif; ?>
         <div class="balans-card__body">
             <?php if ( $args['badge'] ) : ?><span class="upcoming-badge" data-testid="upcoming-badge"><?php echo esc_html( $args['badge'] ); ?></span><?php endif; ?>
@@ -51,10 +51,13 @@ function balans_card( $args ) {
  * Render a "placeholder" notice for sections where content still needs to come from the owner.
  */
 function balans_placeholder_notice( $text = '' ) {
+    if ( ! current_user_can( 'edit_posts' ) ) {
+        return;
+    }
     if ( empty( $text ) ) {
         $text = __( 'Nog aan te leveren door de eigenaar. Dit is een tijdelijke aanduiding.', 'balans' );
     }
-    echo '<p class="balans-placeholder-notice"><small>' . esc_html( $text ) . '</small></p>';
+    echo '<p class="balans-placeholder-notice"><small><strong>' . esc_html__( 'Alleen zichtbaar voor jou als beheerder:', 'balans' ) . '</strong> ' . esc_html( $text ) . '</small></p>';
 }
 
 /**

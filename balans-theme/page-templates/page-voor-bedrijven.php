@@ -13,13 +13,7 @@ $query = new WP_Query( array(
 ) );
 ?>
 <main id="main" class="site-main" data-testid="page-zakelijk">
-    <section class="page-hero">
-        <div class="container">
-            <p class="eyebrow"><?php esc_html_e( 'Voor bedrijven', 'balans' ); ?></p>
-            <h1><?php esc_html_e( 'Trainingen die ruimte scheppen in de groep.', 'balans' ); ?></h1>
-            <p class="page-hero__intro"><?php esc_html_e( 'Een vastgesteld concept en programma op onze locatie. Deelnemers komen naar de trainingslocatie — training op locatie bij het bedrijf wordt niet aangeboden.', 'balans' ); ?></p>
-        </div>
-    </section>
+    <?php balans_page_hero( 'voor-bedrijven' ); ?>
 
     <section class="section">
         <div class="container">
@@ -36,7 +30,7 @@ $query = new WP_Query( array(
                         ) );
                     endwhile; wp_reset_postdata(); ?>
                 </div>
-            <?php else : ?>
+            <?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
                 <?php balans_placeholder_notice( __( 'Nog geen zakelijke trainingen toegevoegd. Voeg aanbod toe via "Zakelijk aanbod" in het WordPress-menu.', 'balans' ) ); ?>
                 <div class="cards-grid">
                     <?php balans_card( array(
@@ -51,28 +45,12 @@ $query = new WP_Query( array(
         </div>
     </section>
 
-    <section class="section section--alt">
-        <div class="container">
-            <div class="section-intro">
-                <h2><?php esc_html_e( 'Twee routes', 'balans' ); ?></h2>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); if ( get_the_content() ) : ?>
+        <section class="section section--alt">
+            <div class="container entry-content entry-content--wide" data-testid="zakelijk-content">
+                <?php the_content(); ?>
             </div>
-            <div class="cards-grid">
-                <?php balans_card( array(
-                    'eyebrow' => __( 'Open inschrijving', 'balans' ),
-                    'title'   => __( 'Zelf een plek boeken', 'balans' ),
-                    'text'    => __( 'Als een training een vaste prijs en open inschrijving heeft, kun je direct inschrijven en afrekenen via het winkelmandje.', 'balans' ),
-                    'link'    => get_post_type_archive_link( 'balans_zakelijk' ),
-                    'cta'     => __( 'Bekijk open trainingen', 'balans' ),
-                ) ); ?>
-                <?php balans_card( array(
-                    'eyebrow' => __( 'Groepen', 'balans' ),
-                    'title'   => __( 'Vraag een offerte aan', 'balans' ),
-                    'text'    => __( 'Meerdere medewerkers aanmelden of een voorstel ontvangen? Vraag een offerte aan.', 'balans' ),
-                    'link'    => balans_url( 'offerte-aanvragen' ),
-                    'cta'     => __( 'Offerte aanvragen', 'balans' ),
-                ) ); ?>
-            </div>
-        </div>
-    </section>
+        </section>
+    <?php endif; endwhile; endif; ?>
 </main>
 <?php get_footer();

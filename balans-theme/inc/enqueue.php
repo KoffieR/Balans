@@ -24,14 +24,14 @@ function balans_enqueue_assets() {
         'balans-main',
         BALANS_URI . '/assets/css/main.css',
         array( 'balans-root' ),
-        BALANS_VERSION
+        BALANS_VERSION . '.' . filemtime( BALANS_DIR . '/assets/css/main.css' )
     );
 
     wp_enqueue_script(
         'balans-main',
         BALANS_URI . '/assets/js/main.js',
         array(),
-        BALANS_VERSION,
+        BALANS_VERSION . '.' . filemtime( BALANS_DIR . '/assets/js/main.js' ),
         true
     );
 

@@ -42,13 +42,7 @@ $meditatie_query = new WP_Query( array(
 ) );
 ?>
 <main id="main" class="site-main" data-testid="page-meditatie">
-    <section class="page-hero">
-        <div class="container">
-            <p class="eyebrow"><?php esc_html_e( 'Meditatie', 'balans' ); ?></p>
-            <h1><?php esc_html_e( 'Meditaties om zelf te luisteren.', 'balans' ); ?></h1>
-            <p class="page-hero__intro"><?php esc_html_e( 'Gratis meditaties zonder account. Later volgen losse programma\'s en abonnementen via de shop.', 'balans' ); ?></p>
-        </div>
-    </section>
+    <?php balans_page_hero( 'meditatie' ); ?>
 
     <section class="section">
         <div class="container">
@@ -79,7 +73,7 @@ $meditatie_query = new WP_Query( array(
                         </article>
                     <?php endwhile; wp_reset_postdata(); ?>
                 </div>
-            <?php else : ?>
+            <?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
                 <?php balans_placeholder_notice( __( 'Nog geen meditaties toegevoegd. Voeg ze toe onder "Meditaties" in het WordPress-menu. Hieronder staan voorbeeld-blokken ter illustratie van de layout.', 'balans' ) ); ?>
                 <div class="meditation-list">
                     <?php foreach ( $placeholder_free as $m ) : ?>

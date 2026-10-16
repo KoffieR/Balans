@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'BALANS_VERSION', '1.7.0' );
+define( 'BALANS_VERSION', '2.0.0' );
 define( 'BALANS_DIR', get_template_directory() );
 define( 'BALANS_URI', get_template_directory_uri() );
 
@@ -32,4 +32,5 @@ require_once BALANS_DIR . '/inc/events.php';
 require_once BALANS_DIR . '/inc/event-tickets.php';
 require_once BALANS_DIR . '/inc/event-extras.php';
 require_once BALANS_DIR . '/inc/event-share.php';
+require_once BALANS_DIR . '/inc/page-texts.php';
 require_once BALANS_DIR . '/inc/upgrade.php';

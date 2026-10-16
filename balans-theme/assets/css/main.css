@@ -189,8 +189,9 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 /* ---------- Logo ---------- */
 .site-logo { display: inline-flex; align-items: center; line-height: 0; color: var(--balans-logo); transition: opacity .25s var(--balans-ease); }
 .site-logo:hover { opacity: .8; }
-.site-logo__svg { height: 96px; width: auto; }
-@media (max-width: 600px) { .site-logo__svg { height: 72px; } }
+.site-branding { padding-left: 16px; }
+.site-logo__svg { height: 118px; width: auto; }
+@media (max-width: 600px) { .site-branding { padding-left: 14px; } .site-logo__svg { height: 72px; } }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -660,3 +661,15 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 .event-share__list a, .event-share__copy { display: inline-block; padding: 7px 16px; border: 1px solid var(--balans-line); border-radius: 999px; background: #FFFBF4; color: var(--balans-text, #2B2420); font: inherit; font-size: .9rem; text-decoration: none; cursor: pointer; transition: border-color .2s ease, color .2s ease, transform .2s ease; }
 .event-share__list a:hover, .event-share__copy:hover { border-color: var(--balans-logo); color: var(--balans-logo); transform: translateY(-1px); }
 .event-interest { margin-top: 40px; }
+
+/* Bewerkbare pagina-inhoud (blokken) */
+.entry-content--wide { max-width: none; }
+.entry-content .wp-block-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 60px; align-items: start; margin: 0 0 1.5em; }
+.entry-content .wp-block-column > :first-child { margin-top: 0; }
+.entry-content .wp-block-column h2:first-child, .entry-content > h2:first-child { margin-top: 0; }
+@media (max-width: 900px) { .entry-content .wp-block-columns { grid-template-columns: 1fr; gap: 32px; } }
+.entry-content .wp-block-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0 0; }
+.entry-content .wp-block-button__link { display: inline-flex; align-items: center; padding: 13px 26px; border-radius: 999px; background: var(--balans-primary); color: #fff; font-weight: 500; text-decoration: none; transition: background-color .25s var(--balans-ease), transform .25s var(--balans-ease); }
+.entry-content .wp-block-button__link:hover { background: var(--balans-primary-dk); color: #fff; transform: translateY(-1px); }
+.hero__visual--image { padding: 0; overflow: hidden; }
+.hero__img { display: block; width: 100%; height: 100%; object-fit: cover; }

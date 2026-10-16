@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 const BALANS_DIENSTEN_SEED = 1;
 
-function balans_services() {
+function balans_services( $lang = '' ) {
     static $cache = array();
-    $lang = balans_lang();
+    $lang = $lang ? $lang : balans_lang();
     if ( ! isset( $cache[ $lang ] ) ) {
         $cache[ $lang ] = require BALANS_DIR . '/inc/content/services-' . $lang . '.php';
     }

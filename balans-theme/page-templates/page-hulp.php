@@ -9,20 +9,13 @@ get_header();
 $s = balans_services();
 ?>
 <main id="main" class="site-main" data-testid="page-hulp">
-    <section class="page-hero">
-        <div class="container">
-            <p class="eyebrow"><?php echo esc_html( $s['hulp_eyebrow'] ); ?></p>
-            <h1><?php echo esc_html( $s['hulp_title'] ); ?></h1>
-            <?php foreach ( $s['hulp_intro'] as $paragraph ) : ?>
-                <p class="page-hero__intro"><?php echo esc_html( $paragraph ); ?></p>
-            <?php endforeach; ?>
+    <?php ob_start(); ?>
             <nav class="service-jump" aria-label="<?php echo esc_attr( $s['hulp_eyebrow'] ); ?>">
                 <?php foreach ( balans_get_diensten( 'hulp' ) as $key => $item ) : ?>
                     <a href="#<?php echo esc_attr( $key ); ?>" data-testid="jump-<?php echo esc_attr( $key ); ?>"><?php echo esc_html( $item['title'] ); ?></a>
                 <?php endforeach; ?>
             </nav>
-        </div>
-    </section>
+    <?php balans_page_hero( 'hulp', ob_get_clean() ); ?>
 
     <section class="section">
         <div class="container">
@@ -32,6 +25,9 @@ $s = balans_services();
                 <?php endforeach; ?>
             </div>
             <?php balans_price_note(); ?>
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); if ( get_the_content() ) : ?>
+                <div class="entry-content service-extra" style="margin-top:48px;"><?php the_content(); ?></div>
+            <?php endif; endwhile; endif; ?>
         </div>
     </section>
 </main>

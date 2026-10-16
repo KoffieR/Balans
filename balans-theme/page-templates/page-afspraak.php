@@ -9,13 +9,7 @@ get_header();
 $slots = balans_get_time_slots();
 ?>
 <main id="main" class="site-main" data-testid="page-afspraak">
-    <section class="page-hero">
-        <div class="container">
-            <p class="eyebrow"><?php esc_html_e( 'Afspraken', 'balans' ); ?></p>
-            <h1><?php esc_html_e( 'Een afspraak inplannen.', 'balans' ); ?></h1>
-            <p class="page-hero__intro"><?php esc_html_e( 'Kies de dienst, een datum en een tijdslot. We nemen daarna contact met je op om de afspraak te bevestigen.', 'balans' ); ?></p>
-        </div>
-    </section>
+    <?php balans_page_hero( 'afspraak' ); ?>
 
     <section class="section">
         <div class="container">

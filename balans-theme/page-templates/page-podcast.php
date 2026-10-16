@@ -18,15 +18,11 @@ $episodes = balans_has_podcast_plugin() ? new WP_Query( array(
 
 <main id="main" class="site-main" data-testid="podcast-page">
 
-    <section class="page-hero podcast-hero">
-        <?php echo balans_svg( 'q-accent', 'hero__q' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
-        <div class="container">
-            <p class="eyebrow"><?php esc_html_e( 'Podcast', 'balans' ); ?></p>
-            <h1><?php esc_html_e( 'Meditaties om naar te luisteren, waar je ook bent.', 'balans' ); ?></h1>
-            <p class="page-hero__intro"><?php esc_html_e( 'Rustige afleveringen om even stil te staan. Een deel is gratis; met een EQ5-abonnement luister je naar alles.', 'balans' ); ?></p>
-            <?php get_template_part( 'template-parts/podcast-subscribe' ); ?>
-        </div>
-    </section>
+    <?php
+    ob_start();
+    get_template_part( 'template-parts/podcast-subscribe' );
+    balans_page_hero( 'podcast', ob_get_clean(), 'podcast-hero' );
+    ?>
 
     <section class="section">
         <div class="container">

@@ -146,94 +146,8 @@ msgid "Disclaimer"
 msgstr "Disclaimer"
 
 #: front-page.php
-msgid "Welkom"
-msgstr "Welcome"
-
-#: front-page.php
-msgid "Van vicieuze cirkel %s"
-msgstr "From vicious cycle %s"
-
-#: front-page.php
-msgid "naar balans."
-msgstr "to balance."
-
-#: front-page.php
-msgid ""
-"Iedereen heeft vragen in een zoektocht naar balans. Hier vind je rustige "
-"begeleiding — van meditaties die je zelf kunt doen tot gesprekken en "
-"lichaamsgericht werk."
-msgstr ""
-"Everyone has questions on the search for balance. Here you will find calm "
-"guidance — from meditations you can do yourself to conversations and body-"
-"oriented work."
-
-#: front-page.php
-msgid "Ontdek wat bij je past"
-msgstr "Discover what suits you"
-
-#: front-page.php
-msgid "Luister gratis"
-msgstr "Listen for free"
-
-#: front-page.php
-msgid "Beeld nog aan te leveren"
-msgstr "Image still to be supplied"
-
-#: front-page.php
-msgid "Keuzehulp"
-msgstr "Guide"
-
-#: front-page.php
-msgid "Waar ben je naar op zoek?"
-msgstr "What are you looking for?"
-
-#: front-page.php
-msgid "Vijf directe routes. Kies wat op dit moment het beste past."
-msgstr "Five direct routes. Choose what suits you best right now."
-
-#: front-page.php
-msgid "Trainingen die ruimte scheppen in de groep."
-msgstr "Trainings that create space within the group."
-
-#: front-page.php
-msgid ""
-"Een vastgesteld concept en programma, op onze locatie. Op aanvraag maken we "
-"een offerte voor een groep medewerkers."
-msgstr ""
-"A set concept and programme, at our location. On request we prepare a quote "
-"for a group of employees."
-
-#: front-page.php
-msgid "Bekijk het zakelijke aanbod"
-msgstr "View the business offer"
-
-#: front-page.php
-msgid "Voorbeeld-concept"
-msgstr "Example concept"
-
-#: front-page.php
-msgid "Werken met de groep"
-msgstr "Working with the group"
-
-#: front-page.php
-msgid "Programmadetails nog aan te leveren door de eigenaar."
-msgstr "Programme details still to be supplied by the owner."
-
-#: front-page.php
 msgid "Meer info"
 msgstr "More info"
-
-#: front-page.php
-msgid "Kristallen & (half)edelstenen"
-msgstr "Crystals & (semi-)precious stones"
-
-#: front-page.php
-msgid ""
-"Stenen die energetisch zijn bewerkt om bij een thema of persoonlijk proces "
-"te ondersteunen."
-msgstr ""
-"Stones that have been energetically treated to support a theme or personal "
-"process."
 
 #: front-page.php
 msgid "Bekijk de hele shop"
@@ -250,26 +164,6 @@ msgstr ""
 msgid "Naar de shop"
 msgstr "To the shop"
 
-#: front-page.php
-msgid "Onze aanpak"
-msgstr "Our approach"
-
-#: front-page.php
-msgid "Empathisch energiewerk, in woorden die kloppen."
-msgstr "Empathic energy work, in words that ring true."
-
-#: front-page.php
-msgid ""
-"Geen beloftes, geen jargon. Een rustige, menselijke manier van kijken naar "
-"wat er bij jou of in een groep speelt."
-msgstr ""
-"No promises, no jargon. A calm, human way of looking at what is going on for"
-" you or within a group."
-
-#: front-page.php
-msgid "Lees meer over onze aanpak"
-msgstr "Read more about our approach"
-
 #: header.php
 msgid "Spring naar hoofdinhoud"
 msgstr "Skip to main content"
@@ -281,10 +175,6 @@ msgstr "Open menu"
 #: header.php
 msgid "Hoofdnavigatie"
 msgstr "Main navigation"
-
-#: header.php
-msgid "Hulp"
-msgstr "Help"
 
 #: inc/appointments.php
 msgid "Kies een geldige dienst."
@@ -560,6 +450,312 @@ msgstr ""
 msgid "Engelse en Franse pagina's aanmaken"
 msgstr "Create English and French pages"
 
+#: inc/page-texts.php
+msgid "Over ons, de oprichter en onze aanpak."
+msgstr "About us, the founder and our approach."
+
+#: inc/page-texts.php
+msgid ""
+"Wie we zijn, hoe we werken en wat we met empathisch energiewerk bedoelen."
+msgstr "Who we are, how we work and what we mean by empathic energy work."
+
+#: inc/page-texts.php
+msgid "Vijf manieren om met wat er speelt aan de slag te gaan."
+msgstr "Five ways to work with what is going on."
+
+#: inc/page-texts.php
+msgid ""
+"Kies wat op dit moment past. Je kunt altijd op een ander moment een andere "
+"route proberen."
+msgstr ""
+"Choose what suits you right now. You can always try another route at another"
+" time."
+
+#: inc/page-texts.php
+msgid "Trainingen die ruimte scheppen in de groep."
+msgstr "Trainings that create space within the group."
+
+#: inc/page-texts.php
+msgid ""
+"Een vastgesteld concept en programma op onze locatie. Deelnemers komen naar "
+"de trainingslocatie — training op locatie bij het bedrijf wordt niet "
+"aangeboden."
+msgstr ""
+"A set concept and programme at our location. Participants come to the "
+"training location — training on site at the company is not offered."
+
+#: inc/page-texts.php
+msgid "Contact"
+msgstr "Contact"
+
+#: inc/page-texts.php
+msgid "Stuur een bericht en we reageren zo snel mogelijk."
+msgstr "Send a message and we will respond as soon as possible."
+
+#: inc/page-texts.php
+msgid "Een afspraak inplannen."
+msgstr "Schedule an appointment."
+
+#: inc/page-texts.php
+msgid ""
+"Kies de dienst, een datum en een tijdslot. We nemen daarna contact met je op"
+" om de afspraak te bevestigen."
+msgstr ""
+"Choose the service, a date and a time slot. We will then contact you to "
+"confirm the appointment."
+
+#: inc/page-texts.php
+msgid "Lezen, verdiepen en reflecteren."
+msgstr "Reading, deepening and reflecting."
+
+#: inc/page-texts.php
+msgid ""
+"Artikelen met inhoudelijke verdieping en betrouwbare bronnen, plus eigen "
+"blogs waarin we visie en ervaring delen."
+msgstr ""
+"Articles with in-depth content and reliable sources, plus our own blogs in "
+"which we share vision and experience."
+
+#: inc/page-texts.php
+msgid "Meditaties om zelf te luisteren."
+msgstr "Meditations to listen to yourself."
+
+#: inc/page-texts.php
+msgid ""
+"Gratis meditaties zonder account. Later volgen losse programma's en "
+"abonnementen via de shop."
+msgstr ""
+"Free meditations without an account. Separate programmes and subscriptions "
+"will follow later via the shop."
+
+#: inc/page-texts.php
+msgid "Vraag een offerte aan"
+msgstr "Request a quote"
+
+#: inc/page-texts.php
+msgid ""
+"Voor groepsaanmeldingen of een voorstel op maat van de bestaande concepten. "
+"We vragen alleen wat nodig is."
+msgstr ""
+"For group registrations or a tailored proposal based on the existing "
+"concepts. We only ask for what is necessary."
+
+#: inc/page-texts.php
+msgid ""
+"Op vastgestelde data op onze locatie. Waar mogelijk kun je direct "
+"inschrijven via het winkelmandje."
+msgstr ""
+"On fixed dates at our location. Where possible you can register directly via"
+" the shopping cart."
+
+#: inc/page-texts.php
+msgid "Podcast"
+msgstr "Podcast"
+
+#: inc/page-texts.php
+msgid "Meditaties om naar te luisteren, waar je ook bent."
+msgstr "Meditations to listen to, wherever you are."
+
+#: inc/page-texts.php
+msgid ""
+"Rustige afleveringen om even stil te staan. Een deel is gratis; met een "
+"EQ5-abonnement luister je naar alles."
+msgstr ""
+"Calm episodes to pause for a moment. Some are free; with an EQ5 subscription"
+" you can listen to everything."
+
+#: inc/page-texts.php
+msgid "(Voorbeeldtekst — klik erop om hem te vervangen.)"
+msgstr "(Example text — click it to replace it.)"
+
+#: inc/page-texts.php
+msgid "De organisatie"
+msgstr "The organisation"
+
+#: inc/page-texts.php
+msgid ""
+"Vertel hier in een paar zinnen wie EQ5 is, waar je voor staat en voor wie je"
+" er bent."
+msgstr ""
+"Tell in a few sentences who EQ5 is, what you stand for and who you are there"
+" for."
+
+#: inc/page-texts.php
+msgid "De oprichter"
+msgstr "The founder"
+
+#: inc/page-texts.php
+msgid ""
+"Vertel hier iets over jezelf: je achtergrond, je ervaring en hoe je bij dit "
+"werk bent gekomen."
+msgstr ""
+"Tell something about yourself: your background, your experience and how you "
+"came to this work."
+
+#: inc/page-texts.php
+msgid "Onze aanpak & empathisch energiewerk"
+msgstr "Our approach & empathic energy work"
+
+#: inc/page-texts.php
+msgid ""
+"Een rustige, menselijke manier van kijken naar wat er speelt. Zonder "
+"beloftes, zonder jargon. We presenteren wat we doen niet als vervanging van "
+"medische zorg."
+msgstr ""
+"A calm, human way of looking at what is going on. Without promises, without "
+"jargon. We do not present what we do as a substitute for medical care."
+
+#: inc/page-texts.php
+msgid "Beschrijf hier hoe een sessie verloopt en wat iemand kan verwachten."
+msgstr "Describe how a session goes and what someone can expect."
+
+#: inc/page-texts.php
+msgid "Partners & samenwerking"
+msgstr "Partners & collaboration"
+
+#: inc/page-texts.php
+msgid ""
+"Werk je samen met andere praktijken of organisaties? Noem ze hier, of "
+"verwijder dit kopje."
+msgstr ""
+"Do you work with other practices or organisations? Name them here, or remove"
+" this heading."
+
+#: inc/page-texts.php
+msgid "Adres: [straat en huisnummer, postcode en plaats]"
+msgstr "Address: [street and number, postcode and town]"
+
+#: inc/page-texts.php
+msgid "We reageren meestal binnen twee werkdagen."
+msgstr "We usually respond within two working days."
+
+#: inc/page-texts.php
+msgid "Twee routes"
+msgstr "Two routes"
+
+#: inc/page-texts.php
+msgid "Zelf een plek boeken"
+msgstr "Book a place yourself"
+
+#: inc/page-texts.php
+msgid ""
+"Als een training een vaste prijs en open inschrijving heeft, kun je direct "
+"inschrijven en afrekenen via het winkelmandje."
+msgstr ""
+"If a training has a fixed price and open registration, you can register and "
+"pay directly via the shopping cart."
+
+#: inc/page-texts.php
+msgid "Bekijk open trainingen"
+msgstr "View open trainings"
+
+#: inc/page-texts.php
+msgid ""
+"Meerdere medewerkers aanmelden of een voorstel ontvangen? Vraag een offerte "
+"aan."
+msgstr ""
+"Registering several employees or receiving a proposal? Request a quote."
+
+#: inc/page-texts.php
+msgid "Offerte aanvragen"
+msgstr "Request a quote"
+
+#: inc/page-texts.php
+msgid "Welkom"
+msgstr "Welcome"
+
+#: inc/page-texts.php
+msgid "Van vicieuze cirkel %s"
+msgstr "From vicious cycle %s"
+
+#: inc/page-texts.php
+msgid "naar balans."
+msgstr "to balance."
+
+#: inc/page-texts.php
+msgid ""
+"Iedereen heeft vragen in een zoektocht naar balans. Hier vind je rustige "
+"begeleiding — van meditaties die je zelf kunt doen tot gesprekken en "
+"lichaamsgericht werk."
+msgstr ""
+"Everyone has questions on the search for balance. Here you will find calm "
+"guidance — from meditations you can do yourself to conversations and body-"
+"oriented work."
+
+#: inc/page-texts.php
+msgid "Ontdek wat bij je past"
+msgstr "Discover what suits you"
+
+#: inc/page-texts.php
+msgid "Luister gratis"
+msgstr "Listen for free"
+
+#: inc/page-texts.php
+msgid "Keuzehulp"
+msgstr "Guide"
+
+#: inc/page-texts.php
+msgid "Waar ben je naar op zoek?"
+msgstr "What are you looking for?"
+
+#: inc/page-texts.php
+msgid "Vijf directe routes. Kies wat op dit moment het beste past."
+msgstr "Five direct routes. Choose what suits you best right now."
+
+#: inc/page-texts.php
+msgid ""
+"Een vastgesteld concept en programma, op onze locatie. Op aanvraag maken we "
+"een offerte voor een groep medewerkers."
+msgstr ""
+"A set concept and programme, at our location. On request we prepare a quote "
+"for a group of employees."
+
+#: inc/page-texts.php
+msgid "Bekijk het zakelijke aanbod"
+msgstr "View the business offer"
+
+#: inc/page-texts.php
+msgid "Werken met de groep"
+msgstr "Working with the group"
+
+#: inc/page-texts.php
+msgid "Een dag waarin de groep ruimte maakt voor wat er onderling speelt."
+msgstr ""
+"A day in which the group makes room for what is going on between its "
+"members."
+
+#: inc/page-texts.php
+msgid "Kristallen & (half)edelstenen"
+msgstr "Crystals & (semi-)precious stones"
+
+#: inc/page-texts.php
+msgid ""
+"Stenen die energetisch zijn bewerkt om bij een thema of persoonlijk proces "
+"te ondersteunen."
+msgstr ""
+"Stones that have been energetically treated to support a theme or personal "
+"process."
+
+#: inc/page-texts.php
+msgid "Onze aanpak"
+msgstr "Our approach"
+
+#: inc/page-texts.php
+msgid "Empathisch energiewerk, in woorden die kloppen."
+msgstr "Empathic energy work, in words that ring true."
+
+#: inc/page-texts.php
+msgid ""
+"Geen beloftes, geen jargon. Een rustige, menselijke manier van kijken naar "
+"wat er bij jou of in een groep speelt."
+msgstr ""
+"No promises, no jargon. A calm, human way of looking at what is going on for"
+" you or within a group."
+
+#: inc/page-texts.php
+msgid "Lees meer over onze aanpak"
+msgstr "Read more about our approach"
+
 #: inc/placeholder-content.php
 msgid "Meer rust, zelf ontdekken en oefenen"
 msgstr "More calm, discovering and practising yourself"
@@ -572,6 +768,10 @@ msgstr "Free and paid meditations you can listen to at your own pace."
 #: inc/placeholder-content.php
 msgid "Praten over wat er bij je speelt"
 msgstr "Talking about what is going on for you"
+
+#: inc/placeholder-content.php
+msgid "Hulp"
+msgstr "Help"
 
 #: inc/placeholder-content.php
 msgid ""
@@ -794,18 +994,6 @@ msgid "Er is nog geen inhoud op deze locatie."
 msgstr "There is no content at this location yet."
 
 #: page-templates/page-afspraak.php
-msgid "Een afspraak inplannen."
-msgstr "Schedule an appointment."
-
-#: page-templates/page-afspraak.php
-msgid ""
-"Kies de dienst, een datum en een tijdslot. We nemen daarna contact met je op"
-" om de afspraak te bevestigen."
-msgstr ""
-"Choose the service, a date and a time slot. We will then contact you to "
-"confirm the appointment."
-
-#: page-templates/page-afspraak.php
 msgid ""
 "Beschikbare tijdslots zijn tijdelijke voorbeelden. De werkelijke "
 "beschikbaarheid wordt later door de eigenaar ingericht."
@@ -841,18 +1029,6 @@ msgstr ""
 "Appointments are only for consultations and acupressure massage + "
 "consultation. Shop, meditations and fixed trainings go through the shopping "
 "cart."
-
-#: page-templates/page-artikelen.php
-msgid "Lezen, verdiepen en reflecteren."
-msgstr "Reading, deepening and reflecting."
-
-#: page-templates/page-artikelen.php
-msgid ""
-"Artikelen met inhoudelijke verdieping en betrouwbare bronnen, plus eigen "
-"blogs waarin we visie en ervaring delen."
-msgstr ""
-"Articles with in-depth content and reliable sources, plus our own blogs in "
-"which we share vision and experience."
 
 #: page-templates/page-artikelen.php
 msgid "Lees artikel"
@@ -905,18 +1081,6 @@ msgstr "Still to be completed."
 #: page-templates/page-consult.php
 msgid "Wat je kunt verwachten"
 msgstr "What you can expect"
-
-#: page-templates/page-contact.php
-msgid "Contact"
-msgstr "Contact"
-
-#: page-templates/page-contact.php
-msgid "Stuur een bericht en we reageren zo snel mogelijk."
-msgstr "Send a message and we will respond as soon as possible."
-
-#: page-templates/page-contact.php
-msgid "Adres en reactietermijnen nog aan te leveren door de eigenaar."
-msgstr "Address and response times still to be provided by the owner."
 
 #: page-templates/page-contact.php
 msgid "Je bericht"
@@ -1002,18 +1166,6 @@ msgid "Een zachte afsluiting om los te laten wat er was."
 msgstr "A gentle closing to let go of what has been."
 
 #: page-templates/page-meditatie.php
-msgid "Meditaties om zelf te luisteren."
-msgstr "Meditations to listen to yourself."
-
-#: page-templates/page-meditatie.php
-msgid ""
-"Gratis meditaties zonder account. Later volgen losse programma's en "
-"abonnementen via de shop."
-msgstr ""
-"Free meditations without an account. Separate programmes and subscriptions "
-"will follow later via the shop."
-
-#: page-templates/page-meditatie.php
 msgid "Gratis meditaties"
 msgstr "Free meditations"
 
@@ -1057,18 +1209,6 @@ msgstr ""
 "payment."
 
 #: page-templates/page-offerte.php
-msgid "Vraag een offerte aan"
-msgstr "Request a quote"
-
-#: page-templates/page-offerte.php
-msgid ""
-"Voor groepsaanmeldingen of een voorstel op maat van de bestaande concepten. "
-"We vragen alleen wat nodig is."
-msgstr ""
-"For group registrations or a tailored proposal based on the existing "
-"concepts. We only ask for what is necessary."
-
-#: page-templates/page-offerte.php
 msgid "Bedrijfsnaam"
 msgstr "Company name"
 
@@ -1092,84 +1232,6 @@ msgstr "Group size (optional)"
 msgid "Vraag of aanvullende informatie"
 msgstr "Question or additional information"
 
-#: page-templates/page-offerte.php
-msgid "Offerte aanvragen"
-msgstr "Request a quote"
-
-#: page-templates/page-over.php
-msgid "Over ons, de oprichter en onze aanpak."
-msgstr "About us, the founder and our approach."
-
-#: page-templates/page-over.php
-msgid ""
-"Wie we zijn, hoe we werken en wat we met empathisch energiewerk bedoelen."
-msgstr "Who we are, how we work and what we mean by empathic energy work."
-
-#: page-templates/page-over.php
-msgid "De organisatie"
-msgstr "The organisation"
-
-#: page-templates/page-over.php
-msgid "Beschrijving van de organisatie — nog aan te leveren door de eigenaar."
-msgstr "Description of the organisation — still to be supplied by the owner."
-
-#: page-templates/page-over.php
-msgid "De oprichter"
-msgstr "The founder"
-
-#: page-templates/page-over.php
-msgid ""
-"Achtergrond, werkervaring en relevante kwalificaties — nog aan te leveren. "
-"Alleen echte informatie wordt getoond."
-msgstr ""
-"Background, work experience and relevant qualifications — still to be "
-"supplied. Only real information is shown."
-
-#: page-templates/page-over.php
-msgid "Onze aanpak & empathisch energiewerk"
-msgstr "Our approach & empathic energy work"
-
-#: page-templates/page-over.php
-msgid ""
-"Een rustige, menselijke manier van kijken naar wat er speelt. Zonder "
-"beloftes, zonder jargon. We presenteren wat we doen niet als vervanging van "
-"medische zorg."
-msgstr ""
-"A calm, human way of looking at what is going on. Without promises, without "
-"jargon. We do not present what we do as a substitute for medical care."
-
-#: page-templates/page-over.php
-msgid "Uitgebreide beschrijving nog aan te leveren."
-msgstr "Extensive description still to be supplied."
-
-#: page-templates/page-over.php
-msgid "Partners & samenwerking"
-msgstr "Partners & collaboration"
-
-#: page-templates/page-over.php
-msgid ""
-"Alleen opnemen wanneer er werkelijk relevante partners zijn. Nog aan te "
-"leveren."
-msgstr ""
-"Only include when there are genuinely relevant partners. Still to be "
-"supplied."
-
-#: page-templates/page-podcast.php
-msgid "Podcast"
-msgstr "Podcast"
-
-#: page-templates/page-podcast.php
-msgid "Meditaties om naar te luisteren, waar je ook bent."
-msgstr "Meditations to listen to, wherever you are."
-
-#: page-templates/page-podcast.php
-msgid ""
-"Rustige afleveringen om even stil te staan. Een deel is gratis; met een "
-"EQ5-abonnement luister je naar alles."
-msgstr ""
-"Calm episodes to pause for a moment. Some are free; with an EQ5 subscription"
-" you can listen to everything."
-
 #: page-templates/page-podcast.php
 msgid ""
 "Installeer en activeer de plugin Seriously Simple Podcasting om afleveringen"
@@ -1185,14 +1247,6 @@ msgstr "No episodes yet. Add them via \"Podcast\" in the WordPress menu."
 #: page-templates/page-podcast.php
 msgid "Meer afleveringen"
 msgstr "More episodes"
-
-#: page-templates/page-trainingen.php
-msgid ""
-"Op vastgestelde data op onze locatie. Waar mogelijk kun je direct "
-"inschrijven via het winkelmandje."
-msgstr ""
-"On fixed dates at our location. Where possible you can register directly via"
-" the shopping cart."
 
 #: page-templates/page-trainingen.php
 msgid "Bekijk training"
@@ -1225,15 +1279,6 @@ msgstr "Still to be supplied"
 
 #: page-templates/page-voor-bedrijven.php
 msgid ""
-"Een vastgesteld concept en programma op onze locatie. Deelnemers komen naar "
-"de trainingslocatie — training op locatie bij het bedrijf wordt niet "
-"aangeboden."
-msgstr ""
-"A set concept and programme at our location. Participants come to the "
-"training location — training on site at the company is not offered."
-
-#: page-templates/page-voor-bedrijven.php
-msgid ""
 "Nog geen zakelijke trainingen toegevoegd. Voeg aanbod toe via \"Zakelijk "
 "aanbod\" in het WordPress-menu."
 msgstr ""
@@ -1241,55 +1286,12 @@ msgstr ""
 "WordPress menu."
 
 #: page-templates/page-voor-bedrijven.php
+msgid "Voorbeeld-concept"
+msgstr "Example concept"
+
+#: page-templates/page-voor-bedrijven.php
 msgid "Programma, aantal dagen en eventuele terugkomdag nog aan te leveren."
 msgstr "Programme, number of days and any follow-up day still to be supplied."
-
-#: page-templates/page-voor-bedrijven.php
-msgid "Twee routes"
-msgstr "Two routes"
-
-#: page-templates/page-voor-bedrijven.php
-msgid "Open inschrijving"
-msgstr "Open registration"
-
-#: page-templates/page-voor-bedrijven.php
-msgid "Zelf een plek boeken"
-msgstr "Book a place yourself"
-
-#: page-templates/page-voor-bedrijven.php
-msgid ""
-"Als een training een vaste prijs en open inschrijving heeft, kun je direct "
-"inschrijven en afrekenen via het winkelmandje."
-msgstr ""
-"If a training has a fixed price and open registration, you can register and "
-"pay directly via the shopping cart."
-
-#: page-templates/page-voor-bedrijven.php
-msgid "Bekijk open trainingen"
-msgstr "View open trainings"
-
-#: page-templates/page-voor-bedrijven.php
-msgid "Groepen"
-msgstr "Groups"
-
-#: page-templates/page-voor-bedrijven.php
-msgid ""
-"Meerdere medewerkers aanmelden of een voorstel ontvangen? Vraag een offerte "
-"aan."
-msgstr ""
-"Registering several employees or receiving a proposal? Request a quote."
-
-#: page-templates/page-voor-jou.php
-msgid "Vijf manieren om met wat er speelt aan de slag te gaan."
-msgstr "Five ways to work with what is going on."
-
-#: page-templates/page-voor-jou.php
-msgid ""
-"Kies wat op dit moment past. Je kunt altijd op een ander moment een andere "
-"route proberen."
-msgstr ""
-"Choose what suits you right now. You can always try another route at another"
-" time."
 
 #: page-templates/page-voor-jou.php
 msgid "Meer informatie"
