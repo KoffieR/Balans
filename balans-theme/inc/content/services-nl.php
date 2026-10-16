@@ -82,9 +82,9 @@ return array(
         ),
         'dubbel-consult' => array(
             'title' => 'Dubbel consult',
-            'when'  => 'Met Remco en Maaike',
+            'when'  => 'Met Maaike en Remco',
             'text'  => array(
-                'Bij het dubbel consult werkt Remco samen met Maaike, die de juiste extra inbreng levert om nog dieper op de materie in te gaan en verder te kijken naar karakter en systeem (de directe omgeving van de persoon). Twee mensen die werken betekent meer kosten, maar het is de investering zeker waard.',
+                'Bij het dubbel consult werken Maaike en Remco samen. Maaike levert de juiste extra inbreng om nog dieper op de materie in te gaan en verder te kijken naar karakter en systeem (de directe omgeving van de persoon). Twee mensen die werken betekent meer kosten, maar het is de investering zeker waard.',
             ),
         ),
         'drukpuntmassage' => array(
@@ -97,11 +97,10 @@ return array(
             ),
         ),
         'maatwerk' => array(
-            'title' => 'Maatwerk',
-            'when'  => 'In je gezin of bedrijf',
+            'title' => 'Familie-pakket',
+            'when'  => 'Voor het hele gezin',
             'text'  => array(
-                'Het is mogelijk om een maatwerktraject aan te vragen waarbij Remco in je gezin of bedrijf meeloopt om te zien waar de patronen zitten die de vicieuze cirkels in stand houden. Neem hiervoor contact op om in gesprek te gaan over de mogelijkheden.',
-                'Veel bedrijven hebben werknemers die niet tot hun recht komen. Dat heeft vaak te maken met persoonlijke patronen en in het bedrijf ingeslopen patronen die te sterk op elkaar inhaken om ze te doorzien en te doorbreken. Remco is in staat deze te herkennen en te doorbreken, met advies over welke veranderingen de potentie in mensen naar boven halen, zodat het bedrijf kan floreren.',
+                'Een Familie-pakket bestaat uit afstemmingen over de familieleden, een consult voor de ouder(s), het afvoeren van gedeelde emotionele ladingen en het oplossen van generationele lijnen.',
             ),
         ),
     ),

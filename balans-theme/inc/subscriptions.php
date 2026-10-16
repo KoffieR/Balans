@@ -133,7 +133,7 @@ function balans_dienst_for_level( $level_id, $lang ) {
     return $post;
 }
 
-function balans_mail_html( $lang, $paragraphs, $user_id ) {
+function balans_mail_html( $lang, $paragraphs, $user_id = 0 ) {
     $t     = balans_mail_texts( $lang );
     $style = 'font-family:Georgia,serif;font-size:16px;line-height:1.6;color:#2B2420;';
     $html  = '<div style="background:#F5F0E8;padding:32px 16px;"><div style="max-width:560px;margin:0 auto;background:#FFFBF4;border-radius:10px;padding:32px;' . $style . '">';
@@ -142,7 +142,9 @@ function balans_mail_html( $lang, $paragraphs, $user_id ) {
         $html .= '<p style="margin:0 0 16px;">' . wp_kses_post( $p ) . '</p>';
     }
     $html .= '<p style="margin:24px 0 0;color:#8B6B47;font-style:italic;">' . esc_html( $t['sign'] ) . '</p>';
-    $html .= '<p style="margin:28px 0 0;font-family:Arial,sans-serif;font-size:12px;color:#8A7D71;"><a style="color:#8A7D71;" href="' . esc_url( balans_reminder_unsubscribe_url( $user_id ) ) . '">' . esc_html( $t['unsubscribe'] ) . '</a></p>';
+    if ( $user_id ) {
+        $html .= '<p style="margin:28px 0 0;font-family:Arial,sans-serif;font-size:12px;color:#8A7D71;"><a style="color:#8A7D71;" href="' . esc_url( balans_reminder_unsubscribe_url( $user_id ) ) . '">' . esc_html( $t['unsubscribe'] ) . '</a></p>';
+    }
     return $html . '</div></div>';
 }
 

@@ -5,7 +5,7 @@ import cairosvg
 from make_logos import svg_q, svg_eq5, glyph, CAP
 
 IMG = "/app/balans-theme/assets/images"
-TEAL, CREAM = "#3C6E71", "#F5F0E8"
+TEAL, CREAM = "#3F7F83", "#F5F0E8"
 
 
 def tighten(svg, x0, x1):

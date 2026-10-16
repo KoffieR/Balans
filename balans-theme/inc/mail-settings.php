@@ -23,7 +23,7 @@ function balans_mail_defaults( $lang ) {
             'welcome_hi'      => 'Lieve {naam},',
             'welcome_body'    => 'Fijn dat je hebt gekozen voor het abonnement {abonnement}. Vanaf nu word je {moment} energetisch verlicht. Je hoeft daar zelf niets voor te doen; je kunt er wel ruimte voor maken door op dat moment even rustig aan te doen, water te drinken en te voelen wat er verandert.',
             'welcome_what'    => 'Wat er gebeurt:',
-            'welcome_end'     => 'Heb je vragen? Beantwoord gewoon deze e-mail of bel +31 6 23 988 488.',
+            'welcome_end'     => 'Heb je vragen? Beantwoord gewoon deze e-mail.',
             'remind_subject'  => 'Vandaag is je moment van verlichting',
             'remind_body'     => 'Vandaag vindt de verlichting van je abonnement {abonnement} plaats. Neem vandaag even de tijd voor rust: een wandeling, een kop thee, een paar minuten stilte. Zo geef je de energie de ruimte om haar werk te doen.',
             'monthly_subject' => 'Je maandelijkse rustmoment',
@@ -31,6 +31,9 @@ function balans_mail_defaults( $lang ) {
             'reflect_intro'   => 'Een vraag voor jezelf, na de verlichting:',
             'reflect_q'       => "Wat voelde je vandaag in je lichaam?\nWelke gedachte of emotie kwam vandaag naar boven?\nWaar merkte je vandaag meer rust of ruimte?\nWat wil je vandaag loslaten?\nWaar ben je vandaag dankbaar voor?",
             'reflect_tip'     => 'Schrijf je antwoord kort op in een schriftje of op je telefoon. Zo zie je na een paar weken wat er verandert.',
+            'appt_subject'    => 'Je afspraakaanvraag bij EQ5: {dienst}',
+            'appt_body'       => "Lieve {naam},\n\nBedankt voor je aanvraag voor {dienst} op {datum} om {tijd}. We nemen zo snel mogelijk contact met je op om de afspraak te bevestigen.",
+            'appt_phone'      => 'Op het afgesproken tijdstip bel je naar:',
             'sign'            => 'Hartelijke groet, Remco Sas — EQ5',
             'unsubscribe'     => 'Geen herinneringen meer ontvangen? Klik hier.',
             'unsubscribed'    => 'Je ontvangt geen herinneringen meer. Je abonnement loopt gewoon door.',
@@ -40,7 +43,7 @@ function balans_mail_defaults( $lang ) {
             'welcome_hi'      => 'Dear {naam},',
             'welcome_body'    => 'We are glad you chose the {abonnement} subscription. From now on you will be lightened energetically {moment}. You do not need to do anything yourself; you can make room for it by taking it easy at that moment, drinking water and feeling what changes.',
             'welcome_what'    => 'What happens:',
-            'welcome_end'     => 'Any questions? Simply reply to this email or call +31 6 23 988 488.',
+            'welcome_end'     => 'Any questions? Simply reply to this email.',
             'remind_subject'  => 'Today is your moment of lightening',
             'remind_body'     => 'Today the lightening of your {abonnement} subscription takes place. Take some time for rest today: a walk, a cup of tea, a few minutes of silence. This gives the energy room to do its work.',
             'monthly_subject' => 'Your monthly moment of rest',
@@ -48,6 +51,9 @@ function balans_mail_defaults( $lang ) {
             'reflect_intro'   => 'A question for yourself, after the lightening:',
             'reflect_q'       => "What did you feel in your body today?\nWhich thought or emotion came up today?\nWhere did you notice more calm or space today?\nWhat would you like to let go of today?\nWhat are you grateful for today?",
             'reflect_tip'     => 'Write your answer down briefly in a notebook or on your phone. After a few weeks you will see what changes.',
+            'appt_subject'    => 'Your appointment request with EQ5: {dienst}',
+            'appt_body'       => "Dear {naam},\n\nThank you for your request for {dienst} on {datum} at {tijd}. We will contact you as soon as possible to confirm the appointment.",
+            'appt_phone'      => 'At the agreed time, please call:',
             'sign'            => 'Warm regards, Remco Sas — EQ5',
             'unsubscribe'     => 'No longer want reminders? Click here.',
             'unsubscribed'    => 'You will no longer receive reminders. Your subscription continues as usual.',
@@ -57,7 +63,7 @@ function balans_mail_defaults( $lang ) {
             'welcome_hi'      => 'Cher/Chère {naam},',
             'welcome_body'    => "Nous sommes heureux que vous ayez choisi l'abonnement {abonnement}. Désormais, vous serez allégé(e) énergétiquement {moment}. Vous n'avez rien à faire vous-même ; vous pouvez y faire de la place en prenant les choses calmement à ce moment-là, en buvant de l'eau et en ressentant ce qui change.",
             'welcome_what'    => 'Ce qui se passe :',
-            'welcome_end'     => 'Des questions ? Répondez simplement à cet e-mail ou appelez le +31 6 23 988 488.',
+            'welcome_end'     => 'Des questions ? Répondez simplement à cet e-mail.',
             'remind_subject'  => "Aujourd'hui, c'est votre moment d'allègement",
             'remind_body'     => "Aujourd'hui a lieu l'allègement de votre abonnement {abonnement}. Prenez un moment de repos aujourd'hui : une promenade, une tasse de thé, quelques minutes de silence. Vous laissez ainsi à l'énergie l'espace pour faire son travail.",
             'monthly_subject' => 'Votre moment de repos mensuel',
@@ -65,6 +71,9 @@ function balans_mail_defaults( $lang ) {
             'reflect_intro'   => "Une question pour vous-même, après l'allègement :",
             'reflect_q'       => "Qu'avez-vous ressenti dans votre corps aujourd'hui ?\nQuelle pensée ou émotion est remontée aujourd'hui ?\nOù avez-vous ressenti plus de calme ou d'espace aujourd'hui ?\nQue souhaitez-vous lâcher aujourd'hui ?\nDe quoi êtes-vous reconnaissant(e) aujourd'hui ?",
             'reflect_tip'     => 'Notez brièvement votre réponse dans un carnet ou sur votre téléphone. Après quelques semaines, vous verrez ce qui change.',
+            'appt_subject'    => 'Votre demande de rendez-vous chez EQ5 : {dienst}',
+            'appt_body'       => "Cher/Chère {naam},\n\nMerci pour votre demande de {dienst} le {datum} à {tijd}. Nous vous contacterons dès que possible pour confirmer le rendez-vous.",
+            'appt_phone'      => "À l'heure convenue, appelez le :",
             'sign'            => 'Bien chaleureusement, Remco Sas — EQ5',
             'unsubscribe'     => 'Vous ne souhaitez plus recevoir de rappels ? Cliquez ici.',
             'unsubscribed'    => 'Vous ne recevrez plus de rappels. Votre abonnement continue normalement.',
@@ -81,6 +90,10 @@ function balans_mail_texts( $lang ) {
     $saved = (array) get_option( BALANS_MAIL_OPTION, array() );
     $saved = isset( $saved[ $lang ] ) ? array_filter( (array) $saved[ $lang ], 'strlen' ) : array();
     return array_merge( balans_mail_defaults( $lang ), $saved );
+}
+
+function balans_phone() {
+    return (string) get_option( 'balans_phone', '+31 6 23 988 488' );
 }
 
 function balans_mail_fill( $text, $vars ) {
@@ -121,6 +134,11 @@ function balans_mail_fields() {
             'reflect_q'     => array( __( 'Vragen — één per regel, er wordt telkens een andere gekozen', 'balans' ), 'textarea' ),
             'reflect_tip'   => array( __( 'Tip onder de vraag', 'balans' ), 'textarea' ),
         ),
+        __( 'Afspraakbevestiging (naar de klant)', 'balans' ) => array(
+            'appt_subject' => array( __( 'Onderwerp', 'balans' ), 'text' ),
+            'appt_body'    => array( __( 'Tekst — plaatshouders: {naam}, {dienst}, {datum}, {tijd}', 'balans' ), 'textarea' ),
+            'appt_phone'   => array( __( 'Zin boven het telefoonnummer', 'balans' ), 'text' ),
+        ),
         __( 'Algemeen', 'balans' )                   => array(
             'sign'         => array( __( 'Ondertekening', 'balans' ), 'text' ),
             'unsubscribe'  => array( __( 'Afmeldlink', 'balans' ), 'text' ),
@@ -141,6 +159,9 @@ add_action( 'admin_post_balans_mail_texts', function () {
     check_admin_referer( 'balans_mail_texts' );
     $lang  = balans_mail_lang( isset( $_POST['lang'] ) ? sanitize_key( $_POST['lang'] ) : '' );
     $saved = (array) get_option( BALANS_MAIL_OPTION, array() );
+    if ( isset( $_POST['balans_phone'] ) ) {
+        update_option( 'balans_phone', sanitize_text_field( wp_unslash( $_POST['balans_phone'] ) ) );
+    }
     if ( isset( $_POST['reset'] ) ) {
         unset( $saved[ $lang ] );
     } else {
@@ -173,6 +194,7 @@ function balans_mail_settings_page() {
     echo '</nav><form method="post" action="' . esc_url( admin_url( 'admin-post.php' ) ) . '">';
     wp_nonce_field( 'balans_mail_texts' );
     echo '<input type="hidden" name="action" value="balans_mail_texts"><input type="hidden" name="lang" value="' . esc_attr( $lang ) . '">';
+    echo '<h2>' . esc_html__( 'Telefoonnummer', 'balans' ) . '</h2><table class="form-table" role="presentation"><tr><th scope="row"><label for="balans-phone">' . esc_html__( 'Telefoonnummer in de afspraakbevestiging (geldt voor alle talen)', 'balans' ) . '</label></th><td><input data-testid="balans-phone" class="regular-text" type="text" id="balans-phone" name="balans_phone" value="' . esc_attr( balans_phone() ) . '"><p class="description">' . esc_html__( 'Dit nummer staat alleen in de bevestigingsmail van een afspraak, niet op de website.', 'balans' ) . '</p></td></tr></table>';
     foreach ( balans_mail_fields() as $section => $fields ) {
         echo '<h2>' . esc_html( $section ) . '</h2><table class="form-table" role="presentation">';
         foreach ( $fields as $key => $field ) {

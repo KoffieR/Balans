@@ -82,9 +82,9 @@ return array(
         ),
         'dubbel-consult' => array(
             'title' => 'Double consultation',
-            'when'  => 'With Remco and Maaike',
+            'when'  => 'With Maaike and Remco',
             'text'  => array(
-                'In the double consultation, Remco works together with Maaike, who provides the right additional input to go even deeper into the matter and look further at character and system (the person\'s immediate environment). Two people working means higher costs, but it is certainly worth the investment.',
+                'In the double consultation, Maaike and Remco work together. Maaike provides the right additional input to go even deeper into the matter and look further at character and system (the person\'s immediate environment). Two people working means higher costs, but it is certainly worth the investment.',
             ),
         ),
         'drukpuntmassage' => array(
@@ -97,11 +97,10 @@ return array(
             ),
         ),
         'maatwerk' => array(
-            'title' => 'Tailor-made',
-            'when'  => 'In your family or company',
+            'title' => 'Family package',
+            'when'  => 'For the whole family',
             'text'  => array(
-                'It is possible to request a tailor-made programme in which Remco joins your family or company to see where the patterns are that keep the vicious cycles going. Please get in touch to discuss the possibilities.',
-                'Many companies have employees who do not come into their own. This often has to do with personal patterns and patterns that have crept into the company, which hook into each other too strongly to be seen through and broken. Remco is able to recognise and break them, with advice on which changes will bring out the potential in people so that the company can flourish.',
+                'A Family package consists of attunements for the family members, a consultation for the parent(s), the release of shared emotional charges and the resolution of generational lines.',
             ),
         ),
     ),

@@ -18,7 +18,7 @@
     --balans-accent:      #6B7F5C;  /* gedempt salie-groen */
     --balans-line:        #D9CFBE;  /* lijnen/randen */
     --balans-focus:       #3C6E71;  /* focusring - cool teal voor contrast */
-    --balans-logo:        #3C6E71;  /* EQ5-logo teal */
+    --balans-logo:        #3F7F83;  /* EQ5-logo teal */
     --balans-logo-lt:     #7FAAAD;  /* EQ5-logo teal, lichter voor donkere achtergrond */
 
     --balans-radius:      4px;
@@ -189,8 +189,8 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 /* ---------- Logo ---------- */
 .site-logo { display: inline-flex; align-items: center; line-height: 0; color: var(--balans-logo); transition: opacity .25s var(--balans-ease); }
 .site-logo:hover { opacity: .8; }
-.site-logo__svg { height: 66px; width: auto; }
-@media (max-width: 600px) { .site-logo__svg { height: 52px; } }
+.site-logo__svg { height: 96px; width: auto; }
+@media (max-width: 600px) { .site-logo__svg { height: 72px; } }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -463,7 +463,7 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 }
 .footer-bottom nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 20px; flex-wrap: wrap; }
 .footer-brand { display: inline-block; color: var(--balans-logo-lt); line-height: 0; }
-.footer-brand__svg { height: 92px; width: auto; }
+.footer-brand__svg { height: 112px; width: auto; }
 .footer-text { color: #B5A48B; margin-top: 18px; max-width: 30ch; }
 .footer-contact { color: #D9CFBE; font-size: 0.92rem; margin-top: 16px; line-height: 1.7; }
 .footer-muted { color: #8A7D71; }
@@ -635,3 +635,9 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
     .service-block { grid-template-columns: 1fr; padding: 26px 24px; }
     .service-block__foot { grid-column: 1; }
 }
+
+/* Events */
+.event-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px 28px; margin: 0 0 32px; padding: 22px 24px; background: var(--balans-primary-lt); border-radius: var(--balans-radius-lg); }
+.event-meta dt { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--balans-muted); }
+.event-meta dd { margin: 4px 0 0; font-family: var(--balans-font-serif); font-size: 1.1rem; }
+.event-past { color: var(--balans-muted); font-style: italic; }

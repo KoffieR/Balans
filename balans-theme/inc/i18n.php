@@ -36,6 +36,7 @@ function balans_page_map() {
         'disclaimer'              => array( 'Disclaimer', 'disclaimer-en', 'Avertissement', 'avertissement' ),
         'podcasts'                => array( 'Podcast', 'listen', 'Podcast', 'ecouter' ),
         'afspraak-voor-hulp'      => array( 'Appointment for help', 'appointment-for-help', 'Rendez-vous d\'aide', 'rendez-vous-aide' ),
+        'events'                  => array( 'Events', 'events-en', 'Événements', 'evenements' ),
     );
 }
 
@@ -54,11 +55,16 @@ function balans_legal_pages() {
 }
 
 function balans_legal_content( $nl_slug, $lang ) {
-    $file = BALANS_DIR . '/inc/legal/' . sanitize_key( $lang ) . '/' . sanitize_file_name( $nl_slug ) . '.html';
-    return file_exists( $file ) ? file_get_contents( $file ) : '';
+    foreach ( array( 'legal', 'content/pages' ) as $dir ) {
+        $file = BALANS_DIR . '/inc/' . $dir . '/' . sanitize_key( $lang ) . '/' . sanitize_file_name( $nl_slug ) . '.html';
+        if ( file_exists( $file ) ) {
+            return file_get_contents( $file );
+        }
+    }
+    return '';
 }
 
-const BALANS_PAGES_VERSION = 3;
+const BALANS_PAGES_VERSION = 4;
 
 /**
  * Pagina's uit nieuwere themaversies eenmalig aanmaken (bestaande pagina's worden nooit overschreven).
@@ -67,8 +73,9 @@ function balans_install_extra_pages() {
     if ( (int) get_option( 'balans_pages_version' ) >= BALANS_PAGES_VERSION || ! current_user_can( 'manage_options' ) ) {
         return;
     }
-    $pages = balans_legal_pages() + array( 'podcasts' => 'Podcast', 'afspraak-voor-hulp' => 'Afspraak voor hulp' );
+    $pages = balans_legal_pages() + array( 'podcasts' => 'Podcast', 'afspraak-voor-hulp' => 'Afspraak voor hulp', 'events' => 'Events' );
     $templates = array(
+        'events'             => 'page-templates/page-events.php',
         'podcasts'           => 'page-templates/page-podcast.php',
         'afspraak-voor-hulp' => 'page-templates/page-hulp.php',
     );
@@ -187,7 +194,7 @@ add_action( 'change_locale', 'balans_reload_textdomain' );
  * Maak eigen berichttypes en taxonomie vertaalbaar in Polylang.
  */
 function balans_pll_post_types( $types, $is_settings ) {
-    foreach ( array( 'balans_meditatie', 'balans_training', 'balans_zakelijk', 'balans_blog' ) as $type ) {
+    foreach ( array( 'balans_meditatie', 'balans_training', 'balans_zakelijk', 'balans_blog', 'balans_event' ) as $type ) {
         $types[ $type ] = $type;
     }
     return $types;

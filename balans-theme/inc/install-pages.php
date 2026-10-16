@@ -24,8 +24,6 @@ function balans_install_pages() {
         array( 'title' => 'Afspraak maken',             'slug' => 'afspraak-maken',         'template' => 'page-templates/page-afspraak.php' ),
         array( 'title' => 'Heb je een vraag?',          'slug' => 'contact',                'template' => 'page-templates/page-contact.php' ),
         array( 'title' => 'Meditatie',                  'slug' => 'meditatie',              'template' => 'page-templates/page-meditatie.php' ),
-        array( 'title' => 'Consult',                    'slug' => 'consult',                'template' => 'page-templates/page-consult.php' ),
-        array( 'title' => 'Drukpuntmassage + consult',  'slug' => 'drukpuntmassage-consult','template' => 'page-templates/page-drukpuntmassage.php' ),
         array( 'title' => 'Abonnementen',               'slug' => 'abonnementen',           'template' => 'page-templates/page-abonnementen.php' ),
         array( 'title' => 'Trainingen & workshops',     'slug' => 'trainingen-workshops',   'template' => 'page-templates/page-trainingen.php' ),
         array( 'title' => 'Offerte aanvragen',          'slug' => 'offerte-aanvragen',      'template' => 'page-templates/page-offerte.php' ),

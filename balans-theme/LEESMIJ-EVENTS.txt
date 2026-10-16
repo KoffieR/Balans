@@ -1,0 +1,18 @@
+EVENTS
+======
+- De pagina "Events" (NL/EN/FR) wordt automatisch aangemaakt. Bovenaan staat de uitleg met de thema's; die tekst
+  pas je aan via Pagina's → Events (gewoon in de editor, bijv. een thema aan de lijst toevoegen).
+- Daaronder verschijnen automatisch de komende events.
+- Nieuw event: WordPress-menu "Events" → Nieuw event. Vul titel, tekst, korte samenvatting (Samenvatting) en
+  eventueel een uitgelichte afbeelding in, plus bij "Gegevens van het event": datum, begin-/eindtijd, locatie,
+  thema, prijs en optioneel een aanmeldlink (bijv. een webshop-product). Zonder aanmeldlink gaat de knop
+  "Aanmelden" naar het contactformulier, met de naam en datum van het event al ingevuld.
+- Vertalen: met Polylang maak je bij het event een EN/FR-vertaling; datum, tijden, prijs en link worden automatisch
+  overgenomen.
+- Voorbije events verdwijnen vanzelf uit het overzicht; hun pagina meldt "Dit event is al geweest".
+
+AFSPRAAKBEVESTIGING
+- Wie via het afspraakformulier een afspraak aanvraagt, krijgt direct een bevestigingsmail in de eigen taal,
+  met het telefoonnummer groot en duidelijk. Nummer en teksten pas je aan bij Balans → E-mailteksten.
+- Gebruik je de agenda-plugin (Simply Schedule Appointments)? Zet het telefoonnummer dan ook in de
+  bevestigingsmail van die plugin: Appointments → Settings → Notifications.

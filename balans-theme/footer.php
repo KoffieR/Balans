@@ -16,8 +16,7 @@
                     <?php esc_html_e( 'Iedereen heeft vragen in een zoektocht naar balans.', 'balans' ); ?>
                 </p>
                 <p class="footer-contact" data-testid="footer-contact">
-                    Remco Sas &middot; <?php esc_html_e( 'Balansbrenger', 'balans' ); ?><br />
-                    <a href="tel:+31623988488">+31 6 23 988 488</a>
+                    Remco Sas &middot; <?php esc_html_e( 'Balansbrenger', 'balans' ); ?>
                 </p>
             </div>
 
@@ -36,7 +35,7 @@
                 <h4><?php esc_html_e( 'Diensten', 'balans' ); ?></h4>
                 <ul>
                     <li><a href="<?php echo esc_url( balans_url( 'meditatie' ) ); ?>"><?php esc_html_e( 'Meditatie', 'balans' ); ?></a></li>
-                    <li><a href="<?php echo esc_url( balans_url( 'podcasts' ) ); ?>"><?php esc_html_e( 'Podcast', 'balans' ); ?></a></li>
+                    <li><a href="<?php echo esc_url( balans_url( 'events' ) ); ?>"><?php esc_html_e( 'Events', 'balans' ); ?></a></li>
                     <li><a href="<?php echo esc_url( balans_url( 'abonnementen' ) ); ?>"><?php esc_html_e( 'Abonnementen', 'balans' ); ?></a></li>
                     <li><a href="<?php echo esc_url( balans_url( 'afspraak-voor-hulp' ) ); ?>"><?php esc_html_e( 'Afspraak voor hulp', 'balans' ); ?></a></li>
                     <li><a href="<?php echo esc_url( balans_url( 'trainingen-workshops' ) ); ?>"><?php esc_html_e( 'Trainingen & workshops', 'balans' ); ?></a></li>

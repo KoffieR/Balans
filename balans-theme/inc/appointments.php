@@ -84,12 +84,45 @@ function balans_handle_appointment() {
         $message
     );
     wp_mail( $admin_email, $subject, $body );
+    balans_appointment_confirmation( $email, $name, $service, $date, $time_slot, isset( $_POST['lang'] ) ? sanitize_key( wp_unslash( $_POST['lang'] ) ) : 'nl' );
 
     wp_send_json_success( array(
         'message' => __( 'Bedankt, je aanvraag is verzonden. We nemen zo snel mogelijk contact met je op om de afspraak te bevestigen.', 'balans' ),
     ) );
 }
 add_action( 'wp_ajax_balans_appointment', 'balans_handle_appointment' );
+
+/**
+ * Bevestiging naar de klant, met het telefoonnummer groot en duidelijk.
+ */
+function balans_appointment_confirmation( $email, $name, $service, $date, $time_slot, $lang ) {
+    $lang     = balans_mail_lang( $lang );
+    $t        = balans_mail_texts( $lang );
+    $switched = switch_to_locale( array( 'nl' => 'nl_NL', 'en' => 'en_GB', 'fr' => 'fr_FR' )[ $lang ] );
+    $dienst   = get_posts( array(
+        'post_type'   => 'balans_dienst',
+        'numberposts' => 1,
+        'lang'        => balans_has_polylang() ? $lang : '',
+        'meta_query'  => array( array( 'key' => '_dienst_key', 'value' => $service ) ), // phpcs:ignore WordPress.DB.SlowDBQuery
+    ) );
+    $vars     = array(
+        '{naam}'   => $name,
+        '{dienst}' => $dienst ? get_the_title( $dienst[0] ) : $service,
+        '{datum}'  => $date ? date_i18n( 'j F Y', strtotime( $date ) ) : '',
+        '{tijd}'   => $time_slot,
+    );
+    $phone = balans_phone();
+    $html  = balans_mail_html( $lang, array(
+        nl2br( esc_html( balans_mail_fill( $t['appt_body'], $vars ) ) ),
+        '<span style="display:block;background:#EEF4F4;border-radius:8px;padding:18px 20px;text-align:center;">'
+            . '<span style="display:block;font-size:15px;color:#3F7F83;">' . esc_html( $t['appt_phone'] ) . '</span>'
+            . '<a href="tel:' . esc_attr( preg_replace( '/[^0-9+]/', '', $phone ) ) . '" style="display:block;margin-top:6px;font-size:28px;font-weight:bold;letter-spacing:1px;color:#2B2420;text-decoration:none;">' . esc_html( $phone ) . '</a></span>',
+    ) );
+    if ( $switched ) {
+        restore_previous_locale();
+    }
+    return wp_mail( $email, balans_mail_fill( $t['appt_subject'], $vars ), $html, array( 'Content-Type: text/html; charset=UTF-8' ) );
+}
 add_action( 'wp_ajax_nopriv_balans_appointment', 'balans_handle_appointment' );
 
 /**

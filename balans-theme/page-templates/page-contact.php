@@ -18,7 +18,7 @@ get_header();
 
     <section class="section">
         <div class="container">
-            <?php balans_placeholder_notice( __( 'Telefoonnummer, adres en reactietermijnen nog aan te leveren door de eigenaar.', 'balans' ) ); ?>
+            <?php balans_placeholder_notice( __( 'Adres en reactietermijnen nog aan te leveren door de eigenaar.', 'balans' ) ); ?>
 
             <form class="balans-form" data-balans-ajax="balans_contact" data-testid="form-contact" novalidate>
                 <div class="form-row--inline">
@@ -33,7 +33,8 @@ get_header();
                 </div>
                 <div class="form-row">
                     <label for="contact-message"><?php esc_html_e( 'Je bericht', 'balans' ); ?></label>
-                    <textarea id="contact-message" name="message" required data-testid="contact-message"></textarea>
+                    <?php $event_id = isset( $_GET['event'] ) ? absint( $_GET['event'] ) : 0; // phpcs:ignore WordPress.Security.NonceVerification ?>
+                    <textarea id="contact-message" name="message" required data-testid="contact-message"><?php echo $event_id && 'balans_event' === get_post_type( $event_id ) ? esc_textarea( sprintf( __( 'Ik meld me graag aan voor: %1$s (%2$s)', 'balans' ), get_the_title( $event_id ), balans_event_date( $event_id ) ) ) : ''; ?></textarea>
                 </div>
                 <button type="submit" class="balans-btn balans-btn--primary" data-testid="contact-submit"><?php esc_html_e( 'Bericht verzenden', 'balans' ); ?></button>
                 <div class="balans-form-message" role="status" aria-live="polite"></div>

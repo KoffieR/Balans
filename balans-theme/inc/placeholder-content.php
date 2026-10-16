@@ -20,15 +20,15 @@ function balans_homepage_routes() {
         ),
         array(
             'eyebrow' => __( 'Praten over wat er bij je speelt', 'balans' ),
-            'title'   => __( 'Consult', 'balans' ),
-            'text'    => __( 'Een gesprek om stil te staan bij jouw vraag of patroon.', 'balans' ),
-            'link'    => balans_url( 'afspraak-voor-hulp' ) . '#consult',
+            'title'   => __( 'Hulp', 'balans' ),
+            'text'    => __( 'Persoonlijke hulp, één op één: een afstemming, een consult of een dubbel consult.', 'balans' ),
+            'link'    => balans_url( 'afspraak-voor-hulp' ),
         ),
         array(
-            'eyebrow' => __( 'Drukpuntmassage gecombineerd met een consult', 'balans' ),
-            'title'   => __( 'Drukpuntmassage + consult', 'balans' ),
-            'text'    => __( 'Lichaamsgericht werk gecombineerd met ruimte om te vertellen wat er speelt.', 'balans' ),
-            'link'    => balans_url( 'afspraak-voor-hulp' ) . '#drukpuntmassage',
+            'eyebrow' => __( 'Een middag of avond rond één thema', 'balans' ),
+            'title'   => __( 'Event', 'balans' ),
+            'text'    => __( 'Laat emotionele ladingen los en ga verlicht en fris naar huis. Niemand verwacht dat je iets deelt.', 'balans' ),
+            'link'    => balans_url( 'events' ),
         ),
         array(
             'eyebrow' => __( 'Leren, ontdekken en jezelf ontwikkelen', 'balans' ),
@@ -37,7 +37,7 @@ function balans_homepage_routes() {
             'link'    => balans_url( 'trainingen-workshops' ),
         ),
         array(
-            'eyebrow' => __( 'Regelmatige energetische opschoning van je lichaam', 'balans' ),
+            'eyebrow' => __( 'Regelmatig afvoeren van verbruikte en vastgelopen emoties en energie uit je lichaam', 'balans' ),
             'title'   => __( 'Abonnementen', 'balans' ),
             'text'    => __( 'Een doorlopend ritme van energetische opschoning op afspraak.', 'balans' ),
             'link'    => balans_url( 'abonnementen' ),

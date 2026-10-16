@@ -6,7 +6,8 @@ from translations import T
 LANG_DIR = "/app/balans-theme/languages"
 strings = json.load(open("/app/drukwerk/scripts/strings.json"))
 missing = [k for k in strings if k not in T]
-assert not missing, missing
+print(len(missing), 'strings zonder vertaling (beheer, blijft Nederlands)')
+strings = {k: v for k, v in strings.items() if k in T}
 
 LOCALES = {"en_US": 0, "en_GB": 0, "fr_FR": 1, "fr_BE": 1}
 META = {

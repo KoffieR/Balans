@@ -82,9 +82,9 @@ return array(
         ),
         'dubbel-consult' => array(
             'title' => 'Double consultation',
-            'when'  => 'Avec Remco et Maaike',
+            'when'  => 'Avec Maaike et Remco',
             'text'  => array(
-                "Lors de la double consultation, Remco travaille avec Maaike, qui apporte la contribution supplémentaire juste pour approfondir encore le sujet et regarder plus loin le caractère et le système (l'environnement direct de la personne). Deux personnes qui travaillent représentent un coût plus élevé, mais l'investissement en vaut vraiment la peine.",
+                "Lors de la double consultation, Maaike et Remco travaillent ensemble. Maaike apporte la contribution supplémentaire juste pour approfondir encore le sujet et regarder plus loin le caractère et le système (l'environnement direct de la personne). Deux personnes qui travaillent représentent un coût plus élevé, mais l'investissement en vaut vraiment la peine.",
             ),
         ),
         'drukpuntmassage' => array(
@@ -97,11 +97,10 @@ return array(
             ),
         ),
         'maatwerk' => array(
-            'title' => 'Sur mesure',
-            'when'  => 'Dans votre famille ou votre entreprise',
+            'title' => 'Forfait famille',
+            'when'  => 'Pour toute la famille',
             'text'  => array(
-                "Il est possible de demander un accompagnement sur mesure au cours duquel Remco vient observer votre famille ou votre entreprise afin de voir où se trouvent les schémas qui entretiennent les cercles vicieux. Contactez-nous pour discuter des possibilités.",
-                "De nombreuses entreprises ont des collaborateurs qui ne donnent pas toute leur mesure. Cela tient souvent à des schémas personnels et à des schémas installés dans l'entreprise, qui s'emboîtent trop fortement pour être percés à jour et brisés. Remco est capable de les reconnaître et de les briser, avec des conseils sur les changements qui feront émerger le potentiel des personnes afin que l'entreprise puisse s'épanouir.",
+                "Un forfait famille comprend des harmonisations pour les membres de la famille, une consultation pour le(s) parent(s), l'évacuation des charges émotionnelles partagées et la résolution des lignées générationnelles.",
             ),
         ),
     ),

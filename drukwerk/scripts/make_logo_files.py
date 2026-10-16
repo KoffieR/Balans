@@ -8,12 +8,12 @@ from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 
 OUT = "/app/drukwerk/logo"
-TEAL = "#3C6E71"
+TEAL = "#3F7F83"
 LOGO = "/app/balans-theme/assets/images/logo-eq5.svg"
 SLOGANS = {
-    "nl": "van vicieuze cirkel naar balans",
-    "en": "from vicious cycle to balance",
-    "fr": "du cercle vicieux \u00e0 l\u2019\u00e9quilibre",
+    "nl": ("van vicieuze cirkel", "naar balans"),
+    "en": ("from vicious cycle", "to balance"),
+    "fr": ("du cercle vicieux", "\u00e0 l\u2019\u00e9quilibre"),
 }
 THEME_IMG = "/app/balans-theme/assets/images"
 SLOGAN_FONT = "/app/lettertypes/Fraunces/Fraunces-Italic.ttf"
@@ -53,16 +53,22 @@ def write(name, svg):
     cairosvg.svg2pdf(bytestring=svg.encode(), write_to=path + ".pdf")
 
 
-def slogan_svg(body, x, y, w, h, pad, slogan, color):
-    size = w * 0.115
-    _, tw = text_path(slogan, SLOGAN_FONT, size, 0, 0)
-    base = y + h + size * 1.35
-    d, tw = text_path(slogan, SLOGAN_FONT, size, x + (w - tw) / 2, base)
-    left, right = min(x, x + (w - tw) / 2), max(x + w, x + (w + tw) / 2)
-    bottom = base + size * 0.3
+def slogan_svg(body, x, y, w, h, pad, lines, color):
+    """Slogan in twee gecentreerde regels onder EQ5."""
+    size = w * 0.135
+    paths, left, right = [], x, x + w
+    base = y + h + size * 1.25
+    for line in lines:
+        _, tw = text_path(line, SLOGAN_FONT, size, 0, 0)
+        lx = x + (w - tw) / 2
+        d, _ = text_path(line, SLOGAN_FONT, size, lx, base)
+        paths.append(d)
+        left, right = min(left, lx), max(right, lx + tw)
+        base += size * 1.15
+    bottom = base - size * 1.15 + size * 0.3
     return (f'<svg xmlns="http://www.w3.org/2000/svg" '
             f'viewBox="{left - pad:.0f} {y - pad:.0f} {right - left + 2 * pad:.0f} {bottom - y + 2 * pad:.0f}">'
-            f'{body}<path fill="{color}" d="{d}"/></svg>')
+            f'{body}<path fill="{color}" d="{" ".join(paths)}"/></svg>')
 
 
 def main():

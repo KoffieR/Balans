@@ -78,8 +78,8 @@ msgid "Meditatie"
 msgstr "Meditation"
 
 #: footer.php
-msgid "Podcast"
-msgstr "Podcast"
+msgid "Events"
+msgstr "Events"
 
 #: footer.php
 msgid "Abonnementen"
@@ -414,6 +414,51 @@ msgstr "Something went wrong."
 msgid "Netwerkfout. Probeer het later opnieuw."
 msgstr "Network error. Please try again later."
 
+#: inc/events.php
+msgid "Event"
+msgstr "Event"
+
+#: inc/events.php
+msgid "Nieuw event"
+msgstr "New event"
+
+#: inc/events.php
+msgid "Event bewerken"
+msgstr "Edit event"
+
+#: inc/events.php
+msgid "Datum"
+msgstr "Date"
+
+#: inc/events.php
+msgid "Begintijd"
+msgstr "Start time"
+
+#: inc/events.php
+msgid "Eindtijd"
+msgstr "End time"
+
+#: inc/events.php
+msgid "Locatie"
+msgstr "Location"
+
+#: inc/events.php
+msgid "Thema"
+msgstr "Theme"
+
+#: inc/events.php
+msgid "Prijs"
+msgstr "Price"
+
+#: inc/events.php
+msgid ""
+"Aanmeldlink (optioneel, bijv. webshop-product; leeg = contactformulier)"
+msgstr "Sign-up link (optional, e.g. webshop product; empty = contact form)"
+
+#: inc/events.php
+msgid "Gegevens van het event"
+msgstr "Event details"
+
 #: inc/form-handler.php
 msgid "Schrijf een bericht."
 msgstr "Write a message."
@@ -490,25 +535,24 @@ msgid "Praten over wat er bij je speelt"
 msgstr "Talking about what is going on for you"
 
 #: inc/placeholder-content.php
-msgid "Consult"
-msgstr "Consultation"
+msgid ""
+"Persoonlijke hulp, één op één: een afstemming, een consult of een dubbel "
+"consult."
+msgstr ""
+"Personal help, one to one: an attunement, a consultation or a double "
+"consultation."
 
 #: inc/placeholder-content.php
-msgid "Een gesprek om stil te staan bij jouw vraag of patroon."
-msgstr "A conversation to reflect on your question or pattern."
-
-#: inc/placeholder-content.php
-msgid "Drukpuntmassage gecombineerd met een consult"
-msgstr "Acupressure massage combined with a consultation"
-
-#: inc/placeholder-content.php
-msgid "Drukpuntmassage + consult"
-msgstr "Acupressure massage + consultation"
+msgid "Een middag of avond rond één thema"
+msgstr "An afternoon or evening around one theme"
 
 #: inc/placeholder-content.php
 msgid ""
-"Lichaamsgericht werk gecombineerd met ruimte om te vertellen wat er speelt."
-msgstr "Body-oriented work combined with space to share what is going on."
+"Laat emotionele ladingen los en ga verlicht en fris naar huis. Niemand "
+"verwacht dat je iets deelt."
+msgstr ""
+"Let go of emotional charges and go home lighter and refreshed. Nobody "
+"expects you to share anything."
 
 #: inc/placeholder-content.php
 msgid "Leren, ontdekken en jezelf ontwikkelen"
@@ -519,8 +563,11 @@ msgid "Op vastgestelde data op onze locatie. Open inschrijving waar mogelijk."
 msgstr "On fixed dates at our location. Open registration where possible."
 
 #: inc/placeholder-content.php
-msgid "Regelmatige energetische opschoning van je lichaam"
-msgstr "Regular energetic cleansing of your body"
+msgid ""
+"Regelmatig afvoeren van verbruikte en vastgelopen emoties en energie uit je "
+"lichaam"
+msgstr ""
+"Regularly releasing used-up and stuck emotions and energy from your body"
 
 #: inc/placeholder-content.php
 msgid "Een doorlopend ritme van energetische opschoning op afspraak."
@@ -732,10 +779,6 @@ msgid "Kies een dienst…"
 msgstr "Choose a service…"
 
 #: page-templates/page-afspraak.php
-msgid "Datum"
-msgstr "Date"
-
-#: page-templates/page-afspraak.php
 msgid "Tijdslot"
 msgstr "Time slot"
 
@@ -801,6 +844,10 @@ msgid ""
 msgstr "No own blogs yet. Add them via \"Eigen blogs\" in the WordPress menu."
 
 #: page-templates/page-consult.php
+msgid "Consult"
+msgstr "Consultation"
+
+#: page-templates/page-consult.php
 msgid ""
 "Een gesprek om stil te staan bij wat er speelt en zicht te krijgen op een "
 "volgende stap."
@@ -837,19 +884,24 @@ msgid "Stuur een bericht en we reageren zo snel mogelijk."
 msgstr "Send a message and we will respond as soon as possible."
 
 #: page-templates/page-contact.php
-msgid ""
-"Telefoonnummer, adres en reactietermijnen nog aan te leveren door de "
-"eigenaar."
-msgstr ""
-"Phone number, address and response times still to be supplied by the owner."
+msgid "Adres en reactietermijnen nog aan te leveren door de eigenaar."
+msgstr "Address and response times still to be provided by the owner."
 
 #: page-templates/page-contact.php
 msgid "Je bericht"
 msgstr "Your message"
 
 #: page-templates/page-contact.php
+msgid "Ik meld me graag aan voor: %1$s (%2$s)"
+msgstr "I would like to sign up for: %1$s (%2$s)"
+
+#: page-templates/page-contact.php
 msgid "Bericht verzenden"
 msgstr "Send message"
+
+#: page-templates/page-drukpuntmassage.php
+msgid "Drukpuntmassage + consult"
+msgstr "Acupressure massage + consultation"
 
 #: page-templates/page-drukpuntmassage.php
 msgid ""
@@ -873,6 +925,26 @@ msgstr ""
 #: page-templates/page-drukpuntmassage.php
 msgid "Hoe verloopt een sessie?"
 msgstr "How does a session work?"
+
+#: page-templates/page-events.php
+msgid "Komende events"
+msgstr "Upcoming events"
+
+#: page-templates/page-events.php
+msgid "Bekijk event"
+msgstr "View event"
+
+#: page-templates/page-events.php
+msgid ""
+"Er staan op dit moment geen events gepland. Wil je op de hoogte blijven? "
+"Laat het ons weten."
+msgstr ""
+"There are no events planned at the moment. Would you like to stay informed? "
+"Let us know."
+
+#: page-templates/page-events.php
+msgid "Houd me op de hoogte"
+msgstr "Keep me informed"
 
 #: page-templates/page-meditatie.php
 msgid "Adem — 5 minuten rust"
@@ -1052,6 +1124,10 @@ msgstr ""
 "supplied."
 
 #: page-templates/page-podcast.php
+msgid "Podcast"
+msgstr "Podcast"
+
+#: page-templates/page-podcast.php
 msgid "Meditaties om naar te luisteren, waar je ook bent."
 msgstr "Meditations to listen to, wherever you are."
 
@@ -1211,6 +1287,22 @@ msgstr "Search…"
 #: searchform.php
 msgid "Zoeken"
 msgstr "Search"
+
+#: single-balans_event.php
+msgid "Tijd"
+msgstr "Time"
+
+#: single-balans_event.php
+msgid "Dit event is al geweest."
+msgstr "This event has already taken place."
+
+#: single-balans_event.php
+msgid "Bekijk de komende events"
+msgstr "View upcoming events"
+
+#: single-balans_event.php
+msgid "Aanmelden"
+msgstr "Sign up"
 
 #: single.php
 msgid "Eigen blog"

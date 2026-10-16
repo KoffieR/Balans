@@ -103,3 +103,12 @@ Thema `balans-theme/` met:
 - `page-afspraak.php`: toont [ssa_booking] als SSA actief is, anders eigen formulier.
 - Getest op verse WP-install (/tmp/wpf) via wp-cli: alle 5 plugins echt gedownload en geactiveerd; setup gaf 95 pagina's, 27 diensten.
 - Bekend: WooCommerce-pagina's alleen NL (vertalen vereist betaalde Polylang for WooCommerce).
+
+## Update juni 2026 — Logo, menu's, Events, telefoonnummer (DONE)
+- Logo: slogan in 2 regels onder EQ5 ("van vicieuze cirkel" / "naar balans", EN/FR idem), teal lichter #3F7F83 (site + /app/drukwerk/logo + favicon). Header 96px. Visitekaartje ongewijzigd (heeft nog telefoonnummer, wens gebruiker).
+- Voor jou/home: Consult → "Hulp" (naar afspraak-voor-hulp), Drukpuntmassage + consult → "Event" (naar /events). Oude /consult en /drukpuntmassage-consult redirecten naar Hulp. Abonnementen-tekst: "Regelmatig afvoeren van verbruikte en vastgelopen emoties en energie uit je lichaam".
+- Podcast uit header-fallback en footer verborgen (pagina bestaat nog).
+- Telefoonnummer weg uit footer, welkomstmails, juridische pagina's (bestanden + DB-upgrade inc/upgrade.php, BALANS_CONTENT_VERSION=2). Nieuw: afspraakbevestiging naar klant met groot telefoonnummer (option balans_phone, teksten appt_* in Balans → E-mailteksten).
+- Diensten: Maatwerk → Familie-pakket (nieuwe tekst NL/EN/FR), Dubbel consult "Maaike en Remco". DB-upgrade past bestaande diensten aan als ze niet zelf gewijzigd zijn.
+- Events: CPT balans_event (inc/events.php, single-balans_event.php, page-templates/page-events.php), pagina "Events" met bewerkbare intro + thema's (inc/content/pages/{lang}/events.html), komende events, aanmelden via link of contactformulier (prefill).
+- Getest op verse WP in /tmp/wpf (php -S + curl, wp-cli).

@@ -25,6 +25,7 @@ $slots = balans_get_time_slots();
             <?php balans_placeholder_notice( __( 'Beschikbare tijdslots zijn tijdelijke voorbeelden. De werkelijke beschikbaarheid wordt later door de eigenaar ingericht.', 'balans' ) ); ?>
 
             <form class="balans-form" data-balans-ajax="balans_appointment" data-testid="form-afspraak" novalidate>
+                <input type="hidden" name="lang" value="<?php echo esc_attr( balans_lang() ); ?>" />
 
                 <div class="form-row">
                     <label for="afspraak-service"><?php esc_html_e( 'Dienst', 'balans' ); ?></label>

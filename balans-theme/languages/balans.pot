@@ -74,7 +74,7 @@ msgid "Meditatie"
 msgstr ""
 
 #: footer.php
-msgid "Podcast"
+msgid "Events"
 msgstr ""
 
 #: footer.php
@@ -398,6 +398,51 @@ msgstr ""
 msgid "Netwerkfout. Probeer het later opnieuw."
 msgstr ""
 
+#: inc/events.php
+msgid "Event"
+msgstr ""
+
+#: inc/events.php
+msgid "Nieuw event"
+msgstr ""
+
+#: inc/events.php
+msgid "Event bewerken"
+msgstr ""
+
+#: inc/events.php
+msgid "Datum"
+msgstr ""
+
+#: inc/events.php
+msgid "Begintijd"
+msgstr ""
+
+#: inc/events.php
+msgid "Eindtijd"
+msgstr ""
+
+#: inc/events.php
+msgid "Locatie"
+msgstr ""
+
+#: inc/events.php
+msgid "Thema"
+msgstr ""
+
+#: inc/events.php
+msgid "Prijs"
+msgstr ""
+
+#: inc/events.php
+msgid ""
+"Aanmeldlink (optioneel, bijv. webshop-product; leeg = contactformulier)"
+msgstr ""
+
+#: inc/events.php
+msgid "Gegevens van het event"
+msgstr ""
+
 #: inc/form-handler.php
 msgid "Schrijf een bericht."
 msgstr ""
@@ -469,24 +514,19 @@ msgid "Praten over wat er bij je speelt"
 msgstr ""
 
 #: inc/placeholder-content.php
-msgid "Consult"
+msgid ""
+"Persoonlijke hulp, één op één: een afstemming, een consult of een dubbel "
+"consult."
 msgstr ""
 
 #: inc/placeholder-content.php
-msgid "Een gesprek om stil te staan bij jouw vraag of patroon."
-msgstr ""
-
-#: inc/placeholder-content.php
-msgid "Drukpuntmassage gecombineerd met een consult"
-msgstr ""
-
-#: inc/placeholder-content.php
-msgid "Drukpuntmassage + consult"
+msgid "Een middag of avond rond één thema"
 msgstr ""
 
 #: inc/placeholder-content.php
 msgid ""
-"Lichaamsgericht werk gecombineerd met ruimte om te vertellen wat er speelt."
+"Laat emotionele ladingen los en ga verlicht en fris naar huis. Niemand "
+"verwacht dat je iets deelt."
 msgstr ""
 
 #: inc/placeholder-content.php
@@ -498,7 +538,9 @@ msgid "Op vastgestelde data op onze locatie. Open inschrijving waar mogelijk."
 msgstr ""
 
 #: inc/placeholder-content.php
-msgid "Regelmatige energetische opschoning van je lichaam"
+msgid ""
+"Regelmatig afvoeren van verbruikte en vastgelopen emoties en energie uit je "
+"lichaam"
 msgstr ""
 
 #: inc/placeholder-content.php
@@ -693,10 +735,6 @@ msgid "Kies een dienst…"
 msgstr ""
 
 #: page-templates/page-afspraak.php
-msgid "Datum"
-msgstr ""
-
-#: page-templates/page-afspraak.php
 msgid "Tijdslot"
 msgstr ""
 
@@ -756,6 +794,10 @@ msgid ""
 msgstr ""
 
 #: page-templates/page-consult.php
+msgid "Consult"
+msgstr ""
+
+#: page-templates/page-consult.php
 msgid ""
 "Een gesprek om stil te staan bij wat er speelt en zicht te krijgen op een "
 "volgende stap."
@@ -788,9 +830,7 @@ msgid "Stuur een bericht en we reageren zo snel mogelijk."
 msgstr ""
 
 #: page-templates/page-contact.php
-msgid ""
-"Telefoonnummer, adres en reactietermijnen nog aan te leveren door de "
-"eigenaar."
+msgid "Adres en reactietermijnen nog aan te leveren door de eigenaar."
 msgstr ""
 
 #: page-templates/page-contact.php
@@ -798,7 +838,15 @@ msgid "Je bericht"
 msgstr ""
 
 #: page-templates/page-contact.php
+msgid "Ik meld me graag aan voor: %1$s (%2$s)"
+msgstr ""
+
+#: page-templates/page-contact.php
 msgid "Bericht verzenden"
+msgstr ""
+
+#: page-templates/page-drukpuntmassage.php
+msgid "Drukpuntmassage + consult"
 msgstr ""
 
 #: page-templates/page-drukpuntmassage.php
@@ -818,6 +866,24 @@ msgstr ""
 
 #: page-templates/page-drukpuntmassage.php
 msgid "Hoe verloopt een sessie?"
+msgstr ""
+
+#: page-templates/page-events.php
+msgid "Komende events"
+msgstr ""
+
+#: page-templates/page-events.php
+msgid "Bekijk event"
+msgstr ""
+
+#: page-templates/page-events.php
+msgid ""
+"Er staan op dit moment geen events gepland. Wil je op de hoogte blijven? "
+"Laat het ons weten."
+msgstr ""
+
+#: page-templates/page-events.php
+msgid "Houd me op de hoogte"
 msgstr ""
 
 #: page-templates/page-meditatie.php
@@ -981,6 +1047,10 @@ msgid ""
 msgstr ""
 
 #: page-templates/page-podcast.php
+msgid "Podcast"
+msgstr ""
+
+#: page-templates/page-podcast.php
 msgid "Meditaties om naar te luisteren, waar je ook bent."
 msgstr ""
 
@@ -1122,6 +1192,22 @@ msgstr ""
 
 #: searchform.php
 msgid "Zoeken"
+msgstr ""
+
+#: single-balans_event.php
+msgid "Tijd"
+msgstr ""
+
+#: single-balans_event.php
+msgid "Dit event is al geweest."
+msgstr ""
+
+#: single-balans_event.php
+msgid "Bekijk de komende events"
+msgstr ""
+
+#: single-balans_event.php
+msgid "Aanmelden"
 msgstr ""
 
 #: single.php
