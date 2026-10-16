@@ -398,6 +398,26 @@ msgstr ""
 msgid "Netwerkfout. Probeer het later opnieuw."
 msgstr ""
 
+#: inc/event-tickets.php
+msgid "Je kunt maximaal %d tickets per bestelling kopen."
+msgstr ""
+
+#: inc/event-tickets.php
+msgid "Datum"
+msgstr ""
+
+#: inc/event-tickets.php
+msgid "Tijd"
+msgstr ""
+
+#: inc/event-tickets.php
+msgid "Locatie"
+msgstr ""
+
+#: inc/event-tickets.php
+msgid "Tickets"
+msgstr ""
+
 #: inc/events.php
 msgid "Event"
 msgstr ""
@@ -411,10 +431,6 @@ msgid "Event bewerken"
 msgstr ""
 
 #: inc/events.php
-msgid "Datum"
-msgstr ""
-
-#: inc/events.php
 msgid "Begintijd"
 msgstr ""
 
@@ -423,20 +439,7 @@ msgid "Eindtijd"
 msgstr ""
 
 #: inc/events.php
-msgid "Locatie"
-msgstr ""
-
-#: inc/events.php
 msgid "Thema"
-msgstr ""
-
-#: inc/events.php
-msgid "Prijs"
-msgstr ""
-
-#: inc/events.php
-msgid ""
-"Aanmeldlink (optioneel, bijv. webshop-product; leeg = contactformulier)"
 msgstr ""
 
 #: inc/events.php
@@ -873,6 +876,10 @@ msgid "Komende events"
 msgstr ""
 
 #: page-templates/page-events.php
+msgid "Uitverkocht"
+msgstr ""
+
+#: page-templates/page-events.php
 msgid "Bekijk event"
 msgstr ""
 
@@ -1195,7 +1202,7 @@ msgid "Zoeken"
 msgstr ""
 
 #: single-balans_event.php
-msgid "Tijd"
+msgid "Prijs"
 msgstr ""
 
 #: single-balans_event.php
@@ -1216,6 +1223,26 @@ msgstr ""
 
 #: single.php
 msgid "Artikel"
+msgstr ""
+
+#: template-parts/event-tickets.php
+msgid "Aantal tickets"
+msgstr ""
+
+#: template-parts/event-tickets.php
+msgid "Ticket kopen"
+msgstr ""
+
+#: template-parts/event-tickets.php
+msgid "per ticket"
+msgstr ""
+
+#: template-parts/event-tickets.php
+msgid "Nog %d plaats beschikbaar"
+msgstr ""
+
+#: template-parts/event-tickets.php
+msgid "Nog %d plaatsen beschikbaar"
 msgstr ""
 
 #: template-parts/podcast-episode.php

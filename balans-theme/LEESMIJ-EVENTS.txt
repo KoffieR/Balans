@@ -5,8 +5,7 @@ EVENTS
 - Daaronder verschijnen automatisch de komende events.
 - Nieuw event: WordPress-menu "Events" → Nieuw event. Vul titel, tekst, korte samenvatting (Samenvatting) en
   eventueel een uitgelichte afbeelding in, plus bij "Gegevens van het event": datum, begin-/eindtijd, locatie,
-  thema, prijs en optioneel een aanmeldlink (bijv. een webshop-product). Zonder aanmeldlink gaat de knop
-  "Aanmelden" naar het contactformulier, met de naam en datum van het event al ingevuld.
+  thema, prijs per ticket en het maximaal aantal plaatsen.
 - Vertalen: met Polylang maak je bij het event een EN/FR-vertaling; datum, tijden, prijs en link worden automatisch
   overgenomen.
 - Voorbije events verdwijnen vanzelf uit het overzicht; hun pagina meldt "Dit event is al geweest".
@@ -16,3 +15,26 @@ AFSPRAAKBEVESTIGING
   met het telefoonnummer groot en duidelijk. Nummer en teksten pas je aan bij Balans → E-mailteksten.
 - Gebruik je de agenda-plugin (Simply Schedule Appointments)? Zet het telefoonnummer dan ook in de
   bevestigingsmail van die plugin: Appointments → Settings → Notifications.
+
+TICKETS (WooCommerce)
+- Vul je bij een event een prijs per ticket en een maximaal aantal plaatsen in, dan maakt het thema bij het opslaan
+  automatisch een verborgen webshop-product (ticket) aan. Dat staat niet in de winkel, alleen op de eventpagina.
+- Op de eventpagina kiest de bezoeker 1 tot 4 tickets en klikt op "Ticket kopen"; hij gaat direct naar afrekenen.
+  Meer dan 4 tickets per bestelling kan niet. Bij weinig plaatsen staat er "Nog X plaatsen beschikbaar".
+- Zijn alle plaatsen verkocht, dan verschijnt "Uitverkocht" (ook in het overzicht).
+- Meer plaatsen nodig? Verhoog het maximum bij het event; de beschikbare plaatsen gaan automatisch mee omhoog.
+- Bestellingen en deelnemers zie je in WooCommerce → Bestellingen.
+- Vul je zelf een "Eigen aanmeldlink" in, dan wordt die gebruikt in plaats van de ticketverkoop.
+- Zet een betaalmethode aan in WooCommerce → Instellingen → Betalingen (bijv. Stripe, of Mollie voor iDEAL).
+
+HERINNERING EEN DAG VAN TEVOREN
+- Elke koper krijgt de dag voor het event (rond 08:00) automatisch een mail in zijn eigen taal met datum, tijd,
+  locatie (met link naar OpenStreetMap), aantal tickets en een korte voorbereidingstekst.
+- Onderwerp, tekst en voorbereiding pas je per taal aan bij Balans → E-mailteksten → "Event-herinnering".
+- Elke koper krijgt de herinnering maar één keer.
+
+AGENDA IN HUISSTIJL
+- De agenda (Simply Schedule Appointments) staat in de teal en warme tinten van de site, met dezelfde lettertypes en
+  ronde hoeken. De lettertypes worden van je eigen server geladen, niet van Google (AVG-vriendelijk).
+- De stijl wordt ingesteld met "Alles instellen" (Balans → Installatie & plugins) en via het bestand
+  ssa/booking-app/custom.css in het thema.

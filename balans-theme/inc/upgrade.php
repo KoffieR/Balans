@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-const BALANS_CONTENT_VERSION = 2;
+const BALANS_CONTENT_VERSION = 3;
 
 function balans_phone_replacements() {
     return array(
@@ -70,6 +70,13 @@ function balans_content_upgrade() {
             }, $item['text'] ) ),
         ) );
         update_post_meta( $post->ID, '_dienst_when', $item['when'] );
+    }
+    // 4. Vrije prijstekst van events (bijv. "€ 45") omzetten naar een getal.
+    foreach ( get_posts( array( 'post_type' => 'balans_event', 'numberposts' => -1, 'lang' => '', 'post_status' => 'any' ) ) as $event ) {
+        $price = get_post_meta( $event->ID, '_event_price', true );
+        if ( '' !== $price && ! is_numeric( $price ) ) {
+            update_post_meta( $event->ID, '_event_price', (string) (float) str_replace( ',', '.', preg_replace( '/[^0-9,.]/', '', $price ) ) );
+        }
     }
     update_option( 'balans_content_version', BALANS_CONTENT_VERSION );
 }

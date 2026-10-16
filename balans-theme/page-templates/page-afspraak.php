@@ -20,7 +20,7 @@ $slots = balans_get_time_slots();
     <section class="section">
         <div class="container">
             <?php if ( shortcode_exists( 'ssa_booking' ) ) : ?>
-            <div class="balans-agenda" data-testid="agenda-booking"><?php echo do_shortcode( '[ssa_booking]' ); ?></div>
+            <div class="balans-agenda" data-testid="agenda-booking"><?php echo do_shortcode( '[ssa_booking accent_color="3F7F83" background="F5F0E8" font="Helvetica Neue, Helvetica, Arial, sans-serif" padding="0px"]' ); ?></div>
             <?php else : ?>
             <?php balans_placeholder_notice( __( 'Beschikbare tijdslots zijn tijdelijke voorbeelden. De werkelijke beschikbaarheid wordt later door de eigenaar ingericht.', 'balans' ) ); ?>
 

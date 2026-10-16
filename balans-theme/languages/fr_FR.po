@@ -416,6 +416,26 @@ msgstr "Une erreur s'est produite."
 msgid "Netwerkfout. Probeer het later opnieuw."
 msgstr "Erreur réseau. Veuillez réessayer plus tard."
 
+#: inc/event-tickets.php
+msgid "Je kunt maximaal %d tickets per bestelling kopen."
+msgstr "Vous pouvez acheter au maximum %d billets par commande."
+
+#: inc/event-tickets.php
+msgid "Datum"
+msgstr "Date"
+
+#: inc/event-tickets.php
+msgid "Tijd"
+msgstr "Heure"
+
+#: inc/event-tickets.php
+msgid "Locatie"
+msgstr "Lieu"
+
+#: inc/event-tickets.php
+msgid "Tickets"
+msgstr "Billets"
+
 #: inc/events.php
 msgid "Event"
 msgstr "Événement"
@@ -429,10 +449,6 @@ msgid "Event bewerken"
 msgstr "Modifier l'événement"
 
 #: inc/events.php
-msgid "Datum"
-msgstr "Date"
-
-#: inc/events.php
 msgid "Begintijd"
 msgstr "Heure de début"
 
@@ -441,23 +457,8 @@ msgid "Eindtijd"
 msgstr "Heure de fin"
 
 #: inc/events.php
-msgid "Locatie"
-msgstr "Lieu"
-
-#: inc/events.php
 msgid "Thema"
 msgstr "Thème"
-
-#: inc/events.php
-msgid "Prijs"
-msgstr "Prix"
-
-#: inc/events.php
-msgid ""
-"Aanmeldlink (optioneel, bijv. webshop-product; leeg = contactformulier)"
-msgstr ""
-"Lien d'inscription (facultatif, p. ex. produit de la boutique ; vide = "
-"formulaire de contact)"
 
 #: inc/events.php
 msgid "Gegevens van het event"
@@ -939,6 +940,10 @@ msgid "Komende events"
 msgstr "Événements à venir"
 
 #: page-templates/page-events.php
+msgid "Uitverkocht"
+msgstr "Complet"
+
+#: page-templates/page-events.php
 msgid "Bekijk event"
 msgstr "Voir l'événement"
 
@@ -1307,8 +1312,8 @@ msgid "Zoeken"
 msgstr "Rechercher"
 
 #: single-balans_event.php
-msgid "Tijd"
-msgstr "Heure"
+msgid "Prijs"
+msgstr "Prix"
 
 #: single-balans_event.php
 msgid "Dit event is al geweest."
@@ -1329,6 +1334,26 @@ msgstr "Blog"
 #: single.php
 msgid "Artikel"
 msgstr "Article"
+
+#: template-parts/event-tickets.php
+msgid "Aantal tickets"
+msgstr "Nombre de billets"
+
+#: template-parts/event-tickets.php
+msgid "Ticket kopen"
+msgstr "Acheter un billet"
+
+#: template-parts/event-tickets.php
+msgid "per ticket"
+msgstr "par billet"
+
+#: template-parts/event-tickets.php
+msgid "Nog %d plaats beschikbaar"
+msgstr "Encore %d place disponible"
+
+#: template-parts/event-tickets.php
+msgid "Nog %d plaatsen beschikbaar"
+msgstr "Encore %d places disponibles"
 
 #: template-parts/podcast-episode.php
 msgid "Abonnees"

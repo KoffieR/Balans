@@ -112,3 +112,12 @@ Thema `balans-theme/` met:
 - Diensten: Maatwerk → Familie-pakket (nieuwe tekst NL/EN/FR), Dubbel consult "Maaike en Remco". DB-upgrade past bestaande diensten aan als ze niet zelf gewijzigd zijn.
 - Events: CPT balans_event (inc/events.php, single-balans_event.php, page-templates/page-events.php), pagina "Events" met bewerkbare intro + thema's (inc/content/pages/{lang}/events.html), komende events, aanmelden via link of contactformulier (prefill).
 - Getest op verse WP in /tmp/wpf (php -S + curl, wp-cli).
+
+## Update juni 2026 — Event-tickets, event-herinnering, agenda-huisstijl (DONE)
+- `inc/event-tickets.php`: per event (prijs + max plaatsen) automatisch verborgen virtueel WooCommerce-product (voorraad = plaatsen, gedeeld door vertalingen, capaciteitswijziging past voorraad aan). Max 4 tickets per bestelling (validatie + clamp + Store API), add-to-cart → direct naar checkout. Taal koper in order-meta `_balans_lang`.
+- `template-parts/event-tickets.php`: aantal (1-4) + "Ticket kopen", "Nog X plaatsen" (≤10), "Uitverkocht"; overzicht toont "· Uitverkocht".
+- Herinnering dag van tevoren via bestaande cron `balans_daily_reminders`: datum/tijd/locatie + OpenStreetMap-link + tickets + voorbereiding; teksten event_* per taal in Balans → E-mailteksten; 1x per order (`_balans_reminded_{pid}`).
+- Agenda: `ssa/booking-app/custom.css` (lokale fonts, teal/crème, ronde hoeken), shortcode-params + setup-stap "Agenda in huisstijl" (geen Google Fonts).
+- WooCommerce prijsnotatie € 45,00. Upgrade v3 zet oude vrije prijstekst om naar getal.
+- Getest op /tmp/wpf (wp-cli + php -S/curl).
+- Later (gebruiker): eerstvolgend event op de homepage.

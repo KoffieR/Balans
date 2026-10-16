@@ -641,3 +641,9 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 .event-meta dt { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--balans-muted); }
 .event-meta dd { margin: 4px 0 0; font-family: var(--balans-font-serif); font-size: 1.1rem; }
 .event-past { color: var(--balans-muted); font-style: italic; }
+.event-tickets__form { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+.event-tickets__form label { font-size: .9rem; color: var(--balans-muted); }
+.event-tickets__form select { padding: 10px 14px; border: 1px solid var(--balans-line, #D9CFBF); border-radius: var(--balans-radius); background: #fff; font: inherit; }
+.event-tickets__info { margin-top: 12px; font-size: .95rem; color: var(--balans-muted); }
+.balans-btn.is-disabled { opacity: .55; cursor: not-allowed; pointer-events: none; }
+.balans-agenda { border-radius: var(--balans-radius-lg); overflow: hidden; }

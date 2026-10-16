@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-const BALANS_EVENT_SYNC = array( '_event_date', '_event_start', '_event_end', '_event_price', '_event_url' );
+const BALANS_EVENT_SYNC = array( '_event_date', '_event_start', '_event_end', '_event_price', '_event_capacity', '_event_url', '_event_product_id' );
 
 add_action( 'init', function () {
     register_post_type( 'balans_event', array(
@@ -36,8 +36,9 @@ function balans_event_fields() {
         '_event_end'      => array( __( 'Eindtijd', 'balans' ), 'time' ),
         '_event_location' => array( __( 'Locatie', 'balans' ), 'text' ),
         '_event_theme'    => array( __( 'Thema', 'balans' ), 'text' ),
-        '_event_price'    => array( __( 'Prijs', 'balans' ), 'text' ),
-        '_event_url'      => array( __( 'Aanmeldlink (optioneel, bijv. webshop-product; leeg = contactformulier)', 'balans' ), 'url' ),
+        '_event_price'    => array( __( 'Prijs per ticket (€)', 'balans' ), 'number' ),
+        '_event_capacity' => array( __( 'Maximaal aantal plaatsen', 'balans' ), 'number' ),
+        '_event_url'      => array( __( 'Eigen aanmeldlink (optioneel; vervangt de ticketverkoop)', 'balans' ), 'url' ),
     );
 }
 
@@ -50,14 +51,22 @@ function balans_event_meta_box( $post ) {
     echo '<table class="form-table">';
     foreach ( balans_event_fields() as $key => $f ) {
         printf(
-            '<tr><th><label for="%1$s">%2$s</label></th><td><input type="%3$s" class="regular-text" id="%1$s" name="%1$s" value="%4$s" /></td></tr>',
+            '<tr><th><label for="%1$s">%2$s</label></th><td><input type="%3$s" class="regular-text" id="%1$s" name="%1$s" value="%4$s"%5$s /></td></tr>',
             esc_attr( $key ),
             esc_html( $f[0] ),
             esc_attr( $f[1] ),
-            esc_attr( get_post_meta( $post->ID, $key, true ) )
+            esc_attr( get_post_meta( $post->ID, $key, true ) ),
+            'number' === $f[1] ? ' min="0" step="' . ( '_event_price' === $key ? '0.01' : '1' ) . '"' : ''
         );
     }
     echo '</table>';
+    $product = (int) get_post_meta( $post->ID, '_event_product_id', true );
+    if ( $product && function_exists( 'wc_get_product' ) && wc_get_product( $product ) ) {
+        $p = wc_get_product( $product );
+        printf( '<p>%s</p>', esc_html( sprintf( __( 'Ticketverkoop via de webshop: %1$d van %2$d plaatsen nog beschikbaar.', 'balans' ), (int) $p->get_stock_quantity(), (int) get_post_meta( $post->ID, '_event_capacity', true ) ) ) );
+    } else {
+        echo '<p class="description">' . esc_html__( 'Na opslaan met een prijs en een aantal plaatsen maakt het thema automatisch een verborgen webshop-product (ticket) aan.', 'balans' ) . '</p>';
+    }
 }
 
 add_action( 'save_post_balans_event', function ( $post_id ) {
@@ -66,8 +75,12 @@ add_action( 'save_post_balans_event', function ( $post_id ) {
     }
     foreach ( balans_event_fields() as $key => $f ) {
         $value = isset( $_POST[ $key ] ) ? wp_unslash( $_POST[ $key ] ) : ''; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
+        if ( 'number' === $f[1] ) {
+            $value = '' === trim( $value ) ? '' : (string) max( 0, (float) str_replace( ',', '.', $value ) );
+        }
         update_post_meta( $post_id, $key, 'url' === $f[1] ? esc_url_raw( $value ) : sanitize_text_field( $value ) );
     }
+    balans_event_sync_product( $post_id );
     if ( balans_has_polylang() ) {
         foreach ( pll_get_post_translations( $post_id ) as $id ) {
             if ( (int) $id === (int) $post_id ) {

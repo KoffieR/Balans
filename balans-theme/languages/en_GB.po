@@ -414,6 +414,26 @@ msgstr "Something went wrong."
 msgid "Netwerkfout. Probeer het later opnieuw."
 msgstr "Network error. Please try again later."
 
+#: inc/event-tickets.php
+msgid "Je kunt maximaal %d tickets per bestelling kopen."
+msgstr "You can buy a maximum of %d tickets per order."
+
+#: inc/event-tickets.php
+msgid "Datum"
+msgstr "Date"
+
+#: inc/event-tickets.php
+msgid "Tijd"
+msgstr "Time"
+
+#: inc/event-tickets.php
+msgid "Locatie"
+msgstr "Location"
+
+#: inc/event-tickets.php
+msgid "Tickets"
+msgstr "Tickets"
+
 #: inc/events.php
 msgid "Event"
 msgstr "Event"
@@ -427,10 +447,6 @@ msgid "Event bewerken"
 msgstr "Edit event"
 
 #: inc/events.php
-msgid "Datum"
-msgstr "Date"
-
-#: inc/events.php
 msgid "Begintijd"
 msgstr "Start time"
 
@@ -439,21 +455,8 @@ msgid "Eindtijd"
 msgstr "End time"
 
 #: inc/events.php
-msgid "Locatie"
-msgstr "Location"
-
-#: inc/events.php
 msgid "Thema"
 msgstr "Theme"
-
-#: inc/events.php
-msgid "Prijs"
-msgstr "Price"
-
-#: inc/events.php
-msgid ""
-"Aanmeldlink (optioneel, bijv. webshop-product; leeg = contactformulier)"
-msgstr "Sign-up link (optional, e.g. webshop product; empty = contact form)"
 
 #: inc/events.php
 msgid "Gegevens van het event"
@@ -931,6 +934,10 @@ msgid "Komende events"
 msgstr "Upcoming events"
 
 #: page-templates/page-events.php
+msgid "Uitverkocht"
+msgstr "Sold out"
+
+#: page-templates/page-events.php
 msgid "Bekijk event"
 msgstr "View event"
 
@@ -1289,8 +1296,8 @@ msgid "Zoeken"
 msgstr "Search"
 
 #: single-balans_event.php
-msgid "Tijd"
-msgstr "Time"
+msgid "Prijs"
+msgstr "Price"
 
 #: single-balans_event.php
 msgid "Dit event is al geweest."
@@ -1311,6 +1318,26 @@ msgstr "Own blog"
 #: single.php
 msgid "Artikel"
 msgstr "Article"
+
+#: template-parts/event-tickets.php
+msgid "Aantal tickets"
+msgstr "Number of tickets"
+
+#: template-parts/event-tickets.php
+msgid "Ticket kopen"
+msgstr "Buy ticket"
+
+#: template-parts/event-tickets.php
+msgid "per ticket"
+msgstr "per ticket"
+
+#: template-parts/event-tickets.php
+msgid "Nog %d plaats beschikbaar"
+msgstr "%d place left"
+
+#: template-parts/event-tickets.php
+msgid "Nog %d plaatsen beschikbaar"
+msgstr "%d places left"
 
 #: template-parts/podcast-episode.php
 msgid "Abonnees"

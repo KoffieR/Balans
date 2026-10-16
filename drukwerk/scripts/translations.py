@@ -299,4 +299,12 @@ T = {
     "Dit event is al geweest.": ("This event has already taken place.", "Cet événement a déjà eu lieu."),
     "Bekijk de komende events": ("View upcoming events", "Voir les événements à venir"),
     "Aanmelden": ("Sign up", "S'inscrire"),
+    "Uitverkocht": ("Sold out", "Complet"),
+    "Aantal tickets": ("Number of tickets", "Nombre de billets"),
+    "Ticket kopen": ("Buy ticket", "Acheter un billet"),
+    "per ticket": ("per ticket", "par billet"),
+    "Nog %d plaats beschikbaar": ("%d place left", "Encore %d place disponible"),
+    "Nog %d plaatsen beschikbaar": ("%d places left", "Encore %d places disponibles"),
+    "Je kunt maximaal %d tickets per bestelling kopen.": ("You can buy a maximum of %d tickets per order.", "Vous pouvez acheter au maximum %d billets par commande."),
+    "Tickets": ("Tickets", "Billets"),
 }

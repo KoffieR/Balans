@@ -15,7 +15,7 @@ get_header();
             __( 'Tijd', 'balans' )    => balans_event_time( $id ),
             __( 'Locatie', 'balans' ) => get_post_meta( $id, '_event_location', true ),
             __( 'Thema', 'balans' )   => get_post_meta( $id, '_event_theme', true ),
-            __( 'Prijs', 'balans' )   => get_post_meta( $id, '_event_price', true ),
+            __( 'Prijs', 'balans' )   => balans_event_price( $id ),
         );
         ?>
         <section class="page-hero">
@@ -40,6 +40,8 @@ get_header();
                     <?php if ( balans_event_is_past( $id ) ) : ?>
                         <p class="event-past" data-testid="event-past"><?php esc_html_e( 'Dit event is al geweest.', 'balans' ); ?></p>
                         <?php balans_button( balans_url( 'events' ), __( 'Bekijk de komende events', 'balans' ), 'ghost', 'event-more' ); ?>
+                    <?php elseif ( ! get_post_meta( $id, '_event_url', true ) && balans_event_product( $id ) ) : ?>
+                        <?php get_template_part( 'template-parts/event-tickets', null, array( 'event' => $id ) ); ?>
                     <?php else : ?>
                         <?php balans_button( balans_event_signup_url( $id ), __( 'Aanmelden', 'balans' ), 'primary', 'event-signup' ); ?>
                     <?php endif; ?>

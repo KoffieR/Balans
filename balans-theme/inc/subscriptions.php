@@ -137,7 +137,7 @@ function balans_mail_html( $lang, $paragraphs, $user_id = 0 ) {
     $t     = balans_mail_texts( $lang );
     $style = 'font-family:Georgia,serif;font-size:16px;line-height:1.6;color:#2B2420;';
     $html  = '<div style="background:#F5F0E8;padding:32px 16px;"><div style="max-width:560px;margin:0 auto;background:#FFFBF4;border-radius:10px;padding:32px;' . $style . '">';
-    $html .= '<p style="margin:0 0 20px;font-size:26px;color:#3C6E71;letter-spacing:1px;">EQ5</p>';
+    $html .= '<p style="margin:0 0 20px;font-size:26px;color:#3F7F83;letter-spacing:1px;">EQ5</p>';
     foreach ( $paragraphs as $p ) {
         $html .= '<p style="margin:0 0 16px;">' . wp_kses_post( $p ) . '</p>';
     }

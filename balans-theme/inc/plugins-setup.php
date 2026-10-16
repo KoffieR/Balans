@@ -147,6 +147,9 @@ function balans_setup_woocommerce() {
     }
     WC_Install::create_pages();
     update_option( 'woocommerce_currency', 'EUR' );
+    update_option( 'woocommerce_currency_pos', 'left_space' );
+    update_option( 'woocommerce_price_decimal_sep', ',' );
+    update_option( 'woocommerce_price_thousand_sep', '.' );
     if ( ! get_option( 'woocommerce_default_country' ) || 'US:CA' === get_option( 'woocommerce_default_country' ) ) {
         update_option( 'woocommerce_default_country', 'NL' );
     }
@@ -175,12 +178,26 @@ function balans_setup_theme_content() {
     return true;
 }
 
+function balans_setup_agenda() {
+    if ( ! function_exists( 'ssa' ) || empty( ssa()->styles_settings ) ) {
+        return __( 'Agenda-plugin is niet actief (optioneel).', 'balans' );
+    }
+    ssa()->styles_settings->update( array(
+        'accent_color' => 'rgba(63, 127, 131, 1)',
+        'background'   => 'rgba(245, 240, 232, 1)',
+        'font'         => 'Helvetica Neue, Helvetica, Arial, sans-serif',
+        'padding'      => '0px',
+    ) );
+    return true;
+}
+
 function balans_setup_all() {
     $steps = array(
         __( 'Talen NL / EN / FR', 'balans' )                    => 'balans_setup_languages',
         __( 'Pagina\'s, vertalingen en diensten', 'balans' )    => 'balans_setup_theme_content',
         __( 'Abonnementspagina\'s (PMPro)', 'balans' )          => 'balans_setup_pmpro',
         __( 'Webshop-pagina\'s (WooCommerce)', 'balans' )       => 'balans_setup_woocommerce',
+        __( 'Agenda in huisstijl', 'balans' )                   => 'balans_setup_agenda',
     );
     $report = array();
     foreach ( $steps as $label => $fn ) {

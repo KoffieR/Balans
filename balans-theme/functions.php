@@ -29,4 +29,5 @@ require_once BALANS_DIR . '/inc/mail-settings.php';
 require_once BALANS_DIR . '/inc/subscriptions.php';
 require_once BALANS_DIR . '/inc/plugins-setup.php';
 require_once BALANS_DIR . '/inc/events.php';
+require_once BALANS_DIR . '/inc/event-tickets.php';
 require_once BALANS_DIR . '/inc/upgrade.php';

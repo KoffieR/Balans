@@ -32,7 +32,7 @@ $events = balans_upcoming_events();
                     <?php foreach ( $events as $event ) :
                         $where = get_post_meta( $event->ID, '_event_location', true );
                         balans_card( array(
-                            'eyebrow' => balans_event_date( $event->ID ) . ( $where ? ' · ' . $where : '' ),
+                            'eyebrow' => balans_event_date( $event->ID ) . ( $where ? ' · ' . $where : '' ) . ( balans_event_sold_out( $event->ID ) ? ' · ' . __( 'Uitverkocht', 'balans' ) : '' ),
                             'title'   => get_the_title( $event ),
                             'text'    => wp_trim_words( get_the_excerpt( $event ), 24 ),
                             'link'    => get_permalink( $event ),
