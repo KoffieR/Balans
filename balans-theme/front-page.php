@@ -51,10 +51,12 @@ get_header();
             </div>
 
             <div class="routes-grid">
-                <?php $i = 0; foreach ( balans_homepage_routes() as $route ) : $i++; ?>
+                <?php $i = 0; foreach ( balans_homepage_routes() as $route ) : $i++; $route = balans_route_upcoming( $route ); ?>
                     <a class="route fade-in" data-delay="<?php echo esc_attr( min( $i, 5 ) ); ?>" href="<?php echo esc_url( $route['link'] ); ?>" data-testid="route-<?php echo esc_attr( sanitize_title( $route['title'] ) ); ?>">
+                        <?php if ( ! empty( $route['badge'] ) ) : ?><span class="upcoming-badge" data-testid="upcoming-badge"><?php echo esc_html( $route['badge'] ); ?></span><?php endif; ?>
                         <p class="eyebrow"><?php echo esc_html( $route['eyebrow'] ); ?></p>
                         <h3><?php echo esc_html( $route['title'] ); ?></h3>
+                        <?php if ( ! empty( $route['badge'] ) ) : ?><p class="route__text" data-testid="upcoming-text"><?php echo esc_html( $route['text'] ); ?></p><?php endif; ?>
                         <p class="route__arrow" aria-hidden="true">→</p>
                     </a>
                 <?php endforeach; ?>

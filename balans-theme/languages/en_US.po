@@ -414,6 +414,34 @@ msgstr "Something went wrong."
 msgid "Netwerkfout. Probeer het later opnieuw."
 msgstr "Network error. Please try again later."
 
+#: inc/event-extras.php
+msgid "Onbekend event."
+msgstr "Unknown event."
+
+#: inc/event-extras.php
+msgid "Geef toestemming om je gegevens voor de wachtlijst te gebruiken."
+msgstr "Please give permission to use your details for the waiting list."
+
+#: inc/event-extras.php
+msgid ""
+"Je staat op de wachtlijst. Komt er een plek vrij, dan krijg je meteen een "
+"e-mail."
+msgstr ""
+"You are on the waiting list. If a place becomes available, you will receive "
+"an email right away."
+
+#: inc/event-extras.php
+msgid "Naam"
+msgstr "Name"
+
+#: inc/event-extras.php
+msgid "E-mail"
+msgstr "Email"
+
+#: inc/event-extras.php
+msgid "Tickets"
+msgstr "Tickets"
+
 #: inc/event-tickets.php
 msgid "Je kunt maximaal %d tickets per bestelling kopen."
 msgstr "You can buy a maximum of %d tickets per order."
@@ -429,10 +457,6 @@ msgstr "Time"
 #: inc/event-tickets.php
 msgid "Locatie"
 msgstr "Location"
-
-#: inc/event-tickets.php
-msgid "Tickets"
-msgstr "Tickets"
 
 #: inc/events.php
 msgid "Event"
@@ -784,14 +808,6 @@ msgstr "Choose a service…"
 #: page-templates/page-afspraak.php
 msgid "Tijdslot"
 msgstr "Time slot"
-
-#: page-templates/page-afspraak.php
-msgid "Naam"
-msgstr "Name"
-
-#: page-templates/page-afspraak.php
-msgid "E-mail"
-msgstr "Email"
 
 #: page-templates/page-afspraak.php
 msgid "Telefoon (optioneel)"
@@ -1318,6 +1334,29 @@ msgstr "Own blog"
 #: single.php
 msgid "Artikel"
 msgstr "Article"
+
+#: template-parts/event-tickets.php
+msgid "Zet me op de wachtlijst"
+msgstr "Put me on the waiting list"
+
+#: template-parts/event-tickets.php
+msgid ""
+"Komt er een plek vrij, dan krijgt iedereen op de wachtlijst tegelijk een "
+"e-mail. Wie het eerst een ticket koopt, heeft de plek."
+msgstr ""
+"If a place becomes available, everyone on the waiting list receives an email"
+" at the same time. Whoever buys a ticket first gets the place."
+
+#: template-parts/event-tickets.php
+msgid ""
+"Mijn gegevens worden alleen gebruikt voor deze wachtlijst en daarna "
+"verwijderd."
+msgstr ""
+"My details will only be used for this waiting list and deleted afterwards."
+
+#: template-parts/event-tickets.php
+msgid "Op de wachtlijst"
+msgstr "Join the waiting list"
 
 #: template-parts/event-tickets.php
 msgid "Aantal tickets"

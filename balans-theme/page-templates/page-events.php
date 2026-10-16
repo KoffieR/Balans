@@ -42,7 +42,9 @@ $events = balans_upcoming_events();
                     endforeach; ?>
                 </div>
             <?php else : ?>
-                <p data-testid="events-empty"><?php esc_html_e( 'Er staan op dit moment geen events gepland. Wil je op de hoogte blijven? Laat het ons weten.', 'balans' ); ?></p>
+                <?php $u = balans_upcoming(); ?>
+                <?php if ( $u ) : ?><span class="upcoming-badge"><?php echo esc_html( $u['badge'] ); ?></span><?php endif; ?>
+                <p data-testid="events-empty"><?php echo esc_html( $u ? $u['text'] : __( 'Er staan op dit moment geen events gepland. Wil je op de hoogte blijven? Laat het ons weten.', 'balans' ) ); ?></p>
                 <?php balans_button( balans_url( 'contact' ), __( 'Houd me op de hoogte', 'balans' ), 'ghost', 'events-notify' ); ?>
             <?php endif; ?>
         </div>

@@ -121,3 +121,11 @@ Thema `balans-theme/` met:
 - WooCommerce prijsnotatie € 45,00. Upgrade v3 zet oude vrije prijstekst om naar getal.
 - Getest op /tmp/wpf (wp-cli + php -S/curl).
 - Later (gebruiker): eerstvolgend event op de homepage.
+
+## Update juni 2026 — Wachtlijst, nagesprek, deelnemerslijst, Upcoming (DONE)
+- `inc/event-extras.php`: wachtlijst (AJAX `balans_waitlist`, toestemming verplicht, opgeslagen in event-meta `_event_waitlist` op hoofd-event), bij stock_status → instock iedereen tegelijk mailen en lijst wissen (niet voor voorbije events).
+- Nagesprek-mail dag na event (`balans_send_event_followups` op cron `balans_daily_reminders`), eigen reflectievraag per taal + eerstvolgend event. `balans_send_event_mails($type)` generiek in event-tickets.php.
+- Deelnemerslijst: Events → Deelnemerslijst (`balans-attendees`), row action + knop in publiceren-box, printbaar, met wachtlijst.
+- Upcoming: Customizer-sectie "Homepage: Upcoming" (eq5_upcoming_show/next/badge_{lang}/text_{lang}); badge + tekst op dienst Event (homepage-routes, Voor jou-kaart, lege Events-pagina); toont eerstvolgend event als er een is.
+- Mailteksten waitlist_* en followup_* in Balans → E-mailteksten.
+- Getest op /tmp/wpf (wp-cli + php -S/curl).

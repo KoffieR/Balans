@@ -38,3 +38,23 @@ AGENDA IN HUISSTIJL
   ronde hoeken. De lettertypes worden van je eigen server geladen, niet van Google (AVG-vriendelijk).
 - De stijl wordt ingesteld met "Alles instellen" (Balans → Installatie & plugins) en via het bestand
   ssa/booking-app/custom.css in het thema.
+
+WACHTLIJST
+- Is een event uitverkocht, dan kunnen bezoekers zich op de eventpagina op de wachtlijst zetten (naam, e-mail, toestemming).
+- Komt er een plek vrij (je verhoogt het maximum of een bestelling wordt geannuleerd), dan krijgt iedereen op de
+  wachtlijst tegelijk een mail in de eigen taal met een knop naar het event. Wie het eerst koopt, heeft de plek.
+  Daarna wordt de wachtlijst leeggemaakt (AVG: gegevens worden niet langer bewaard dan nodig).
+- Teksten: Balans → E-mailteksten → "Wachtlijst: plek vrijgekomen".
+
+NAGESPREK (DAG NA HET EVENT)
+- Elke koper krijgt de dag na het event een warme mail met een reflectievraag en, als er een volgend event gepland is,
+  dat event met een knop. Teksten en vraag per taal: Balans → E-mailteksten → "Nagesprek".
+
+DEELNEMERSLIJST
+- Events → Deelnemerslijst, of de knop "Deelnemerslijst" bij een event (ook in het overzicht onder de titel).
+- Naam, e-mail, aantal tickets en bestelnummer, met afvinkvakjes en een knop "Printen". De wachtlijst staat eronder.
+
+UPCOMING (homepage en Voor jou)
+- Bij de dienst "Event" staat een label "Upcoming" met een korte tekst dat events eraan komen.
+- Aanpassen: Weergave → Customizer → "Homepage: Upcoming" (met live voorbeeld): aan/uit, label en tekst per taal,
+  en of zodra er een event gepland is het eerstvolgende event getoond moet worden in plaats van de tekst.

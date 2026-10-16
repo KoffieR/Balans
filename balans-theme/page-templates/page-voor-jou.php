@@ -20,7 +20,9 @@ get_header();
         <div class="container">
             <div class="voor-jou-grid">
                 <?php foreach ( balans_voor_jou_services() as $svc ) :
+                    $svc = balans_route_upcoming( $svc );
                     balans_card( array(
+                        'badge'   => isset( $svc['badge'] ) ? $svc['badge'] : '',
                         'eyebrow' => $svc['eyebrow'],
                         'title'   => $svc['title'],
                         'text'    => $svc['text'],

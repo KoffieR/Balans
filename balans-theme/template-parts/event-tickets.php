@@ -12,6 +12,27 @@ $left    = balans_event_tickets_left( $event );
 <div class="event-tickets" data-testid="event-tickets">
     <?php if ( ! $product->is_in_stock() ) : ?>
         <span class="balans-btn balans-btn--primary is-disabled" aria-disabled="true" data-testid="event-sold-out"><?php esc_html_e( 'Uitverkocht', 'balans' ); ?></span>
+        <form class="balans-form event-waitlist" data-balans-ajax="balans_waitlist" data-testid="form-waitlist" novalidate>
+            <h3><?php esc_html_e( 'Zet me op de wachtlijst', 'balans' ); ?></h3>
+            <p><?php esc_html_e( 'Komt er een plek vrij, dan krijgt iedereen op de wachtlijst tegelijk een e-mail. Wie het eerst een ticket koopt, heeft de plek.', 'balans' ); ?></p>
+            <input type="hidden" name="event" value="<?php echo esc_attr( $event ); ?>" />
+            <input type="hidden" name="lang" value="<?php echo esc_attr( balans_lang() ); ?>" />
+            <div class="form-row--inline">
+                <div class="form-row">
+                    <label for="waitlist-name"><?php esc_html_e( 'Naam', 'balans' ); ?></label>
+                    <input type="text" id="waitlist-name" name="name" required data-testid="waitlist-name" />
+                </div>
+                <div class="form-row">
+                    <label for="waitlist-email"><?php esc_html_e( 'E-mail', 'balans' ); ?></label>
+                    <input type="email" id="waitlist-email" name="email" required data-testid="waitlist-email" />
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="event-waitlist__consent"><input type="checkbox" name="consent" value="1" required data-testid="waitlist-consent" /> <?php esc_html_e( 'Mijn gegevens worden alleen gebruikt voor deze wachtlijst en daarna verwijderd.', 'balans' ); ?></label>
+            </div>
+            <button type="submit" class="balans-btn balans-btn--secondary" data-testid="waitlist-submit"><?php esc_html_e( 'Op de wachtlijst', 'balans' ); ?></button>
+            <div class="balans-form-message" role="status" aria-live="polite"></div>
+        </form>
     <?php else : ?>
         <form class="event-tickets__form" method="get" action="<?php echo esc_url( wc_get_checkout_url() ); ?>">
             <input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" />

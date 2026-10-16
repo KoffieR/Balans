@@ -189,31 +189,53 @@ add_action( 'woocommerce_store_api_checkout_update_order_meta', function ( $orde
  * Herinnering een dag van tevoren
  * ------------------------------------------------------------- */
 
-function balans_send_event_reminders( $timestamp = null ) {
-    if ( ! function_exists( 'wc_get_orders' ) ) {
-        return 0;
+/**
+ * Betaalde bestellingen met tickets voor een product: lijst van array( order, aantal ).
+ */
+function balans_event_orders( $product_id ) {
+    static $orders = null;
+    if ( null === $orders ) {
+        $orders = function_exists( 'wc_get_orders' ) ? wc_get_orders( array( 'status' => array( 'processing', 'completed' ), 'limit' => -1, 'date_created' => '>' . ( time() - 2 * YEAR_IN_SECONDS ) ) ) : array();
     }
+    $list = array();
+    foreach ( $orders as $order ) {
+        $qty = 0;
+        foreach ( $order->get_items() as $item ) {
+            if ( (int) $item->get_product_id() === (int) $product_id ) {
+                $qty += (int) $item->get_quantity();
+            }
+        }
+        if ( $qty ) {
+            $list[] = array( $order, $qty );
+        }
+    }
+    return $list;
+}
+
+/**
+ * Mails rond een event: 'reminder' (dag ervoor) of 'followup' (dag erna). Elke koper krijgt elke mail maar één keer.
+ */
+function balans_send_event_mails( $type, $timestamp = null ) {
     $timestamp = $timestamp ? (int) $timestamp : time();
-    $tomorrow  = wp_date( 'Y-m-d', $timestamp + DAY_IN_SECONDS );
+    $day       = wp_date( 'Y-m-d', $timestamp + ( 'reminder' === $type ? DAY_IN_SECONDS : -DAY_IN_SECONDS ) );
+    $flag      = 'reminder' === $type ? '_balans_reminded_' : '_balans_followup_';
     $products  = array();
-    foreach ( get_posts( array( 'post_type' => 'balans_event', 'numberposts' => -1, 'lang' => '', 'meta_key' => '_event_date', 'meta_value' => $tomorrow ) ) as $event ) { // phpcs:ignore WordPress.DB.SlowDBQuery
+    foreach ( get_posts( array( 'post_type' => 'balans_event', 'numberposts' => -1, 'lang' => '', 'meta_key' => '_event_date', 'meta_value' => $day ) ) as $event ) { // phpcs:ignore WordPress.DB.SlowDBQuery
         $pid = (int) get_post_meta( $event->ID, '_event_product_id', true );
         if ( $pid ) {
             $products[ $pid ] = balans_event_main_id( $event->ID );
         }
     }
-    if ( ! $products ) {
-        return 0;
-    }
     $sent = 0;
-    foreach ( wc_get_orders( array( 'status' => array( 'processing', 'completed' ), 'limit' => -1, 'date_created' => '>' . ( $timestamp - YEAR_IN_SECONDS ) ) ) as $order ) {
-        foreach ( $order->get_items() as $item ) {
-            $pid = (int) $item->get_product_id();
-            if ( ! isset( $products[ $pid ] ) || $order->get_meta( '_balans_reminded_' . $pid ) ) {
+    foreach ( $products as $pid => $main ) {
+        foreach ( balans_event_orders( $pid ) as $row ) {
+            list( $order, $qty ) = $row;
+            if ( $order->get_meta( $flag . $pid ) ) {
                 continue;
             }
-            if ( balans_event_reminder_mail( $order, $products[ $pid ], (int) $item->get_quantity() ) ) {
-                $order->update_meta_data( '_balans_reminded_' . $pid, 1 );
+            $ok = 'reminder' === $type ? balans_event_reminder_mail( $order, $main, $qty ) : balans_event_followup_mail( $order, $main );
+            if ( $ok ) {
+                $order->update_meta_data( $flag . $pid, 1 );
                 $order->save();
                 $sent++;
             }
@@ -221,6 +243,15 @@ function balans_send_event_reminders( $timestamp = null ) {
     }
     return $sent;
 }
+
+function balans_send_event_reminders( $timestamp = null ) {
+    return balans_send_event_mails( 'reminder', $timestamp );
+}
+
+function balans_send_event_followups( $timestamp = null ) {
+    return balans_send_event_mails( 'followup', $timestamp );
+}
+add_action( 'balans_daily_reminders', 'balans_send_event_followups' );
 add_action( 'balans_daily_reminders', 'balans_send_event_reminders' );
 
 function balans_event_reminder_mail( $order, $main_event, $qty ) {

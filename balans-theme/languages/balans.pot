@@ -398,6 +398,32 @@ msgstr ""
 msgid "Netwerkfout. Probeer het later opnieuw."
 msgstr ""
 
+#: inc/event-extras.php
+msgid "Onbekend event."
+msgstr ""
+
+#: inc/event-extras.php
+msgid "Geef toestemming om je gegevens voor de wachtlijst te gebruiken."
+msgstr ""
+
+#: inc/event-extras.php
+msgid ""
+"Je staat op de wachtlijst. Komt er een plek vrij, dan krijg je meteen een "
+"e-mail."
+msgstr ""
+
+#: inc/event-extras.php
+msgid "Naam"
+msgstr ""
+
+#: inc/event-extras.php
+msgid "E-mail"
+msgstr ""
+
+#: inc/event-extras.php
+msgid "Tickets"
+msgstr ""
+
 #: inc/event-tickets.php
 msgid "Je kunt maximaal %d tickets per bestelling kopen."
 msgstr ""
@@ -412,10 +438,6 @@ msgstr ""
 
 #: inc/event-tickets.php
 msgid "Locatie"
-msgstr ""
-
-#: inc/event-tickets.php
-msgid "Tickets"
 msgstr ""
 
 #: inc/events.php
@@ -739,14 +761,6 @@ msgstr ""
 
 #: page-templates/page-afspraak.php
 msgid "Tijdslot"
-msgstr ""
-
-#: page-templates/page-afspraak.php
-msgid "Naam"
-msgstr ""
-
-#: page-templates/page-afspraak.php
-msgid "E-mail"
 msgstr ""
 
 #: page-templates/page-afspraak.php
@@ -1223,6 +1237,26 @@ msgstr ""
 
 #: single.php
 msgid "Artikel"
+msgstr ""
+
+#: template-parts/event-tickets.php
+msgid "Zet me op de wachtlijst"
+msgstr ""
+
+#: template-parts/event-tickets.php
+msgid ""
+"Komt er een plek vrij, dan krijgt iedereen op de wachtlijst tegelijk een "
+"e-mail. Wie het eerst een ticket koopt, heeft de plek."
+msgstr ""
+
+#: template-parts/event-tickets.php
+msgid ""
+"Mijn gegevens worden alleen gebruikt voor deze wachtlijst en daarna "
+"verwijderd."
+msgstr ""
+
+#: template-parts/event-tickets.php
+msgid "Op de wachtlijst"
 msgstr ""
 
 #: template-parts/event-tickets.php

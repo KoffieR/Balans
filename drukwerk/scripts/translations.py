@@ -307,4 +307,11 @@ T = {
     "Nog %d plaatsen beschikbaar": ("%d places left", "Encore %d places disponibles"),
     "Je kunt maximaal %d tickets per bestelling kopen.": ("You can buy a maximum of %d tickets per order.", "Vous pouvez acheter au maximum %d billets par commande."),
     "Tickets": ("Tickets", "Billets"),
+    "Onbekend event.": ("Unknown event.", "Événement inconnu."),
+    "Geef toestemming om je gegevens voor de wachtlijst te gebruiken.": ("Please give permission to use your details for the waiting list.", "Veuillez autoriser l'utilisation de vos données pour la liste d'attente."),
+    "Je staat op de wachtlijst. Komt er een plek vrij, dan krijg je meteen een e-mail.": ("You are on the waiting list. If a place becomes available, you will receive an email right away.", "Vous êtes sur la liste d'attente. Si une place se libère, vous recevrez immédiatement un e-mail."),
+    "Zet me op de wachtlijst": ("Put me on the waiting list", "Inscrivez-moi sur la liste d'attente"),
+    "Komt er een plek vrij, dan krijgt iedereen op de wachtlijst tegelijk een e-mail. Wie het eerst een ticket koopt, heeft de plek.": ("If a place becomes available, everyone on the waiting list receives an email at the same time. Whoever buys a ticket first gets the place.", "Si une place se libère, toutes les personnes sur la liste d'attente reçoivent un e-mail en même temps. La première personne qui achète un billet obtient la place."),
+    "Mijn gegevens worden alleen gebruikt voor deze wachtlijst en daarna verwijderd.": ("My details will only be used for this waiting list and deleted afterwards.", "Mes données seront utilisées uniquement pour cette liste d'attente, puis supprimées."),
+    "Op de wachtlijst": ("Join the waiting list", "Rejoindre la liste d'attente"),
 }

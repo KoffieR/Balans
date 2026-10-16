@@ -29,6 +29,7 @@ function balans_homepage_routes() {
             'title'   => __( 'Event', 'balans' ),
             'text'    => __( 'Laat emotionele ladingen los en ga verlicht en fris naar huis. Niemand verwacht dat je iets deelt.', 'balans' ),
             'link'    => balans_url( 'events' ),
+            'upcoming' => true,
         ),
         array(
             'eyebrow' => __( 'Leren, ontdekken en jezelf ontwikkelen', 'balans' ),

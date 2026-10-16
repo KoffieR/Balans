@@ -21,6 +21,7 @@ function balans_card( $args ) {
         'cta'      => __( 'Lees meer', 'balans' ),
         'image'    => '', // URL or empty for CSS placeholder.
         'tone'     => '', // optional CSS modifier.
+        'badge'    => '',
     );
     $args = wp_parse_args( $args, $defaults );
     ?>
@@ -31,6 +32,7 @@ function balans_card( $args ) {
             <div class="balans-card__image balans-card__image--placeholder" aria-hidden="true" data-label="<?php esc_attr_e( 'Foto nog aan te leveren', 'balans' ); ?>"></div>
         <?php endif; ?>
         <div class="balans-card__body">
+            <?php if ( $args['badge'] ) : ?><span class="upcoming-badge" data-testid="upcoming-badge"><?php echo esc_html( $args['badge'] ); ?></span><?php endif; ?>
             <?php if ( $args['eyebrow'] ) : ?><p class="eyebrow"><?php echo esc_html( $args['eyebrow'] ); ?></p><?php endif; ?>
             <h3 class="balans-card__title"><?php echo esc_html( $args['title'] ); ?></h3>
             <p class="balans-card__text"><?php echo esc_html( $args['text'] ); ?></p>
