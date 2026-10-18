@@ -148,3 +148,6 @@ Thema `balans-theme/` met:
 - i18n: balans_reload_textdomain($locale) laadt mo met locale-param; nl_NL.mo (identiteit) toegevoegd in build_translations.py.
 - Testsite nu persistent: /root/wptest/build_site.sh → /root/wpf/wordpress.
 - LEESMIJ-TEKSTEN-AANPASSEN.txt.
+
+## Update juni 2026 — Visitekaartje opties (DONE)
+- make_business_card.py: voorkant slogan 2 regels 1,3x (11pt), "naar balans" schuin brons #B08D57, logo-teal #3F7F83. Achterkant 3 opties: A crème, B donkerbruin (footer), C beige-teal. Diensten: "meditaties · consulten · events / trainingen · workshops". Per optie afloop- en snijtekens-PDF + previews + overzicht-opties.png in /app/drukwerk/visitekaartje.

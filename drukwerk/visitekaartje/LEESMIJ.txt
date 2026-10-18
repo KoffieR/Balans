@@ -1,14 +1,19 @@
-Visitekaartje EQ5 — Remco Sas
+VISITEKAARTJE EQ5 — REMCO SAS
 =============================
-Formaat : 85 x 55 mm, dubbelzijdig (pagina 1 = voorkant, pagina 2 = achterkant)
-Kleur   : CMYK  — teal C75 M38 Y42 K18 (ca. #3C6E71), creme C3 M5 Y9 K0
-Afloop  : 3 mm rondom, lettertypes ingesloten (Fraunces + Instrument Sans)
+Formaat 85 x 55 mm, 3 mm afloop, CMYK, lettertypes ingesloten. Dubbelzijdig: pagina 1 = voorkant, pagina 2 = achterkant.
 
-Bestanden
-- visitekaartje-EQ5-drukklaar-snijtekens.pdf : met snijtekens (voor de meeste drukkerijen)
-- visitekaartje-EQ5-drukklaar-afloop.pdf     : alleen 3 mm afloop, zonder snijtekens
-  (gebruik deze als je online drukker zoals Drukwerkdeal/Helloprint "zonder snijtekens" vraagt)
-- preview-voorkant.png / preview-achterkant.png : alleen ter controle, niet voor druk
+Voorkant (gelijk bij alle opties): EQ5-logo in teal, slogan in twee regels:
+  "Van vicieuze cirkel" (donkerbruin) en "naar balans" (schuin, brons #B08D57) — zoals op de homepage.
 
-Advies papier: 350 g/m2 mat of silk, eventueel matte laminaat voor een zachte, warme uitstraling.
-Aanpassen: wijzig de gegevens in drukwerk/scripts/make_business_card.py (CARD) en draai het script opnieuw.
+Achterkant — kies één van de drie opties (in de kleuren van de website):
+  A  crème        Crème achtergrond, donkerbruine naam, bronzen accenten, zachte bronzen Q.
+  B  donkerbruin  Warm donkerbruin zoals de footer van de website, crème tekst, brons.
+  C  beige-teal   Zacht beige, teal accent (Balansbrenger) en een lichte teal Q.
+  Tekst: Remco Sas · Balansbrenger · meditaties · consulten · events / trainingen · workshops · +31 6 23 988 488 · www.eq5.nl
+
+Bestanden per optie:
+  visitekaartje-EQ5-optie-[X]-drukklaar-afloop.pdf     -> voor online drukkerijen (bijv. Drukwerkdeal, Vistaprint)
+  visitekaartje-EQ5-optie-[X]-drukklaar-snijtekens.pdf -> voor een lokale drukker (met snijtekens)
+  preview-*.png en overzicht-opties.png                -> alleen om te bekijken, niet om te drukken
+
+Tip: optie B (donker) komt het mooist uit op mat papier van minimaal 350 grams.

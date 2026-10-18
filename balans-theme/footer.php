@@ -13,10 +13,10 @@
                     <?php echo balans_svg( 'logo-eq5-slogan-' . balans_lang(), 'footer-brand__svg' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
                 </a>
                 <p class="footer-text">
-                    <?php esc_html_e( 'Iedereen heeft vragen in een zoektocht naar balans.', 'balans' ); ?>
+                    <?php esc_html_e( 'Een onpartijdige, met begrip en ervaring, kan net het verschil maken dat nodig is.', 'balans' ); ?>
                 </p>
                 <p class="footer-contact" data-testid="footer-contact">
-                    Remco Sas &middot; <?php esc_html_e( 'Balansbrenger', 'balans' ); ?>
+                    Remco Sas  &middot; <?php esc_html_e( ' Balansbrenger', 'balans' ); ?>
                 </p>
             </div>
 

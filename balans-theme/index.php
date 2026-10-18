@@ -32,7 +32,7 @@ get_header();
                 <?php the_posts_pagination(); ?>
             <?php else : ?>
                 <h1><?php esc_html_e( 'Nog geen inhoud', 'balans' ); ?></h1>
-                <p><?php esc_html_e( 'Er is nog geen inhoud op deze locatie.', 'balans' ); ?></p>
+                <p><?php esc_html_e( 'Er is nog geen inhoud op deze index locatie.', 'balans' ); ?></p>
             <?php endif; ?>
         </div>
     </section>
