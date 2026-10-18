@@ -136,11 +136,12 @@ def tracked(c, x, y, text, font, size, spacing, color):
     c.restoreState()
 
 
-def front(c):
+def front(c, logo=None):
+    logo = logo or TEAL
     c.setFillColor(CREAM)
     c.rect(-BLEED, -BLEED, TRIM_W + 2 * BLEED, TRIM_H + 2 * BLEED, stroke=0, fill=1)
     w = 44 * mm
-    draw_eq5(c, (TRIM_W - w) / 2, 30 * mm, w, TEAL)
+    draw_eq5(c, (TRIM_W - w) / 2, 30 * mm, w, logo)
     size = 8.5 * 1.3
     c.setFillColor(INK)
     c.setFont("Fraunces", size)
@@ -205,6 +206,7 @@ def back_c(c):
 
 
 BACKS = {"A-creme": back_a, "B-donkerbruin": back_b, "C-beige-teal": back_c}
+FRONTS = {"teal": lambda c: front(c, TEAL), "brons": lambda c: front(c, BRONZE)}
 
 
 def crop_marks(c, slug):
@@ -219,7 +221,7 @@ def crop_marks(c, slug):
             c.line(x, y + dy * off, x, y + dy * (off + ln - BLEED))
 
 
-def build(filename, marks, back):
+def build(filename, marks, back, front=front):
     slug = 8 * mm if marks else BLEED
     pw, ph = TRIM_W + 2 * slug, TRIM_H + 2 * slug
     c = canvas.Canvas(os.path.join(OUT, filename), pagesize=(pw, ph), initialFontName="InstrumentSans", initialFontSize=8)
@@ -252,24 +254,24 @@ def set_boxes(filename, slug, pw, ph):
     w.write(path)
 
 
-def previews(filename, key):
+def previews(filename, key, fkey):
     import pymupdf as fitz
     doc = fitz.open(os.path.join(OUT, filename))
     for i, page in enumerate(doc):
-        name = "preview-voorkant.png" if i == 0 else f"preview-achterkant-{key}.png"
+        name = f"preview-voorkant-{fkey}.png" if i == 0 else f"preview-achterkant-{key}.png"
         page.get_pixmap(dpi=300, clip=page.trimbox).save(os.path.join(OUT, name))
 
 
 def overview():
     from PIL import Image, ImageDraw, ImageFont
-    files = ["preview-voorkant.png"] + [f"preview-achterkant-{k}.png" for k in BACKS]
+    files = [f"preview-voorkant-{f}.png" for f in FRONTS] + [f"preview-achterkant-{k}.png" for k in BACKS]
     ims = [Image.open(os.path.join(OUT, f)).convert("RGB") for f in files]
     w, h = ims[0].size
     gap, lab = 60, 90
-    sheet = Image.new("RGB", (2 * w + 3 * gap, 2 * (h + lab) + 3 * gap), (236, 228, 212))
+    sheet = Image.new("RGB", (2 * w + 3 * gap, 3 * (h + lab) + 4 * gap), (236, 228, 212))
     d = ImageDraw.Draw(sheet)
     font = ImageFont.truetype(os.path.join(FD, "InstrumentSans/InstrumentSans-Medium.ttf"), 44)
-    labels = ["Voorkant"] + [f"Achterkant optie {k.replace('-', ' — ', 1).replace('creme', 'crème')}" for k in BACKS]
+    labels = ["Voorkant — EQ5 teal", "Voorkant — EQ5 brons"] + [f"Achterkant optie {k.replace('-', ' — ', 1).replace('creme', 'crème')}" for k in BACKS]
     for i, (im, label) in enumerate(zip(ims, labels)):
         x = gap + (i % 2) * (w + gap)
         y = gap + (i // 2) * (h + lab + gap)
@@ -283,10 +285,11 @@ if __name__ == "__main__":
     for f in os.listdir(OUT):
         if f.endswith((".pdf", ".png")):
             os.remove(os.path.join(OUT, f))
-    for key, back in BACKS.items():
-        for kind, marks in (("snijtekens", True), ("afloop", False)):
-            fn = f"visitekaartje-EQ5-optie-{key}-drukklaar-{kind}.pdf"
-            set_boxes(fn, *build(fn, marks, back))
-        previews(f"visitekaartje-EQ5-optie-{key}-drukklaar-afloop.pdf", key)
+    for fkey, fr in FRONTS.items():
+        for key, back in BACKS.items():
+            for kind, marks in (("snijtekens", True), ("afloop", False)):
+                fn = f"visitekaartje-EQ5-voorkant-{fkey}-achterkant-{key}-drukklaar-{kind}.pdf"
+                set_boxes(fn, *build(fn, marks, back, fr))
+            previews(f"visitekaartje-EQ5-voorkant-{fkey}-achterkant-{key}-drukklaar-afloop.pdf", key, fkey)
     overview()
     print("klaar")

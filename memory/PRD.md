@@ -151,3 +151,4 @@ Thema `balans-theme/` met:
 
 ## Update juni 2026 — Visitekaartje opties (DONE)
 - make_business_card.py: voorkant slogan 2 regels 1,3x (11pt), "naar balans" schuin brons #B08D57, logo-teal #3F7F83. Achterkant 3 opties: A crème, B donkerbruin (footer), C beige-teal. Diensten: "meditaties · consulten · events / trainingen · workshops". Per optie afloop- en snijtekens-PDF + previews + overzicht-opties.png in /app/drukwerk/visitekaartje.
+- Voorkant ook in brons: 12 PDF's (voorkant teal/brons x achterkant A/B/C x afloop/snijtekens), overzicht-opties.png met beide voorkanten.
