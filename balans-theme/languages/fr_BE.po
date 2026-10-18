@@ -42,14 +42,6 @@ msgid "Nog geen inhoud."
 msgstr "Pas encore de contenu."
 
 #: footer.php
-msgid "Iedereen heeft vragen in een zoektocht naar balans."
-msgstr "Chacun se pose des questions dans sa quête d'équilibre."
-
-#: footer.php
-msgid "Balansbrenger"
-msgstr "Porteur d'équilibre"
-
-#: footer.php
 msgid "Ontdek"
 msgstr "Découvrir"
 
@@ -767,6 +759,26 @@ msgstr ""
 msgid "Lees meer over onze aanpak"
 msgstr "En savoir plus sur notre approche"
 
+#: inc/page-texts.php
+msgid "Ervaringen"
+msgstr "Témoignages"
+
+#: inc/page-texts.php
+msgid "Wat anderen ervaren."
+msgstr "Ce que vivent les autres."
+
+#: inc/page-texts.php
+msgid "Deel je ervaring"
+msgstr "Partagez votre expérience"
+
+#: inc/page-texts.php
+msgid ""
+"Een paar zinnen is genoeg. We lezen elke ervaring eerst, daarna verschijnt "
+"hij op de website."
+msgstr ""
+"Quelques phrases suffisent. Nous lisons chaque témoignage avant qu'il "
+"n'apparaisse sur le site."
+
 #: inc/placeholder-content.php
 msgid "Meer rust, zelf ontdekken en oefenen"
 msgstr "Plus de calme, découvrir et pratiquer soi-même"
@@ -971,6 +983,22 @@ msgstr "Photo encore à fournir"
 msgid "Nog aan te leveren door de eigenaar. Dit is een tijdelijke aanduiding."
 msgstr "Encore à fournir par le propriétaire. Ceci est un contenu provisoire."
 
+#: inc/testimonials.php
+msgid "Vul je naam of initialen in (max. 60 tekens)."
+msgstr "Indiquez votre nom ou vos initiales (60 caractères max.)."
+
+#: inc/testimonials.php
+msgid "Schrijf je ervaring in 10 tot 600 tekens."
+msgstr "Écrivez votre témoignage en 10 à 600 caractères."
+
+#: inc/testimonials.php
+msgid ""
+"Dank je wel voor het delen! Je ervaring verschijnt op de website zodra we "
+"hem hebben bekeken."
+msgstr ""
+"Merci pour votre partage ! Votre témoignage apparaîtra sur le site dès que "
+"nous l'aurons lu."
+
 #: inc/theme-setup.php
 msgid "Footer navigatie"
 msgstr "Navigation du pied de page"
@@ -1003,10 +1031,6 @@ msgstr ""
 #: index.php
 msgid "Nog geen inhoud"
 msgstr "Pas encore de contenu"
-
-#: index.php
-msgid "Er is nog geen inhoud op deze locatie."
-msgstr "Il n'y a pas encore de contenu à cet endroit."
 
 #: page-templates/page-afspraak.php
 msgid ""
@@ -1488,3 +1512,19 @@ msgstr ""
 #: template-parts/podcast-subscribe.php
 msgid "Privé-feed"
 msgstr "Flux privé"
+
+#: template-parts/testimonials.php
+msgid "Naam of initialen"
+msgstr "Nom ou initiales"
+
+#: template-parts/testimonials.php
+msgid "Bij welke dienst (optioneel)"
+msgstr "Pour quel service (facultatif)"
+
+#: template-parts/testimonials.php
+msgid "Je ervaring"
+msgstr "Votre expérience"
+
+#: template-parts/testimonials.php
+msgid "Ervaring versturen"
+msgstr "Envoyer le témoignage"

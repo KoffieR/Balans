@@ -13,9 +13,10 @@ get_header();
     <section class="section">
         <div class="container">
             <div class="voor-jou-grid">
-                <?php foreach ( balans_voor_jou_services() as $svc ) :
+                <?php foreach ( balans_voor_jou_services() as $i => $svc ) :
                     $svc = balans_route_upcoming( $svc );
                     balans_card( array(
+                        'image'   => (string) wp_get_attachment_image_url( (int) get_theme_mod( 'eq5_vj_image_' . ( $i + 1 ), 0 ), 'large' ),
                         'badge'   => isset( $svc['badge'] ) ? $svc['badge'] : '',
                         'eyebrow' => $svc['eyebrow'],
                         'title'   => $svc['title'],

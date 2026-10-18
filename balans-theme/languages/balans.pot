@@ -38,14 +38,6 @@ msgid "Nog geen inhoud."
 msgstr ""
 
 #: footer.php
-msgid "Iedereen heeft vragen in een zoektocht naar balans."
-msgstr ""
-
-#: footer.php
-msgid "Balansbrenger"
-msgstr ""
-
-#: footer.php
 msgid "Ontdek"
 msgstr ""
 
@@ -704,6 +696,24 @@ msgstr ""
 msgid "Lees meer over onze aanpak"
 msgstr ""
 
+#: inc/page-texts.php
+msgid "Ervaringen"
+msgstr ""
+
+#: inc/page-texts.php
+msgid "Wat anderen ervaren."
+msgstr ""
+
+#: inc/page-texts.php
+msgid "Deel je ervaring"
+msgstr ""
+
+#: inc/page-texts.php
+msgid ""
+"Een paar zinnen is genoeg. We lezen elke ervaring eerst, daarna verschijnt "
+"hij op de website."
+msgstr ""
+
 #: inc/placeholder-content.php
 msgid "Meer rust, zelf ontdekken en oefenen"
 msgstr ""
@@ -889,6 +899,20 @@ msgstr ""
 msgid "Nog aan te leveren door de eigenaar. Dit is een tijdelijke aanduiding."
 msgstr ""
 
+#: inc/testimonials.php
+msgid "Vul je naam of initialen in (max. 60 tekens)."
+msgstr ""
+
+#: inc/testimonials.php
+msgid "Schrijf je ervaring in 10 tot 600 tekens."
+msgstr ""
+
+#: inc/testimonials.php
+msgid ""
+"Dank je wel voor het delen! Je ervaring verschijnt op de website zodra we "
+"hem hebben bekeken."
+msgstr ""
+
 #: inc/theme-setup.php
 msgid "Footer navigatie"
 msgstr ""
@@ -916,10 +940,6 @@ msgstr ""
 
 #: index.php
 msgid "Nog geen inhoud"
-msgstr ""
-
-#: index.php
-msgid "Er is nog geen inhoud op deze locatie."
 msgstr ""
 
 #: page-templates/page-afspraak.php
@@ -1356,4 +1376,20 @@ msgstr ""
 
 #: template-parts/podcast-subscribe.php
 msgid "Privé-feed"
+msgstr ""
+
+#: template-parts/testimonials.php
+msgid "Naam of initialen"
+msgstr ""
+
+#: template-parts/testimonials.php
+msgid "Bij welke dienst (optioneel)"
+msgstr ""
+
+#: template-parts/testimonials.php
+msgid "Je ervaring"
+msgstr ""
+
+#: template-parts/testimonials.php
+msgid "Ervaring versturen"
 msgstr ""

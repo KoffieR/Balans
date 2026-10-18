@@ -33,7 +33,7 @@ function balans_register_dienst_cpt() {
         'show_ui'      => true,
         'show_in_rest' => true,
         'menu_icon'    => 'dashicons-heart',
-        'supports'     => array( 'title', 'editor', 'page-attributes' ),
+        'supports'     => array( 'title', 'editor', 'page-attributes', 'thumbnail' ),
     ) );
 }
 add_action( 'init', 'balans_register_dienst_cpt' );
@@ -128,6 +128,7 @@ function balans_get_diensten( $group ) {
             'price' => get_post_meta( $post->ID, '_dienst_price', true ),
             'level' => (int) get_post_meta( $post->ID, '_dienst_level', true ),
             'cta'   => get_post_meta( $post->ID, '_dienst_cta', true ),
+            'image' => (int) get_post_thumbnail_id( $post ),
         );
     }
     if ( $items ) {
@@ -142,6 +143,7 @@ function balans_get_diensten( $group ) {
             'price' => '',
             'level' => 0,
             'cta'   => 'maatwerk' === $key ? 'contact' : 'afspraak',
+            'image' => 0,
         );
     }
     return $items;
@@ -198,6 +200,11 @@ function balans_service_block( $key, $item, $group ) {
         <header class="service-block__head">
             <h2 class="service-block__title"><?php echo esc_html( $item['title'] ); ?></h2>
             <?php if ( $item['when'] ) : ?><p class="service-block__when"><?php echo esc_html( $item['when'] ); ?></p><?php endif; ?>
+            <?php if ( $item['image'] ) : ?>
+                <?php echo wp_get_attachment_image( $item['image'], 'medium_large', false, array( 'class' => 'service-block__img', 'alt' => esc_attr( $item['title'] ), 'data-testid' => 'service-image-' . $key ) ); ?>
+            <?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
+                <div class="service-block__img service-block__img--placeholder" aria-hidden="true" data-label="<?php esc_attr_e( 'Kies een foto: Diensten → Uitgelichte afbeelding', 'balans' ); ?>"></div>
+            <?php endif; ?>
         </header>
         <div class="service-block__body"><?php echo wp_kses_post( $item['html'] ); ?></div>
         <footer class="service-block__foot">
@@ -303,6 +310,9 @@ function balans_sync_dienst_translations( $post_id ) {
         }
         foreach ( array( '_dienst_group', '_dienst_key', '_dienst_level', '_dienst_cta' ) as $key ) {
             update_post_meta( $id, $key, get_post_meta( $post_id, $key, true ) );
+        }
+        if ( ! has_post_thumbnail( $id ) && has_post_thumbnail( $post_id ) ) {
+            set_post_thumbnail( $id, get_post_thumbnail_id( $post_id ) );
         }
         if ( ! get_post_meta( $id, '_dienst_price', true ) ) {
             update_post_meta( $id, '_dienst_price', get_post_meta( $post_id, '_dienst_price', true ) );

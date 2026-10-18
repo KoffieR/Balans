@@ -244,6 +244,10 @@ function balans_hp_fields() {
         'aanpak_title'   => array( __( 'Aanpak: kop', 'balans' ), __( 'Empathisch energiewerk, in woorden die kloppen.', 'balans' ) ),
         'aanpak_text'    => array( __( 'Aanpak: tekst', 'balans' ), __( 'Geen beloftes, geen jargon. Een rustige, menselijke manier van kijken naar wat er bij jou of in een groep speelt.', 'balans' ), 'textarea' ),
         'aanpak_button'  => array( __( 'Aanpak: knop', 'balans' ), __( 'Lees meer over onze aanpak', 'balans' ) ),
+        'erv_eyebrow'    => array( __( 'Ervaringen: klein kopje', 'balans' ), __( 'Ervaringen', 'balans' ) ),
+        'erv_title'      => array( __( 'Ervaringen: kop', 'balans' ), __( 'Wat anderen ervaren.', 'balans' ) ),
+        'erv_form_title' => array( __( 'Ervaringen: kop formulier', 'balans' ), __( 'Deel je ervaring', 'balans' ) ),
+        'erv_form_intro' => array( __( 'Ervaringen: tekst formulier', 'balans' ), __( 'Een paar zinnen is genoeg. We lezen elke ervaring eerst, daarna verschijnt hij op de website.', 'balans' ), 'textarea' ),
     );
 }
 
@@ -263,6 +267,16 @@ add_action( 'customize_register', function ( $wp_customize ) {
     $wp_customize->add_section( 'eq5_hp_image', array( 'title' => __( 'Afbeelding welkomstblok', 'balans' ), 'panel' => 'eq5_homepage' ) );
     $wp_customize->add_setting( 'eq5_hp_hero_image', array( 'default' => 0, 'sanitize_callback' => 'absint' ) );
     $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'eq5_hp_hero_image', array( 'label' => __( 'Afbeelding naast de welkomsttekst', 'balans' ), 'section' => 'eq5_hp_image', 'mime_type' => 'image' ) ) );
+    $wp_customize->add_section( 'eq5_vj_images', array(
+        'title'       => __( "Foto's Voor jou", 'balans' ),
+        'description' => __( 'Eén foto per blok op de pagina "Voor jou" (geldt voor alle talen). Foto\'s bij de diensten kies je via Diensten → Uitgelichte afbeelding.', 'balans' ),
+        'priority'    => 31,
+    ) );
+    foreach ( balans_voor_jou_services() as $i => $svc ) {
+        $id = 'eq5_vj_image_' . ( $i + 1 );
+        $wp_customize->add_setting( $id, array( 'default' => 0, 'sanitize_callback' => 'absint' ) );
+        $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, $id, array( 'label' => $svc['title'], 'section' => 'eq5_vj_images', 'mime_type' => 'image' ) ) );
+    }
     foreach ( array( 'nl' => 'Nederlands', 'en' => 'English', 'fr' => 'Français' ) as $lang => $label ) {
         $wp_customize->add_section( 'eq5_hp_' . $lang, array( 'title' => $label, 'panel' => 'eq5_homepage' ) );
         $fields = balans_with_locale( array( 'nl' => 'nl_NL', 'en' => 'en_GB', 'fr' => 'fr_FR' )[ $lang ], 'balans_hp_fields' );

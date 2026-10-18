@@ -48,3 +48,15 @@ kleine melding met uitleg. Bezoekers zien die meldingen en voorbeeldkaarten niet
 ZIE JE OUDE KLEUREN OF TEKSTEN?
 Na een thema-update laadt de site automatisch de nieuwe opmaak. Gebruik je een cache-plugin (bijv. WP Rocket,
 LiteSpeed), leeg dan één keer de cache.
+
+FOTO'S BIJ DIENSTEN EN "VOOR JOU"
+- Diensten: Diensten → open een dienst → rechts "Uitgelichte afbeelding" → kies een foto → Bijwerken.
+  (De foto wordt automatisch ook bij de EN/FR-vertaling gezet als die nog geen foto heeft.)
+- Voor jou: Weergave → Customizer → "Foto's Voor jou" → kies per blok een foto → Publiceren.
+
+ERVARINGEN (HOMEPAGE)
+- Bezoekers vullen onderaan de homepage het formulier "Deel je ervaring" in (naam/initialen, tekst, optioneel de dienst).
+- Je krijgt een e-mail op het beheerders-e-mailadres. De ervaring staat dan als "Wacht op beoordeling" onder Ervaringen.
+- Goedkeuren = de ervaring openen en op "Publiceren" klikken. Je kunt de tekst eerst nog aanpassen.
+- Customizer → Homepage-teksten → Ervaringen: tonen aan/uit, aantal ervaringen, formulier aan/uit.
+- De koppen en de tekst boven het formulier pas je per taal aan in Customizer → Homepage-teksten → Nederlands/English/Français.

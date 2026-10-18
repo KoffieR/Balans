@@ -152,3 +152,11 @@ Thema `balans-theme/` met:
 ## Update juni 2026 — Visitekaartje opties (DONE)
 - make_business_card.py: voorkant slogan 2 regels 1,3x (11pt), "naar balans" schuin brons #B08D57, logo-teal #3F7F83. Achterkant 3 opties: A crème, B donkerbruin (footer), C beige-teal. Diensten: "meditaties · consulten · events / trainingen · workshops". Per optie afloop- en snijtekens-PDF + previews + overzicht-opties.png in /app/drukwerk/visitekaartje.
 - Voorkant ook in brons: 12 PDF's (voorkant teal/brons x achterkant A/B/C x afloop/snijtekens), overzicht-opties.png met beide voorkanten.
+
+## Update juni 2026 — Foto's bij diensten/Voor jou + Ervaringen (DONE)
+- Diensten (balans_dienst) ondersteunen "Uitgelichte afbeelding"; getoond in service-block (header, onder tijdsaanduiding); placeholder alleen voor beheerders; foto wordt naar EN/FR-vertaling gesynchroniseerd als die er nog geen heeft.
+- Voor jou: Customizer-sectie "Foto's Voor jou" (eq5_vj_image_1..5, één per blok, alle talen).
+- `inc/testimonials.php` + `template-parts/testimonials.php`: CPT balans_ervaring (pending → publiceren = goedkeuren), AJAX `balans_ervaring` (naam/initialen ≤60, tekst 10–600, optionele dienst uit lijst, honeypot `website`), mail naar admin_email, teller in menu, dienst-kolom.
+- Customizer → Homepage-teksten → Ervaringen: eq5_ervaringen_show, eq5_ervaringen_count (default 3), eq5_ervaringen_form (aan/uit). Koppen per taal: erv_eyebrow/erv_title/erv_form_title/erv_form_intro.
+- EN/FR vertalingen via drukwerk/scripts/translations.py → extract_strings.py → build_translations.py.
+- Getest op /root/wpf (wp-cli + php -S/curl): validatie, honeypot, pending/publish, aantal, toggles, foto's, vertalingen.

@@ -34,12 +34,6 @@ msgstr "Lees meer"
 msgid "Nog geen inhoud."
 msgstr "Nog geen inhoud."
 
-msgid "Iedereen heeft vragen in een zoektocht naar balans."
-msgstr "Iedereen heeft vragen in een zoektocht naar balans."
-
-msgid "Balansbrenger"
-msgstr "Balansbrenger"
-
 msgid "Ontdek"
 msgstr "Ontdek"
 
@@ -598,6 +592,22 @@ msgstr ""
 msgid "Lees meer over onze aanpak"
 msgstr "Lees meer over onze aanpak"
 
+msgid "Ervaringen"
+msgstr "Ervaringen"
+
+msgid "Wat anderen ervaren."
+msgstr "Wat anderen ervaren."
+
+msgid "Deel je ervaring"
+msgstr "Deel je ervaring"
+
+msgid ""
+"Een paar zinnen is genoeg. We lezen elke ervaring eerst, daarna verschijnt "
+"hij op de website."
+msgstr ""
+"Een paar zinnen is genoeg. We lezen elke ervaring eerst, daarna verschijnt "
+"hij op de website."
+
 msgid "Meer rust, zelf ontdekken en oefenen"
 msgstr "Meer rust, zelf ontdekken en oefenen"
 
@@ -760,6 +770,19 @@ msgid "Nog aan te leveren door de eigenaar. Dit is een tijdelijke aanduiding."
 msgstr ""
 "Nog aan te leveren door de eigenaar. Dit is een tijdelijke aanduiding."
 
+msgid "Vul je naam of initialen in (max. 60 tekens)."
+msgstr "Vul je naam of initialen in (max. 60 tekens)."
+
+msgid "Schrijf je ervaring in 10 tot 600 tekens."
+msgstr "Schrijf je ervaring in 10 tot 600 tekens."
+
+msgid ""
+"Dank je wel voor het delen! Je ervaring verschijnt op de website zodra we "
+"hem hebben bekeken."
+msgstr ""
+"Dank je wel voor het delen! Je ervaring verschijnt op de website zodra we "
+"hem hebben bekeken."
+
 msgid "Footer navigatie"
 msgstr "Footer navigatie"
 
@@ -787,9 +810,6 @@ msgstr ""
 
 msgid "Nog geen inhoud"
 msgstr "Nog geen inhoud"
-
-msgid "Er is nog geen inhoud op deze locatie."
-msgstr "Er is nog geen inhoud op deze locatie."
 
 msgid ""
 "Beschikbare tijdslots zijn tijdelijke voorbeelden. De werkelijke "
@@ -1167,3 +1187,15 @@ msgstr ""
 
 msgid "Privé-feed"
 msgstr "Privé-feed"
+
+msgid "Naam of initialen"
+msgstr "Naam of initialen"
+
+msgid "Bij welke dienst (optioneel)"
+msgstr "Bij welke dienst (optioneel)"
+
+msgid "Je ervaring"
+msgstr "Je ervaring"
+
+msgid "Ervaring versturen"
+msgstr "Ervaring versturen"

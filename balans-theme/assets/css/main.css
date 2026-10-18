@@ -673,3 +673,22 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
 .entry-content .wp-block-button__link:hover { background: var(--balans-primary-dk); color: #fff; transform: translateY(-1px); }
 .hero__visual--image { padding: 0; overflow: hidden; }
 .hero__img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* Foto bij dienst */
+.service-block__img { display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; margin-top: 18px; border-radius: var(--balans-radius-lg); }
+.service-block__img--placeholder { background: linear-gradient(135deg, #D9CFBE 0%, #B5A48B 100%); position: relative; }
+.service-block__img--placeholder::after { content: attr(data-label); position: absolute; inset: 0; display: grid; place-items: center; padding: 12px; text-align: center; color: var(--balans-surface); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; }
+
+/* Ervaringen */
+.ervaringen-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; margin: 40px 0 0; }
+.ervaring { margin: 0; padding: 30px 30px 26px; background: var(--balans-surface); border: 1px solid var(--balans-line); border-radius: var(--balans-radius-lg); display: flex; flex-direction: column; gap: 16px; transition: transform .3s var(--balans-ease), box-shadow .3s var(--balans-ease); }
+.ervaring:hover { transform: translateY(-3px); box-shadow: var(--balans-shadow); }
+.ervaring__q { width: 30px; height: auto; color: var(--balans-gold); }
+.ervaring__text { margin: 0; font-family: var(--balans-font-serif); font-size: 1.08rem; line-height: 1.7; color: var(--balans-ink); flex: 1; }
+.ervaring__text p { margin: 0 0 10px; }
+.ervaring__by { display: flex; flex-direction: column; gap: 2px; padding-top: 14px; border-top: 1px solid var(--balans-line); font-size: 0.92rem; }
+.ervaring__by span { color: var(--balans-gold); font-style: italic; font-family: var(--balans-font-serif); }
+.ervaring-form-wrap { margin-top: 56px; max-width: 720px; }
+.ervaring-form-wrap h3 { margin: 0 0 8px; }
+.ervaring-form-wrap > p { margin: 0 0 22px; color: var(--balans-ink-soft); }
+.form-row--hp { position: absolute !important; left: -9999px; width: 1px; height: 1px; overflow: hidden; }

@@ -42,14 +42,6 @@ msgid "Nog geen inhoud."
 msgstr "No content yet."
 
 #: footer.php
-msgid "Iedereen heeft vragen in een zoektocht naar balans."
-msgstr "Everyone has questions on the search for balance."
-
-#: footer.php
-msgid "Balansbrenger"
-msgstr "Balance bringer"
-
-#: footer.php
 msgid "Ontdek"
 msgstr "Discover"
 
@@ -756,6 +748,26 @@ msgstr ""
 msgid "Lees meer over onze aanpak"
 msgstr "Read more about our approach"
 
+#: inc/page-texts.php
+msgid "Ervaringen"
+msgstr "Experiences"
+
+#: inc/page-texts.php
+msgid "Wat anderen ervaren."
+msgstr "What others experience."
+
+#: inc/page-texts.php
+msgid "Deel je ervaring"
+msgstr "Share your experience"
+
+#: inc/page-texts.php
+msgid ""
+"Een paar zinnen is genoeg. We lezen elke ervaring eerst, daarna verschijnt "
+"hij op de website."
+msgstr ""
+"A few sentences are enough. We read every experience first; then it appears "
+"on the website."
+
 #: inc/placeholder-content.php
 msgid "Meer rust, zelf ontdekken en oefenen"
 msgstr "More calm, discovering and practising yourself"
@@ -956,6 +968,22 @@ msgstr "Photo still to be supplied"
 msgid "Nog aan te leveren door de eigenaar. Dit is een tijdelijke aanduiding."
 msgstr "Still to be supplied by the owner. This is a placeholder."
 
+#: inc/testimonials.php
+msgid "Vul je naam of initialen in (max. 60 tekens)."
+msgstr "Please enter your name or initials (max. 60 characters)."
+
+#: inc/testimonials.php
+msgid "Schrijf je ervaring in 10 tot 600 tekens."
+msgstr "Write your experience in 10 to 600 characters."
+
+#: inc/testimonials.php
+msgid ""
+"Dank je wel voor het delen! Je ervaring verschijnt op de website zodra we "
+"hem hebben bekeken."
+msgstr ""
+"Thank you for sharing! Your experience will appear on the website once we "
+"have read it."
+
 #: inc/theme-setup.php
 msgid "Footer navigatie"
 msgstr "Footer navigation"
@@ -988,10 +1016,6 @@ msgstr ""
 #: index.php
 msgid "Nog geen inhoud"
 msgstr "No content yet"
-
-#: index.php
-msgid "Er is nog geen inhoud op deze locatie."
-msgstr "There is no content at this location yet."
 
 #: page-templates/page-afspraak.php
 msgid ""
@@ -1465,3 +1489,19 @@ msgstr ""
 #: template-parts/podcast-subscribe.php
 msgid "Privé-feed"
 msgstr "Private feed"
+
+#: template-parts/testimonials.php
+msgid "Naam of initialen"
+msgstr "Name or initials"
+
+#: template-parts/testimonials.php
+msgid "Bij welke dienst (optioneel)"
+msgstr "Which service (optional)"
+
+#: template-parts/testimonials.php
+msgid "Je ervaring"
+msgstr "Your experience"
+
+#: template-parts/testimonials.php
+msgid "Ervaring versturen"
+msgstr "Send experience"
