@@ -619,8 +619,8 @@ msgstr ""
 msgid "Praten over wat er bij je speelt"
 msgstr "Praten over wat er bij je speelt"
 
-msgid "Hulp"
-msgstr "Hulp"
+msgid "Consulten"
+msgstr "Consulten"
 
 msgid ""
 "Persoonlijke hulp, één op één: een afstemming, een consult of een dubbel "

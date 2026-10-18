@@ -268,8 +268,8 @@ add_action( 'customize_register', function ( $wp_customize ) {
     $wp_customize->add_setting( 'eq5_hp_hero_image', array( 'default' => 0, 'sanitize_callback' => 'absint' ) );
     $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'eq5_hp_hero_image', array( 'label' => __( 'Afbeelding naast de welkomsttekst', 'balans' ), 'section' => 'eq5_hp_image', 'mime_type' => 'image' ) ) );
     $wp_customize->add_section( 'eq5_vj_images', array(
-        'title'       => __( "Foto's Voor jou", 'balans' ),
-        'description' => __( 'Eén foto per blok op de pagina "Voor jou" (geldt voor alle talen). Foto\'s bij de diensten kies je via Diensten → Uitgelichte afbeelding.', 'balans' ),
+        'title'       => __( "Foto's keuzeblokken (homepage + Voor jou)", 'balans' ),
+        'description' => __( 'Eén foto per blok; dezelfde foto verschijnt in de keuzehulp op de homepage én op de pagina "Voor jou" (geldt voor alle talen). Foto\'s bij de diensten kies je via Diensten → Uitgelichte afbeelding.', 'balans' ),
         'priority'    => 31,
     ) );
     foreach ( balans_voor_jou_services() as $i => $svc ) {

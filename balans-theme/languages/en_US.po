@@ -782,8 +782,8 @@ msgid "Praten over wat er bij je speelt"
 msgstr "Talking about what is going on for you"
 
 #: inc/placeholder-content.php
-msgid "Hulp"
-msgstr "Help"
+msgid "Consulten"
+msgstr "Consultations"
 
 #: inc/placeholder-content.php
 msgid ""

@@ -52,7 +52,7 @@ LiteSpeed), leeg dan één keer de cache.
 FOTO'S BIJ DIENSTEN EN "VOOR JOU"
 - Diensten: Diensten → open een dienst → rechts "Uitgelichte afbeelding" → kies een foto → Bijwerken.
   (De foto wordt automatisch ook bij de EN/FR-vertaling gezet als die nog geen foto heeft.)
-- Voor jou: Weergave → Customizer → "Foto's Voor jou" → kies per blok een foto → Publiceren.
+- Keuzehulp homepage + Voor jou: Weergave → Customizer → "Foto's keuzeblokken (homepage + Voor jou)" → kies per blok een foto → Publiceren. Dezelfde foto verschijnt op beide plekken.
 
 ERVARINGEN (HOMEPAGE)
 - Bezoekers vullen onderaan de homepage het formulier "Deel je ervaring" in (naam/initialen, tekst, optioneel de dienst).

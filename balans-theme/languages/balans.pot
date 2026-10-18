@@ -728,7 +728,7 @@ msgid "Praten over wat er bij je speelt"
 msgstr ""
 
 #: inc/placeholder-content.php
-msgid "Hulp"
+msgid "Consulten"
 msgstr ""
 
 #: inc/placeholder-content.php

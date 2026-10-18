@@ -270,6 +270,9 @@ p  { margin: 0 0 1em; color: var(--balans-ink-soft); }
     position: relative;
 }
 .route:hover { transform: translateY(-4px); border-color: var(--balans-primary); box-shadow: var(--balans-shadow); }
+.route--image { overflow: hidden; }
+.route__img { display: block; width: calc(100% + 56px); max-width: none; height: auto; aspect-ratio: 16/10; object-fit: cover; margin: -28px -28px 4px; }
+.route--image .upcoming-badge { z-index: 1; }
 .route .eyebrow { margin: 0; }
 .route h3 { margin: 0; }
 .route__arrow { margin-top: auto; color: var(--balans-primary-dk); font-size: 1.3rem; }

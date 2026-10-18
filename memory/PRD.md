@@ -160,3 +160,7 @@ Thema `balans-theme/` met:
 - Customizer → Homepage-teksten → Ervaringen: eq5_ervaringen_show, eq5_ervaringen_count (default 3), eq5_ervaringen_form (aan/uit). Koppen per taal: erv_eyebrow/erv_title/erv_form_title/erv_form_intro.
 - EN/FR vertalingen via drukwerk/scripts/translations.py → extract_strings.py → build_translations.py.
 - Getest op /root/wpf (wp-cli + php -S/curl): validatie, honeypot, pending/publish, aantal, toggles, foto's, vertalingen.
+
+## Update juni 2026 — Foto's keuzehulp homepage + titels (DONE)
+- Homepage-routes tonen dezelfde foto's als Voor jou (eq5_vj_image_1..5); Customizer-sectie hernoemd naar "Foto's keuzeblokken (homepage + Voor jou)". CSS .route__img/.route--image.
+- Routetitels: Meditatie→Meditaties, Hulp→Consulten (EN/FR Consultations), Event→Events (FR Événements). Getest via curl NL/EN/FR.

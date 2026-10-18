@@ -14,19 +14,19 @@ function balans_homepage_routes() {
     return array(
         array(
             'eyebrow' => __( 'Meer rust, zelf ontdekken en oefenen', 'balans' ),
-            'title'   => __( 'Meditatie', 'balans' ),
+            'title'   => __( 'Meditaties', 'balans' ),
             'text'    => __( 'Gratis en betaalde meditaties die je in je eigen tempo kunt beluisteren.', 'balans' ),
             'link'    => balans_url( 'meditatie' ),
         ),
         array(
             'eyebrow' => __( 'Praten over wat er bij je speelt', 'balans' ),
-            'title'   => __( 'Hulp', 'balans' ),
+            'title'   => __( 'Consulten', 'balans' ),
             'text'    => __( 'Persoonlijke hulp, één op één: een afstemming, een consult of een dubbel consult.', 'balans' ),
             'link'    => balans_url( 'afspraak-voor-hulp' ),
         ),
         array(
             'eyebrow' => __( 'Een middag of avond rond één thema', 'balans' ),
-            'title'   => __( 'Event', 'balans' ),
+            'title'   => __( 'Events', 'balans' ),
             'text'    => __( 'Laat emotionele ladingen los en ga verlicht en fris naar huis. Niemand verwacht dat je iets deelt.', 'balans' ),
             'link'    => balans_url( 'events' ),
             'upcoming' => true,

@@ -342,4 +342,5 @@ T = {
     'Vul je naam of initialen in (max. 60 tekens).': ('Please enter your name or initials (max. 60 characters).', 'Indiquez votre nom ou vos initiales (60 caractères max.).'),
     'Schrijf je ervaring in 10 tot 600 tekens.': ('Write your experience in 10 to 600 characters.', 'Écrivez votre témoignage en 10 à 600 caractères.'),
     'Dank je wel voor het delen! Je ervaring verschijnt op de website zodra we hem hebben bekeken.': ('Thank you for sharing! Your experience will appear on the website once we have read it.', "Merci pour votre partage ! Votre témoignage apparaîtra sur le site dès que nous l'aurons lu."),
+    'Consulten': ('Consultations', 'Consultations'),
 }

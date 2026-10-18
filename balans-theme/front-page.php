@@ -46,8 +46,9 @@ get_header();
             </div>
 
             <div class="routes-grid">
-                <?php $i = 0; foreach ( balans_homepage_routes() as $route ) : $i++; $route = balans_route_upcoming( $route ); ?>
-                    <a class="route fade-in" data-delay="<?php echo esc_attr( min( $i, 5 ) ); ?>" href="<?php echo esc_url( $route['link'] ); ?>" data-testid="route-<?php echo esc_attr( sanitize_title( $route['title'] ) ); ?>">
+                <?php $i = 0; foreach ( balans_homepage_routes() as $route ) : $i++; $route = balans_route_upcoming( $route ); $img = (int) get_theme_mod( 'eq5_vj_image_' . $i, 0 ); ?>
+                    <a class="route fade-in<?php echo $img ? ' route--image' : ''; ?>" data-delay="<?php echo esc_attr( min( $i, 5 ) ); ?>" href="<?php echo esc_url( $route['link'] ); ?>" data-testid="route-<?php echo esc_attr( sanitize_title( $route['title'] ) ); ?>">
+                        <?php if ( $img ) : ?><?php echo wp_get_attachment_image( $img, 'medium_large', false, array( 'class' => 'route__img', 'alt' => '', 'data-testid' => 'route-image-' . $i ) ); ?><?php endif; ?>
                         <?php if ( ! empty( $route['badge'] ) ) : ?><span class="upcoming-badge" data-testid="upcoming-badge"><?php echo esc_html( $route['badge'] ); ?></span><?php endif; ?>
                         <p class="eyebrow"><?php echo esc_html( $route['eyebrow'] ); ?></p>
                         <h3><?php echo esc_html( $route['title'] ); ?></h3>

@@ -793,8 +793,8 @@ msgid "Praten over wat er bij je speelt"
 msgstr "Parler de ce qui vous préoccupe"
 
 #: inc/placeholder-content.php
-msgid "Hulp"
-msgstr "Aide"
+msgid "Consulten"
+msgstr "Consultations"
 
 #: inc/placeholder-content.php
 msgid ""
