@@ -83,6 +83,11 @@ def main():
         for lang, slogan in SLOGANS.items():
             write(f"EQ5-logo-{cname}-met-slogan-{lang.upper()}", slogan_svg(cbody, x, y, w, h, pad, slogan, color))
 
+    q = open(os.path.join(THEME_IMG, "q-accent.svg")).read()
+    q = q.replace(' aria-hidden="true" focusable="false"', '').replace('viewBox="59 -1460 1418 1975"', 'viewBox="-21 -1540 1578 2135"')
+    for cname, color in COLORS.items():
+        write(f"EQ5-beeldmerk-Q-{cname}", q.replace("currentColor", color))
+
     for lang, slogan in SLOGANS.items():
         theme = slogan_svg(body.replace(TEAL, "currentColor"), x, y, w, h, w * 0.01, slogan, "currentColor")
         open(os.path.join(THEME_IMG, f"logo-eq5-slogan-{lang}.svg"), "w").write(

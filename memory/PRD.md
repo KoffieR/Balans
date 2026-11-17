@@ -170,3 +170,4 @@ Thema `balans-theme/` met:
 - Favicon/apple-touch/site-icon-512: brons vlak + crème Q (export_theme_assets.py BRONS).
 - make_logo_files.py maakt teal + brons: /app/drukwerk/logo/EQ5-logo-brons*.{svg,png,pdf}; EPS via ghostscript eps2write (RGB .eps + -CMYK.eps). LEESMIJ bijgewerkt.
 - Let op: omgeving was eerder gereset; deze stap opnieuw uitgevoerd.
+- Beeldmerk Q zonder tekst (brons + teal) toegevoegd: EQ5-beeldmerk-Q-*.{svg,png,pdf,eps,-CMYK.eps}

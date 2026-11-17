@@ -23,3 +23,10 @@ EQ5-logo-brons-met-slogan-FR : met "du cercle vicieux à l’équilibre"
 Per variant: .svg, .png (3000 px, transparant), .pdf en .eps (vector).
 - .eps       : RGB-kleuren, voor ontwerpprogramma's en schermgebruik
 - -CMYK.eps  : CMYK-kleuren, geef deze aan de drukker / reclamemaker (borduren, stickers, belettering)
+
+Beeldmerk zonder tekst (alleen de Q)
+====================================
+EQ5-beeldmerk-Q-brons : de Q in brons (#B08D57)
+EQ5-beeldmerk-Q-teal  : de Q in teal (#3F7F83)
+Formaten: .svg, .png (3000 px, transparant), .pdf, .eps (RGB) en -CMYK.eps (voor de drukker).
+Handig voor social-media-profielfoto, stempel, sticker of als klein merkteken.
