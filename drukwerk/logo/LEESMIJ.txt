@@ -12,3 +12,14 @@ Per variant drie bestandstypes:
 
 Alle tekst is omgezet naar contouren: het logo ziet er overal hetzelfde uit,
 ook zonder dat de lettertypes geinstalleerd zijn.
+
+EQ5-logo — brons (#B08D57 / CMYK ca. C30 M42 Y72 K8)
+=====================================================
+EQ5-logo-brons               : alleen het woordmerk (zoals linksboven op de website)
+EQ5-logo-brons-met-slogan-NL : met "van vicieuze cirkel naar balans"
+EQ5-logo-brons-met-slogan-EN : met "from vicious cycle to balance"
+EQ5-logo-brons-met-slogan-FR : met "du cercle vicieux à l’équilibre"
+
+Per variant: .svg, .png (3000 px, transparant), .pdf en .eps (vector).
+- .eps       : RGB-kleuren, voor ontwerpprogramma's en schermgebruik
+- -CMYK.eps  : CMYK-kleuren, geef deze aan de drukker / reclamemaker (borduren, stickers, belettering)

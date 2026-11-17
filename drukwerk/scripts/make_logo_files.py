@@ -9,6 +9,7 @@ from fontTools.pens.transformPen import TransformPen
 
 OUT = "/app/drukwerk/logo"
 TEAL = "#3F7F83"
+COLORS = {"teal": TEAL, "brons": "#B08D57"}
 LOGO = "/app/balans-theme/assets/images/logo-eq5.svg"
 SLOGANS = {
     "nl": ("van vicieuze cirkel", "naar balans"),
@@ -75,12 +76,14 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     body, (x, y, w, h) = logo_parts()
     pad = w * 0.06
-    write("EQ5-logo-teal", f'<svg xmlns="http://www.w3.org/2000/svg" '
-          f'viewBox="{x - pad:.0f} {y - pad:.0f} {w + 2 * pad:.0f} {h + 2 * pad:.0f}">{body}</svg>')
+    for cname, color in COLORS.items():
+        cbody = body.replace(TEAL, color)
+        write(f"EQ5-logo-{cname}", f'<svg xmlns="http://www.w3.org/2000/svg" '
+              f'viewBox="{x - pad:.0f} {y - pad:.0f} {w + 2 * pad:.0f} {h + 2 * pad:.0f}">{cbody}</svg>')
+        for lang, slogan in SLOGANS.items():
+            write(f"EQ5-logo-{cname}-met-slogan-{lang.upper()}", slogan_svg(cbody, x, y, w, h, pad, slogan, color))
 
     for lang, slogan in SLOGANS.items():
-        svg = slogan_svg(body, x, y, w, h, pad, slogan, TEAL)
-        write(f"EQ5-logo-teal-met-slogan-{lang.upper()}", svg)
         theme = slogan_svg(body.replace(TEAL, "currentColor"), x, y, w, h, w * 0.01, slogan, "currentColor")
         open(os.path.join(THEME_IMG, f"logo-eq5-slogan-{lang}.svg"), "w").write(
             theme.replace("<svg ", '<svg aria-hidden="true" focusable="false" '))

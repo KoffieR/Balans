@@ -5,7 +5,7 @@ import cairosvg
 from make_logos import svg_q, svg_eq5, glyph, CAP
 
 IMG = "/app/balans-theme/assets/images"
-TEAL, CREAM = "#3F7F83", "#F5F0E8"
+TEAL, BRONS, CREAM = "#3F7F83", "#B08D57", "#F5F0E8"
 
 
 def tighten(svg, x0, x1):
@@ -28,7 +28,7 @@ def main():
     body = q.split(">", 1)[1].rsplit("</svg>", 1)[0].replace("currentColor", CREAM)
     vb = re.search(r'viewBox="([^"]+)"', q).group(1)
     icon = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">'
-            f'<rect width="64" height="64" rx="14" fill="{TEAL}"/>'
+            f'<rect width="64" height="64" rx="14" fill="{BRONS}"/>'
             f'<svg x="14" y="8" width="36" height="50" viewBox="{vb}">{body}</svg></svg>')
     open(os.path.join(IMG, "favicon.svg"), "w").write(icon)
     for size, fn in ((32, "favicon-32.png"), (180, "apple-touch-icon.png"), (512, "site-icon-512.png")):

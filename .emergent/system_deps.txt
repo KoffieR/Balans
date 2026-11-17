@@ -1,5 +1,6 @@
+ghostscript=10.0.0~dfsg-11+deb12u9
 php-cli=2:8.2+93
-php8.2-curl=8.2.34-1~deb12u1
-php8.2-mbstring=8.2.34-1~deb12u1
-php8.2-sqlite3=8.2.34-1~deb12u1
-php8.2-xml=8.2.34-1~deb12u1
+php8.2-curl=8.2.35-1~deb12u1
+php8.2-mbstring=8.2.35-1~deb12u1
+php8.2-sqlite3=8.2.35-1~deb12u1
+php8.2-xml=8.2.35-1~deb12u1

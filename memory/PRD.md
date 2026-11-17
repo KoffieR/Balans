@@ -164,3 +164,9 @@ Thema `balans-theme/` met:
 ## Update juni 2026 — Foto's keuzehulp homepage + titels (DONE)
 - Homepage-routes tonen dezelfde foto's als Voor jou (eq5_vj_image_1..5); Customizer-sectie hernoemd naar "Foto's keuzeblokken (homepage + Voor jou)". CSS .route__img/.route--image.
 - Routetitels: Meditatie→Meditaties, Hulp→Consulten (EN/FR Consultations), Event→Events (FR Événements). Getest via curl NL/EN/FR.
+
+## Update juni 2026 — Logo + favicon brons, EPS (DONE)
+- Header-logo (.site-logo) nu var(--balans-gold) #B08D57; footer-logo ongewijzigd.
+- Favicon/apple-touch/site-icon-512: brons vlak + crème Q (export_theme_assets.py BRONS).
+- make_logo_files.py maakt teal + brons: /app/drukwerk/logo/EQ5-logo-brons*.{svg,png,pdf}; EPS via ghostscript eps2write (RGB .eps + -CMYK.eps). LEESMIJ bijgewerkt.
+- Let op: omgeving was eerder gereset; deze stap opnieuw uitgevoerd.
